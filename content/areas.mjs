@@ -32,7 +32,7 @@ export function loadAreas(file) {
 const REGION_ORDER = ['West Midlands', 'East Midlands', 'London', 'South East', 'East of England', 'South West', 'North West', 'Yorkshire and the Humber', 'North East'];
 
 export function areaPages(areas) {
-  const live = areas.filter((a) => a.tier === '1' && a.slug !== 'london');
+  const live = areas.filter((a) => a.slug !== 'london');
   const liveSet = new Set(live.map((a) => a.slug));
   const link = (a) => liveSet.has(a.slug) ? `<a href="/areas/${a.slug}/">${esc(a.place)}</a>` : esc(a.place);
   const regions = REGION_ORDER.map((r) => ({ name: r, slug: slug(r), places: areas.filter((a) => a.region === r && !a.place.startsWith('London (')) }));
@@ -82,7 +82,16 @@ ${ctaBand()}`,
     const who = a.inPerson
       ? `Our Birmingham-based lead engineer carries out inspections and measured surveys in ${esc(a.place)} in person.`
       : `Inspections in ${esc(a.place)} are carried out by a qualified inspector who is a member of a recognised professional body for surveying (such as RICS, CIOB or CABE) to our checklist, and every report is checked by our lead engineer before it reaches you. Design work is done by our engineer, with the measured survey by a local partner or 3D scan.`;
-    const nearby = areas.filter((x) => x.region === a.region && x.slug !== a.slug && !x.place.startsWith('London (')).slice(0, 12);
+    // Neighbours rotate per page so each town links to a different set of places in its region.
+    const regionPlaces = areas.filter((x) => x.region === a.region && !x.place.startsWith('London ('));
+    const idx = regionPlaces.findIndex((x) => x.slug === a.slug);
+    const nearby = regionPlaces.length <= 13 ? regionPlaces.filter((x) => x.slug !== a.slug)
+      : Array.from({ length: 12 }, (_, i) => regionPlaces[(idx + 1 + i) % regionPlaces.length]);
+    const sameCouncil = areas.filter((x) => x.planning_authority === a.planning_authority && x.slug !== a.slug);
+    const kind = a.type === 'Borough' ? 'London borough' : a.type === 'City' ? 'city' : 'town';
+    const planningNote = a.type === 'Borough'
+      ? 'Many London boroughs have extensive conservation areas and Article 4 directions that limit permitted development, so we check your street and the borough\'s design guidance before we draw anything.'
+      : `We check ${esc(a.planning_authority)}'s local plan and design guidance, any conservation area or Article 4 direction on your street, and your property's planning history before we draw anything.`;
     const faqs = [
       [`How much are extension drawings in ${a.place}?`, `Planning drawings for a single-storey extension start at ${gbp(single.s1)}, both stages at ${gbp(single.both)}, and the Complete package with structural calculations at ${gbp(single.complete)}. Council fees are paid to ${a.planning_authority}.`],
       [`How much is a snagging survey in ${a.place}?`, `From ${gbp(minSnag)} for a flat, ${gbp(prices.snag[2].price)} for a 3-bedroom house and ${gbp(prices.snag[4].price)} for 5 bedrooms.`],
@@ -90,8 +99,6 @@ ${ctaBand()}`,
     ];
     out.push({
       path: `/areas/${a.slug}/`,
-      // Out-of-area towns stay live for visitors but out of the index until they have real local content.
-      noindex: !a.inPerson && !LOCAL[a.slug],
       title: `Extension Drawings & Snagging, ${a.place.replace(/ \(.*\)/, '')}`,
       description: `Engineer-led extension drawings from ${gbp(single.s1)} and new-build snagging surveys from ${gbp(minSnag)} in ${a.place}. ${a.inPerson ? 'In-person service from our Birmingham base.' : 'Covering all of England.'}`,
       trail,
@@ -99,7 +106,8 @@ ${ctaBand()}`,
       body: `${pageHero({ trail, eyebrow: `${a.place} · ${a.region}`, h1: `Extension drawings and snagging surveys in ${esc(a.place)}`, lede: `Engineer-led extension design, structural calculations and independent new-build inspections in ${esc(a.place)}. ${a.inPerson ? 'Covered in person from our Birmingham base.' : 'Part of our England-wide service.'}`, ctas: '<a class="btn btn-amber" href="/contact/">Get a price</a><a class="btn btn-slate" href="/snagging-prices/">Instant snagging price</a>' })}
 <section class="section"><div class="wrap grid-2">
   <div class="card card-door"><p class="eyebrow">Extensions in ${esc(a.place)}</p><h2>Planning, building regs and structural calcs</h2>
-    <p>Householder planning applications in ${esc(a.place)} are decided by <strong>${esc(a.planning_authority)}</strong>. Before we design, we check the council's local design guidance, any conservation area or Article 4 direction affecting your street, and your property's planning history.</p>
+    <p>Householder planning applications in the ${kind} of ${esc(a.place)} are decided by <strong>${esc(a.planning_authority)}</strong>. ${planningNote}</p>
+    ${sameCouncil.length ? `<p class="small muted">${esc(a.planning_authority)} also handles planning for ${sameCouncil.map((x) => `<a href="/areas/${x.slug}/">${esc(x.place)}</a>`).join(', ')}.</p>` : ''}
     <p class="price-from">Planning drawings from <b>${gbp(single.s1)}</b></p>
     <div class="btn-row"><a class="btn btn-amber" href="/extension-design-prices/">Design prices</a><a class="btn btn-ghost" href="/can-i-extend/">Can I extend?</a></div></div>
   <div class="card card-door"><p class="eyebrow">New builds in ${esc(a.place)}</p><h2>Snagging and pre-completion inspections</h2>
