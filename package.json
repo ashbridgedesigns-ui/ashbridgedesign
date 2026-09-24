@@ -1,0 +1,11 @@
+{
+    "name":  "ashbridgedesign",
+    "private":  true,
+    "scripts":  {
+                    "build":  "node build.mjs",
+                    "serve":  "node serve.mjs"
+                },
+    "devDependencies":  {
+                            "esbuild":  "^0.28.2"
+                        }
+}

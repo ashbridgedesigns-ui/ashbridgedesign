@@ -1,5 +1,6 @@
 // Builds the static site into dist/. Run: node build.mjs
-import { mkdirSync, writeFileSync, rmSync, cpSync } from 'node:fs';
+import { mkdirSync, writeFileSync, readFileSync, rmSync, cpSync } from 'node:fs';
+import { transformSync } from 'esbuild';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import site from './site.config.mjs';
@@ -13,6 +14,15 @@ const dist = join(root, 'dist');
 rmSync(dist, { recursive: true, force: true });
 mkdirSync(dist, { recursive: true });
 cpSync(join(root, 'assets'), join(dist, 'assets'), { recursive: true });
+
+// Minify the published CSS and JS; the readable sources stay in assets/.
+for (const [file, loader] of [['main.js', 'js'], ['styles.css', 'css']]) {
+  const out = join(dist, 'assets', file);
+  const src = readFileSync(out, 'utf8');
+  const { code } = transformSync(src, { loader, minify: true, target: loader === 'js' ? 'es2018' : ['chrome90', 'firefox90', 'safari14'] });
+  writeFileSync(out, code);
+  console.log(`Minified ${file}: ${(src.length / 1024).toFixed(1)}KB -> ${(code.length / 1024).toFixed(1)}KB`);
+}
 
 const areas = loadAreas(join(root, 'data', 'areas.csv'));
 const all = [...pages, ...guidePages(), ...areaPages(areas)];
