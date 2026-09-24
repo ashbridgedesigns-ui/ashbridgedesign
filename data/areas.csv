@@ -1,0 +1,208 @@
+region,place,type,planning_authority,tier,coverage
+West Midlands,Birmingham,City,Birmingham City Council,1,In person (Birmingham)
+London,London (hub page),City,32 London boroughs + City of London,1,Inspector network
+London,Barking and Dagenham,Borough,London Borough of Barking and Dagenham,2,Inspector network
+London,Barnet,Borough,London Borough of Barnet,2,Inspector network
+London,Bexley,Borough,London Borough of Bexley,2,Inspector network
+London,Brent,Borough,London Borough of Brent,2,Inspector network
+London,Bromley,Borough,London Borough of Bromley,2,Inspector network
+London,Camden,Borough,London Borough of Camden,2,Inspector network
+London,Croydon,Borough,London Borough of Croydon,2,Inspector network
+London,Ealing,Borough,London Borough of Ealing,2,Inspector network
+London,Enfield,Borough,London Borough of Enfield,2,Inspector network
+London,Greenwich,Borough,Royal Borough of Greenwich,2,Inspector network
+London,Hackney,Borough,London Borough of Hackney,2,Inspector network
+London,Hammersmith and Fulham,Borough,London Borough of Hammersmith and Fulham,2,Inspector network
+London,Haringey,Borough,London Borough of Haringey,2,Inspector network
+London,Harrow,Borough,London Borough of Harrow,2,Inspector network
+London,Havering,Borough,London Borough of Havering,2,Inspector network
+London,Hillingdon,Borough,London Borough of Hillingdon,2,Inspector network
+London,Hounslow,Borough,London Borough of Hounslow,2,Inspector network
+London,Islington,Borough,London Borough of Islington,2,Inspector network
+London,Kensington and Chelsea,Borough,Royal Borough of Kensington and Chelsea,2,Inspector network
+London,Kingston upon Thames,Borough,Royal Borough of Kingston upon Thames,2,Inspector network
+London,Lambeth,Borough,London Borough of Lambeth,2,Inspector network
+London,Lewisham,Borough,London Borough of Lewisham,2,Inspector network
+London,Merton,Borough,London Borough of Merton,2,Inspector network
+London,Newham,Borough,London Borough of Newham,2,Inspector network
+London,Redbridge,Borough,London Borough of Redbridge,2,Inspector network
+London,Richmond upon Thames,Borough,London Borough of Richmond upon Thames,2,Inspector network
+London,Southwark,Borough,London Borough of Southwark,2,Inspector network
+London,Sutton,Borough,London Borough of Sutton,2,Inspector network
+London,Tower Hamlets,Borough,London Borough of Tower Hamlets,2,Inspector network
+London,Waltham Forest,Borough,London Borough of Waltham Forest,2,Inspector network
+London,Wandsworth,Borough,London Borough of Wandsworth,2,Inspector network
+London,Westminster,City,Westminster City Council,2,Inspector network
+South East,Milton Keynes,City,Milton Keynes City Council,1,Inspector network
+South East,Reading,Town,Reading Borough Council,1,Inspector network
+South East,Southampton,City,Southampton City Council,1,Inspector network
+South East,Brighton & Hove,City,Brighton & Hove City Council,1,Inspector network
+South East,Oxford,City,Oxford City Council,1,Inspector network
+South East,Portsmouth,City,Portsmouth City Council,2,Inspector network
+South East,Canterbury,City,Canterbury City Council,2,Inspector network
+South East,Ashford,Town,Ashford Borough Council,2,Inspector network
+South East,Maidstone,Town,Maidstone Borough Council,2,Inspector network
+South East,Basingstoke,Town,Basingstoke and Deane Borough Council,2,Inspector network
+South East,Bicester,Town,Cherwell District Council,2,Inspector network
+South East,Aylesbury,Town,Buckinghamshire Council,2,Inspector network
+South East,Crawley,Town,Crawley Borough Council,2,Inspector network
+South East,Dartford & Ebbsfleet,Town,Dartford Borough Council,2,Inspector network
+South East,Chichester,City,Chichester District Council,3,Inspector network
+South East,Winchester,City,Winchester City Council,3,Inspector network
+South East,Slough,Town,Slough Borough Council,3,Inspector network
+South East,Guildford,Town,Guildford Borough Council,3,Inspector network
+South East,Woking,Town,Woking Borough Council,3,Inspector network
+South East,Bracknell,Town,Bracknell Forest Council,3,Inspector network
+South East,Wokingham,Town,Wokingham Borough Council,3,Inspector network
+South East,High Wycombe,Town,Buckinghamshire Council,3,Inspector network
+South East,Eastbourne,Town,Eastbourne Borough Council,3,Inspector network
+South East,Hastings,Town,Hastings Borough Council,3,Inspector network
+South East,Worthing,Town,Worthing Borough Council,3,Inspector network
+South East,Chatham & Gillingham (Medway),Town,Medway Council,3,Inspector network
+South East,Tunbridge Wells,Town,Tunbridge Wells Borough Council,3,Inspector network
+South East,Gravesend,Town,Gravesham Borough Council,3,Inspector network
+South East,Folkestone,Town,Folkestone & Hythe District Council,3,Inspector network
+South East,Margate,Town,Thanet District Council,3,Inspector network
+South East,Bognor Regis,Town,Arun District Council,3,Inspector network
+South East,Horsham,Town,Horsham District Council,3,Inspector network
+South East,Newbury,Town,West Berkshire Council,3,Inspector network
+South East,Maidenhead,Town,Royal Borough of Windsor and Maidenhead,3,Inspector network
+South East,Banbury,Town,Cherwell District Council,1,In person (Birmingham)
+South East,Didcot,Town,South Oxfordshire District Council,3,Inspector network
+South East,Eastleigh,Town,Eastleigh Borough Council,3,Inspector network
+South East,Fareham,Town,Fareham Borough Council,3,Inspector network
+South East,Andover,Town,Test Valley Borough Council,3,Inspector network
+South East,Farnborough,Town,Rushmoor Borough Council,3,Inspector network
+South East,Epsom,Town,Epsom and Ewell Borough Council,3,Inspector network
+South East,Newport (Isle of Wight),Town,Isle of Wight Council,3,Inspector network
+East of England,Cambridge,City,Cambridge City Council,1,Inspector network
+East of England,Peterborough,City,Peterborough City Council,1,Inspector network
+East of England,Chelmsford,City,Chelmsford City Council,1,Inspector network
+East of England,Norwich,City,Norwich City Council,2,Inspector network
+East of England,Ipswich,Town,Ipswich Borough Council,2,Inspector network
+East of England,Colchester,City,Colchester City Council,2,Inspector network
+East of England,Luton,Town,Luton Borough Council,2,Inspector network
+East of England,Bedford,Town,Bedford Borough Council,2,Inspector network
+East of England,Stevenage,Town,Stevenage Borough Council,2,Inspector network
+East of England,Southend-on-Sea,City,Southend-on-Sea City Council,3,Inspector network
+East of England,St Albans,City,St Albans City and District Council,3,Inspector network
+East of England,Basildon,Town,Basildon Borough Council,3,Inspector network
+East of England,Watford,Town,Watford Borough Council,3,Inspector network
+East of England,Hemel Hempstead,Town,Dacorum Borough Council,3,Inspector network
+East of England,Harlow,Town,Harlow District Council,3,Inspector network
+East of England,Braintree,Town,Braintree District Council,3,Inspector network
+East of England,Great Yarmouth,Town,Great Yarmouth Borough Council,3,Inspector network
+East of England,King's Lynn,Town,Borough Council of King's Lynn & West Norfolk,3,Inspector network
+East of England,Bury St Edmunds,Town,West Suffolk Council,3,Inspector network
+East of England,Lowestoft,Town,East Suffolk Council,3,Inspector network
+East of England,Welwyn Garden City,Town,Welwyn Hatfield Borough Council,3,Inspector network
+East of England,Huntingdon,Town,Huntingdonshire District Council,3,Inspector network
+South West,Bristol,City,Bristol City Council,1,Inspector network
+South West,Swindon,Town,Swindon Borough Council,1,Inspector network
+South West,Exeter,City,Exeter City Council,1,Inspector network
+South West,Plymouth,City,Plymouth City Council,2,Inspector network
+South West,Gloucester,City,Gloucester City Council,2,Inspector network
+South West,Cheltenham,Town,Cheltenham Borough Council,2,Inspector network
+South West,Bath,City,Bath & North East Somerset Council,2,Inspector network
+South West,Bournemouth,Town,BCP Council,2,Inspector network
+South West,Poole,Town,BCP Council,2,Inspector network
+South West,Taunton,Town,Somerset Council,2,Inspector network
+South West,Cranbrook,Town,East Devon District Council,2,Inspector network
+South West,Salisbury,City,Wiltshire Council,3,Inspector network
+South West,Chippenham,Town,Wiltshire Council,3,Inspector network
+South West,Trowbridge,Town,Wiltshire Council,3,Inspector network
+South West,Truro,City,Cornwall Council,3,Inspector network
+South West,Newquay,Town,Cornwall Council,3,Inspector network
+South West,Torquay,Town,Torbay Council,3,Inspector network
+South West,Yeovil,Town,Somerset Council,3,Inspector network
+South West,Bridgwater,Town,Somerset Council,3,Inspector network
+South West,Weston-super-Mare,Town,North Somerset Council,3,Inspector network
+South West,Barnstaple,Town,North Devon Council,3,Inspector network
+South West,Weymouth,Town,Dorset Council,3,Inspector network
+West Midlands,Coventry,City,Coventry City Council,1,In person (Birmingham)
+West Midlands,Wolverhampton,City,City of Wolverhampton Council,1,In person (Birmingham)
+West Midlands,Stoke-on-Trent,City,Stoke-on-Trent City Council,1,In person (Birmingham)
+West Midlands,Worcester,City,Worcester City Council,1,In person (Birmingham)
+West Midlands,Solihull,Town,Solihull Metropolitan Borough Council,1,In person (Birmingham)
+West Midlands,Telford,Town,Telford & Wrekin Council,1,In person (Birmingham)
+West Midlands,Shrewsbury,Town,Shropshire Council,1,In person (Birmingham)
+West Midlands,Rugby,Town,Rugby Borough Council,1,In person (Birmingham)
+West Midlands,Hereford,City,Herefordshire Council,1,In person (Birmingham)
+West Midlands,Lichfield,City,Lichfield District Council,1,In person (Birmingham)
+West Midlands,Walsall,Town,Walsall Council,1,In person (Birmingham)
+West Midlands,Dudley,Town,Dudley Metropolitan Borough Council,1,In person (Birmingham)
+West Midlands,West Bromwich,Town,Sandwell Metropolitan Borough Council,1,In person (Birmingham)
+West Midlands,Stafford,Town,Stafford Borough Council,1,In person (Birmingham)
+West Midlands,Nuneaton,Town,Nuneaton and Bedworth Borough Council,1,In person (Birmingham)
+West Midlands,Leamington Spa & Warwick,Town,Warwick District Council,1,In person (Birmingham)
+West Midlands,Redditch,Town,Redditch Borough Council,1,In person (Birmingham)
+West Midlands,Kidderminster,Town,Wyre Forest District Council,1,In person (Birmingham)
+West Midlands,Tamworth,Town,Tamworth Borough Council,1,In person (Birmingham)
+West Midlands,Burton upon Trent,Town,East Staffordshire Borough Council,1,In person (Birmingham)
+West Midlands,Cannock,Town,Cannock Chase District Council,1,In person (Birmingham)
+West Midlands,Stratford-upon-Avon,Town,Stratford-on-Avon District Council,1,In person (Birmingham)
+East Midlands,Nottingham,City,Nottingham City Council,1,In person (Birmingham)
+East Midlands,Leicester,City,Leicester City Council,1,In person (Birmingham)
+East Midlands,Derby,City,Derby City Council,1,In person (Birmingham)
+East Midlands,Northampton,Town,West Northamptonshire Council,1,In person (Birmingham)
+East Midlands,Lincoln,City,City of Lincoln Council,2,Inspector network
+East Midlands,Kettering,Town,North Northamptonshire Council,2,Inspector network
+East Midlands,Corby,Town,North Northamptonshire Council,2,Inspector network
+East Midlands,Mansfield,Town,Mansfield District Council,2,Inspector network
+East Midlands,Loughborough,Town,Charnwood Borough Council,1,In person (Birmingham)
+East Midlands,Wellingborough,Town,North Northamptonshire Council,3,Inspector network
+East Midlands,Chesterfield,Town,Chesterfield Borough Council,3,Inspector network
+East Midlands,Grantham,Town,South Kesteven District Council,3,Inspector network
+East Midlands,Boston,Town,Boston Borough Council,3,Inspector network
+East Midlands,Hinckley,Town,Hinckley & Bosworth Borough Council,1,In person (Birmingham)
+East Midlands,Newark-on-Trent,Town,Newark & Sherwood District Council,3,Inspector network
+Yorkshire and the Humber,Leeds,City,Leeds City Council,1,Inspector network
+Yorkshire and the Humber,Sheffield,City,Sheffield City Council,1,Inspector network
+Yorkshire and the Humber,Bradford,City,City of Bradford Metropolitan District Council,1,Inspector network
+Yorkshire and the Humber,York,City,City of York Council,1,Inspector network
+Yorkshire and the Humber,Wakefield,City,Wakefield Council,2,Inspector network
+Yorkshire and the Humber,Hull,City,Hull City Council,2,Inspector network
+Yorkshire and the Humber,Doncaster,City,City of Doncaster Council,2,Inspector network
+Yorkshire and the Humber,Huddersfield,Town,Kirklees Council,2,Inspector network
+Yorkshire and the Humber,Harrogate,Town,North Yorkshire Council,2,Inspector network
+Yorkshire and the Humber,Halifax,Town,Calderdale Council,3,Inspector network
+Yorkshire and the Humber,Rotherham,Town,Rotherham Metropolitan Borough Council,3,Inspector network
+Yorkshire and the Humber,Barnsley,Town,Barnsley Metropolitan Borough Council,3,Inspector network
+Yorkshire and the Humber,Scarborough,Town,North Yorkshire Council,3,Inspector network
+Yorkshire and the Humber,Grimsby,Town,North East Lincolnshire Council,3,Inspector network
+Yorkshire and the Humber,Scunthorpe,Town,North Lincolnshire Council,3,Inspector network
+North West,Manchester,City,Manchester City Council,1,Inspector network
+North West,Liverpool,City,Liverpool City Council,1,Inspector network
+North West,Salford,City,Salford City Council,2,Inspector network
+North West,Preston,City,Preston City Council,2,Inspector network
+North West,Chester,City,Cheshire West and Chester Council,2,Inspector network
+North West,Stockport,Town,Stockport Metropolitan Borough Council,2,Inspector network
+North West,Warrington,Town,Warrington Borough Council,2,Inspector network
+North West,Bolton,Town,Bolton Council,2,Inspector network
+North West,Wigan,Town,Wigan Council,2,Inspector network
+North West,Lancaster,City,Lancaster City Council,3,Inspector network
+North West,Carlisle,City,Cumberland Council,3,Inspector network
+North West,Bury,Town,Bury Council,3,Inspector network
+North West,Oldham,Town,Oldham Council,3,Inspector network
+North West,Rochdale,Town,Rochdale Borough Council,3,Inspector network
+North West,Altrincham,Town,Trafford Council,3,Inspector network
+North West,St Helens,Town,St Helens Borough Council,3,Inspector network
+North West,Southport,Town,Sefton Council,3,Inspector network
+North West,Birkenhead,Town,Wirral Council,3,Inspector network
+North West,Blackpool,Town,Blackpool Council,3,Inspector network
+North West,Blackburn,Town,Blackburn with Darwen Borough Council,3,Inspector network
+North West,Burnley,Town,Burnley Borough Council,3,Inspector network
+North West,Crewe,Town,Cheshire East Council,3,Inspector network
+North West,Macclesfield,Town,Cheshire East Council,3,Inspector network
+North West,Barrow-in-Furness,Town,Westmorland and Furness Council,3,Inspector network
+North East,Newcastle upon Tyne,City,Newcastle City Council,1,Inspector network
+North East,Sunderland,City,Sunderland City Council,2,Inspector network
+North East,Durham,City,Durham County Council,2,Inspector network
+North East,Middlesbrough,Town,Middlesbrough Council,2,Inspector network
+North East,Gateshead,Town,Gateshead Council,3,Inspector network
+North East,Darlington,Town,Darlington Borough Council,3,Inspector network
+North East,Hartlepool,Town,Hartlepool Borough Council,3,Inspector network
+North East,Stockton-on-Tees,Town,Stockton-on-Tees Borough Council,3,Inspector network
+North East,South Shields,Town,South Tyneside Council,3,Inspector network
+North East,North Shields,Town,North Tyneside Council,3,Inspector network
+North East,Cramlington,Town,Northumberland County Council,3,Inspector network
