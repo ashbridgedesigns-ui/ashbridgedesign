@@ -3,7 +3,7 @@
 export default {
   name: 'Ashbridge Design',
   tagline: 'Engineer-led extension design & new-build inspections',
-  url: 'https://ashbridgedesign.co.uk',
+  url: 'https://www.ashbridgedesign.co.uk',
   base: 'Birmingham',
   email: 'hello@ashbridgedesign.co.uk',
   phone: '',            // e.g. '0121 496 0000' — enables Call buttons when set

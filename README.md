@@ -41,6 +41,6 @@ Change a price in `site.config.mjs`, rebuild, and every page, table, tool and sc
    - `ENQUIRY_FROM`: optional sender (defaults to website@ashbridgedesign.co.uk)
 
    Then redeploy. Until this is set, the form shows an error asking people to email instead.
-3. **Domains:** in Vercel → Project → Settings → Domains, add `ashbridgedesign.co.uk`, `www.ashbridgedesign.co.uk`, `ashbridgedesign.com` and `www.ashbridgedesign.com`. `vercel.json` 301-redirects the others to `https://ashbridgedesign.co.uk`. At GoDaddy, set the DNS records Vercel shows (an A record for the apex and a CNAME for www).
+3. **Domains:** in Vercel → Project → Settings → Domains, add `ashbridgedesign.co.uk`, `www.ashbridgedesign.co.uk`, `ashbridgedesign.com` and `www.ashbridgedesign.com`. The main address is `https://www.ashbridgedesign.co.uk`. `vercel.json` 301-redirects the other three to it. At GoDaddy, set the DNS records Vercel shows: an A record for each bare domain (`@`) and a CNAME for each `www`.
 4. Every push to `main` deploys automatically.
-5. Submit `https://ashbridgedesign.co.uk/sitemap.xml` in Google Search Console, and link the site from the Google Business Profile.
+5. Submit `https://www.ashbridgedesign.co.uk/sitemap.xml` in Google Search Console, and link the site from the Google Business Profile.

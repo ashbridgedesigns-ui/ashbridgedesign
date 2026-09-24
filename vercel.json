@@ -5,9 +5,9 @@
   "outputDirectory": "dist",
   "trailingSlash": true,
   "redirects": [
-    { "source": "/:path*", "has": [{ "type": "host", "value": "ashbridgedesign.com" }], "destination": "https://ashbridgedesign.co.uk/:path*", "permanent": true },
-    { "source": "/:path*", "has": [{ "type": "host", "value": "www.ashbridgedesign.com" }], "destination": "https://ashbridgedesign.co.uk/:path*", "permanent": true },
-    { "source": "/:path*", "has": [{ "type": "host", "value": "www.ashbridgedesign.co.uk" }], "destination": "https://ashbridgedesign.co.uk/:path*", "permanent": true }
+    { "source": "/:path*", "has": [{ "type": "host", "value": "ashbridgedesign.co.uk" }], "destination": "https://www.ashbridgedesign.co.uk/:path*", "permanent": true },
+    { "source": "/:path*", "has": [{ "type": "host", "value": "ashbridgedesign.com" }], "destination": "https://www.ashbridgedesign.co.uk/:path*", "permanent": true },
+    { "source": "/:path*", "has": [{ "type": "host", "value": "www.ashbridgedesign.com" }], "destination": "https://www.ashbridgedesign.co.uk/:path*", "permanent": true }
   ],
   "headers": [
     { "source": "/assets/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=604800" }] }
