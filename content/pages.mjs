@@ -366,6 +366,7 @@ ${ctaBand()}`,
 <section class="section"><div class="wrap grid-2" style="align-items:start">
   <div class="report" aria-label="Example report layout">
     <div class="report-head"><b>ASHBRIDGE DESIGN · SNAGGING REPORT</b><span>Example layout: not a real property</span></div>
+    <h2 class="sr">Example snags from a report</h2>
     <div class="snag"><div class="ph">Photo</div><div class="stack-sm"><div><span class="sev sev-high">Priority</span></div><h3 class="snag-title">Kitchen: gap at worktop and wall junction, no seal</h3><p class="small">Location: kitchen, rear wall, left of sink. Risk of water getting behind the units. Seal to the manufacturer's standard.</p></div></div>
     <div class="snag"><div class="ph">Photo</div><div class="stack-sm"><div><span class="sev sev-med">Standard</span></div><h3 class="snag-title">Bedroom 2: door catches the frame when closing</h3><p class="small">Location: bedroom 2 entrance. Adjust the hinges so the door closes freely with an even gap.</p></div></div>
     <div class="snag"><div class="ph">Photo</div><div class="stack-sm"><div><span class="sev sev-low">Cosmetic</span></div><h3 class="snag-title">Landing: paint runs on skirting board</h3><p class="small">Location: first-floor landing, 1.2 m from the stair head. Rub down and repaint.</p></div></div>
