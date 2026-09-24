@@ -69,7 +69,7 @@
       out.innerHTML =
         '<p class="small muted">' + labels[type] + ' · ' + row.label + '</p>' +
         '<p class="big">' + gbp(total) + '</p>' +
-        '<p class="small">No VAT to add' + (travel ? ' · includes ' + gbp(travel) + ' travel for remote areas' : '') + '. Pay a ' + gbp(P.deposit) + ' deposit to book, and the balance when your report arrives.</p>' +
+        '<p class="small">Fixed price' + (travel ? ', including ' + gbp(travel) + ' travel for remote areas' : '') + '. Pay a ' + gbp(P.deposit) + ' deposit to book, and the balance when your report arrives.</p>' +
         '<p class="small"><strong>' + who + '</strong></p>' +
         '<div class="btn-row"><a class="btn btn-amber" href="' + payHref + '">Book this inspection</a><a class="btn btn-ghost" href="/sample-snagging-report/">See a sample report</a></div>';
     }
@@ -85,7 +85,7 @@
       var id = $('[name="project"]', tool).value;
       var stage = ($('[name="stage"]:checked', tool) || {}).value || 'both';
       if (id === 'beam') {
-        out.innerHTML = '<p class="small muted">Structural calculations · wall removal or single steel beam</p><p class="big">' + gbp(P.beamCalc) + '</p><p class="small">Calculations and beam specification for building control, done in-house by our engineer. No VAT to add.</p><div class="btn-row"><a class="btn btn-amber" href="' + bookHref('Structural calculations', 'Wall removal / steel beam') + '">Request calculations</a></div>';
+        out.innerHTML = '<p class="small muted">Structural calculations · wall removal or single steel beam</p><p class="big">' + gbp(P.beamCalc) + '</p><p class="small">Calculations and beam specification for building control, done in-house by our engineer. Fixed price.</p><div class="btn-row"><a class="btn btn-amber" href="' + bookHref('Structural calculations', 'Wall removal / steel beam') + '">Request calculations</a></div>';
         return;
       }
       var p = P.design.filter(function (d) { return d.id === id; })[0];
@@ -96,7 +96,7 @@
         complete: ['Complete · Planning, building regs and structural calcs', p.complete, 'Both stages plus in-house structural calculations, so there is no third-party engineer to wait for.']
       };
       var m = map[stage];
-      out.innerHTML = '<p class="small muted">' + p.name + ' · ' + m[0] + '</p><p class="big">from ' + gbp(m[1]) + '</p><p class="small">' + m[2] + ' No VAT to add. Council and building control fees are paid separately.</p><div class="btn-row"><a class="btn btn-amber" href="' + bookHref('Extension design', p.name + ', ' + m[0] + ', from ' + gbp(m[1])) + '">Get my fixed price</a></div>';
+      out.innerHTML = '<p class="small muted">' + p.name + ' · ' + m[0] + '</p><p class="big">from ' + gbp(m[1]) + '</p><p class="small">' + m[2] + ' Council and building control fees are paid separately.</p><div class="btn-row"><a class="btn btn-amber" href="' + bookHref('Extension design', p.name + ', ' + m[0] + ', from ' + gbp(m[1])) + '">Get my fixed price</a></div>';
     }
     tool.addEventListener('input', calc);
     tool.addEventListener('change', calc);

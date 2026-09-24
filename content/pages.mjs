@@ -21,7 +21,7 @@ ${ctaBand()}`;
 }
 
 const designFaqs = [
-  ['How much do extension drawings cost?', `Planning drawings for a single-storey extension start at ${gbp(single.s1)}. Planning and building regs together start at ${gbp(single.both)}, and the Complete package with structural calculations starts at ${gbp(single.complete)}. There's no VAT to add.`],
+  ['How much do extension drawings cost?', `Planning drawings for a single-storey extension start at ${gbp(single.s1)}. Planning and building regs together start at ${gbp(single.both)}, and the Complete package with structural calculations starts at ${gbp(single.complete)}.`],
   ['Do you visit the property?', 'Yes. Every project starts with a measured survey. Around Birmingham and the West Midlands our engineer visits in person. Elsewhere in England, the survey is carried out by a partner surveyor or by 3D scan, depending on the project.'],
   ['What if planning is refused?', 'If you book both stages, a resubmission is included free. We also design to your council\'s own guidance from the start, to give the application the best chance first time.'],
   ['Are you architects?', '<p>No. “Architect” is a protected title in the UK. Ashbridge is an engineer-led design practice run by a civil engineer (MSc) with 15 years\' experience, producing planning drawings, building regulations drawings and structural calculations.</p>'],
@@ -33,7 +33,6 @@ const snagFaqs = [
   ['When should I book?', 'Ideally before legal completion, as a pre-completion inspection, while the developer still has every reason to fix things quickly. A post-completion snagging survey is still worthwhile in the first two years.'],
   ['How quickly do I get the report?', 'Within 24 hours of the inspection in most cases, as a PDF with photographs, locations and the relevant standard for each snag.'],
   ['Who carries out the inspection?', 'Around Birmingham, Ashbridge\'s lead engineer inspects in person. Across the rest of England, an accredited Ashbridge inspector attends and every report is checked by the lead engineer before it reaches you.'],
-  ['Is there VAT on top?', 'No. Ashbridge isn\'t VAT registered, so the price you see is the price you pay.'],
 ];
 
 export const pages = [
@@ -50,7 +49,7 @@ export const pages = [
     <p class="lede">Extension drawings, planning support, structural calculations and independent new-build inspections, all led by a civil engineer. Based in ${site.base}, covering all of England.</p>
     <div class="btn-row"><a class="btn btn-amber" href="/extension-design/">Plan an extension</a><a class="btn btn-slate" href="/snagging-prices/">Book a snagging inspection</a></div>
     ${waInline(`Questions? WhatsApp us on ${site.whatsappDisplay}`, 'home page')}
-    <div class="trust"><span>Engineer-led · MSc Civil Engineering</span><span>15 years' experience</span><span>Fixed prices, no VAT to add</span><span>Snag reports in 24 hours</span></div>
+    <div class="trust"><span>Engineer-led · MSc Civil Engineering</span><span>15 years' experience</span><span>Fixed prices</span><span>Snag reports in 24 hours</span></div>
   </div>
   <div class="hero-art">${heroArt}</div>
 </div></section>
@@ -103,7 +102,7 @@ ${engineerBand}
 </div></section>
 
 <section class="section"><div class="wrap">
-  <div class="section-head"><p class="eyebrow">Clear, fixed prices</p><h2>What it costs</h2><p class="muted">No VAT to add, no hidden extras. Council fees are paid separately.</p></div>
+  <div class="section-head"><p class="eyebrow">Clear, fixed prices</p><h2>What it costs</h2><p class="muted">Fixed prices, no hidden extras. Council fees are paid separately.</p></div>
   <div class="grid-4">
     <div class="card"><h3>Planning drawings</h3><p class="price-from">from <b>${gbp(single.s1)}</b></p><a class="more" href="/planning-drawings/">Planning drawings</a></div>
     <div class="card"><h3>Planning + building regs</h3><p class="price-from">from <b>${gbp(single.both)}</b></p><a class="more" href="/extension-design-prices/">Design prices</a></div>
@@ -125,7 +124,7 @@ ${ctaBand()}`,
   servicePage({
     path: '/extension-design/',
     title: 'Extension Design, Planning & Building Regs Drawings',
-    description: `Engineer-led extension design across England: planning drawings from ${gbp(single.s1)}, building regs drawings, and structural calculations in-house. Fixed prices, no VAT.`,
+    description: `Engineer-led extension design across England: planning drawings from ${gbp(single.s1)}, building regs drawings, and structural calculations in-house. Fixed prices.`,
     trail: [['/extension-design/', 'Extension design']],
     eyebrow: 'Extension design',
     h1: 'Extension design by an engineer, from planning to build',
@@ -151,7 +150,7 @@ ${ctaBand()}`,
   servicePage({
     path: '/planning-drawings/',
     title: `Planning Drawings from ${gbp(single.s1)}`,
-    description: `Planning drawings for extensions, lofts and garage conversions from ${gbp(single.s1)}, with no VAT. Measured survey, design, submission and management of your application. Engineer-led, England-wide.`,
+    description: `Planning drawings for extensions, lofts and garage conversions from ${gbp(single.s1)}. Measured survey, design, submission and management of your application. Engineer-led, England-wide.`,
     trail: [['/extension-design/', 'Extension design'], ['/planning-drawings/', 'Planning drawings']],
     eyebrow: 'Stage 1 · Planning',
     h1: `Planning drawings from ${gbp(single.s1)}`,
@@ -169,7 +168,7 @@ ${ctaBand()}`,
   servicePage({
     path: '/building-regulations-drawings/',
     title: `Building Regulations Drawings from ${gbp(single.s2)}`,
-    description: `Building regulations drawings and specifications drawn by a civil engineer, from ${gbp(single.s2)}, with structural calculations in-house. No VAT, England-wide.`,
+    description: `Building regulations drawings and specifications drawn by a civil engineer, from ${gbp(single.s2)}, with structural calculations in-house. England-wide.`,
     trail: [['/extension-design/', 'Extension design'], ['/building-regulations-drawings/', 'Building regs drawings']],
     eyebrow: 'Stage 2 · Building regulations',
     h1: 'Building regs drawings that builders can actually build from',
@@ -186,7 +185,7 @@ ${ctaBand()}`,
   servicePage({
     path: '/structural-calculations/',
     title: `Structural Calculations from ${gbp(prices.beamCalc)}: Beams, Walls & Extensions`,
-    description: `In-house structural calculations for steel beams, wall removal, extensions and lofts, from ${gbp(prices.beamCalc)}. Done by a civil engineer, accepted by building control. No VAT.`,
+    description: `In-house structural calculations for steel beams, wall removal, extensions and lofts, from ${gbp(prices.beamCalc)}. Done by a civil engineer, accepted by building control.`,
     trail: [['/extension-design/', 'Extension design'], ['/structural-calculations/', 'Structural calculations']],
     eyebrow: 'Structural calculations',
     h1: `Structural calculations from ${gbp(prices.beamCalc)}`,
@@ -207,7 +206,7 @@ ${prices.design.map((d) => `<tr><td>${d.name}, when booked with Stage 2</td><td 
   servicePage({
     path: '/loft-conversion-drawings/',
     title: `Loft Conversion Drawings from ${gbp(prices.design[2].s1)}`,
-    description: `Loft conversion drawings: planning or lawful development from ${gbp(prices.design[2].s1)}, building regs drawings, and structural calculations in-house. Engineer-led, no VAT.`,
+    description: `Loft conversion drawings: planning or lawful development from ${gbp(prices.design[2].s1)}, building regs drawings, and structural calculations in-house. Engineer-led, fixed prices.`,
     trail: [['/extension-design/', 'Extension design'], ['/loft-conversion-drawings/', 'Loft conversions']],
     eyebrow: 'Loft conversions',
     h1: 'Loft conversion drawings and structural design',
@@ -223,7 +222,7 @@ ${prices.design.map((d) => `<tr><td>${d.name}, when booked with Stage 2</td><td 
   servicePage({
     path: '/garage-conversion-drawings/',
     title: `Garage Conversion Drawings from ${gbp(prices.design[3].s1)}`,
-    description: `Garage conversion drawings from ${gbp(prices.design[3].s1)}: lawful development or planning, building regs, and structural calculations. Engineer-led, no VAT.`,
+    description: `Garage conversion drawings from ${gbp(prices.design[3].s1)}: lawful development or planning, building regs, and structural calculations. Engineer-led, fixed prices.`,
     trail: [['/extension-design/', 'Extension design'], ['/garage-conversion-drawings/', 'Garage conversions']],
     eyebrow: 'Garage conversions',
     h1: 'Garage conversion drawings',
@@ -239,10 +238,10 @@ ${prices.design.map((d) => `<tr><td>${d.name}, when booked with Stage 2</td><td 
   {
     path: '/extension-design-prices/',
     title: 'Extension Design Prices: Planning, Building Regs & Structural Calcs',
-    description: `Fixed prices for extension drawings: planning from ${gbp(single.s1)}, both stages from ${gbp(single.both)}, Complete with structural calcs from ${gbp(single.complete)}. No VAT to add.`,
+    description: `Fixed prices for extension drawings: planning from ${gbp(single.s1)}, both stages from ${gbp(single.both)}, Complete with structural calcs from ${gbp(single.complete)}.`,
     trail: [['/extension-design-prices/', 'Design prices']],
     ld: [{ '@context': 'https://schema.org', '@type': 'OfferCatalog', name: 'Extension design prices', itemListElement: prices.design.map((d) => ({ '@type': 'Offer', name: d.name + ' – planning and building regs', price: d.both, priceCurrency: 'GBP' })) }],
-    body: `${pageHero({ trail: [['/extension-design-prices/', 'Design prices']], eyebrow: 'Prices', h1: 'Extension design prices', lede: 'Fixed “from” prices in two stages, with no VAT to add. Book both stages together for a saving, a free resubmission and a free site plan.' })}
+    body: `${pageHero({ trail: [['/extension-design-prices/', 'Design prices']], eyebrow: 'Prices', h1: 'Extension design prices', lede: 'Fixed “from” prices in two stages. Book both stages together for a saving, a free resubmission and a free site plan.' })}
 <section class="section"><div class="wrap stack">
   ${designPriceTable()}
   <div class="grid-3">
@@ -278,7 +277,7 @@ ${ctaBand()}`,
   servicePage({
     path: '/new-build-snagging/',
     title: `New-Build Snagging Surveys from ${gbp(minSnag)}, England-wide`,
-    description: `Independent new-build snagging surveys and pre-completion inspections from ${gbp(minSnag)}. Engineer-checked reports within 24 hours. Based in Birmingham, covering England. No VAT.`,
+    description: `Independent new-build snagging surveys and pre-completion inspections from ${gbp(minSnag)}. Engineer-checked reports within 24 hours. Based in Birmingham, covering England.`,
     trail: [['/new-build-snagging/', 'New-build snagging']],
     eyebrow: 'New-build snagging',
     h1: 'Independent new-build snagging surveys',
@@ -306,7 +305,7 @@ ${ctaBand()}`,
       ['Can I have my new build inspected before completion?', 'If your developer is registered with the New Homes Quality Board, you can request an independent pre-completion inspection under the New Homes Quality Code.'],
       ['When does the inspection window open?', 'For homes reserved from 2 March 2026, the developer must give the inspector the chance to inspect from five calendar days after the Notice to Complete is served.'],
     ])],
-    body: `${pageHero({ trail: [['/new-build-snagging/', 'New-build snagging'], ['/pre-completion-inspection/', 'Pre-completion inspection']], eyebrow: 'Pre-completion inspection', h1: 'Buying from an NHQB-registered developer? You can request an independent pre-completion inspection.', lede: `The best time to find defects is before you complete, while the developer still has every reason to fix them. Inspections from ${gbp(minSnag)}, no VAT.`, ctas: '<a class="btn btn-amber" href="#window">Check my inspection window</a><a class="btn btn-ghost" href="/snagging-prices/">Prices</a>' })}
+    body: `${pageHero({ trail: [['/new-build-snagging/', 'New-build snagging'], ['/pre-completion-inspection/', 'Pre-completion inspection']], eyebrow: 'Pre-completion inspection', h1: 'Buying from an NHQB-registered developer? You can request an independent pre-completion inspection.', lede: `The best time to find defects is before you complete, while the developer still has every reason to fix them. Inspections from ${gbp(minSnag)}, at fixed prices.`, ctas: '<a class="btn btn-amber" href="#window">Check my inspection window</a><a class="btn btn-ghost" href="/snagging-prices/">Prices</a>' })}
 <section class="section"><div class="wrap grid-2">
   <div class="prose">
     <h2>How it works under the New Homes Quality Code</h2>
@@ -329,11 +328,11 @@ ${ctaBand()}`,
   servicePage({
     path: '/two-year-warranty-inspection/',
     title: `2-Year Warranty Inspection: Before the Developer's Liability Ends`,
-    description: `Inspection of your new-build home before the end of the developer's two-year defects period. ${gbp(prices.warranty)}, or ${gbp(prices.warrantyReturning)} for returning clients. No VAT.`,
+    description: `Inspection of your new-build home before the end of the developer's two-year defects period. ${gbp(prices.warranty)}, or ${gbp(prices.warrantyReturning)} for returning clients.`,
     trail: [['/new-build-snagging/', 'New-build snagging'], ['/two-year-warranty-inspection/', '2-year warranty inspection']],
     eyebrow: '2-year warranty inspection',
     h1: 'Get defects on record before your two years are up',
-    lede: `Under most new-home warranties, the developer is responsible for putting defects right in the first two years. After that, cover is mainly structural. An inspection at month 22–23 makes sure nothing is missed. ${gbp(prices.warranty)}, no VAT.`,
+    lede: `Under most new-home warranties, the developer is responsible for putting defects right in the first two years. After that, cover is mainly structural. An inspection at month 22–23 makes sure nothing is missed. ${gbp(prices.warranty)}.`,
     ctas: `<a class="btn btn-amber" href="/contact/?service=New-build%20snagging&detail=2-year%20warranty%20inspection">Book my inspection</a>`,
     intro: `<h2>Problems that show up after you move in</h2><p>Settlement cracking, sticking doors and windows, damp patches, poor drainage, failing sealant and heating issues often appear after the first year, once the house has dried out and been through the seasons. They are much easier to get fixed while the developer is still responsible.</p><p>Returning Ashbridge clients pay ${gbp(prices.warrantyReturning)}.</p>`,
     includes: ['Full re-inspection of the home, inside and out', 'Comparison with any earlier snagging report', 'Photographed, graded report within 24 hours', 'Guidance on raising issues with the developer and warranty provider'],
@@ -343,10 +342,10 @@ ${ctaBand()}`,
   {
     path: '/snagging-prices/',
     title: `Snagging Survey Prices from ${gbp(minSnag)}: Instant Quote`,
-    description: `Snagging survey and pre-completion inspection prices by bedrooms: ${prices.snag.map((r) => r.label + ' ' + gbp(r.price)).join(', ')}. No VAT. Book online.`,
+    description: `Snagging survey and pre-completion inspection prices by bedrooms: ${prices.snag.map((r) => r.label + ' ' + gbp(r.price)).join(', ')}. Fixed prices. Book online.`,
     trail: [['/new-build-snagging/', 'New-build snagging'], ['/snagging-prices/', 'Prices']],
     ld: [{ '@context': 'https://schema.org', '@type': 'OfferCatalog', name: 'Snagging survey prices', itemListElement: prices.snag.map((r) => ({ '@type': 'Offer', name: 'Snagging survey – ' + r.label, price: r.price, priceCurrency: 'GBP' })) }],
-    body: `${pageHero({ trail: [['/new-build-snagging/', 'New-build snagging'], ['/snagging-prices/', 'Prices']], eyebrow: 'Snagging prices', h1: 'Snagging survey prices', lede: `Priced by bedrooms, with no VAT to add. Book online with a ${gbp(prices.deposit)} deposit and pay the balance when your report arrives.` })}
+    body: `${pageHero({ trail: [['/new-build-snagging/', 'New-build snagging'], ['/snagging-prices/', 'Prices']], eyebrow: 'Snagging prices', h1: 'Snagging survey prices', lede: `Fixed prices by bedrooms. Book online with a ${gbp(prices.deposit)} deposit and pay the balance when your report arrives.` })}
 <section class="section-tight"><div class="wrap">${snagQuoteTool()}</div></section>
 <section class="section"><div class="wrap stack">${snagPriceTable()}</div></section>
 ${ctaBand()}`,
@@ -395,7 +394,7 @@ ${ctaBand()}`,
     <p>Ashbridge is led by a civil engineer with a Master's in Civil Engineering and 15 years' experience in design and construction. That background shapes everything we do. We design extensions that work structurally from day one, produce our own structural calculations, and inspect new homes against the standards they were meant to be built to.</p>
     <h3>What we promise</h3>
     <ul>
-      <li><strong>Fixed, published prices.</strong> No VAT to add and no hourly billing.</li>
+      <li><strong>Fixed, published prices.</strong> No hourly billing and no hidden extras.</li>
       <li><strong>Speed.</strong> Snagging reports within 24 hours, and quotes usually the same day.</li>
       <li><strong>One standard across England.</strong> Every report and drawing set is signed off by the lead engineer.</li>
       <li><strong>Independence.</strong> We act for homeowners and buyers, never for developers.</li>
@@ -405,7 +404,7 @@ ${ctaBand()}`,
   <div class="card stack">
     <div class="stamp" style="background:var(--deep);margin-inline:auto">MSc<br>CIVIL ENG<small>15 YEARS</small></div>
     <h3>At a glance</h3>
-    <ul class="ticks"><li>Based in ${site.base}</li><li>Covering all of England</li><li>Extension design, planning and building regs drawings</li><li>Structural calculations in-house</li><li>New-build snagging and pre-completion inspections</li><li>Not VAT registered</li></ul>
+    <ul class="ticks"><li>Based in ${site.base}</li><li>Covering all of England</li><li>Extension design, planning and building regs drawings</li><li>Structural calculations in-house</li><li>New-build snagging and pre-completion inspections</li><li>Fixed, published prices</li></ul>
   </div>
 </div></section>
 ${ctaBand()}`,

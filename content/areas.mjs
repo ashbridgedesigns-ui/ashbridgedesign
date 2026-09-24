@@ -63,7 +63,7 @@ ${ctaBand()}`,
     out.push({
       path: `/areas/${r.slug}/`,
       title: `Extension Drawings & Snagging Surveys in ${r.name}`,
-      description: `Extension design from ${gbp(single.s1)} and new-build snagging surveys from ${gbp(minSnag)} across ${r.name}. Engineer-led, no VAT.`,
+      description: `Extension design from ${gbp(single.s1)} and new-build snagging surveys from ${gbp(minSnag)} across ${r.name}. Engineer-led, fixed prices.`,
       trail,
       body: `${pageHero({ trail, eyebrow: r.name, h1: `Extension design and snagging surveys across ${r.name}`, lede: inPersonCount ? `${inPersonCount} places in ${r.name} are covered in person by our Birmingham-based lead engineer.` : `Inspections across ${r.name} are carried out by accredited Ashbridge inspectors, with every report checked by our lead engineer. Extension design is handled by our engineer, with measured surveys by local partners or 3D scan.`, ctas: '<a class="btn btn-amber" href="/contact/">Get a price</a><a class="btn btn-ghost" href="/snagging-prices/">Snagging prices</a>' })}
 <section class="section"><div class="wrap stack">
@@ -84,14 +84,14 @@ ${ctaBand()}`,
       : `Inspections in ${esc(a.place)} are carried out by an accredited Ashbridge inspector to our checklist, and every report is checked by our lead engineer before it reaches you. Design work is done by our engineer, with the measured survey by a local partner or 3D scan.`;
     const nearby = areas.filter((x) => x.region === a.region && x.slug !== a.slug && !x.place.startsWith('London (')).slice(0, 12);
     const faqs = [
-      [`How much are extension drawings in ${a.place}?`, `Planning drawings for a single-storey extension start at ${gbp(single.s1)}, both stages at ${gbp(single.both)}, and the Complete package with structural calculations at ${gbp(single.complete)}. No VAT to add. Council fees are paid to ${a.planning_authority}.`],
-      [`How much is a snagging survey in ${a.place}?`, `From ${gbp(minSnag)} for a flat, ${gbp(prices.snag[2].price)} for a 3-bedroom house and ${gbp(prices.snag[4].price)} for 5 bedrooms. No VAT to add.`],
+      [`How much are extension drawings in ${a.place}?`, `Planning drawings for a single-storey extension start at ${gbp(single.s1)}, both stages at ${gbp(single.both)}, and the Complete package with structural calculations at ${gbp(single.complete)}. Council fees are paid to ${a.planning_authority}.`],
+      [`How much is a snagging survey in ${a.place}?`, `From ${gbp(minSnag)} for a flat, ${gbp(prices.snag[2].price)} for a 3-bedroom house and ${gbp(prices.snag[4].price)} for 5 bedrooms.`],
       [`Who inspects homes in ${a.place}?`, a.inPerson ? 'Our lead engineer, in person.' : 'An accredited Ashbridge inspector, with the report checked and signed off by our lead engineer.'],
     ];
     out.push({
       path: `/areas/${a.slug}/`,
       title: `Extension Drawings & Snagging Surveys in ${a.place}`,
-      description: `Engineer-led extension drawings from ${gbp(single.s1)} and new-build snagging surveys from ${gbp(minSnag)} in ${a.place}. ${a.inPerson ? 'In-person service from our Birmingham base.' : 'Covering all of England.'} No VAT.`,
+      description: `Engineer-led extension drawings from ${gbp(single.s1)} and new-build snagging surveys from ${gbp(minSnag)} in ${a.place}. ${a.inPerson ? 'In-person service from our Birmingham base.' : 'Covering all of England.'}`,
       trail,
       ld: [faqLd(faqs), { '@context': 'https://schema.org', '@type': 'Service', name: `Extension design and snagging surveys in ${a.place}`, provider: { '@id': site.url + '/#business' }, areaServed: { '@type': 'City', name: a.place.replace(/ \(.*\)/, '') } }],
       body: `${pageHero({ trail, eyebrow: `${a.place} · ${a.region}`, h1: `Extension drawings and snagging surveys in ${esc(a.place)}`, lede: `Engineer-led extension design, structural calculations and independent new-build inspections in ${esc(a.place)}. ${a.inPerson ? 'Covered in person from our Birmingham base.' : 'Part of our England-wide service.'}`, ctas: '<a class="btn btn-amber" href="/contact/">Get a price</a><a class="btn btn-slate" href="/snagging-prices/">Instant snagging price</a>' })}

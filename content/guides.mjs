@@ -60,7 +60,7 @@ const guides = [
 <h2>Structural calculations</h2>
 <p>If there's a steel beam, a new opening or a loft floor, building control needs calculations proving the structure works. Many firms send these to a separate engineer. At Ashbridge they're done in-house.</p>
 <h2>What it costs</h2>
-<p>For a single-storey extension: planning ${gbp(single.s1)}, building regs ${gbp(single.s2)}, both stages ${gbp(single.both)}, or Complete with calculations ${gbp(single.complete)}. No VAT to add. <a href="/extension-design-prices/">See all prices</a>.</p>`,
+<p>For a single-storey extension: planning ${gbp(single.s1)}, building regs ${gbp(single.s2)}, both stages ${gbp(single.both)}, or Complete with calculations ${gbp(single.complete)}. <a href="/extension-design-prices/">See all prices</a>.</p>`,
   },
   {
     slug: 'what-is-a-snagging-survey',
@@ -74,7 +74,7 @@ const guides = [
 <h2>When to book</h2>
 <p>Before completion, if your developer is NHQB-registered: see <a href="/guides/pre-completion-inspection-explained/">pre-completion inspections explained</a>. After completion is still worthwhile, and again just before the developer's two-year defects period ends.</p>
 <h2>Cost</h2>
-<p>From ${gbp(prices.snag[0].price)} for a flat, ${gbp(prices.snag[2].price)} for a 3-bedroom house. No VAT. <a href="/snagging-prices/">Get an instant price</a>.</p>`,
+<p>From ${gbp(prices.snag[0].price)} for a flat, ${gbp(prices.snag[2].price)} for a 3-bedroom house. <a href="/snagging-prices/">Get an instant price</a>.</p>`,
   },
 ];
 
