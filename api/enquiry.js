@@ -1,7 +1,7 @@
 // Vercel function: receives the enquiry form and emails it via Resend.
 // Environment variables (Vercel → Project → Settings → Environment Variables):
 //   RESEND_API_KEY  required — from resend.com
-//   ENQUIRY_TO      where enquiries go (default hello@ashbridgedesign.co.uk)
+//   ENQUIRY_TO      required — the inbox enquiries are sent to
 //   ENQUIRY_FROM    verified sender (default website@ashbridgedesign.co.uk)
 
 const MAX_ATTACH = 4 * 1024 * 1024; // Vercel caps request bodies at 4.5 MB
@@ -25,8 +25,8 @@ export async function POST(request) {
   }
 
   const key = process.env.RESEND_API_KEY;
-  if (!key) {
-    console.error('RESEND_API_KEY is not set; enquiry not sent', data);
+  if (!key || !process.env.ENQUIRY_TO) {
+    console.error('RESEND_API_KEY or ENQUIRY_TO is not set; enquiry not sent', data);
     return Response.json({ ok: false, error: 'Email not configured' }, { status: 500 });
   }
 
@@ -45,7 +45,7 @@ export async function POST(request) {
     headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
     body: JSON.stringify({
       from: `Ashbridge Website <${process.env.ENQUIRY_FROM || 'website@ashbridgedesign.co.uk'}>`,
-      to: [process.env.ENQUIRY_TO || 'hello@ashbridgedesign.co.uk'],
+      to: [process.env.ENQUIRY_TO],
       reply_to: data.email,
       subject: `New enquiry: ${data.service || 'General'} · ${data.postcode} · ${data.name}`,
       html: `<h2 style="font-family:Arial">New website enquiry</h2><table style="font-family:Arial;font-size:14px">${rows}</table>${attachments.length ? `<p>${attachments.length} attachment(s) included.</p>` : ''}`,

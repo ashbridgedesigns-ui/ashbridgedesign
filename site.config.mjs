@@ -5,7 +5,7 @@ export default {
   tagline: 'Engineer-led extension design & new-build inspections',
   url: 'https://www.ashbridgedesign.co.uk',
   base: 'Birmingham',
-  email: 'hello@ashbridgedesign.co.uk',
+  email: '',           // public contact email; blank hides it everywhere (e.g. 'hello@ashbridgedesign.co.uk')
   phone: '',            // e.g. '0121 496 0000' — enables Call buttons when set
   whatsapp: '447466812272', // international format, no + (07466 812272)
   whatsappDisplay: '07466 812272',

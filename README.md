@@ -37,7 +37,7 @@ Change a price in `site.config.mjs`, rebuild, and every page, table, tool and sc
 1. In Vercel, **Add New → Project** and import `ashbridgedesigns-ui/ashbridgedesign`. `vercel.json` sets the build (`node build.mjs`, output `dist`), so leave the framework as **Other**.
 2. **Enquiry emails:** create a free account at resend.com, verify the domain `ashbridgedesign.co.uk` (Resend gives DNS records for GoDaddy), and create an API key. In Vercel → Project → Settings → Environment Variables, add:
    - `RESEND_API_KEY`: the key
-   - `ENQUIRY_TO`: the inbox for enquiries (defaults to hello@ashbridgedesign.co.uk)
+   - `ENQUIRY_TO`: the inbox for enquiries (required)
    - `ENQUIRY_FROM`: optional sender (defaults to website@ashbridgedesign.co.uk)
 
    Then redeploy. Until this is set, the form shows an error asking people to email instead.

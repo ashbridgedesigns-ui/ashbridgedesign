@@ -462,7 +462,7 @@ ${ctaBand()}`,
   </form>
   <div class="stack">
     <div class="card stack-sm"><h3>Contact</h3>
-      <p><a href="mailto:${site.email}">${site.email}</a></p>
+      ${site.email ? `<p><a href="mailto:${site.email}">${site.email}</a></p>` : ''}
       ${site.phone ? `<p><a href="tel:${tel}">${esc(site.phone)}</a></p>` : ''}
       ${site.whatsapp ? `<p>${waInline(`WhatsApp ${site.whatsappDisplay}`, 'Get a price page')}</p><p class="small muted">Send photos of your home or plans straight from your phone.</p>` : ''}
       <p class="small muted">Based in ${site.base}. Covering all of England.</p></div>
@@ -490,7 +490,7 @@ ${ctaBand()}`,
     trail: [['/privacy/', 'Privacy']],
     body: `${pageHero({ trail: [['/privacy/', 'Privacy']], h1: 'Privacy notice' })}
 <section class="section"><div class="wrap prose">
-  <p>${esc(site.name)} (“we”) is the data controller for personal information you give us through this website. Contact: <a href="mailto:${site.email}">${site.email}</a>.</p>
+  <p>${esc(site.name)} (“we”) is the data controller for personal information you give us through this website. To contact us about your data, ${site.email ? `email <a href="mailto:${site.email}">${site.email}</a>` : `use our <a href="/contact/">contact form</a>${site.whatsapp ? ` or WhatsApp ${esc(site.whatsappDisplay)}` : ''}`}.</p>
   <h2>What we collect and why</h2>
   <ul><li><strong>Enquiries:</strong> your name, contact details, property address and project information, used to reply and quote (legitimate interests, or steps before entering a contract).</li><li><strong>Clients:</strong> the information needed to carry out surveys, inspections and design work, and to keep business records (contract and legal obligation).</li><li><strong>Follow-up:</strong> with your consent, occasional messages about relevant services, such as your 2-year warranty inspection. You can opt out at any time.</li></ul>
   <h2>Who we share it with</h2>

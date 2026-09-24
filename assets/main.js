@@ -210,7 +210,7 @@
         .then(function (r) { if (!r.ok) throw new Error(r.status); track('generate_lead', { service: form.service ? form.service.value : '' }); setTimeout(function () { location.href = '/thank-you/'; }, 150); })
         .catch(function () {
           btn.disabled = false; status.className = 'form-status err';
-          status.textContent = 'That didn\'t send. Please try again, or email ' + (A.site.email || 'us') + ' directly.';
+          status.textContent = 'That didn\'t send. Please try again' + (A.site.email ? ', or email ' + A.site.email + ' directly.' : A.site.whatsappDisplay ? ', or message us on WhatsApp on ' + A.site.whatsappDisplay + '.' : '.');
         });
     });
   });
