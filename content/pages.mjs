@@ -144,7 +144,8 @@ ${ctaBand()}`,
     includes: ['Measured survey of your home', 'Planning history and council policy check', 'Design options and concept drawings', 'Planning or Lawful Development Certificate drawings, submission and management', 'Building regs technical drawings and specification', 'Structural calculations in-house (Complete package)', 'Free planning resubmission when both stages are booked', 'Free location and site plan when both stages are booked'],
     excludes: ['Council planning and building control fees', 'Party wall surveyor, if your project needs one', 'Topographical or drainage surveys, if needed'],
     faqs: designFaqs,
-    extra: `<section class="section-tight"><div class="wrap">${designQuoteTool()}</div></section>`,
+    extra: `<section class="section-tight"><div class="wrap">${designQuoteTool()}</div></section>
+<section class="section section-white"><div class="wrap narrow stack"><p class="eyebrow">Standards we work to</p><h2>What our work is checked against</h2><ul class="ticks"><li><strong>Planning:</strong> your council’s local plan and design guidance, and the national rules on <a href="https://www.gov.uk/government/publications/permitted-development-rights-for-householders-technical-guidance" rel="noopener">permitted development for householders</a>.</li><li><strong>Building regulations:</strong> technical drawings and specifications prepared to the <a href="https://www.gov.uk/government/collections/approved-documents" rel="noopener">Approved Documents</a> for England.</li><li><strong>Structural calculations:</strong> prepared by a civil engineer (MSc) to the relevant British Standards and Eurocodes, for building control approval.</li><li><strong>Honest titles:</strong> we are an engineer-led design practice, not architects. “Architect” is a title protected by the <a href="https://arb.org.uk/" rel="noopener">Architects Registration Board</a>.</li></ul></div></section>`,
     offer: { name: 'Extension design', price: single.s1 },
   }),
 
@@ -293,7 +294,8 @@ ${ctaBand()}`,
     includes: ['Inspection of every room, the loft space and the outside', 'Checks against building regulations and warranty-provider standards', 'Windows, doors, finishes, plumbing, heating, electrics (visual and functional)', 'Photographs with each snag located and graded', 'PDF report within 24 hours, ready to send to the developer', 'Every report checked by our lead engineer'],
     excludes: ['Opening up of concealed structures', 'Specialist gas or electrical safety certification'],
     faqs: snagFaqs,
-    extra: `<section class="section-tight"><div class="wrap">${snagQuoteTool()}</div></section>`,
+    extra: `<section class="section-tight"><div class="wrap">${snagQuoteTool()}</div></section>
+<section class="section section-white"><div class="wrap narrow stack"><p class="eyebrow">Standards we work to</p><h2>What our work is checked against</h2><ul class="ticks"><li><strong>Pre-completion inspections:</strong> carried out under the <a href="https://www.nhqb.org.uk/the-code/" rel="noopener">New Homes Quality Code</a>, using the NHQB Pre-Completion Inspection Checklist.</li><li><strong>Inspectors:</strong> as the Code requires, a member of a recognised professional body for surveying, with professional indemnity insurance, working within their competency.</li><li><strong>Defects:</strong> judged against the <a href="https://www.gov.uk/government/collections/approved-documents" rel="noopener">Building Regulations Approved Documents</a> and the technical standards of the home’s warranty provider.</li><li><strong>Reports:</strong> every snag photographed, located, graded and referenced, then checked by our lead engineer before it reaches you.</li></ul></div></section>`,
     offer: { name: 'New-build snagging survey', price: minSnag },
   }),
 
@@ -364,9 +366,9 @@ ${ctaBand()}`,
 <section class="section"><div class="wrap grid-2" style="align-items:start">
   <div class="report" aria-label="Example report layout">
     <div class="report-head"><b>ASHBRIDGE DESIGN · SNAGGING REPORT</b><span>Example layout: not a real property</span></div>
-    <div class="snag"><div class="ph">Photo</div><div class="stack-sm"><div><span class="sev sev-high">Priority</span></div><h4>Kitchen: gap at worktop and wall junction, no seal</h4><p class="small">Location: kitchen, rear wall, left of sink. Risk of water getting behind the units. Seal to the manufacturer's standard.</p></div></div>
-    <div class="snag"><div class="ph">Photo</div><div class="stack-sm"><div><span class="sev sev-med">Standard</span></div><h4>Bedroom 2: door catches the frame when closing</h4><p class="small">Location: bedroom 2 entrance. Adjust the hinges so the door closes freely with an even gap.</p></div></div>
-    <div class="snag"><div class="ph">Photo</div><div class="stack-sm"><div><span class="sev sev-low">Cosmetic</span></div><h4>Landing: paint runs on skirting board</h4><p class="small">Location: first-floor landing, 1.2 m from the stair head. Rub down and repaint.</p></div></div>
+    <div class="snag"><div class="ph">Photo</div><div class="stack-sm"><div><span class="sev sev-high">Priority</span></div><h3 class="snag-title">Kitchen: gap at worktop and wall junction, no seal</h3><p class="small">Location: kitchen, rear wall, left of sink. Risk of water getting behind the units. Seal to the manufacturer's standard.</p></div></div>
+    <div class="snag"><div class="ph">Photo</div><div class="stack-sm"><div><span class="sev sev-med">Standard</span></div><h3 class="snag-title">Bedroom 2: door catches the frame when closing</h3><p class="small">Location: bedroom 2 entrance. Adjust the hinges so the door closes freely with an even gap.</p></div></div>
+    <div class="snag"><div class="ph">Photo</div><div class="stack-sm"><div><span class="sev sev-low">Cosmetic</span></div><h3 class="snag-title">Landing: paint runs on skirting board</h3><p class="small">Location: first-floor landing, 1.2 m from the stair head. Rub down and repaint.</p></div></div>
   </div>
   <div class="stack">
     <h2>In every report</h2>

@@ -5,11 +5,20 @@ import { site, prices } from '../lib/parts.mjs';
 const single = prices.design[0];
 const minSnag = prices.snag[0].price;
 
+// Location data from postcodes.io (OS Open Names / ONS), fetched by tools/fetch-geo.mjs.
+const GEO = JSON.parse(readFileSync(new URL('../data/geo.json', import.meta.url), 'utf8'));
+const BASE = { lat: 52.4814, lon: -1.8998 }; // Birmingham city centre
+// Non-geographic districts (PO boxes, large users) that shouldn't be listed as areas.
+const NON_GEO = new Set(['W1A', 'NW1W', 'N1P', 'EC1P', 'EC2P', 'EC3P', 'EC4P', 'SE1P', 'E98', 'CR9', 'CR44', 'CR90', 'BN50', 'BN51', 'BN52', 'BN88', 'BN91', 'BN95', 'BN99', 'NE82', 'NE83', 'NE85', 'NE88', 'NE92', 'NE98', 'NE99', 'LS88', 'LS98', 'LS99', 'S95', 'S96', 'S97', 'S98', 'S99', 'BD97', 'BD98', 'BD99', 'B99', 'M60', 'M61', 'M99', 'WV98', 'WV99', 'DH98', 'DH99', 'L70', 'L80', 'NG70', 'NG80', 'NG90', 'LE87', 'LE94', 'LE95', 'CV35X', 'PO12X', 'SO97', 'BS80', 'BS98', 'BS99', 'IG6X', 'SM6X', 'NN99', 'MK77', 'SN38', 'SN99', 'OX4X', 'GU95', 'RG94', 'NR99', 'IP98', 'PE99', 'DE99', 'DN55', 'HU20X', 'YO90', 'YO91', 'CA95', 'L67', 'L68', 'L69', 'L71', 'L72', 'L73', 'L74', 'L75', 'M90']);
+const RAD = Math.PI / 180;
+const miles = (a, b) => { const dLat = (b.lat - a.lat) * RAD, dLon = (b.lon - a.lon) * RAD; const h = Math.sin(dLat / 2) ** 2 + Math.cos(a.lat * RAD) * Math.cos(b.lat * RAD) * Math.sin(dLon / 2) ** 2; return 2 * 3958.8 * Math.asin(Math.sqrt(h)); };
+const direction = (a, b) => { const y = Math.sin((b.lon - a.lon) * RAD) * Math.cos(b.lat * RAD); const x = Math.cos(a.lat * RAD) * Math.sin(b.lat * RAD) - Math.sin(a.lat * RAD) * Math.cos(b.lat * RAD) * Math.cos((b.lon - a.lon) * RAD); const deg = (Math.atan2(y, x) / RAD + 360) % 360; return ['north', 'north-east', 'east', 'south-east', 'south', 'south-west', 'west', 'north-west'][Math.round(deg / 45) % 8]; };
+const listJoin = (arr) => arr.length < 2 ? arr.join('') : arr.slice(0, -1).join(', ') + ' and ' + arr[arr.length - 1];
+
 // Researched local detail. Add an entry here before promoting a place to a live page.
 const LOCAL = {
   birmingham: {
-    notes: `<p>Birmingham is our home base, so projects across the city are surveyed and inspected in person by our lead engineer.</p>
-<ul class="ticks">
+    notes: `<ul class="ticks">
 <li><strong>Langley, Sutton Coldfield:</strong> one of the largest single housing developments in the UK, planned for around 5,500–6,000 homes near Walmley. It's a key area for pre-completion inspections and snagging.</li>
 <li><strong>Longbridge:</strong> new homes by several developers on the former car works site.</li>
 <li><strong>Extensions:</strong> Birmingham City Council decides householder applications, and parts of the city fall within conservation areas. We check your street before we design.</li>
@@ -82,11 +91,18 @@ ${ctaBand()}`,
     const who = a.inPerson
       ? `Our Birmingham-based lead engineer carries out inspections and measured surveys in ${esc(a.place)} in person.`
       : `Inspections in ${esc(a.place)} are carried out by a qualified inspector who is a member of a recognised professional body for surveying (such as RICS, CIOB or CABE) to our checklist, and every report is checked by our lead engineer before it reaches you. Design work is done by our engineer, with the measured survey by a local partner or 3D scan.`;
-    // Neighbours rotate per page so each town links to a different set of places in its region.
-    const regionPlaces = areas.filter((x) => x.region === a.region && !x.place.startsWith('London ('));
-    const idx = regionPlaces.findIndex((x) => x.slug === a.slug);
-    const nearby = regionPlaces.length <= 13 ? regionPlaces.filter((x) => x.slug !== a.slug)
-      : Array.from({ length: 12 }, (_, i) => regionPlaces[(idx + 1 + i) % regionPlaces.length]);
+    const g = GEO[a.slug];
+    const core = a.place.replace(/ \(.*\)/, '');
+    // Nearest places we cover, by straight-line distance.
+    const nearby = live.filter((x) => x.slug !== a.slug && GEO[x.slug])
+      .map((x) => ({ x, d: miles(g, GEO[x.slug]) })).sort((p, q) => p.d - q.d).slice(0, 10);
+    const outcodes = g.outcodes.filter((o) => !NON_GEO.has(o));
+    const wards = g.wards.slice(0, 12);
+    const fromBase = Math.round(miles(BASE, g));
+    const county = g.county && !g.county.toLowerCase().includes(core.toLowerCase().split(' ')[0]) ? g.county : '';
+    const whereLine = a.slug === 'birmingham'
+      ? 'Birmingham is our home base, so projects across the city are surveyed and inspected in person by our lead engineer.'
+      : `${esc(core)} is${county ? ` in ${esc(county)},` : ''} about ${fromBase} miles ${direction(BASE, g)} of our Birmingham base as the crow flies. ${a.inPerson ? 'That puts it inside our in-person area: our lead engineer carries out surveys and inspections here in person.' : 'Inspections here are carried out through our England-wide inspector network, and design work is done by our engineer.'}`;
     const sameCouncil = areas.filter((x) => x.planning_authority === a.planning_authority && x.slug !== a.slug);
     const kind = a.type === 'Borough' ? 'London borough' : a.type === 'City' ? 'city' : 'town';
     const planningNote = a.type === 'Borough'
@@ -95,6 +111,7 @@ ${ctaBand()}`,
     const faqs = [
       [`How much are extension drawings in ${a.place}?`, `Planning drawings for a single-storey extension start at ${gbp(single.s1)}, both stages at ${gbp(single.both)}, and the Complete package with structural calculations at ${gbp(single.complete)}. Council fees are paid to ${a.planning_authority}.`],
       [`How much is a snagging survey in ${a.place}?`, `From ${gbp(minSnag)} for a flat, ${gbp(prices.snag[2].price)} for a 3-bedroom house and ${gbp(prices.snag[4].price)} for 5 bedrooms.`],
+      ...(outcodes.length ? [[`Do you cover all ${core} postcodes?`, `Yes. We cover ${core} and the surrounding area, including the ${listJoin(outcodes)} postcode districts, as part of ${a.inPerson ? 'our in-person service from Birmingham' : 'our England-wide service'}.`]] : []),
       [`Who inspects homes in ${a.place}?`, a.inPerson ? 'Our lead engineer, in person.' : 'A qualified inspector who is a member of a recognised professional body for surveying, with the report checked and signed off by our lead engineer.'],
     ];
     out.push({
@@ -102,7 +119,7 @@ ${ctaBand()}`,
       title: `Extension Drawings & Snagging, ${a.place.replace(/ \(.*\)/, '')}`,
       description: `Engineer-led extension drawings from ${gbp(single.s1)} and new-build snagging surveys from ${gbp(minSnag)} in ${a.place}. ${a.inPerson ? 'In-person service from our Birmingham base.' : 'Covering all of England.'}`,
       trail,
-      ld: [faqLd(faqs), { '@context': 'https://schema.org', '@type': 'Service', name: `Extension design and snagging surveys in ${a.place}`, provider: { '@id': site.url + '/#business' }, areaServed: { '@type': 'City', name: a.place.replace(/ \(.*\)/, '') } }],
+      ld: [faqLd(faqs), { '@context': 'https://schema.org', '@type': 'Service', name: `Extension design and snagging surveys in ${a.place}`, provider: { '@id': site.url + '/#business' }, areaServed: { '@type': a.type === 'Borough' ? 'AdministrativeArea' : 'City', name: core, geo: { '@type': 'GeoCoordinates', latitude: g.lat, longitude: g.lon } } }],
       body: `${pageHero({ trail, eyebrow: `${a.place} · ${a.region}`, h1: `Extension drawings and snagging surveys in ${esc(a.place)}`, lede: `Engineer-led extension design, structural calculations and independent new-build inspections in ${esc(a.place)}. ${a.inPerson ? 'Covered in person from our Birmingham base.' : 'Part of our England-wide service.'}`, ctas: '<a class="btn btn-amber" href="/contact/">Get a price</a><a class="btn btn-slate" href="/snagging-prices/">Instant snagging price</a>' })}
 <section class="section"><div class="wrap grid-2">
   <div class="card card-door"><p class="eyebrow">Extensions in ${esc(a.place)}</p><h2>Planning, building regs and structural calcs</h2>
@@ -117,10 +134,16 @@ ${ctaBand()}`,
     <div class="btn-row"><a class="btn btn-amber" href="/snagging-prices/">Instant price</a><a class="btn btn-ghost" href="/sample-snagging-report/">Sample report</a></div></div>
 </div></section>
 ${LOCAL[a.slug] ? `<section class="section section-white"><div class="wrap narrow stack"><p class="eyebrow">Local knowledge</p><h2>Building and buying in ${esc(a.place)}</h2>${LOCAL[a.slug].notes}</div></section>` : ''}
-<section class="section"><div class="wrap grid-2">
-  <div class="stack"><h2>${esc(a.place)} questions</h2>${faqHtml(faqs)}</div>
-  <div class="stack"><h3>Also covering nearby</h3><ul class="area-list" style="columns:2 160px">${nearby.map((x) => `<li>${link(x)}</li>`).join('')}</ul><a class="more" href="/areas/${regionSlug}/">All of ${a.region}</a></div>
+<section class="section section-white"><div class="wrap grid-2">
+  <div class="stack">
+    <p class="eyebrow">Coverage</p><h2>Where we work in ${esc(core)}</h2>
+    <p>${whereLine}</p>
+    ${outcodes.length ? `<h3>Postcode districts</h3><p class="postcodes">${outcodes.map((o) => `<span>${o}</span>`).join('')}</p>` : ''}
+    ${wards.length ? `<h3>Neighbourhoods in and around ${esc(core)}</h3><p>${esc(listJoin(wards))}.</p>` : ''}
+  </div>
+  <div class="stack"><h3>Nearest places we cover</h3><ul class="area-list" style="columns:2 180px">${nearby.map(({ x, d }) => `<li>${link(x)}<span>${Math.max(1, Math.round(d))} miles</span></li>`).join('')}</ul><a class="more" href="/areas/${regionSlug}/">All of ${a.region}</a></div>
 </div></section>
+<section class="section"><div class="wrap narrow stack"><h2>${esc(core)} questions</h2>${faqHtml(faqs)}</div></section>
 ${ctaBand()}`,
     });
   }

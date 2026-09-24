@@ -1,0 +1,7624 @@
+{
+ "birmingham": {
+  "query": "Birmingham",
+  "name": "Birmingham",
+  "type": "City",
+  "lat": 52.47928,
+  "lon": -1.90294,
+  "county": "Birmingham",
+  "district": [
+   "Birmingham"
+  ],
+  "outcode": "B2",
+  "outcodes": [
+   "B1",
+   "B2",
+   "B3",
+   "B4",
+   "B5",
+   "B7",
+   "B12",
+   "B15",
+   "B16",
+   "B18",
+   "B19",
+   "B99"
+  ],
+  "wards": [
+   "Bordesley & Highgate",
+   "Ladywood",
+   "Newtown",
+   "Soho & Jewellery Quarter",
+   "Nechells",
+   "Sutton Trinity",
+   "Balsall Heath West",
+   "Edgbaston",
+   "Aston",
+   "Birchfield",
+   "Handsworth",
+   "Lozells",
+   "Bournbrook & Selly Park",
+   "Harborne",
+   "North Edgbaston",
+   "Soho & Victoria",
+   "Moseley",
+   "Sparkbrook & Balsall Heath East"
+  ]
+ },
+ "london": {
+  "query": "Westminster",
+  "name": "City of Westminster",
+  "type": "City",
+  "lat": 51.50099,
+  "lon": -0.12614,
+  "county": "Greater London",
+  "district": [
+   "Wandsworth",
+   "Westminster"
+  ],
+  "outcode": "SW1A",
+  "outcodes": [
+   "SW1A",
+   "SW1E",
+   "SW1H",
+   "SW1P",
+   "SW1Y",
+   "W1D",
+   "W1F",
+   "W1J",
+   "WC2E",
+   "WC2H",
+   "WC2N",
+   "WC2R"
+  ],
+  "wards": [
+   "Nine Elms",
+   "St James's",
+   "Clerkenwell",
+   "Pimlico North",
+   "Vincent Square",
+   "Holborn & Covent Garden",
+   "West End"
+  ]
+ },
+ "barking-and-dagenham": {
+  "query": "Barking",
+  "name": "Barking",
+  "type": "Other Settlement",
+  "lat": 51.53817,
+  "lon": 0.07892,
+  "county": "Greater London",
+  "district": [
+   "Barking and Dagenham",
+   "Newham",
+   "Redbridge"
+  ],
+  "outcode": "IG11",
+  "outcodes": [
+   "E6",
+   "E12",
+   "IG1",
+   "IG11"
+  ],
+  "wards": [
+   "Abbey",
+   "Barking Riverside",
+   "Beckton",
+   "Eastbury",
+   "East Ham South",
+   "Gascoigne",
+   "Longbridge",
+   "Mayesbrook",
+   "Mayfield",
+   "Northbury",
+   "Thames View",
+   "Boleyn",
+   "Custom House",
+   "East Ham",
+   "Green Street East",
+   "Plashet",
+   "Wall End",
+   "Little Ilford"
+  ]
+ },
+ "bexley": {
+  "query": "Bexleyheath",
+  "name": "Bexleyheath",
+  "type": "Suburban Area",
+  "lat": 51.46329,
+  "lon": 0.13997,
+  "county": "Greater London",
+  "district": [
+   "Bexley"
+  ],
+  "outcode": "DA7",
+  "outcodes": [
+   "DA6",
+   "DA7",
+   "DA16"
+  ],
+  "wards": [
+   "Barnehurst",
+   "Bexleyheath",
+   "Crayford",
+   "Crook Log",
+   "Northumberland Heath",
+   "West Heath",
+   "East Wickham",
+   "Falconwood & Welling",
+   "Shooters Hill"
+  ]
+ },
+ "barnet": {
+  "query": "Barnet",
+  "name": "Barnet",
+  "type": "Other Settlement",
+  "lat": 51.64968,
+  "lon": -0.17125,
+  "county": "Greater London",
+  "district": [
+   "Barnet",
+   "Enfield",
+   "Hertsmere"
+  ],
+  "outcode": "EN4",
+  "outcodes": [
+   "EN4",
+   "EN5",
+   "N20"
+  ],
+  "wards": [
+   "Barnet Vale",
+   "Bentley Heath & The Royds",
+   "Brunswick Park",
+   "Cockfosters",
+   "East Barnet",
+   "High Barnet",
+   "Ridgeway",
+   "Shenley",
+   "Underhill",
+   "Whetstone",
+   "Friern Barnet",
+   "Totteridge & Woodside",
+   "Woodhouse"
+  ]
+ },
+ "brent": {
+  "query": "Wembley",
+  "name": "Wembley",
+  "type": "Other Settlement",
+  "lat": 51.5537,
+  "lon": -0.29337,
+  "county": "Greater London",
+  "district": [
+   "Brent"
+  ],
+  "outcode": "HA9",
+  "outcodes": [
+   "HA0",
+   "HA9"
+  ],
+  "wards": [
+   "Alperton",
+   "North Greenford",
+   "Northwick Park",
+   "Perivale",
+   "Sudbury",
+   "Wembley Central",
+   "Barnhill",
+   "Kenton",
+   "Preston",
+   "Tokyngton",
+   "Wembley Hill",
+   "Wembley Park"
+  ]
+ },
+ "croydon": {
+  "query": "Croydon",
+  "name": "Croydon",
+  "type": "Other Settlement",
+  "lat": 51.37364,
+  "lon": -0.10024,
+  "county": "Greater London",
+  "district": [
+   "Croydon",
+   "Sutton"
+  ],
+  "outcode": "CR9",
+  "outcodes": [
+   "CR0",
+   "CR9",
+   "CR90"
+  ],
+  "wards": [
+   "Addiscombe East",
+   "Addiscombe West",
+   "Beddington",
+   "Broad Green",
+   "Fairfield",
+   "New Addington South",
+   "Selhurst",
+   "Shirley North",
+   "Shirley South",
+   "South Croydon",
+   "Waddon",
+   "West Thornton",
+   "Bensham Manor",
+   "New Addington North",
+   "Park Hill & Whitgift",
+   "Selsdon & Addington Village",
+   "Selsdon Vale & Forestdale",
+   "South Beddington & Roundshaw"
+  ]
+ },
+ "bromley": {
+  "query": "Bromley",
+  "name": "Bromley",
+  "type": "Suburban Area",
+  "lat": 51.52506,
+  "lon": -0.01985,
+  "county": "Greater London",
+  "district": [
+   "Newham",
+   "Tower Hamlets"
+  ],
+  "outcode": "E3",
+  "outcodes": [
+   "E3",
+   "E14",
+   "E15",
+   "E20"
+  ],
+  "wards": [
+   "Bow East",
+   "Bow West",
+   "Bromley North",
+   "Bromley South",
+   "Canning Town North",
+   "Lansbury",
+   "Mile End",
+   "St Dunstan's",
+   "Stratford",
+   "Stratford Olympic Park",
+   "Blackwall & Cubitt Town",
+   "Canary Wharf",
+   "Island Gardens",
+   "Limehouse",
+   "Poplar",
+   "Shadwell",
+   "Cann Hall",
+   "Cathall"
+  ]
+ },
+ "camden": {
+  "query": "Camden Town",
+  "name": "Camden Town",
+  "type": "Other Settlement",
+  "lat": 51.53902,
+  "lon": -0.14269,
+  "county": "Greater London",
+  "district": [
+   "Camden",
+   "Westminster"
+  ],
+  "outcode": "NW1",
+  "outcodes": [
+   "N1C",
+   "N7",
+   "NW1",
+   "NW1W",
+   "NW5",
+   "NW8",
+   "W1G",
+   "W1T",
+   "W1W",
+   "WC1E",
+   "WC1H",
+   "WC1X"
+  ],
+  "wards": [
+   "Bloomsbury",
+   "Camden Square",
+   "Camden Town",
+   "Church Street",
+   "Haverstock",
+   "Hyde Park",
+   "Kentish Town South",
+   "King's Cross",
+   "Marylebone",
+   "Primrose Hill",
+   "Regent's Park",
+   "St Pancras & Somers Town",
+   "West End",
+   "Gospel Oak",
+   "Highgate",
+   "Junction",
+   "Kentish Town North",
+   "Clerkenwell"
+  ]
+ },
+ "enfield": {
+  "query": "Enfield",
+  "name": "Enfield",
+  "type": "Other Settlement",
+  "lat": 51.65222,
+  "lon": -0.08438,
+  "county": "Greater London",
+  "district": [
+   "Enfield",
+   "Welwyn Hatfield"
+  ],
+  "outcode": "EN2",
+  "outcodes": [
+   "EN1",
+   "EN2",
+   "N21"
+  ],
+  "wards": [
+   "Grange Park",
+   "Northaw and Cuffley",
+   "Oakwood",
+   "Ridgeway",
+   "Town",
+   "Whitewebbs",
+   "Bullsmoor",
+   "Bush Hill Park",
+   "Carterhatch",
+   "Haselbury",
+   "Jubilee",
+   "Ponders End",
+   "Southbury",
+   "Highfield",
+   "Southgate",
+   "Winchmore Hill"
+  ]
+ },
+ "ealing": {
+  "query": "Ealing",
+  "name": "Ealing",
+  "type": "Other Settlement",
+  "lat": 51.51379,
+  "lon": -0.3028,
+  "county": "Greater London",
+  "district": [
+   "Ealing",
+   "Hounslow"
+  ],
+  "outcode": "W5",
+  "outcodes": [
+   "W3",
+   "W5",
+   "W7",
+   "W13"
+  ],
+  "wards": [
+   "Brentford East",
+   "Brentford West",
+   "Chiswick Gunnersbury",
+   "Ealing Broadway",
+   "Ealing Common",
+   "Hanger Hill",
+   "Northfield",
+   "Pitshanger",
+   "Walpole",
+   "Hanwell Broadway",
+   "North Hanwell",
+   "Norwood Green",
+   "College Park & Old Oak",
+   "East Acton",
+   "North Acton",
+   "South Acton",
+   "Southfield",
+   "Wendell Park"
+  ]
+ },
+ "greenwich": {
+  "query": "Greenwich",
+  "name": "Greenwich",
+  "type": "Other Settlement",
+  "lat": 51.47869,
+  "lon": -0.01082,
+  "county": "Greater London",
+  "district": [
+   "Greenwich",
+   "Lewisham"
+  ],
+  "outcode": "SE10",
+  "outcodes": [
+   "SE3",
+   "SE8",
+   "SE10",
+   "SE13",
+   "SE14"
+  ],
+  "wards": [
+   "Blackheath",
+   "Blackheath Westcombe",
+   "East Greenwich",
+   "Greenwich Creekside",
+   "Greenwich Park",
+   "Greenwich Peninsula",
+   "Brockley",
+   "Deptford",
+   "Evelyn",
+   "Lewisham Central",
+   "Rotherhithe",
+   "Hither Green",
+   "Ladywell",
+   "Lee Green",
+   "Rushey Green",
+   "New Cross Gate",
+   "Nunhead & Queen's Road",
+   "Telegraph Hill"
+  ]
+ },
+ "hammersmith-and-fulham": {
+  "query": "Hammersmith",
+  "name": "Hammersmith",
+  "type": "Other Settlement",
+  "lat": 51.4928,
+  "lon": -0.23435,
+  "county": "Greater London",
+  "district": [
+   "Hammersmith and Fulham",
+   "Hounslow"
+  ],
+  "outcode": "W6",
+  "outcodes": [
+   "W4",
+   "W6",
+   "W12",
+   "W14"
+  ],
+  "wards": [
+   "Addison",
+   "Avonmore",
+   "Brook Green",
+   "Chiswick Homefields",
+   "Fulham Reach",
+   "Grove",
+   "Hammersmith Broadway",
+   "Ravenscourt",
+   "Wendell Park",
+   "Abingdon",
+   "Holland",
+   "West Kensington",
+   "College Park & Old Oak",
+   "Coningham",
+   "Pitshanger",
+   "Shepherd's Bush Green",
+   "Southfield",
+   "White City"
+  ]
+ },
+ "hackney": {
+  "query": "Hackney",
+  "name": "Hackney",
+  "type": "Other Settlement",
+  "lat": 51.54475,
+  "lon": -0.05536,
+  "county": "Greater London",
+  "district": [
+   "Hackney",
+   "Islington",
+   "Tower Hamlets"
+  ],
+  "outcode": "E8",
+  "outcodes": [
+   "E2",
+   "E5",
+   "E8",
+   "E9",
+   "N16"
+  ],
+  "wards": [
+   "Bethnal Green West",
+   "Dalston",
+   "De Beauvoir",
+   "Hackney Central",
+   "Haggerston",
+   "Homerton",
+   "London Fields",
+   "Mildmay",
+   "Shacklewell",
+   "Victoria",
+   "Bow East",
+   "Bow West",
+   "Hackney Wick",
+   "King's Park",
+   "Cazenove",
+   "Hackney Downs",
+   "Lea Bridge",
+   "Springfield"
+  ]
+ },
+ "haringey": {
+  "query": "Wood Green",
+  "name": "Wood Green",
+  "type": "Other Settlement",
+  "lat": 51.59718,
+  "lon": -0.10993,
+  "county": "Greater London",
+  "district": [
+   "Enfield",
+   "Haringey"
+  ],
+  "outcode": "N22",
+  "outcodes": [
+   "N8",
+   "N10",
+   "N13",
+   "N22"
+  ],
+  "wards": [
+   "Alexandra Park",
+   "Bounds Green",
+   "Bowes",
+   "Muswell Hill",
+   "New Southgate",
+   "Noel Park",
+   "West Green",
+   "White Hart Lane",
+   "Woodside",
+   "Crouch End",
+   "Harringay",
+   "Hillrise",
+   "Hornsey",
+   "Kilburn",
+   "St Ann's",
+   "Stroud Green",
+   "Arnos Grove",
+   "Highfield"
+  ]
+ },
+ "harrow": {
+  "query": "Harrow",
+  "name": "Harrow",
+  "type": "Other Settlement",
+  "lat": 51.57077,
+  "lon": -0.33948,
+  "county": "Greater London",
+  "district": [
+   "Brent",
+   "Harrow"
+  ],
+  "outcode": "HA1",
+  "outcodes": [
+   "HA1",
+   "HA2"
+  ],
+  "wards": [
+   "Greenhill",
+   "Harrow on the Hill",
+   "Headstone",
+   "Marlborough",
+   "North Harrow",
+   "Northwick Park",
+   "West Harrow",
+   "Pinner",
+   "Pinner South",
+   "Rayners Lane",
+   "Roxbourne",
+   "Roxeth"
+  ]
+ },
+ "havering": {
+  "query": "Romford",
+  "name": "Romford",
+  "type": "Other Settlement",
+  "lat": 51.5807,
+  "lon": 0.18498,
+  "county": "Greater London",
+  "district": [
+   "Havering"
+  ],
+  "outcode": "RM1",
+  "outcodes": [
+   "RM1",
+   "RM2",
+   "RM7"
+  ],
+  "wards": [
+   "Havering-atte-Bower",
+   "Heaton",
+   "Hylands & Harrow Lodge",
+   "Marshalls & Rise Park",
+   "Mawneys",
+   "Rush Green & Crowlands",
+   "St Alban's",
+   "St Edward's",
+   "Eastbrook & Rush Green",
+   "Squirrels Heath"
+  ]
+ },
+ "hillingdon": {
+  "query": "Uxbridge",
+  "name": "Uxbridge",
+  "type": "Other Settlement",
+  "lat": 51.5462,
+  "lon": -0.47956,
+  "county": "Greater London",
+  "district": [
+   "Buckinghamshire",
+   "Hillingdon"
+  ],
+  "outcode": "UB8",
+  "outcodes": [
+   "UB8",
+   "UB10"
+  ],
+  "wards": [
+   "Colham & Cowley",
+   "Gerrards Cross & Denham",
+   "Hillingdon West",
+   "Uxbridge",
+   "Wood End",
+   "Yiewsley",
+   "Charville",
+   "Hillingdon East",
+   "Ickenham & South Harefield"
+  ]
+ },
+ "hounslow": {
+  "query": "Hounslow",
+  "name": "Hounslow",
+  "type": "Other Settlement",
+  "lat": 51.4677,
+  "lon": -0.36174,
+  "county": "Greater London",
+  "district": [
+   "Hounslow",
+   "Richmond upon Thames"
+  ],
+  "outcode": "TW3",
+  "outcodes": [
+   "TW2",
+   "TW3",
+   "TW4",
+   "TW5",
+   "TW7"
+  ],
+  "wards": [
+   "Heathfield",
+   "Heston Central",
+   "Heston East",
+   "Hounslow Central",
+   "Hounslow East",
+   "Hounslow Heath",
+   "Hounslow South",
+   "Hounslow West",
+   "Whitton",
+   "Cranford",
+   "Isleworth",
+   "Osterley & Spring Grove",
+   "St Margarets & North Twickenham",
+   "Syon & Brentford Lock",
+   "Heston West",
+   "Fulwell & Hampton Hill",
+   "South Twickenham",
+   "West Twickenham"
+  ]
+ },
+ "islington": {
+  "query": "Islington",
+  "name": "Islington",
+  "type": "Other Settlement",
+  "lat": 51.53755,
+  "lon": -0.10288,
+  "county": "Greater London",
+  "district": [
+   "Camden",
+   "Hackney",
+   "Islington"
+  ],
+  "outcode": "N1",
+  "outcodes": [
+   "EC1P",
+   "EC1R",
+   "EC1V",
+   "EC1Y",
+   "EC2P",
+   "EC3P",
+   "EC4P",
+   "N1",
+   "N1C",
+   "N1P",
+   "W1A",
+   "WC1X"
+  ],
+  "wards": [
+   "St Mary's & St James'",
+   "Barnsbury",
+   "Caledonian",
+   "Canonbury",
+   "Clerkenwell",
+   "De Beauvoir",
+   "Haggerston",
+   "Highbury",
+   "Hoxton East & Shoreditch",
+   "Hoxton West",
+   "King's Cross",
+   "Laycock",
+   "Mildmay",
+   "St Peter's & Canalside",
+   "Bunhill",
+   "Holborn & Covent Garden",
+   "Bassishaw",
+   "Lime Street"
+  ]
+ },
+ "kensington-and-chelsea": {
+  "query": "Kensington",
+  "name": "Kensington",
+  "type": "Other Settlement",
+  "lat": 51.50057,
+  "lon": -0.19438,
+  "county": "Greater London",
+  "district": [
+   "Kensington and Chelsea"
+  ],
+  "outcode": "W8",
+  "outcodes": [
+   "SW3",
+   "SW5",
+   "SW7",
+   "SW10",
+   "W2",
+   "W8",
+   "W11",
+   "W14"
+  ],
+  "wards": [
+   "Abingdon",
+   "Campden",
+   "Holland",
+   "Queen's Gate",
+   "Courtfield",
+   "Earl's Court",
+   "Redcliffe",
+   "Addison",
+   "Avonmore",
+   "Brook Green",
+   "Fulham Reach",
+   "Hammersmith Broadway",
+   "West Kensington",
+   "Brompton & Hans Town",
+   "Knightsbridge & Belgravia",
+   "Lancaster Gate",
+   "Bayswater",
+   "Church Street"
+  ]
+ },
+ "kingston-upon-thames": {
+  "query": "Kingston upon Thames",
+  "name": "Kingston upon Thames",
+  "type": "Other Settlement",
+  "lat": 51.40901,
+  "lon": -0.30362,
+  "county": "Greater London",
+  "district": [
+   "Kingston upon Thames",
+   "Richmond upon Thames"
+  ],
+  "outcode": "KT1",
+  "outcodes": [
+   "KT1",
+   "KT2",
+   "KT5",
+   "KT6"
+  ],
+  "wards": [
+   "Canbury Gardens",
+   "Coombe Vale",
+   "Hampton Wick & South Teddington",
+   "Kingston Town",
+   "Norbiton",
+   "St Mark's & Seething Wells",
+   "Teddington",
+   "Coombe Hill",
+   "Ham, Petersham & Richmond Riverside",
+   "Kingston Gate",
+   "Tudor",
+   "Alexandra",
+   "Berrylands",
+   "King George's & Sunray",
+   "Surbiton Hill",
+   "Hook & Chessington North",
+   "Long Ditton",
+   "Tolworth"
+  ]
+ },
+ "lewisham": {
+  "query": "Lewisham",
+  "name": "Lewisham",
+  "type": "Other Settlement",
+  "lat": 51.4571,
+  "lon": -0.01371,
+  "county": "Greater London",
+  "district": [
+   "Greenwich",
+   "Lewisham"
+  ],
+  "outcode": "SE13",
+  "outcodes": [
+   "SE4",
+   "SE6",
+   "SE13"
+  ],
+  "wards": [
+   "Blackheath",
+   "Brockley",
+   "Greenwich Park",
+   "Hither Green",
+   "Ladywell",
+   "Lee Green",
+   "Lewisham Central",
+   "Rushey Green",
+   "Crofton Park",
+   "Nunhead & Queen's Road",
+   "Peckham Rye",
+   "Telegraph Hill",
+   "Bellingham",
+   "Catford South",
+   "Downham",
+   "Perry Vale"
+  ]
+ },
+ "lambeth": {
+  "query": "Brixton",
+  "name": "Brixton",
+  "type": "Suburban Area",
+  "lat": 51.46104,
+  "lon": -0.11115,
+  "county": "Greater London",
+  "district": [
+   "Lambeth"
+  ],
+  "outcode": "SW9",
+  "outcodes": [
+   "SE5",
+   "SE24",
+   "SW2",
+   "SW4",
+   "SW8",
+   "SW9"
+  ],
+  "wards": [
+   "Brixton Acre Lane",
+   "Brixton North",
+   "Brixton Windrush",
+   "Clapham East",
+   "Clapham Town",
+   "Herne Hill & Loughborough Junction",
+   "Myatt's Fields",
+   "Oval",
+   "Stockwell East",
+   "Stockwell West & Larkhall",
+   "Camberwell Green",
+   "Champion Hill",
+   "Dulwich Village",
+   "St Martin's",
+   "West Dulwich",
+   "Brixton Rush Common",
+   "Clapham Park",
+   "Streatham Hill East"
+  ]
+ },
+ "merton": {
+  "query": "Morden",
+  "name": "Morden",
+  "type": "Other Settlement",
+  "lat": 51.40158,
+  "lon": -0.19268,
+  "county": "Greater London",
+  "district": [
+   "Merton",
+   "Sutton"
+  ],
+  "outcode": "SM4",
+  "outcodes": [
+   "CR4",
+   "SM4"
+  ],
+  "wards": [
+   "Cannon Hill",
+   "Figge's Marsh",
+   "Lower Morden",
+   "Merton Park",
+   "Ravensbury",
+   "St Helier",
+   "St Helier East",
+   "St Helier West",
+   "Colliers Wood",
+   "Cricket Green",
+   "Graveney",
+   "Hackbridge",
+   "Lavender Fields",
+   "Longthornton",
+   "Pollards Hill",
+   "Streatham Common & Vale",
+   "West Thornton"
+  ]
+ },
+ "redbridge": {
+  "query": "Ilford",
+  "name": "Ilford",
+  "type": "Other Settlement",
+  "lat": 51.55761,
+  "lon": 0.07348,
+  "county": "Greater London",
+  "district": [
+   "Redbridge"
+  ],
+  "outcode": "IG1",
+  "outcodes": [
+   "E12",
+   "IG1",
+   "IG2",
+   "IG3"
+  ],
+  "wards": [
+   "Clementswood",
+   "Cranbrook",
+   "Ilford Town",
+   "Loxford",
+   "Mayfield",
+   "Newbury",
+   "Valentines",
+   "Wanstead Park",
+   "Little Ilford",
+   "Manor Park",
+   "Plashet",
+   "Goodmayes",
+   "Seven Kings",
+   "Aldborough",
+   "Barkingside"
+  ]
+ },
+ "newham": {
+  "query": "East Ham",
+  "name": "East Ham",
+  "type": "Other Settlement",
+  "lat": 51.53306,
+  "lon": 0.05437,
+  "county": "Greater London",
+  "district": [
+   "Newham"
+  ],
+  "outcode": "E6",
+  "outcodes": [
+   "E6",
+   "E7",
+   "E12",
+   "E13"
+  ],
+  "wards": [
+   "Beckton",
+   "Boleyn",
+   "Custom House",
+   "East Ham",
+   "East Ham South",
+   "Green Street East",
+   "Plashet",
+   "Wall End",
+   "Little Ilford",
+   "Manor Park",
+   "Wanstead Park",
+   "Canning Town North",
+   "Green Street West",
+   "Plaistow North",
+   "Plaistow South",
+   "Plaistow West & Canning Town East",
+   "West Ham",
+   "Cann Hall"
+  ]
+ },
+ "richmond-upon-thames": {
+  "query": "Richmond",
+  "name": "Richmond",
+  "type": "Other Settlement",
+  "lat": 51.4613,
+  "lon": -0.3037,
+  "county": "Greater London",
+  "district": [
+   "Richmond upon Thames"
+  ],
+  "outcode": "TW9",
+  "outcodes": [
+   "TW1",
+   "TW9",
+   "TW10"
+  ],
+  "wards": [
+   "Kew",
+   "North Richmond",
+   "South Richmond",
+   "East Sheen",
+   "Ham, Petersham & Richmond Riverside",
+   "Tudor",
+   "Isleworth",
+   "South Twickenham",
+   "St Margarets & North Twickenham",
+   "Teddington",
+   "Twickenham Riverside"
+  ]
+ },
+ "sutton": {
+  "query": "Sutton",
+  "name": "Sutton",
+  "type": "Other Settlement",
+  "lat": 51.36397,
+  "lon": -0.19348,
+  "county": "Greater London",
+  "district": [
+   "Sutton"
+  ],
+  "outcode": "SM1",
+  "outcodes": [
+   "SM1",
+   "SM2",
+   "SM3",
+   "SM5"
+  ],
+  "wards": [
+   "Carshalton Central",
+   "Cheam",
+   "St Helier West",
+   "Stonecot",
+   "Sutton Central",
+   "Sutton North",
+   "Sutton South",
+   "Sutton West & East Cheam",
+   "The Wrythe",
+   "Banstead Village",
+   "Belmont",
+   "Nonsuch",
+   "Lower Morden",
+   "North Cheam",
+   "Worcester Park South",
+   "Carshalton South & Clockhouse",
+   "Hackbridge",
+   "St Helier East"
+  ]
+ },
+ "southwark": {
+  "query": "Peckham",
+  "name": "Peckham",
+  "type": "Suburban Area",
+  "lat": 51.47513,
+  "lon": -0.06844,
+  "county": "Greater London",
+  "district": [
+   "Lewisham",
+   "Southwark"
+  ],
+  "outcode": "SE15",
+  "outcodes": [
+   "SE1P",
+   "SE5",
+   "SE14",
+   "SE15",
+   "SE17",
+   "SE22"
+  ],
+  "wards": [
+   "Goose Green",
+   "New Cross Gate",
+   "Nunhead & Queen's Road",
+   "Old Kent Road",
+   "Peckham",
+   "Peckham Rye",
+   "Rye Lane",
+   "St Giles",
+   "Telegraph Hill",
+   "Brixton North",
+   "Camberwell Green",
+   "Champion Hill",
+   "Dulwich Village",
+   "Faraday",
+   "Herne Hill & Loughborough Junction",
+   "Kennington",
+   "Myatt's Fields",
+   "Newington"
+  ]
+ },
+ "waltham-forest": {
+  "query": "Walthamstow",
+  "name": "Walthamstow",
+  "type": "Other Settlement",
+  "lat": 51.59165,
+  "lon": -0.0049,
+  "county": "Greater London",
+  "district": [
+   "Waltham Forest"
+  ],
+  "outcode": "E17",
+  "outcodes": [
+   "E17"
+  ],
+  "wards": [
+   "Chapel End",
+   "Forest",
+   "Hale End & Highams Park South",
+   "Higham Hill",
+   "High Street",
+   "Hoe Street",
+   "Larkswood",
+   "Lea Bridge",
+   "Markhouse",
+   "St James",
+   "Upper Walthamstow",
+   "William Morris",
+   "Wood Street"
+  ]
+ },
+ "tower-hamlets": {
+  "query": "Whitechapel",
+  "name": "Whitechapel",
+  "type": "Suburban Area",
+  "lat": 51.51637,
+  "lon": -0.0691,
+  "county": "Greater London",
+  "district": [
+   "City of London",
+   "Hackney",
+   "Tower Hamlets"
+  ],
+  "outcode": "E1",
+  "outcodes": [
+   "E1",
+   "E1W",
+   "E98",
+   "EC2A",
+   "EC2M",
+   "EC2N",
+   "EC2R",
+   "EC3A",
+   "EC3M",
+   "EC3N",
+   "EC3R",
+   "EC3V"
+  ],
+  "wards": [
+   "Aldgate",
+   "Bethnal Green East",
+   "Bethnal Green West",
+   "Bishopsgate",
+   "Bow West",
+   "Hoxton East & Shoreditch",
+   "Portsoken",
+   "Shadwell",
+   "Spitalfields & Banglatown",
+   "St Dunstan's",
+   "Stepney Green",
+   "Tower",
+   "Weavers",
+   "Whitechapel",
+   "St Katharine's & Wapping",
+   "Clerkenwell",
+   "Lime Street",
+   "Billingsgate"
+  ]
+ },
+ "wandsworth": {
+  "query": "Wandsworth",
+  "name": "Wandsworth",
+  "type": "Other Settlement",
+  "lat": 51.45677,
+  "lon": -0.19274,
+  "county": "Greater London",
+  "district": [
+   "Merton",
+   "Wandsworth"
+  ],
+  "outcode": "SW18",
+  "outcodes": [
+   "SW11",
+   "SW15",
+   "SW18"
+  ],
+  "wards": [
+   "East Putney",
+   "Falconbrook",
+   "Southfields",
+   "St Mary's",
+   "Thamesfield",
+   "Wandle",
+   "Wandsworth Common",
+   "Wandsworth Town",
+   "West Hill",
+   "Wimbledon Park",
+   "Balham",
+   "Battersea Park",
+   "Lavender",
+   "Nine Elms",
+   "Northcote",
+   "Shaftesbury & Queenstown",
+   "Coombe Hill",
+   "Mortlake & Barnes Common"
+  ]
+ },
+ "westminster": {
+  "query": "Westminster",
+  "name": "City of Westminster",
+  "type": "City",
+  "lat": 51.50099,
+  "lon": -0.12614,
+  "county": "Greater London",
+  "district": [
+   "Wandsworth",
+   "Westminster"
+  ],
+  "outcode": "SW1A",
+  "outcodes": [
+   "SW1A",
+   "SW1E",
+   "SW1H",
+   "SW1P",
+   "SW1Y",
+   "W1D",
+   "W1F",
+   "W1J",
+   "WC2E",
+   "WC2H",
+   "WC2N",
+   "WC2R"
+  ],
+  "wards": [
+   "Nine Elms",
+   "St James's",
+   "Clerkenwell",
+   "Pimlico North",
+   "Vincent Square",
+   "Holborn & Covent Garden",
+   "West End"
+  ]
+ },
+ "milton-keynes": {
+  "query": "Milton Keynes",
+  "name": "Milton Keynes",
+  "type": "City",
+  "lat": 52.04302,
+  "lon": -0.75406,
+  "county": "Milton Keynes",
+  "district": [
+   "Milton Keynes"
+  ],
+  "outcode": "MK9",
+  "outcodes": [
+   "MK1",
+   "MK5",
+   "MK6",
+   "MK8",
+   "MK9",
+   "MK10",
+   "MK12",
+   "MK13",
+   "MK14",
+   "MK15",
+   "MK20",
+   "MK77"
+  ],
+  "wards": [
+   "Campbell Park & Willen",
+   "Central Milton Keynes",
+   "Walton",
+   "Bletchley West",
+   "Ouzel Valley",
+   "Woughton & Fishermead",
+   "Bradwell",
+   "New Bradwell",
+   "Watling",
+   "Wolverton",
+   "Broughton & Moulsoe",
+   "Great Linford",
+   "Hanslope",
+   "Bletchley Park & Fenny Stratford",
+   "Furzton",
+   "Stony Stratford"
+  ]
+ },
+ "reading": {
+  "query": "Reading",
+  "name": "Reading",
+  "type": "Town",
+  "lat": 51.4538,
+  "lon": -0.97376,
+  "county": "Reading",
+  "district": [
+   "Reading",
+   "Wokingham"
+  ],
+  "outcode": "RG1",
+  "outcodes": [
+   "RG1",
+   "RG2",
+   "RG4",
+   "RG6",
+   "RG30"
+  ],
+  "wards": [
+   "Abbey",
+   "Battle",
+   "Coley",
+   "Katesgrove",
+   "Maiden Erlegh & Whitegates",
+   "Park",
+   "Redlands",
+   "Thames",
+   "Whitley",
+   "Burghfield & Mortimer",
+   "Kentwood",
+   "Norcot",
+   "Southcote",
+   "Tilehurst",
+   "Tilehurst Birch Copse",
+   "Tilehurst South & Holybrook",
+   "Caversham",
+   "Caversham Heights"
+  ]
+ },
+ "southampton": {
+  "query": "Southampton",
+  "name": "Southampton",
+  "type": "City",
+  "lat": 50.90489,
+  "lon": -1.40431,
+  "county": "City of Southampton",
+  "district": [
+   "Southampton"
+  ],
+  "outcode": "SO14",
+  "outcodes": [
+   "SO14",
+   "SO15",
+   "SO16",
+   "SO17",
+   "SO18",
+   "SO19"
+  ],
+  "wards": [
+   "Banister & Polygon",
+   "Bargate",
+   "Bevois",
+   "Bitterne Park",
+   "Portswood",
+   "Bassett",
+   "Freemantle",
+   "Millbrook",
+   "Redbridge",
+   "Shirley",
+   "Swaythling",
+   "Bursledon & Hound North",
+   "Harefield",
+   "Hedge End South",
+   "Peartree",
+   "Sholing",
+   "Thornhill",
+   "West End South"
+  ]
+ },
+ "oxford": {
+  "query": "Oxford",
+  "name": "Oxford",
+  "type": "City",
+  "lat": 51.75198,
+  "lon": -1.25765,
+  "county": "Oxfordshire",
+  "district": [
+   "Oxford",
+   "Vale of White Horse"
+  ],
+  "outcode": "OX1",
+  "outcodes": [
+   "OX1",
+   "OX2",
+   "OX3",
+   "OX4"
+  ],
+  "wards": [
+   "Botley & Sunningwell",
+   "Carfax & Jericho",
+   "Cumnor",
+   "Hinksey Park",
+   "Holywell",
+   "Kennington & Radley",
+   "Osney & St Thomas",
+   "Walton Manor",
+   "Wootton",
+   "Cutteslowe & Sunnymead",
+   "Forest Hill & Holton",
+   "Kidlington East",
+   "Marston",
+   "Summertown",
+   "Wolvercote",
+   "Barton & Sandhills",
+   "Churchill",
+   "Headington"
+  ]
+ },
+ "brighton-and-hove": {
+  "query": "Brighton",
+  "name": "Brighton",
+  "type": "Other Settlement",
+  "lat": 50.82237,
+  "lon": -0.13768,
+  "county": "The City of Brighton and Hove",
+  "district": [
+   "Brighton and Hove",
+   "Lewes",
+   "Mid Sussex"
+  ],
+  "outcode": "BN1",
+  "outcodes": [
+   "BN1",
+   "BN2",
+   "BN3",
+   "BN50",
+   "BN52",
+   "BN88"
+  ],
+  "wards": [
+   "West Hill & North Laine",
+   "Preston Park",
+   "Queen's Park",
+   "Brunswick & Adelaide",
+   "Coldean & Stanmer",
+   "Ditchling & Westmeston",
+   "Downland Villages",
+   "Goldsmid",
+   "Hangleton & Knoll",
+   "Hollingdean & Fiveways",
+   "Kemptown",
+   "Kingston",
+   "Patcham & Hollingbury",
+   "Regency",
+   "Round Hill",
+   "Westdene & Hove Park",
+   "East Saltdean & Telscombe Cliffs",
+   "Hanover & Elm Grove"
+  ]
+ },
+ "portsmouth": {
+  "query": "Portsmouth",
+  "name": "Portsmouth",
+  "type": "City",
+  "lat": 50.79685,
+  "lon": -1.09117,
+  "county": "City of Portsmouth",
+  "district": [
+   "Portsmouth"
+  ],
+  "outcode": "PO1",
+  "outcodes": [
+   "PO1",
+   "PO2",
+   "PO3",
+   "PO4",
+   "PO5"
+  ],
+  "wards": [
+   "Charles Dickens",
+   "Fratton",
+   "Nelson",
+   "St Thomas",
+   "Central Southsea",
+   "Eastney and Craneswater",
+   "St Jude",
+   "Baffins",
+   "Milton",
+   "Copnor",
+   "Hilsea"
+  ]
+ },
+ "ashford": {
+  "query": "Ashford",
+  "name": "Ashford",
+  "type": "Town",
+  "lat": 51.43287,
+  "lon": -0.46206,
+  "county": "Surrey",
+  "district": [
+   "Hounslow",
+   "Spelthorne"
+  ],
+  "outcode": "TW15",
+  "outcodes": [
+   "TW6",
+   "TW13",
+   "TW14",
+   "TW15",
+   "TW16",
+   "TW17",
+   "TW18",
+   "TW19"
+  ],
+  "wards": [
+   "Ashford Common",
+   "Ashford East",
+   "Ashford North and Stanwell South",
+   "Ashford Town",
+   "Feltham West",
+   "Laleham and Shepperton Green",
+   "Staines South",
+   "Datchet, Horton & Wraysbury",
+   "Egham Hythe",
+   "Riverside and Laleham",
+   "Staines",
+   "Thorpe",
+   "Bedfont",
+   "Heathrow Villages",
+   "Stanwell North",
+   "Cranford",
+   "Feltham North",
+   "Hanworth Park"
+  ]
+ },
+ "canterbury": {
+  "query": "Canterbury",
+  "name": "Canterbury",
+  "type": "City",
+  "lat": 51.27968,
+  "lon": 1.07888,
+  "county": "Kent",
+  "district": [
+   "Canterbury"
+  ],
+  "outcode": "CT1",
+  "outcodes": [
+   "CT1",
+   "CT2"
+  ],
+  "wards": [
+   "Barton",
+   "Chartham & Stone Street",
+   "Northgate",
+   "Westgate",
+   "Wincheap",
+   "Blean Forest",
+   "Boughton and Courtenay",
+   "St Stephen's",
+   "Sturry"
+  ]
+ },
+ "maidstone": {
+  "query": "Maidstone",
+  "name": "Maidstone",
+  "type": "Town",
+  "lat": 51.27297,
+  "lon": 0.52063,
+  "county": "Kent",
+  "district": [
+   "Maidstone"
+  ],
+  "outcode": "ME14",
+  "outcodes": [
+   "ME14",
+   "ME15",
+   "ME16"
+  ],
+  "wards": [
+   "Bearsted & Downswood",
+   "Boxley Downs",
+   "Grove Green & Vinters Park",
+   "Harrietsham, Lenham & North Downs",
+   "High Street",
+   "Park Wood & Mangravet",
+   "Penenden Heath",
+   "Ringlestone",
+   "Allington & Bridge",
+   "Aylesford South & Ditton",
+   "Barming Heath & Teston",
+   "Fant & Oakwood",
+   "Palace Wood",
+   "Boughton Monchelsea & Chart Sutton",
+   "Coxheath & Farleigh",
+   "Leeds & Langley",
+   "Loose & Linton",
+   "Marden & Yalding"
+  ]
+ },
+ "basingstoke": {
+  "query": "Basingstoke",
+  "name": "Basingstoke",
+  "type": "Town",
+  "lat": 51.26775,
+  "lon": -1.08834,
+  "county": "Hampshire",
+  "district": [
+   "Basingstoke and Deane"
+  ],
+  "outcode": "RG21",
+  "outcodes": [
+   "RG21",
+   "RG22",
+   "RG23",
+   "RG24"
+  ],
+  "wards": [
+   "Brookvale & Kings Furlong",
+   "Eastrop & Grove",
+   "Norden",
+   "Sherborne St John & Rooksdown",
+   "Basing & Upton Grey",
+   "Bramley",
+   "Chineham",
+   "Popley",
+   "Brighton Hill",
+   "Hatch Warren & Beggarwood",
+   "Kempshott & Buckskin",
+   "South Ham",
+   "Winklebury & Manydown",
+   "Oakley & The Candovers"
+  ]
+ },
+ "bicester": {
+  "query": "Bicester",
+  "name": "Bicester",
+  "type": "Town",
+  "lat": 51.89665,
+  "lon": -1.15188,
+  "county": "Oxfordshire",
+  "district": [
+   "Cherwell"
+  ],
+  "outcode": "OX26",
+  "outcodes": [
+   "OX25",
+   "OX26",
+   "OX27"
+  ],
+  "wards": [
+   "Bicester East",
+   "Bicester North and Caversfield",
+   "Bicester South and Ambrosden",
+   "Bicester West",
+   "Fringford and Heyfords",
+   "Launton and Otmoor",
+   "Deddington",
+   "Stonesfield and Tackley",
+   "The Bartons",
+   "Grendon Underwood & The Claydons",
+   "Middleton Cheney"
+  ]
+ },
+ "aylesbury": {
+  "query": "Aylesbury",
+  "name": "Aylesbury",
+  "type": "Town",
+  "lat": 51.81711,
+  "lon": -0.81066,
+  "county": "Buckinghamshire",
+  "district": [
+   "Buckinghamshire"
+  ],
+  "outcode": "HP20",
+  "outcodes": [
+   "HP19",
+   "HP20",
+   "HP21",
+   "HP22"
+  ],
+  "wards": [
+   "Aylesbury East",
+   "Aylesbury North",
+   "Aylesbury North West",
+   "Aylesbury South East",
+   "Bierton, Kingsbrook & Wing",
+   "Aylesbury South West",
+   "Aylesbury West",
+   "Berryfields, Buckingham Park & Watermead",
+   "Aston Clinton & Weston Turville",
+   "Chesham North",
+   "Newton Longville",
+   "Quainton",
+   "Ridgeway East",
+   "Waddesdon",
+   "Wendover, Halton & Stoke Mandeville"
+  ]
+ },
+ "crawley": {
+  "query": "Crawley",
+  "name": "Crawley",
+  "type": "Town",
+  "lat": 51.11448,
+  "lon": -0.18823,
+  "county": "West Sussex",
+  "district": [
+   "Crawley",
+   "Mid Sussex",
+   "Tandridge"
+  ],
+  "outcode": "RH10",
+  "outcodes": [
+   "RH10",
+   "RH11",
+   "RH77"
+  ],
+  "wards": [
+   "Bewbush & North Broadfield",
+   "Broadfield",
+   "Colgate & Rusper",
+   "Gossops Green & North East Broadfield",
+   "Handcross & Pease Pottage",
+   "Ifield",
+   "Langley Green & Tushmore",
+   "Northgate & West Green",
+   "Southgate",
+   "Three Bridges",
+   "Tilgate",
+   "Ardingly, Balcombe & Turners Hill",
+   "Burstow, Horne & Outwood",
+   "Copthorne & Worth",
+   "Crawley Down",
+   "Dormansland & Felbridge",
+   "Furnace Green",
+   "Lindfield Rural & High Weald"
+  ]
+ },
+ "dartford-and-ebbsfleet": {
+  "query": "Dartford",
+  "name": "Dartford",
+  "type": "Town",
+  "lat": 51.4561,
+  "lon": 0.24675,
+  "county": "Kent",
+  "district": [
+   "Dartford",
+   "Sevenoaks"
+  ],
+  "outcode": "DA2",
+  "outcodes": [
+   "DA1",
+   "DA2",
+   "DA9",
+   "DA10"
+  ],
+  "wards": [
+   "Greenhithe & Knockhall",
+   "Stone Castle",
+   "West Hill",
+   "Barnehurst",
+   "Brent",
+   "Bridge",
+   "Burnham",
+   "Crayford",
+   "Heath",
+   "Newtown",
+   "Princes",
+   "Temple Hill",
+   "Town",
+   "Wilmington, Sutton-at-Hone & Hawley",
+   "Bean & Village Park",
+   "Darenth",
+   "Hextable",
+   "Joyden's Wood"
+  ]
+ },
+ "chichester": {
+  "query": "Chichester",
+  "name": "Chichester",
+  "type": "City",
+  "lat": 50.8365,
+  "lon": -0.77902,
+  "county": "West Sussex",
+  "district": [
+   "Chichester"
+  ],
+  "outcode": "PO19",
+  "outcodes": [
+   "PO18",
+   "PO19"
+  ],
+  "wards": [
+   "Chichester Central",
+   "Chichester East",
+   "Chichester North",
+   "Chichester South",
+   "Chichester West",
+   "Goodwood",
+   "Harbour Villages",
+   "Lavant",
+   "North Mundham & Tangmere",
+   "Arundel & Walberton",
+   "Harting",
+   "Midhurst",
+   "Southbourne",
+   "Westbourne"
+  ]
+ },
+ "slough": {
+  "query": "Slough",
+  "name": "Slough",
+  "type": "Town",
+  "lat": 51.50886,
+  "lon": -0.59296,
+  "county": "Slough",
+  "district": [
+   "Buckinghamshire",
+   "Slough"
+  ],
+  "outcode": "SL1",
+  "outcodes": [
+   "SL1",
+   "SL2",
+   "SL3",
+   "SL4",
+   "SL95"
+  ],
+  "wards": [
+   "Baylis & Salt Hill",
+   "Burnham",
+   "Chalvey",
+   "Cippenham Green",
+   "Cippenham Manor",
+   "Cippenham Village",
+   "Elliman",
+   "Farnham",
+   "Flackwell Heath & The Wooburns",
+   "Haymill",
+   "Herschel Park",
+   "Langley St Mary's",
+   "Manor Park & Stoke",
+   "Northborough & Lynch Hill Valley",
+   "Slough Central",
+   "Upton",
+   "Upton Lea",
+   "Colnbrook & Poyle"
+  ]
+ },
+ "winchester": {
+  "query": "Winchester",
+  "name": "Winchester",
+  "type": "City",
+  "lat": 51.06176,
+  "lon": -1.311,
+  "county": "Hampshire",
+  "district": [
+   "Winchester"
+  ],
+  "outcode": "SO23",
+  "outcodes": [
+   "SO21",
+   "SO22",
+   "SO23",
+   "SO25"
+  ],
+  "wards": [
+   "Alresford and Itchen Valley",
+   "Badger Farm and Oliver's Battery",
+   "St Bartholomew",
+   "St Michael",
+   "St Paul",
+   "The Worthys",
+   "Ampfield & Braishfield",
+   "Colden Common and Twyford",
+   "Eastleigh North",
+   "Harewood",
+   "Oakley & The Candovers",
+   "Upper Meon Valley",
+   "Whitchurch, Overton & Laverstoke",
+   "Wonston and Micheldever",
+   "St Barnabas",
+   "St Luke"
+  ]
+ },
+ "guildford": {
+  "query": "Guildford",
+  "name": "Guildford",
+  "type": "Town",
+  "lat": 51.23945,
+  "lon": -0.57591,
+  "county": "Surrey",
+  "district": [
+   "Guildford"
+  ],
+  "outcode": "GU1",
+  "outcodes": [
+   "GU1",
+   "GU2",
+   "GU3",
+   "GU4"
+  ],
+  "wards": [
+   "Bellfields & Slyfield",
+   "Burpham",
+   "Castle",
+   "Merrow",
+   "St Nicolas",
+   "Stoke",
+   "Worplesdon",
+   "Onslow",
+   "Shalford",
+   "Stoughton North",
+   "Stoughton South",
+   "Westborough",
+   "Bramley & Wonersh",
+   "Clandon & Horsley",
+   "Heathlands",
+   "Tillingbourne",
+   "Normandy & Pirbright",
+   "Pilgrims"
+  ]
+ },
+ "woking": {
+  "query": "Woking",
+  "name": "Woking",
+  "type": "Town",
+  "lat": 51.31835,
+  "lon": -0.55813,
+  "county": "Surrey",
+  "district": [
+   "Surrey Heath",
+   "Woking"
+  ],
+  "outcode": "GU21",
+  "outcodes": [
+   "GU21",
+   "GU22",
+   "GU23"
+  ],
+  "wards": [
+   "Canalside",
+   "Heathlands",
+   "Hoe Valley",
+   "Mount Hermon",
+   "Pyrford",
+   "Bisley & West End",
+   "Goldsworth Park",
+   "Horsell",
+   "Knaphill",
+   "St John's",
+   "Clandon & Horsley",
+   "Send & Lovelace"
+  ]
+ },
+ "bracknell": {
+  "query": "Bracknell",
+  "name": "Bracknell",
+  "type": "Town",
+  "lat": 51.41685,
+  "lon": -0.7516,
+  "county": "Bracknell Forest",
+  "district": [
+   "Bracknell Forest"
+  ],
+  "outcode": "RG12",
+  "outcodes": [
+   "RG12",
+   "RG42"
+  ],
+  "wards": [
+   "Binfield North & Warfield West",
+   "Binfield South & Jennett's Park",
+   "Bullbrook",
+   "Crowthorne",
+   "Easthampstead & Wildridings",
+   "Great Hollands",
+   "Hanworth",
+   "Harmans Water & Crown Wood",
+   "Priestwood & Garth",
+   "Swinley Forest",
+   "Town Centre & The Parks",
+   "Whitegrove",
+   "Winkfield & Warfield East",
+   "Bray",
+   "Hurley & Walthams",
+   "Twyford, Ruscombe & Hurst"
+  ]
+ },
+ "wokingham": {
+  "query": "Wokingham",
+  "name": "Wokingham",
+  "type": "Town",
+  "lat": 51.41027,
+  "lon": -0.83293,
+  "county": "Wokingham",
+  "district": [
+   "Bracknell Forest",
+   "Windsor and Maidenhead",
+   "Wokingham"
+  ],
+  "outcode": "RG40",
+  "outcodes": [
+   "RG40",
+   "RG41",
+   "RG45"
+  ],
+  "wards": [
+   "Barkham & Arborfield",
+   "Binfield South & Jennett's Park",
+   "Crowthorne",
+   "Emmbrook",
+   "Evendons",
+   "Finchampstead",
+   "Great Hollands",
+   "Hurley & Walthams",
+   "Norreys",
+   "Twyford, Ruscombe & Hurst",
+   "Wescott",
+   "Wokingham Without",
+   "Hawkedon",
+   "Winnersh",
+   "Priestwood & Garth",
+   "Sandhurst"
+  ]
+ },
+ "high-wycombe": {
+  "query": "High Wycombe",
+  "name": "High Wycombe",
+  "type": "Town",
+  "lat": 51.62876,
+  "lon": -0.74946,
+  "county": "Buckinghamshire",
+  "district": [
+   "Buckinghamshire"
+  ],
+  "outcode": "HP11",
+  "outcodes": [
+   "HP10",
+   "HP11",
+   "HP12",
+   "HP13",
+   "HP15"
+  ],
+  "wards": [
+   "Abbey",
+   "Booker & Cressex",
+   "Castlefield & Oakridge",
+   "Marsh & Micklefield",
+   "Penn, Tylers Green & Loudwater",
+   "Disraeli",
+   "Downley",
+   "Hazlemere",
+   "Ridgeway East",
+   "Terriers & Amersham Hill",
+   "Totteridge & Bowerdean",
+   "Sands",
+   "West Wycombe & Lane End",
+   "Beaconsfield",
+   "Burnham",
+   "Chiltern Villages",
+   "Flackwell Heath & The Wooburns",
+   "The Missendens"
+  ]
+ },
+ "eastbourne": {
+  "query": "Eastbourne",
+  "name": "Eastbourne",
+  "type": "Town",
+  "lat": 50.76644,
+  "lon": 0.27813,
+  "county": "East Sussex",
+  "district": [
+   "Eastbourne"
+  ],
+  "outcode": "BN21",
+  "outcodes": [
+   "BN20",
+   "BN21",
+   "BN22",
+   "BN23"
+  ],
+  "wards": [
+   "Devonshire",
+   "Meads",
+   "Old Town",
+   "Ratton",
+   "Upperton",
+   "Lower Willingdon",
+   "South Downs",
+   "Upper Willingdon",
+   "Hampden Park",
+   "St Anthony's",
+   "Herstmonceux & Pevensey Levels",
+   "Langney",
+   "Sovereign",
+   "Stone Cross"
+  ]
+ },
+ "worthing": {
+  "query": "Worthing",
+  "name": "Worthing",
+  "type": "Town",
+  "lat": 50.81426,
+  "lon": -0.37122,
+  "county": "West Sussex",
+  "district": [
+   "Worthing"
+  ],
+  "outcode": "BN11",
+  "outcodes": [
+   "BN11",
+   "BN12",
+   "BN13",
+   "BN14",
+   "BN99"
+  ],
+  "wards": [
+   "Central",
+   "Heene",
+   "Marine",
+   "Selden",
+   "Castle",
+   "Churchill",
+   "Goring",
+   "Northbrook",
+   "Angmering & Findon",
+   "Broadwater",
+   "Gaisford",
+   "Offington",
+   "Peverel",
+   "Salvington",
+   "Tarring",
+   "Durrington",
+   "Ferring"
+  ]
+ },
+ "hastings": {
+  "query": "Hastings",
+  "name": "Hastings",
+  "type": "Town",
+  "lat": 50.85633,
+  "lon": 0.58122,
+  "county": "East Sussex",
+  "district": [
+   "Hastings",
+   "Rother"
+  ],
+  "outcode": "TN34",
+  "outcodes": [
+   "TN34",
+   "TN35",
+   "TN37",
+   "TN38"
+  ],
+  "wards": [
+   "Baird",
+   "Braybrooke",
+   "Castle",
+   "Central St Leonards",
+   "Conquest",
+   "Gensing",
+   "Old Hastings",
+   "Ore",
+   "Sedlescombe & Westfield",
+   "Silverhill",
+   "St Helens",
+   "Tressell",
+   "Ashdown",
+   "Hollington",
+   "Wishing Tree",
+   "Bexhill Pebsham & St Michaels",
+   "Catsfield & Crowhurst",
+   "Maze Hill"
+  ]
+ },
+ "chatham-and-gillingham": {
+  "query": "Chatham",
+  "name": "Chatham",
+  "type": "Town",
+  "lat": 51.38491,
+  "lon": 0.52552,
+  "county": "Medway",
+  "district": [
+   "Medway"
+  ],
+  "outcode": "ME4",
+  "outcodes": [
+   "ME1",
+   "ME2",
+   "ME4",
+   "ME5",
+   "ME7"
+  ],
+  "wards": [
+   "Chatham Central & Brompton",
+   "Fort Horsted",
+   "Fort Pitt",
+   "Gillingham North",
+   "Luton",
+   "St Mary's Island",
+   "Boxley Downs",
+   "Gillingham South",
+   "Hempstead & Wigmore",
+   "Lordswood & Walderslade",
+   "Rainham North",
+   "Watling",
+   "Aylesford North & North Downs",
+   "Rochester East & Warren Wood",
+   "Rochester West & Borstal",
+   "Cuxton, Halling & Riverside",
+   "Higham & Shorne",
+   "Istead Rise, Cobham & Luddesdown"
+  ]
+ },
+ "tunbridge-wells": {
+  "query": "Tunbridge Wells",
+  "name": "Royal Tunbridge Wells",
+  "type": "Town",
+  "lat": 51.13333,
+  "lon": 0.26353,
+  "county": "Kent",
+  "district": [
+   "Tonbridge and Malling",
+   "Tunbridge Wells"
+  ],
+  "outcode": "TN1",
+  "outcodes": [
+   "TN1",
+   "TN2",
+   "TN3",
+   "TN4"
+  ],
+  "wards": [
+   "Cage Green & Angel",
+   "Culverden",
+   "Pantiles",
+   "Park",
+   "St James'",
+   "St John's",
+   "Frant & Wadhurst",
+   "High Brooms",
+   "Pembury & Capel",
+   "Sherwood",
+   "Uckfield New Town",
+   "Rusthall & Speldhurst",
+   "Southborough & Bidborough",
+   "Vauxhall",
+   "Hadlow Down & Rotherfield",
+   "Hartfield",
+   "Leigh and Chiddingstone Causeway",
+   "Penshurst, Fordcombe and Chiddingstone"
+  ]
+ },
+ "gravesend": {
+  "query": "Gravesend",
+  "name": "Gravesend",
+  "type": "Town",
+  "lat": 51.44251,
+  "lon": 0.36937,
+  "county": "Kent",
+  "district": [
+   "Dartford",
+   "Gravesham"
+  ],
+  "outcode": "DA11",
+  "outcodes": [
+   "DA10",
+   "DA11",
+   "DA12"
+  ],
+  "wards": [
+   "Coldharbour & Perry Street",
+   "Ebbsfleet",
+   "Greenhithe & Knockhall",
+   "Northfleet & Springhead",
+   "Painters Ash",
+   "Pelham",
+   "Rosherville",
+   "Town",
+   "Woodlands",
+   "Chalk",
+   "Denton",
+   "Higham & Shorne",
+   "Istead Rise, Cobham & Luddesdown",
+   "Riverview Park",
+   "Singlewell",
+   "Westcourt",
+   "Whitehill & Windmill Hill",
+   "Swanscombe"
+  ]
+ },
+ "folkestone": {
+  "query": "Folkestone",
+  "name": "Folkestone",
+  "type": "Town",
+  "lat": 51.08172,
+  "lon": 1.18028,
+  "county": "Kent",
+  "district": [
+   "Folkestone and Hythe"
+  ],
+  "outcode": "CT20",
+  "outcodes": [
+   "CT18",
+   "CT19",
+   "CT20",
+   "CT50"
+  ],
+  "wards": [
+   "Broadmead",
+   "Cheriton",
+   "East Folkestone",
+   "Folkestone Central",
+   "Folkestone Harbour",
+   "Hythe",
+   "Sandgate & West Folkestone",
+   "Alkham & Capel-le-Ferne",
+   "North Downs East",
+   "North Downs West"
+  ]
+ },
+ "margate": {
+  "query": "Margate",
+  "name": "Margate",
+  "type": "Town",
+  "lat": 51.38744,
+  "lon": 1.38076,
+  "county": "Kent",
+  "district": [
+   "Thanet"
+  ],
+  "outcode": "CT9",
+  "outcodes": [
+   "CT8",
+   "CT9",
+   "CT10",
+   "CT12"
+  ],
+  "wards": [
+   "Cliftonville East",
+   "Cliftonville West",
+   "Dane Valley",
+   "Garlinge",
+   "Margate Central",
+   "Salmestone",
+   "St Peters",
+   "Thanet Villages",
+   "Westbrook",
+   "Westgate-on-Sea",
+   "Beacon Road",
+   "Bradstowe",
+   "Kingsgate",
+   "Northwood",
+   "Viking",
+   "Birchington South",
+   "Central Harbour",
+   "Cliffsend and Pegwell"
+  ]
+ },
+ "bognor-regis": {
+  "query": "Bognor Regis",
+  "name": "Bognor Regis",
+  "type": "Town",
+  "lat": 50.7844,
+  "lon": -0.67069,
+  "county": "West Sussex",
+  "district": [
+   "Arun"
+  ],
+  "outcode": "PO21",
+  "outcodes": [
+   "PO21",
+   "PO22"
+  ],
+  "wards": [
+   "Aldwick East",
+   "Aldwick West",
+   "Bersted",
+   "Felpham West",
+   "Hotham",
+   "Marine",
+   "Orchard",
+   "Pagham",
+   "Pevensey",
+   "Arundel & Walberton",
+   "Barnham",
+   "Felpham East",
+   "Middleton-on-Sea",
+   "Yapton"
+  ]
+ },
+ "horsham": {
+  "query": "Horsham",
+  "name": "Horsham",
+  "type": "Town",
+  "lat": 51.0621,
+  "lon": -0.3281,
+  "county": "West Sussex",
+  "district": [
+   "Horsham",
+   "Mole Valley",
+   "Waverley"
+  ],
+  "outcode": "RH12",
+  "outcodes": [
+   "RH12",
+   "RH13"
+  ],
+  "wards": [
+   "Alfold, Dunsfold & Hascombe",
+   "Broadbridge Heath",
+   "Capel, Leigh, Newdigate & Charlwood",
+   "Colgate & Rusper",
+   "Cranleigh West",
+   "Denne",
+   "Ewhurst & Ellens Green",
+   "Holbrook East",
+   "Holbrook West",
+   "Itchingfield, Slinfold & Warnham",
+   "Roffey North",
+   "Roffey South",
+   "Rudgwick",
+   "Southwater North",
+   "Trafalgar",
+   "Billingshurst",
+   "Cowfold, Shermanbury & West Grinstead",
+   "Cuckfield, Bolney & Ansty"
+  ]
+ },
+ "newbury": {
+  "query": "Newbury",
+  "name": "Newbury",
+  "type": "Town",
+  "lat": 51.40027,
+  "lon": -1.32305,
+  "county": "West Berkshire",
+  "district": [
+   "West Berkshire"
+  ],
+  "outcode": "RG14",
+  "outcodes": [
+   "RG14",
+   "RG20"
+  ],
+  "wards": [
+   "Chieveley & Cold Ash",
+   "Hungerford & Kintbury",
+   "Newbury Central",
+   "Newbury Clay Hill",
+   "Newbury Greenham",
+   "Newbury Speen",
+   "Newbury Wash Common",
+   "Downlands",
+   "Evingar",
+   "Ridgeway",
+   "Tadley North, Kingsclere & Baughurst"
+  ]
+ },
+ "maidenhead": {
+  "query": "Maidenhead",
+  "name": "Maidenhead",
+  "type": "Town",
+  "lat": 51.52275,
+  "lon": -0.72021,
+  "county": "Windsor and Maidenhead",
+  "district": [
+   "Buckinghamshire",
+   "Slough",
+   "Windsor and Maidenhead"
+  ],
+  "outcode": "SL6",
+  "outcodes": [
+   "SL6",
+   "SL60"
+  ],
+  "wards": [
+   "Oldfield",
+   "Belmont",
+   "Bisham & Cookham",
+   "Boyn Hill",
+   "Bray",
+   "Burnham",
+   "Cox Green",
+   "Flackwell Heath & The Wooburns",
+   "Furze Platt",
+   "Haymill",
+   "Hurley & Walthams",
+   "Pinkneys Green",
+   "Riverside",
+   "St Mary's"
+  ]
+ },
+ "banbury": {
+  "query": "Banbury",
+  "name": "Banbury",
+  "type": "Town",
+  "lat": 52.06213,
+  "lon": -1.3336,
+  "county": "Oxfordshire",
+  "district": [
+   "Cherwell"
+  ],
+  "outcode": "OX16",
+  "outcodes": [
+   "OX16",
+   "OX17"
+  ],
+  "wards": [
+   "Adderbury, Bloxham and Bodicote",
+   "Banbury Calthorpe and Easington",
+   "Banbury Cross and Neithrop",
+   "Banbury Grimsbury and Hightown",
+   "Banbury Hardwick",
+   "Banbury Ruscote",
+   "Cropredy, Sibfords and Wroxton",
+   "Bishop's Itchington, Fenny Compton & Napton",
+   "Deddington",
+   "Middleton Cheney",
+   "Rural South Northamptonshire",
+   "Tysoe"
+  ]
+ },
+ "eastleigh": {
+  "query": "Eastleigh",
+  "name": "Eastleigh",
+  "type": "Town",
+  "lat": 50.96938,
+  "lon": -1.35333,
+  "county": "Hampshire",
+  "district": [
+   "Eastleigh",
+   "Test Valley",
+   "Winchester"
+  ],
+  "outcode": "SO50",
+  "outcodes": [
+   "SO50",
+   "SO53",
+   "SO97"
+  ],
+  "wards": [
+   "Badger Farm and Oliver's Battery",
+   "Bishopstoke",
+   "Chilworth, Nursling & Rownhams",
+   "Colden Common and Twyford",
+   "Eastleigh Central",
+   "Eastleigh North",
+   "Eastleigh South",
+   "Fair Oak & Horton Heath",
+   "West End North",
+   "Ampfield & Braishfield",
+   "Chandler's Ford",
+   "Hiltingbury",
+   "North Baddesley",
+   "Valley Park"
+  ]
+ },
+ "didcot": {
+  "query": "Didcot",
+  "name": "Didcot",
+  "type": "Town",
+  "lat": 51.60638,
+  "lon": -1.24264,
+  "county": "Oxfordshire",
+  "district": [
+   "South Oxfordshire",
+   "Vale of White Horse"
+  ],
+  "outcode": "OX11",
+  "outcodes": [
+   "OX11"
+  ],
+  "wards": [
+   "Blewbury & Harwell",
+   "Cholsey",
+   "Didcot North East",
+   "Didcot South",
+   "Didcot West",
+   "Hendreds",
+   "Sandford & the Wittenhams",
+   "Sutton Courtenay"
+  ]
+ },
+ "fareham": {
+  "query": "Fareham",
+  "name": "Fareham",
+  "type": "Town",
+  "lat": 50.85235,
+  "lon": -1.17591,
+  "county": "Hampshire",
+  "district": [
+   "Fareham"
+  ],
+  "outcode": "PO16",
+  "outcodes": [
+   "PO13",
+   "PO14",
+   "PO15",
+   "PO16",
+   "PO17"
+  ],
+  "wards": [
+   "Fareham Town",
+   "Fort Fareham",
+   "Portchester Castle",
+   "Portchester Wicor",
+   "Uplands & Funtley",
+   "Wallington & Downend",
+   "Avenue",
+   "Hill Head",
+   "Hook-with-Warsash",
+   "Stubbington",
+   "Titchfield",
+   "Titchfield Common",
+   "Central Meon Valley",
+   "Paulsgrove",
+   "Southwick and Wickham",
+   "Whiteley and Shedfield",
+   "Fareham Park",
+   "Park Gate"
+  ]
+ },
+ "farnborough": {
+  "query": "Farnborough",
+  "name": "Farnborough",
+  "type": "Town",
+  "lat": 51.29041,
+  "lon": -0.75475,
+  "county": "Hampshire",
+  "district": [
+   "Guildford",
+   "Hart",
+   "Rushmoor"
+  ],
+  "outcode": "GU14",
+  "outcodes": [
+   "GU11",
+   "GU12",
+   "GU14",
+   "GU16",
+   "GU17"
+  ],
+  "wards": [
+   "Ash Vale",
+   "Blackwater and Hawley",
+   "Cherrywood",
+   "Cove and Southwood",
+   "Empress",
+   "Fernhill",
+   "Fleet East",
+   "Knellwood",
+   "St John's",
+   "St Mark's",
+   "West Heath",
+   "Bisley & West End",
+   "Frimley",
+   "Frimley Green",
+   "Heatherside",
+   "Mytchett & Deepcut",
+   "Normandy & Pirbright",
+   "Parkside"
+  ]
+ },
+ "andover": {
+  "query": "Andover",
+  "name": "Andover",
+  "type": "Town",
+  "lat": 51.2075,
+  "lon": -1.47919,
+  "county": "Hampshire",
+  "district": [
+   "Test Valley"
+  ],
+  "outcode": "SP10",
+  "outcodes": [
+   "SP10",
+   "SP11"
+  ],
+  "wards": [
+   "Andover Downlands",
+   "Andover Harroway",
+   "Andover Millway",
+   "Andover Romans",
+   "Andover St Mary's",
+   "Andover Winton",
+   "Anna",
+   "Bourne Valley",
+   "Charlton & the Pentons",
+   "Bellinger",
+   "Evingar",
+   "Harewood",
+   "Ludgershall North & Rural",
+   "Pewsey Vale East",
+   "Tidworth East & Ludgershall South",
+   "Tidworth North & West"
+  ]
+ },
+ "epsom": {
+  "query": "Epsom",
+  "name": "Epsom",
+  "type": "Town",
+  "lat": 51.33317,
+  "lon": -0.26699,
+  "county": "Surrey",
+  "district": [
+   "Epsom and Ewell",
+   "Kingston upon Thames"
+  ],
+  "outcode": "KT19",
+  "outcodes": [
+   "KT9",
+   "KT17",
+   "KT18",
+   "KT19"
+  ],
+  "wards": [
+   "Cheam",
+   "College",
+   "Ewell Village",
+   "Nonsuch",
+   "Nork",
+   "Stoneleigh",
+   "Town",
+   "Worcester Park South",
+   "Ashtead Park",
+   "Brockham, Betchworth, Buckland, Box Hill & Headley",
+   "Chessington South & Malden Rushett",
+   "Lower Kingswood, Tadworth & Walton",
+   "Stamford",
+   "Tattenham Corner & Preston",
+   "Woodcote & Langley Vale",
+   "Auriol",
+   "Court",
+   "Cuddington"
+  ]
+ },
+ "newport": {
+  "query": "Newport",
+  "name": "Newport",
+  "type": "Town",
+  "lat": 50.70023,
+  "lon": -1.29367,
+  "county": "Isle of Wight",
+  "district": [
+   "Isle of Wight"
+  ],
+  "outcode": "PO30",
+  "outcodes": [
+   "PO30"
+  ],
+  "wards": [
+   "Brighstone, Calbourne & Shalfleet",
+   "Carisbrooke & Gunville",
+   "Central Rural",
+   "Chale, Niton & Shorwell",
+   "Cowes South & Northwood",
+   "Fairlee & Whippingham",
+   "Freshwater North & Yarmouth",
+   "Freshwater South",
+   "Mountjoy & Shide",
+   "Newchurch, Havenstreet & Ashey",
+   "Newport Central",
+   "Newport West",
+   "Pan & Barton",
+   "Parkhurst & Hunnyhill"
+  ]
+ },
+ "cambridge": {
+  "query": "Cambridge",
+  "name": "Cambridge",
+  "type": "City",
+  "lat": 52.20486,
+  "lon": 0.11968,
+  "county": "Cambridgeshire",
+  "district": [
+   "Cambridge",
+   "South Cambridgeshire"
+  ],
+  "outcode": "CB2",
+  "outcodes": [
+   "CB1",
+   "CB2",
+   "CB3",
+   "CB4",
+   "CB5"
+  ],
+  "wards": [
+   "Castle",
+   "Girton",
+   "Harston & Comberton",
+   "Market",
+   "Newnham",
+   "West Chesterton",
+   "Abbey",
+   "Cambourne",
+   "Cherry Hinton",
+   "Coleridge",
+   "Fen Ditton & Fulbourn",
+   "Petersfield",
+   "Queen Edith's",
+   "Romsey",
+   "Arbury",
+   "East Chesterton",
+   "Histon & Impington",
+   "King's Hedges"
+  ]
+ },
+ "peterborough": {
+  "query": "Peterborough",
+  "name": "Peterborough",
+  "type": "City",
+  "lat": 52.57251,
+  "lon": -0.2425,
+  "county": "City of Peterborough",
+  "district": [
+   "Peterborough"
+  ],
+  "outcode": "PE1",
+  "outcodes": [
+   "PE1",
+   "PE2",
+   "PE3",
+   "PE4",
+   "PE7"
+  ],
+  "wards": [
+   "Central",
+   "Dogsthorpe",
+   "East",
+   "Eye, Thorney and Newborough",
+   "Fletton and Stanground",
+   "North",
+   "Park",
+   "Werrington",
+   "Fletton and Woodston",
+   "Hargate and Hempsted",
+   "Orton Longueville",
+   "Orton Waterville",
+   "Stanground South",
+   "Stilton, Folksworth & Washingley",
+   "Bretton",
+   "Glinton and Castor",
+   "Ravensthorpe",
+   "West"
+  ]
+ },
+ "chelmsford": {
+  "query": "Chelmsford",
+  "name": "Chelmsford",
+  "type": "City",
+  "lat": 51.73705,
+  "lon": 0.47361,
+  "county": "Essex",
+  "district": [
+   "Chelmsford",
+   "Uttlesford"
+  ],
+  "outcode": "CM1",
+  "outcodes": [
+   "CM1",
+   "CM2",
+   "CM98",
+   "CM99"
+  ],
+  "wards": [
+   "Bicknacre and East and West Hanningfield",
+   "Boreham and The Leighs",
+   "Broomfield and The Walthams",
+   "Chelmer Village and Beaulieu Park",
+   "Chelmsford Rural West",
+   "High Easter & the Rodings",
+   "Marconi",
+   "Moulsham and Central",
+   "Patching Hall",
+   "Springfield North",
+   "St Andrews",
+   "The Lawns",
+   "Trinity",
+   "Waterhouse Farm",
+   "Writtle",
+   "Galleywood",
+   "Goat Hall",
+   "Great Baddow East"
+  ]
+ },
+ "norwich": {
+  "query": "Norwich",
+  "name": "Norwich",
+  "type": "City",
+  "lat": 52.62887,
+  "lon": 1.29331,
+  "county": "Norfolk",
+  "district": [
+   "Broadland",
+   "Norwich"
+  ],
+  "outcode": "NR2",
+  "outcodes": [
+   "NR1",
+   "NR2",
+   "NR3",
+   "NR4",
+   "NR5",
+   "NR6",
+   "NR7",
+   "NR99"
+  ],
+  "wards": [
+   "Eaton",
+   "Mancroft",
+   "Mile Cross",
+   "Nelson",
+   "Sprowston East",
+   "Thorpe Hamlet",
+   "Town Close",
+   "University",
+   "Wensum",
+   "Catton Grove",
+   "Crome",
+   "Lakenham",
+   "Poringland, Framinghams & Trowse",
+   "Sewell",
+   "Thorpe St Andrew South East",
+   "Old Catton and Sprowston West",
+   "Sprowston Central",
+   "Cringleford"
+  ]
+ },
+ "ipswich": {
+  "query": "Ipswich",
+  "name": "Ipswich",
+  "type": "Town",
+  "lat": 52.05707,
+  "lon": 1.15283,
+  "county": "Suffolk",
+  "district": [
+   "Babergh",
+   "Ipswich",
+   "Mid Suffolk"
+  ],
+  "outcode": "IP1",
+  "outcodes": [
+   "IP1",
+   "IP2",
+   "IP3",
+   "IP4"
+  ],
+  "wards": [
+   "Alexandra",
+   "Bridge",
+   "Castle Hill",
+   "Claydon & Barham",
+   "Gipping",
+   "Sproughton & Pinewood",
+   "St Margaret's",
+   "Westgate",
+   "Whitehouse",
+   "Whitton",
+   "Orwell",
+   "Sprites",
+   "Stoke Park",
+   "Bixley",
+   "Carlford & Fynn Valley",
+   "Kesgrave",
+   "Martlesham & Purdis Farm",
+   "Rushmere"
+  ]
+ },
+ "colchester": {
+  "query": "Colchester",
+  "name": "Colchester",
+  "type": "City",
+  "lat": 51.88971,
+  "lon": 0.89935,
+  "county": "Essex",
+  "district": [
+   "Colchester"
+  ],
+  "outcode": "CO1",
+  "outcodes": [
+   "CO1",
+   "CO2",
+   "CO3",
+   "CO4"
+  ],
+  "wards": [
+   "Castle",
+   "Greenstead",
+   "Mile End",
+   "New Town and Christ Church",
+   "Old Heath and The Hythe",
+   "Tiptree",
+   "Berechurch",
+   "Marks Tey and Layer",
+   "Shrub End",
+   "Stanway",
+   "Ardleigh & Little Bromley",
+   "Highwoods",
+   "Lexden and Braiswick",
+   "Rural North",
+   "St Anne's and St John's",
+   "Wivenhoe",
+   "Prettygate"
+  ]
+ },
+ "luton": {
+  "query": "Luton",
+  "name": "Luton",
+  "type": "Town",
+  "lat": 51.87954,
+  "lon": -0.41745,
+  "county": "Luton",
+  "district": [
+   "Central Bedfordshire",
+   "Dacorum",
+   "Luton"
+  ],
+  "outcode": "LU1",
+  "outcodes": [
+   "LU1",
+   "LU2",
+   "LU3",
+   "LU4"
+  ],
+  "wards": [
+   "Beech Hill",
+   "Caddington",
+   "Central",
+   "Dallow",
+   "Farley",
+   "Leagrave",
+   "South",
+   "Watling",
+   "Barnfield",
+   "Barton-le-Clay & Silsoe",
+   "Bramingham",
+   "Codicote & Kimpton",
+   "High Town",
+   "Hitchwood",
+   "Offa",
+   "Round Green",
+   "Sandridge & Wheathampstead",
+   "Stopsley"
+  ]
+ },
+ "bedford": {
+  "query": "Bedford",
+  "name": "Bedford",
+  "type": "Town",
+  "lat": 52.13684,
+  "lon": -0.46849,
+  "county": "Bedford",
+  "district": [
+   "Bedford"
+  ],
+  "outcode": "MK40",
+  "outcodes": [
+   "MK40",
+   "MK41",
+   "MK42"
+  ],
+  "wards": [
+   "Biddenham",
+   "Castle & Newnham",
+   "De Parys",
+   "Great Denham",
+   "Greyfriars",
+   "Harpur",
+   "Kingsbrook",
+   "Queens Park",
+   "Brickhill",
+   "Clapham & Oakley",
+   "Goldington",
+   "Putnoe",
+   "Renhold & Ravensden",
+   "Riverfield",
+   "Cauldwell",
+   "Houghton Conquest & Haynes",
+   "Kempston Central & East",
+   "Kempston North"
+  ]
+ },
+ "southend-on-sea": {
+  "query": "Southend-on-Sea",
+  "name": "Southend-on-Sea",
+  "type": "City",
+  "lat": 51.54012,
+  "lon": 0.71137,
+  "county": "Southend-on-Sea",
+  "district": [
+   "Southend-on-Sea"
+  ],
+  "outcode": "SS1",
+  "outcodes": [
+   "SS0",
+   "SS1",
+   "SS2",
+   "SS9",
+   "SS22",
+   "SS99"
+  ],
+  "wards": [
+   "Kursaal",
+   "St Laurence",
+   "Victoria",
+   "Prittlewell",
+   "Roche South",
+   "Southchurch",
+   "St. Luke's",
+   "Milton",
+   "Thorpe",
+   "West Shoebury",
+   "Blenheim Park",
+   "Chalkwell",
+   "Westborough",
+   "Belfairs",
+   "Eastwood Park",
+   "Hadleigh St James",
+   "Leigh",
+   "Lodge"
+  ]
+ },
+ "stevenage": {
+  "query": "Stevenage",
+  "name": "Stevenage",
+  "type": "Town",
+  "lat": 51.90234,
+  "lon": -0.2008,
+  "county": "Hertfordshire",
+  "district": [
+   "North Hertfordshire",
+   "Stevenage"
+  ],
+  "outcode": "SG1",
+  "outcodes": [
+   "SG1",
+   "SG2",
+   "SG3",
+   "SG4"
+  ],
+  "wards": [
+   "Almond Hill",
+   "Bedwell",
+   "Chells",
+   "Graveley, St Ippolyts & Wymondley",
+   "Great Ashby",
+   "Manor",
+   "Martins Wood",
+   "Old Town",
+   "Roebuck",
+   "St Nicholas",
+   "Symonds Green",
+   "Woodfield",
+   "Aston, Datchworth & Walkern",
+   "Bandley Hill & Poplars",
+   "Knebworth",
+   "Longmeadow",
+   "Shephall",
+   "The Mundens"
+  ]
+ },
+ "st-albans": {
+  "query": "St Albans",
+  "name": "St Albans",
+  "type": "City",
+  "lat": 51.75231,
+  "lon": -0.33909,
+  "county": "Hertfordshire",
+  "district": [
+   "Central Bedfordshire",
+   "Dacorum",
+   "St Albans"
+  ],
+  "outcode": "AL3",
+  "outcodes": [
+   "AL1",
+   "AL2",
+   "AL3",
+   "AL4"
+  ],
+  "wards": [
+   "Bernards Heath",
+   "Clarence",
+   "Cunningham",
+   "Hill End",
+   "Marshalswick West",
+   "Sopwell",
+   "St Peters",
+   "Verulam",
+   "Aldenham West",
+   "London Colney",
+   "Park Street",
+   "Shenley",
+   "St Stephen",
+   "Codicote & Kimpton",
+   "Colney Heath",
+   "Hatfield Villages",
+   "Marshalswick East & Jersey Farm",
+   "Sandridge & Wheathampstead"
+  ]
+ },
+ "basildon": {
+  "query": "Basildon",
+  "name": "Basildon",
+  "type": "Town",
+  "lat": 51.57067,
+  "lon": 0.4524,
+  "county": "Essex",
+  "district": [
+   "Basildon"
+  ],
+  "outcode": "SS14",
+  "outcodes": [
+   "SS13",
+   "SS14",
+   "SS15",
+   "SS16"
+  ],
+  "wards": [
+   "Corringham & Fobbing",
+   "Laindon Park",
+   "Langdon Hills",
+   "Nethermayne",
+   "Orsett, Horndon & Bulphan",
+   "Pitsea South East",
+   "St Martin's",
+   "Castledon & Crouch",
+   "Fryerns",
+   "Burstead",
+   "Lee Chapel North",
+   "Pitsea North West"
+  ]
+ },
+ "watford": {
+  "query": "Watford",
+  "name": "Watford",
+  "type": "Town",
+  "lat": 51.65512,
+  "lon": -0.39576,
+  "county": "Hertfordshire",
+  "district": [
+   "Watford"
+  ],
+  "outcode": "WD17",
+  "outcodes": [
+   "WD17",
+   "WD18",
+   "WD19",
+   "WD23",
+   "WD24",
+   "WD25",
+   "WD99"
+  ],
+  "wards": [
+   "Central",
+   "Holywell",
+   "Nascot",
+   "Oxhey",
+   "Park",
+   "Dickinsons",
+   "Moor Park & Eastbury",
+   "Oxhey Hall & Hayling",
+   "Vicarage",
+   "Callowland",
+   "Leggatts",
+   "Tudor",
+   "Woodside",
+   "Bushey North",
+   "Bushey St James",
+   "Carpenders Park",
+   "South Oxhey",
+   "Bushey Heath"
+  ]
+ },
+ "harlow": {
+  "query": "Harlow",
+  "name": "Harlow",
+  "type": "Town",
+  "lat": 51.76879,
+  "lon": 0.09571,
+  "county": "Essex",
+  "district": [
+   "East Hertfordshire",
+   "Harlow"
+  ],
+  "outcode": "CM20",
+  "outcodes": [
+   "CM17",
+   "CM18",
+   "CM19",
+   "CM20",
+   "CM92"
+  ],
+  "wards": [
+   "Bush Fair",
+   "Hunsdon",
+   "Latton Bush & Stewards",
+   "Little Parndon & Town Centre",
+   "Mark Hall",
+   "Much Hadham",
+   "Netteswell",
+   "Old Harlow",
+   "Passmores",
+   "Sawbridgeworth",
+   "Epping West & Rural",
+   "Great Parndon",
+   "North Weald Bassett",
+   "Sumners & Kingsmoor",
+   "Great Amwell & Stansteads",
+   "Roydon & Lower Nazeing",
+   "Church Langley North & Newhall",
+   "Church Langley South & Potter Street"
+  ]
+ },
+ "hemel-hempstead": {
+  "query": "Hemel Hempstead",
+  "name": "Hemel Hempstead",
+  "type": "Town",
+  "lat": 51.75261,
+  "lon": -0.47232,
+  "county": "Hertfordshire",
+  "district": [
+   "Dacorum"
+  ],
+  "outcode": "HP1",
+  "outcodes": [
+   "HP1",
+   "HP2",
+   "HP3"
+  ],
+  "wards": [
+   "Adeyfield East",
+   "Ashridge",
+   "Berkhamsted East",
+   "Bovingdon, Flaunden and Chipperfield",
+   "Boxmoor",
+   "Chaulden and Warners End",
+   "Gadebridge",
+   "Grovehill",
+   "Hemel Hempstead Town",
+   "Watling",
+   "Abbots Langley & Bedmond",
+   "Apsley and Corner Hall",
+   "Bennetts End",
+   "Chorleywood North & Sarratt",
+   "Gade Valley",
+   "Kings Langley",
+   "Leverstock Green",
+   "Nash Mills"
+  ]
+ },
+ "great-yarmouth": {
+  "query": "Great Yarmouth",
+  "name": "Great Yarmouth",
+  "type": "Town",
+  "lat": 52.60819,
+  "lon": 1.72714,
+  "county": "Norfolk",
+  "district": [
+   "Broadland",
+   "Great Yarmouth"
+  ],
+  "outcode": "NR30",
+  "outcodes": [
+   "NR30",
+   "NR31"
+  ],
+  "wards": [
+   "Caister North",
+   "Caister South",
+   "Central and Northgate",
+   "Fleggburgh",
+   "Marshes",
+   "Nelson",
+   "Yarmouth North",
+   "Bradwell North",
+   "Bradwell South and Hopton",
+   "Claydon",
+   "Gorleston",
+   "Lothingland",
+   "Magdalen",
+   "Southtown and Cobholm",
+   "St Andrews",
+   "Thurlton"
+  ]
+ },
+ "kings-lynn": {
+  "query": "King's Lynn",
+  "name": "King's Lynn",
+  "type": "Town",
+  "lat": 52.75194,
+  "lon": 0.39538,
+  "county": "Norfolk",
+  "district": [
+   "King's Lynn and West Norfolk"
+  ],
+  "outcode": "PE30",
+  "outcodes": [
+   "PE30",
+   "PE34"
+  ],
+  "wards": [
+   "Fairstead",
+   "Gayton & Grimston",
+   "Gaywood Chase",
+   "Gaywood Clock",
+   "Gaywood North Bank",
+   "North Lynn",
+   "South & West Lynn",
+   "Springwood",
+   "St. Margaret's with St. Nicholas",
+   "The Woottons",
+   "West Winch",
+   "Airfield",
+   "Clenchwarton",
+   "Sutton Bridge",
+   "Terrington",
+   "Tilney, Mershe Lande & Wiggenhall",
+   "Upwell & Delph"
+  ]
+ },
+ "bury-st-edmunds": {
+  "query": "Bury St Edmunds",
+  "name": "Bury St Edmunds",
+  "type": "Town",
+  "lat": 52.24633,
+  "lon": 0.71379,
+  "county": "Suffolk",
+  "district": [
+   "West Suffolk"
+  ],
+  "outcode": "IP33",
+  "outcodes": [
+   "IP32",
+   "IP33"
+  ],
+  "wards": [
+   "Abbeygate",
+   "Barrow",
+   "Eastgate",
+   "Minden",
+   "Moreton Hall",
+   "Southgate",
+   "Tollgate",
+   "Westgate",
+   "Rougham",
+   "St Olaves",
+   "The Fornhams & Great Barton"
+  ]
+ },
+ "lowestoft": {
+  "query": "Lowestoft",
+  "name": "Lowestoft",
+  "type": "Town",
+  "lat": 52.47735,
+  "lon": 1.75043,
+  "county": "Suffolk",
+  "district": [
+   "East Suffolk"
+  ],
+  "outcode": "NR32",
+  "outcodes": [
+   "NR32",
+   "NR33"
+  ],
+  "wards": [
+   "Gunton & St Margarets",
+   "Harbour & Normanston",
+   "Kirkley & Pakefield",
+   "Lothingland",
+   "Oulton Broad",
+   "Carlton Colville",
+   "Carlton & Whitton",
+   "Kessingland",
+   "Wrentham, Wangford & Westleton"
+  ]
+ },
+ "welwyn-garden-city": {
+  "query": "Welwyn Garden City",
+  "name": "Welwyn Garden City",
+  "type": "Town",
+  "lat": 51.8038,
+  "lon": -0.20651,
+  "county": "Hertfordshire",
+  "district": [
+   "Welwyn Hatfield"
+  ],
+  "outcode": "AL8",
+  "outcodes": [
+   "AL6",
+   "AL7",
+   "AL8"
+  ],
+  "wards": [
+   "Handside",
+   "Hatfield Central",
+   "Hatfield Villages",
+   "Peartree",
+   "Sherrards",
+   "Haldens",
+   "Hatfield East",
+   "Hollybush",
+   "Howlands",
+   "Panshanger",
+   "Welwyn East",
+   "Aston, Datchworth & Walkern",
+   "Codicote & Kimpton",
+   "Hertford Rural",
+   "Knebworth",
+   "Sandridge & Wheathampstead",
+   "Welwyn West"
+  ]
+ },
+ "huntingdon": {
+  "query": "Huntingdon",
+  "name": "Huntingdon",
+  "type": "Town",
+  "lat": 52.33059,
+  "lon": -0.1843,
+  "county": "Cambridgeshire",
+  "district": [
+   "Huntingdonshire"
+  ],
+  "outcode": "PE29",
+  "outcodes": [
+   "PE28",
+   "PE29"
+  ],
+  "wards": [
+   "Brampton",
+   "Godmanchester & Hemingford Abbots",
+   "Huntingdon East",
+   "Huntingdon North",
+   "The Stukeleys",
+   "Alconbury",
+   "Buckden",
+   "Caxton & Papworth",
+   "Chatteris South",
+   "Fenstanton",
+   "Great Staughton",
+   "Haddenham",
+   "Hemingford Grey & Houghton",
+   "Holywell-cum-Needingworth",
+   "Kimbolton",
+   "Over & Willingham",
+   "Ramsey",
+   "Riseley"
+  ]
+ },
+ "bristol": {
+  "query": "Bristol",
+  "name": "Bristol",
+  "type": "City",
+  "lat": 51.45313,
+  "lon": -2.60098,
+  "county": "City of Bristol",
+  "district": [
+   "Bristol, City of"
+  ],
+  "outcode": "BS1",
+  "outcodes": [
+   "BS1",
+   "BS2",
+   "BS3",
+   "BS4",
+   "BS5",
+   "BS6",
+   "BS7",
+   "BS8",
+   "BS9",
+   "BS13",
+   "BS98",
+   "BS99"
+  ],
+  "wards": [
+   "Ashley",
+   "Central",
+   "Cotham",
+   "Hotwells and Harbourside",
+   "Lawrence Hill",
+   "Bishopsworth",
+   "Lockleaze",
+   "Clifton",
+   "Clifton Down",
+   "Gordano Valley",
+   "Long Ashton",
+   "Pill",
+   "Stoke Bishop",
+   "Bedminster",
+   "Filwood",
+   "Knowle",
+   "Southville",
+   "Windmill Hill"
+  ]
+ },
+ "swindon": {
+  "query": "Swindon",
+  "name": "Swindon",
+  "type": "Town",
+  "lat": 51.56153,
+  "lon": -1.78546,
+  "county": "Swindon",
+  "district": [
+   "Swindon"
+  ],
+  "outcode": "SN1",
+  "outcodes": [
+   "SN1",
+   "SN2",
+   "SN3",
+   "SN4",
+   "SN5",
+   "SN25",
+   "SN38",
+   "SN99"
+  ],
+  "wards": [
+   "Badbury Park, Eldene & Liden",
+   "Broadgreen",
+   "Kingshill",
+   "Lower Stratton",
+   "Old Town & Lawn",
+   "Queen's Park",
+   "Rodbourne Ferndale & Western",
+   "Walcot",
+   "Wroughton & Wichelstowe",
+   "Lydiard, Freshbrook & Toothill",
+   "Shaw & Westlea",
+   "Gorse Hill",
+   "Haydon Wick",
+   "Penhill & Pinehurst",
+   "Priory Vale",
+   "Rodbourne Cheney",
+   "Upper Stratton",
+   "Blunsdon"
+  ]
+ },
+ "exeter": {
+  "query": "Exeter",
+  "name": "Exeter",
+  "type": "City",
+  "lat": 50.72258,
+  "lon": -3.5326,
+  "county": "Devon",
+  "district": [
+   "East Devon",
+   "Exeter",
+   "Teignbridge"
+  ],
+  "outcode": "EX4",
+  "outcodes": [
+   "EX1",
+   "EX2",
+   "EX4"
+  ],
+  "wards": [
+   "Alphington",
+   "Broadclyst",
+   "Duryard and St James",
+   "Exe Valley",
+   "Exwick",
+   "Kenn Valley",
+   "Mincinglake and Whipton",
+   "Newtown and St Leonard's",
+   "Pennsylvania",
+   "Pinhoe",
+   "St David's",
+   "St Thomas",
+   "Teign Valley",
+   "Clyst Valley",
+   "Heavitree",
+   "Priory",
+   "St Loyes",
+   "Topsham"
+  ]
+ },
+ "braintree": {
+  "query": "Braintree",
+  "name": "Braintree",
+  "type": "Town",
+  "lat": 51.87817,
+  "lon": 0.55311,
+  "county": "Essex",
+  "district": [
+   "Braintree",
+   "Uttlesford"
+  ],
+  "outcode": "CM7",
+  "outcodes": [
+   "CM7",
+   "CM77"
+  ],
+  "wards": [
+   "Bocking Blackwater",
+   "Boreham and The Leighs",
+   "Braintree Central & Beckers Green",
+   "Braintree South",
+   "Braintree West",
+   "Coggeshall",
+   "Felsted & Stebbing",
+   "Great Notley & Black Notley",
+   "Rayne",
+   "Silver End & Cressing",
+   "Bocking North",
+   "Bocking South",
+   "Bumpstead",
+   "Gosfield & Greenstead Green",
+   "Thaxted & the Eastons",
+   "The Sampfords",
+   "Three Fields",
+   "Yeldham"
+  ]
+ },
+ "plymouth": {
+  "query": "Plymouth",
+  "name": "Plymouth",
+  "type": "City",
+  "lat": 50.37001,
+  "lon": -4.14207,
+  "county": "City of Plymouth",
+  "district": [
+   "Plymouth"
+  ],
+  "outcode": "PL1",
+  "outcodes": [
+   "PL1",
+   "PL2",
+   "PL3",
+   "PL4",
+   "PL5",
+   "PL9",
+   "PL95"
+  ],
+  "wards": [
+   "Devonport",
+   "Plymstock Radford",
+   "Stoke",
+   "St Peter and the Waterfront",
+   "Compton",
+   "Drake",
+   "Efford and Lipson",
+   "Peverell",
+   "Sutton and Mount Gould",
+   "Ham",
+   "Plymstock Dunstone",
+   "Wembury & Brixton",
+   "Bickleigh & Cornwood",
+   "Budshead",
+   "Eggbuckland",
+   "Honicknowle",
+   "Southway",
+   "St Budeaux"
+  ]
+ },
+ "gloucester": {
+  "query": "Gloucester",
+  "name": "Gloucester",
+  "type": "City",
+  "lat": 51.86455,
+  "lon": -2.24693,
+  "county": "Gloucestershire",
+  "district": [
+   "Gloucester"
+  ],
+  "outcode": "GL1",
+  "outcodes": [
+   "GL1",
+   "GL2",
+   "GL3",
+   "GL4"
+  ],
+  "wards": [
+   "Barton and Tredworth",
+   "Elmbridge",
+   "Kingsholm and Wotton",
+   "Longlevens",
+   "Moreland",
+   "Podsmead",
+   "Quedgeley Fieldcourt",
+   "Tuffley",
+   "Westgate",
+   "Berkeley Vale",
+   "Churchdown St John's",
+   "Coaley and Uley",
+   "Grange",
+   "Hardwicke",
+   "Hartpury & Redmarley",
+   "Highnam with Haw Bridge",
+   "Innsworth",
+   "Kingsway"
+  ]
+ },
+ "cheltenham": {
+  "query": "Cheltenham",
+  "name": "Cheltenham",
+  "type": "Town",
+  "lat": 51.90073,
+  "lon": -2.07669,
+  "county": "Gloucestershire",
+  "district": [
+   "Cheltenham"
+  ],
+  "outcode": "GL50",
+  "outcodes": [
+   "GL50",
+   "GL51",
+   "GL52",
+   "GL53"
+  ],
+  "wards": [
+   "All Saints",
+   "College",
+   "Lansdown",
+   "Park",
+   "Pittville",
+   "Prestbury",
+   "St Paul's",
+   "St Peter's",
+   "Swindon Village",
+   "Badgeworth",
+   "Benhall, the Reddings & Fiddler's Green",
+   "Churchdown St John's",
+   "Cleeve Grange",
+   "Hesters Way",
+   "Leckhampton",
+   "Severn Vale North",
+   "Severn Vale South",
+   "Shurdington"
+  ]
+ },
+ "bath": {
+  "query": "Bath",
+  "name": "Bath",
+  "type": "City",
+  "lat": 51.3828,
+  "lon": -2.35929,
+  "county": "Bath and North East Somerset",
+  "district": [
+   "Bath and North East Somerset",
+   "Somerset",
+   "Wiltshire"
+  ],
+  "outcode": "BA2",
+  "outcodes": [
+   "BA1",
+   "BA2"
+  ],
+  "wards": [
+   "Bathavon North",
+   "Bathwick",
+   "Bitton & Oldland Common",
+   "Boyd Valley",
+   "Kingsmead",
+   "Lambridge",
+   "Lansdown",
+   "Newbridge",
+   "Walcot",
+   "Weston",
+   "Bathavon South",
+   "Clutton & Farmborough",
+   "Combe Down",
+   "Frome North",
+   "Mendip Central and East",
+   "Moorlands",
+   "Odd Down",
+   "Oldfield Park"
+  ]
+ },
+ "bournemouth": {
+  "query": "Bournemouth",
+  "name": "Bournemouth",
+  "type": "Town",
+  "lat": 50.72097,
+  "lon": -1.87669,
+  "county": "Bournemouth, Christchurch and Poole",
+  "district": [
+   "Bournemouth, Christchurch and Poole"
+  ],
+  "outcode": "BH1",
+  "outcodes": [
+   "BH1",
+   "BH2",
+   "BH3",
+   "BH4",
+   "BH5",
+   "BH7",
+   "BH8",
+   "BH9",
+   "BH10",
+   "BH12",
+   "BH13",
+   "BH14"
+  ],
+  "wards": [
+   "Bournemouth Central",
+   "Talbot & Branksome Woods",
+   "Westbourne & West Cliff",
+   "Boscombe East & Pokesdown",
+   "Boscombe West",
+   "East Cliff & Springbourne",
+   "Littledown & Iford",
+   "Canford Cliffs",
+   "Winton East",
+   "Moordown",
+   "Muscliff & Strouden Park",
+   "Queen's Park",
+   "Kinson",
+   "Wallisdown & Winton West",
+   "Penn Hill",
+   "South East Purbeck",
+   "Alderney & Bourne Valley",
+   "Canford Heath"
+  ]
+ },
+ "poole": {
+  "query": "Poole",
+  "name": "Poole",
+  "type": "Town",
+  "lat": 50.71893,
+  "lon": -1.97983,
+  "county": "Bournemouth, Christchurch and Poole",
+  "district": [
+   "Bournemouth, Christchurch and Poole",
+   "Dorset"
+  ],
+  "outcode": "BH15",
+  "outcodes": [
+   "BH12",
+   "BH13",
+   "BH14",
+   "BH15",
+   "BH17",
+   "BH18"
+  ],
+  "wards": [
+   "Hamworthy",
+   "Newtown & Heatherlands",
+   "Oakdale",
+   "Parkstone",
+   "Poole Town",
+   "South East Purbeck",
+   "Alderney & Bourne Valley",
+   "Canford Cliffs",
+   "Penn Hill",
+   "Bearwood & Merley",
+   "Broadstone",
+   "Canford Heath",
+   "Creekmoor",
+   "Talbot & Branksome Woods",
+   "Westbourne & West Cliff",
+   "Corfe Mullen"
+  ]
+ },
+ "taunton": {
+  "query": "Taunton",
+  "name": "Taunton",
+  "type": "Town",
+  "lat": 51.01341,
+  "lon": -3.10818,
+  "county": "Somerset",
+  "district": [
+   "Somerset"
+  ],
+  "outcode": "TA1",
+  "outcodes": [
+   "TA1",
+   "TA2"
+  ],
+  "wards": [
+   "Bishop's Hull & Taunton West",
+   "Comeytrowe & Trull",
+   "Monkton & North Curry",
+   "Taunton East",
+   "Taunton North",
+   "Taunton South",
+   "Lydeard",
+   "North Petherton",
+   "Rowbarton & Staplegrove"
+  ]
+ },
+ "cranbrook": {
+  "query": "Cranbrook",
+  "name": "Cranbrook",
+  "type": "Village",
+  "lat": 50.747,
+  "lon": -3.4102,
+  "county": "Devon",
+  "district": [
+   "East Devon",
+   "Exeter",
+   "Mid Devon"
+  ],
+  "outcode": "EX5",
+  "outcodes": [
+   "EX5"
+  ],
+  "wards": [
+   "Bradninch",
+   "Broadclyst",
+   "Budleigh & Raleigh",
+   "Cadbury",
+   "Clyst Valley",
+   "Cranbrook",
+   "Cullompton Vale",
+   "Exe Valley",
+   "Feniton",
+   "Pennsylvania",
+   "Silverton",
+   "Tale Vale",
+   "West Hill & Aylesbeare",
+   "Whimple & Rockbeare",
+   "Woodbury & Lympstone",
+   "Yeo"
+  ]
+ },
+ "salisbury": {
+  "query": "Salisbury",
+  "name": "Salisbury",
+  "type": "City",
+  "lat": 51.07037,
+  "lon": -1.79643,
+  "county": "Wiltshire",
+  "district": [
+   "Wiltshire"
+  ],
+  "outcode": "SP1",
+  "outcodes": [
+   "SP1",
+   "SP2"
+  ],
+  "wards": [
+   "Laverstock",
+   "Old Sarum & Lower Bourne Valley",
+   "Salisbury Harnham East",
+   "Salisbury Milford",
+   "Salisbury St Edmund's",
+   "Salisbury St Francis & Stratford",
+   "Salisbury St Paul's",
+   "Downton & Ebble Valley",
+   "Fovant & Chalke Valley",
+   "Salisbury Bemerton Heath",
+   "Salisbury Fisherton & Bemerton Village",
+   "Salisbury Harnham West",
+   "Till Valley",
+   "Wilton"
+  ]
+ },
+ "chippenham": {
+  "query": "Chippenham",
+  "name": "Chippenham",
+  "type": "Town",
+  "lat": 51.45823,
+  "lon": -2.11394,
+  "county": "Wiltshire",
+  "district": [
+   "Wiltshire"
+  ],
+  "outcode": "SN15",
+  "outcodes": [
+   "SN15"
+  ],
+  "wards": [
+   "Bowerhill",
+   "Brinkworth",
+   "Bromham, Rowde & Roundway",
+   "Calne Rural",
+   "Calne South",
+   "Chippenham Cepen Park & Derriads",
+   "Chippenham Cepen Park & Hunters Moon",
+   "Chippenham Hardenhuish",
+   "Chippenham Hardens & Central",
+   "Chippenham Lowden & Rowden",
+   "Chippenham Monkton",
+   "Chippenham Pewsham",
+   "Chippenham Sheldon",
+   "Corsham Without",
+   "Kington",
+   "Lyneham",
+   "Melksham Without North & Shurnhold",
+   "Royal Wootton Bassett East"
+  ]
+ },
+ "trowbridge": {
+  "query": "Trowbridge",
+  "name": "Trowbridge",
+  "type": "Town",
+  "lat": 51.32002,
+  "lon": -2.20805,
+  "county": "Wiltshire",
+  "district": [
+   "Wiltshire"
+  ],
+  "outcode": "BA14",
+  "outcodes": [
+   "BA14",
+   "BA15"
+  ],
+  "wards": [
+   "Devizes Rural West",
+   "Ethandune",
+   "Hilperton",
+   "Holt",
+   "Melksham Without West & Rural",
+   "Southwick",
+   "Trowbridge Adcroft",
+   "Trowbridge Central",
+   "Trowbridge Drynham",
+   "Trowbridge Grove",
+   "Trowbridge Lambrok",
+   "Trowbridge Park",
+   "Trowbridge Paxcroft",
+   "Winsley & Westwood",
+   "Bathavon South",
+   "Bradford-on-Avon North",
+   "Bradford-on-Avon South"
+  ]
+ },
+ "newquay": {
+  "query": "Newquay",
+  "name": "Newquay",
+  "type": "Town",
+  "lat": 50.4136,
+  "lon": -5.08215,
+  "county": "Cornwall",
+  "district": [
+   "Cornwall"
+  ],
+  "outcode": "TR7",
+  "outcodes": [
+   "TR7",
+   "TR8"
+  ],
+  "wards": [
+   "Newquay Central & Pentire",
+   "Newquay Porth & Tretherras",
+   "Newquay Trenance",
+   "St Columb Minor & Colan",
+   "Padstow",
+   "Probus & St Erme",
+   "St Columb Major, St Mawgan & St Wenn",
+   "St Dennis & St Enoder",
+   "St Newlyn East, Cubert & Goonhavern"
+  ]
+ },
+ "truro": {
+  "query": "Truro",
+  "name": "Truro",
+  "type": "City",
+  "lat": 50.26333,
+  "lon": -5.05101,
+  "county": "Cornwall",
+  "district": [
+   "Cornwall"
+  ],
+  "outcode": "TR1",
+  "outcodes": [
+   "TR1"
+  ],
+  "wards": [
+   "Gloweth, Malabar & Shortlanesend",
+   "Probus & St Erme",
+   "Truro Boscawen & Redannick",
+   "Truro Moresk & Trehaverne",
+   "Truro Tregolls"
+  ]
+ },
+ "yeovil": {
+  "query": "Yeovil",
+  "name": "Yeovil",
+  "type": "Town",
+  "lat": 50.94077,
+  "lon": -2.63352,
+  "county": "Somerset",
+  "district": [
+   "Somerset"
+  ],
+  "outcode": "BA20",
+  "outcodes": [
+   "BA20",
+   "BA21",
+   "BA22"
+  ],
+  "wards": [
+   "Brympton",
+   "Coker",
+   "Yeovil Central",
+   "Yeovil South",
+   "Yeovil West",
+   "Castle Cary",
+   "Sherborne Rural",
+   "Yeovil East",
+   "Blackmoor Vale",
+   "Martock",
+   "Somerton",
+   "Yetminster"
+  ]
+ },
+ "torquay": {
+  "query": "Torquay",
+  "name": "Torquay",
+  "type": "Town",
+  "lat": 50.46883,
+  "lon": -3.53141,
+  "county": "Torbay",
+  "district": [
+   "Teignbridge",
+   "Torbay"
+  ],
+  "outcode": "TQ1",
+  "outcodes": [
+   "TQ1",
+   "TQ2",
+   "TQ3"
+  ],
+  "wards": [
+   "Barton with Watcombe",
+   "Ellacombe",
+   "Shaldon & Stokeinteignhead",
+   "St Marychurch",
+   "Tormohun",
+   "Wellswood",
+   "Cockington with Chelston",
+   "Kerswell-with-Combe",
+   "Shiphay",
+   "Clifton with Maidenway",
+   "Collaton St Mary",
+   "Goodrington with Roselands",
+   "King's Ash",
+   "Marldon & Littlehempston",
+   "Preston",
+   "Roundham with Hyde"
+  ]
+ },
+ "bridgwater": {
+  "query": "Bridgwater",
+  "name": "Bridgwater",
+  "type": "Town",
+  "lat": 51.12778,
+  "lon": -3.00641,
+  "county": "Somerset",
+  "district": [
+   "Somerset"
+  ],
+  "outcode": "TA6",
+  "outcodes": [
+   "TA6"
+  ],
+  "wards": [
+   "Bridgwater East & Bawdrip",
+   "Bridgwater North & Central",
+   "Bridgwater South",
+   "Bridgwater West",
+   "Cannington",
+   "Huntspill",
+   "North Petherton"
+  ]
+ },
+ "weston-super-mare": {
+  "query": "Weston-super-Mare",
+  "name": "Weston-super-Mare",
+  "type": "Town",
+  "lat": 51.3461,
+  "lon": -2.97634,
+  "county": "North Somerset",
+  "district": [
+   "North Somerset"
+  ],
+  "outcode": "BS23",
+  "outcodes": [
+   "BS22",
+   "BS23",
+   "BS24"
+  ],
+  "wards": [
+   "Hutton & Locking",
+   "Weston-super-Mare Central",
+   "Weston-super-Mare Hillside",
+   "Weston-super-Mare Kewstoke",
+   "Weston-super-Mare Milton",
+   "Weston-super-Mare South",
+   "Weston-super-Mare Uphill",
+   "Weston-super-Mare Winterstoke",
+   "Weston-super-Mare Mid Worle",
+   "Weston-super-Mare North Worle",
+   "Weston-super-Mare South Worle",
+   "Wick St Lawrence & St Georges",
+   "Banwell & Winscombe",
+   "Brent",
+   "Congresbury & Puxton"
+  ]
+ },
+ "barnstaple": {
+  "query": "Barnstaple",
+  "name": "Barnstaple",
+  "type": "Town",
+  "lat": 51.08108,
+  "lon": -4.05838,
+  "county": "Devon",
+  "district": [
+   "North Devon",
+   "Torridge"
+  ],
+  "outcode": "EX31",
+  "outcodes": [
+   "EX31",
+   "EX32"
+  ],
+  "wards": [
+   "Barnstaple Central",
+   "Barnstaple with Pilton",
+   "Bickington",
+   "Bratton Fleming",
+   "Braunton East",
+   "Fremington",
+   "Heanton Punchardon",
+   "Instow",
+   "Lynton & Lynmouth",
+   "Marwood",
+   "North Molton",
+   "Roundswell",
+   "Two Rivers & Three Moors",
+   "Barnstaple with Westacott",
+   "Chittlehampton",
+   "Landkey",
+   "Newport"
+  ]
+ },
+ "weymouth": {
+  "query": "Weymouth",
+  "name": "Weymouth",
+  "type": "Town",
+  "lat": 50.60699,
+  "lon": -2.45554,
+  "county": "Dorset",
+  "district": [
+   "Dorset"
+  ],
+  "outcode": "DT4",
+  "outcodes": [
+   "DT3",
+   "DT4"
+  ],
+  "wards": [
+   "Chickerell",
+   "Melcombe Regis",
+   "Portland",
+   "Radipole",
+   "Rodwell & Wyke",
+   "Westham",
+   "Chesil Bank",
+   "Crossways",
+   "Littlemoor & Preston",
+   "Upwey & Broadwey",
+   "Winterborne & Broadmayne"
+  ]
+ },
+ "coventry": {
+  "query": "Coventry",
+  "name": "Coventry",
+  "type": "City",
+  "lat": 52.40771,
+  "lon": -1.50686,
+  "county": "Coventry",
+  "district": [
+   "Coventry"
+  ],
+  "outcode": "CV1",
+  "outcodes": [
+   "CV1",
+   "CV2",
+   "CV3",
+   "CV4",
+   "CV5",
+   "CV6"
+  ],
+  "wards": [
+   "Binley & Willenhall",
+   "Cheylesmore",
+   "Earlsdon",
+   "Foleshill",
+   "Radford",
+   "Sherbourne",
+   "St Michael's",
+   "Whoberley",
+   "Cubbington & Leek Wootton",
+   "Lower Stoke",
+   "Revel and Binley Woods",
+   "Upper Stoke",
+   "Wainbody",
+   "Wolston and the Lawfords",
+   "Wyken",
+   "Bablake",
+   "Exhall",
+   "Holbrooks"
+  ]
+ },
+ "wolverhampton": {
+  "query": "Wolverhampton",
+  "name": "Wolverhampton",
+  "type": "City",
+  "lat": 52.5862,
+  "lon": -2.12992,
+  "county": "City of Wolverhampton",
+  "district": [
+   "Wolverhampton"
+  ],
+  "outcode": "WV1",
+  "outcodes": [
+   "WV1",
+   "WV2",
+   "WV3",
+   "WV4",
+   "WV6",
+   "WV10",
+   "WV11",
+   "WV13",
+   "WV14"
+  ],
+  "wards": [
+   "East Park",
+   "Heath Town",
+   "Park",
+   "St Peters",
+   "Blakenhall",
+   "Ettingshall North",
+   "Graiseley",
+   "Penn",
+   "Merry Hill",
+   "Pattingham, Trysull, Bobbington & Lower Penn",
+   "Tettenhall Wightwick",
+   "Ettingshall South & Spring Vale",
+   "Sedgley",
+   "Wombourne North",
+   "Claverley & Worfield",
+   "Codsall",
+   "Perton East",
+   "Perton Lakeside"
+  ]
+ },
+ "stoke-on-trent": {
+  "query": "Stoke-on-Trent",
+  "name": "Stoke-on-Trent",
+  "type": "City",
+  "lat": 53.02218,
+  "lon": -2.17337,
+  "county": "City of Stoke-on-Trent",
+  "district": [
+   "Stoke-on-Trent"
+  ],
+  "outcode": "ST1",
+  "outcodes": [
+   "ST1",
+   "ST2",
+   "ST4",
+   "ST5",
+   "ST6"
+  ],
+  "wards": [
+   "Birches Head & Northwood",
+   "Bucknall & Eaton Park",
+   "Etruria & Hanley",
+   "Ford Green & Smallthorne",
+   "Hanley Park, Joiner's Square & Shelton",
+   "Moorcroft & Sneyd Green",
+   "Abbey Hulton",
+   "Baddeley, Milton & Norton",
+   "Bagnall and Stanley",
+   "Bentilee, Ubberley & Townsend",
+   "Meir Hay North, Parkhall & Weston Coyney",
+   "Werrington",
+   "Basford & Hartshill",
+   "Boothen",
+   "Fenton East",
+   "Fenton West & Mount Pleasant",
+   "Hanford, Newstead & Trentham",
+   "Hartshill Park & Stoke"
+  ]
+ },
+ "worcester": {
+  "query": "Worcester",
+  "name": "Worcester",
+  "type": "City",
+  "lat": 52.19293,
+  "lon": -2.22109,
+  "county": "Worcestershire",
+  "district": [
+   "Worcester"
+  ],
+  "outcode": "WR1",
+  "outcodes": [
+   "WR1",
+   "WR2",
+   "WR3",
+   "WR4",
+   "WR5",
+   "WR99"
+  ],
+  "wards": [
+   "Arboretum",
+   "Cathedral",
+   "Fort Royal",
+   "St Stephen",
+   "Leopard Hill",
+   "Alfrick, Leigh & Rushwick",
+   "Broadheath",
+   "Dines Green & Grove Farm",
+   "Hallow & Holt",
+   "Lower Wick & Pitmaston",
+   "Martley",
+   "Powick & the Hanleys",
+   "St Clement",
+   "St John's",
+   "Battenhall",
+   "Drakes Broughton, Norton & Whittington",
+   "Kempsey",
+   "Nunnery"
+  ]
+ },
+ "solihull": {
+  "query": "Solihull",
+  "name": "Solihull",
+  "type": "Town",
+  "lat": 52.41275,
+  "lon": -1.77755,
+  "county": "Solihull",
+  "district": [
+   "Solihull"
+  ],
+  "outcode": "B91",
+  "outcodes": [
+   "B27",
+   "B28",
+   "B90",
+   "B91",
+   "B92",
+   "B93"
+  ],
+  "wards": [
+   "Knowle",
+   "Lyndon",
+   "Meriden & Arden",
+   "Olton",
+   "Shirley East & Sharmans Cross",
+   "Shirley South",
+   "Silhill",
+   "St Alphege with Monkspath & Hillfield",
+   "Balsall & Berkswell",
+   "Elmdon",
+   "Sheldon",
+   "Blythe",
+   "Shirley West",
+   "Wythall East",
+   "Dorridge & Hockley Heath",
+   "Kenilworth Abbey & Arden",
+   "Acocks Green",
+   "South Yardley"
+  ]
+ },
+ "telford": {
+  "query": "Telford",
+  "name": "Telford",
+  "type": "Town",
+  "lat": 52.6754,
+  "lon": -2.44875,
+  "county": "Telford and Wrekin",
+  "district": [
+   "Telford and Wrekin"
+  ],
+  "outcode": "TF3",
+  "outcodes": [
+   "TF1",
+   "TF2",
+   "TF3",
+   "TF4",
+   "TF7",
+   "WV99"
+  ],
+  "wards": [
+   "Brookside",
+   "Dawley & Aqueduct",
+   "Ketley",
+   "Lawley",
+   "Madeley & Sutton Hill",
+   "Malinslee & Dawley Bank",
+   "Overdale & The Rock",
+   "The Nedge",
+   "Horsehay & Lightmoor",
+   "Ironbridge Gorge",
+   "Wrockwardine",
+   "Church Aston & Lilleshall",
+   "Donnington",
+   "Muxton",
+   "Oakengates & Ketley Bank",
+   "Priorslee",
+   "Shifnal Rural",
+   "St Georges"
+  ]
+ },
+ "shrewsbury": {
+  "query": "Shrewsbury",
+  "name": "Shrewsbury",
+  "type": "Town",
+  "lat": 52.70817,
+  "lon": -2.75433,
+  "county": "Shropshire",
+  "district": [
+   "Shropshire"
+  ],
+  "outcode": "SY1",
+  "outcodes": [
+   "SY1",
+   "SY2",
+   "SY3",
+   "SY99"
+  ],
+  "wards": [
+   "Quarry & Coton Hill",
+   "Abbey",
+   "Bayston Hill",
+   "Belle Vue",
+   "Bicton Heath",
+   "Burnell",
+   "Column & Sutton",
+   "Copthorne",
+   "Longden",
+   "Loton",
+   "Meole",
+   "Oteley & Reabrook",
+   "Porthill",
+   "Radbrook",
+   "Monkmoor",
+   "Severn Valley",
+   "Underdale",
+   "Bagley"
+  ]
+ },
+ "hereford": {
+  "query": "Hereford",
+  "name": "Hereford",
+  "type": "City",
+  "lat": 52.05598,
+  "lon": -2.71755,
+  "county": "County of Herefordshire",
+  "district": [
+   "Herefordshire, County of"
+  ],
+  "outcode": "HR4",
+  "outcodes": [
+   "HR1"
+  ],
+  "wards": [
+   "Aylestone Hill",
+   "Backbury",
+   "Central",
+   "College",
+   "Eign Hill",
+   "Golden Valley South",
+   "Hagley",
+   "Hampton",
+   "Holmer",
+   "Old Gore",
+   "Queenswood",
+   "Sutton Walls",
+   "Three Crosses",
+   "Tupsley",
+   "Widemarsh"
+  ]
+ },
+ "rugby": {
+  "query": "Rugby",
+  "name": "Rugby",
+  "type": "Town",
+  "lat": 52.37218,
+  "lon": -1.26265,
+  "county": "Warwickshire",
+  "district": [
+   "Rugby"
+  ],
+  "outcode": "CV21",
+  "outcodes": [
+   "CV21",
+   "CV22",
+   "CV23"
+  ],
+  "wards": [
+   "Benn",
+   "Coton and Boughton",
+   "Eastlands",
+   "Hillmorton",
+   "New Bilton",
+   "Newbold and Brownsover",
+   "Paddox",
+   "Admirals and Cawston",
+   "Braunston & Crick",
+   "Clifton, Newton and Churchover",
+   "Dunsmore",
+   "Leam Valley",
+   "Radford Semele",
+   "Revel and Binley Woods",
+   "Southam North & Long Itchington",
+   "Wolston and the Lawfords",
+   "Wolvey and Shilton",
+   "Bilton"
+  ]
+ },
+ "lichfield": {
+  "query": "Lichfield",
+  "name": "Lichfield",
+  "type": "City",
+  "lat": 52.68308,
+  "lon": -1.82729,
+  "county": "Staffordshire",
+  "district": [
+   "Lichfield"
+  ],
+  "outcode": "WS13",
+  "outcodes": [
+   "WS13",
+   "WS14"
+  ],
+  "wards": [
+   "Alrewas & Fradley",
+   "Armitage with Handsacre",
+   "Boley Park",
+   "Chadsmead",
+   "Curborough",
+   "Hammerwich with Wall",
+   "Highfield",
+   "Leomansley",
+   "Longdon",
+   "Mease Valley",
+   "Stowe",
+   "Whittington & Streethay",
+   "Bourne Vale",
+   "Little Aston & Stonnall",
+   "Shenstone",
+   "St John's"
+  ]
+ },
+ "dudley": {
+  "query": "Dudley",
+  "name": "Dudley",
+  "type": "Town",
+  "lat": 52.51005,
+  "lon": -2.08316,
+  "county": "Dudley",
+  "district": [
+   "Dudley"
+  ],
+  "outcode": "DY1",
+  "outcodes": [
+   "B64",
+   "B65",
+   "DY1",
+   "DY2",
+   "DY3",
+   "DY4",
+   "DY5"
+  ],
+  "wards": [
+   "Brockmoor & Pensnett",
+   "Castle & Priory",
+   "Netherton & Holly Hall",
+   "St. James's",
+   "St. Thomas's",
+   "Upper Gornal & Woodsetton",
+   "Brierley Hill & Wordsley South",
+   "Quarry Bank & Dudley Wood",
+   "Coseley",
+   "Great Bridge",
+   "Hill Top",
+   "Oldbury",
+   "Princes End",
+   "Tipton Green",
+   "Tividale",
+   "Blackheath",
+   "Halesowen North",
+   "Langley"
+  ]
+ },
+ "walsall": {
+  "query": "Walsall",
+  "name": "Walsall",
+  "type": "Town",
+  "lat": 52.58622,
+  "lon": -1.98034,
+  "county": "Walsall",
+  "district": [
+   "Walsall"
+  ],
+  "outcode": "WS1",
+  "outcodes": [
+   "WS1",
+   "WS2",
+   "WS3",
+   "WS4",
+   "WS5",
+   "WS9",
+   "WS10",
+   "WV12"
+  ],
+  "wards": [
+   "Paddock",
+   "Palfrey & The Delves",
+   "Pleck",
+   "Rushall-Shelfield",
+   "St Matthew's",
+   "Beechdale, Leamore & Reedswood",
+   "Bentley & Darlaston North",
+   "Bloxwich West",
+   "Harden, Goscote & Ryecroft",
+   "Short Heath",
+   "Great Barr, Tamebridge & Yew Tree",
+   "Pheasey Park Farm",
+   "Aldridge Central & South",
+   "Pelsall",
+   "Bloxwich East & Blakenall Heath",
+   "Essington",
+   "Norton Canes",
+   "Charlemont & Grove Vale"
+  ]
+ },
+ "west-bromwich": {
+  "query": "West Bromwich",
+  "name": "West Bromwich",
+  "type": "Town",
+  "lat": 52.52018,
+  "lon": -1.99686,
+  "county": "Sandwell",
+  "district": [
+   "Sandwell"
+  ],
+  "outcode": "B70",
+  "outcodes": [
+   "B21",
+   "B66",
+   "B67",
+   "B68",
+   "B69",
+   "B70",
+   "B71",
+   "DY4",
+   "WS10"
+  ],
+  "wards": [
+   "Great Bridge",
+   "Greets Green & Lyng",
+   "Hateley Heath",
+   "Hill Top",
+   "West Bromwich Central",
+   "Charlemont & Grove Vale",
+   "Friar Park & Stone Cross",
+   "Newton & Valley",
+   "St Pauls",
+   "Bristnall",
+   "Langley",
+   "Oldbury",
+   "Rowley",
+   "Tividale",
+   "Bearwood",
+   "Holyhead",
+   "Smethwick",
+   "Soho & Jewellery Quarter"
+  ]
+ },
+ "nuneaton": {
+  "query": "Nuneaton",
+  "name": "Nuneaton",
+  "type": "Town",
+  "lat": 52.52214,
+  "lon": -1.46773,
+  "county": "Warwickshire",
+  "district": [
+   "Hinckley and Bosworth",
+   "Nuneaton and Bedworth",
+   "Rugby"
+  ],
+  "outcode": "CV11",
+  "outcodes": [
+   "CV10",
+   "CV11",
+   "CV12"
+  ],
+  "wards": [
+   "Ambien",
+   "Attleborough",
+   "Chilvers Coton",
+   "Eastboro",
+   "Milby",
+   "St Mary's",
+   "St Nicolas",
+   "Stockingford East",
+   "Weddington",
+   "Whitestone",
+   "Wolvey and Shilton",
+   "Arbury",
+   "Arley and Whitacre",
+   "Atherstone South and Mancetter",
+   "Camp Hill",
+   "Fillongley",
+   "Galley Common",
+   "Hartshill"
+  ]
+ },
+ "stafford": {
+  "query": "Stafford",
+  "name": "Stafford",
+  "type": "Town",
+  "lat": 52.8058,
+  "lon": -2.11666,
+  "county": "Staffordshire",
+  "district": [
+   "Stafford"
+  ],
+  "outcode": "ST16",
+  "outcodes": [
+   "ST16",
+   "ST17",
+   "ST18"
+  ],
+  "wards": [
+   "Common",
+   "Coton",
+   "Doxey & Castletown",
+   "Forebridge",
+   "Highfields & Western Downs",
+   "Holmcroft",
+   "Littleworth",
+   "Milwich",
+   "Rowley",
+   "Seighford & Church Eaton",
+   "Baswich",
+   "Haywood & Hixon",
+   "Manor",
+   "Milford",
+   "Penkridge North & Acton Trussell",
+   "Penkside",
+   "Weeping Cross & Wildwood",
+   "Bagots & Needwood"
+  ]
+ },
+ "kidderminster": {
+  "query": "Kidderminster",
+  "name": "Kidderminster",
+  "type": "Town",
+  "lat": 52.3882,
+  "lon": -2.24923,
+  "county": "Worcestershire",
+  "district": [
+   "Bromsgrove",
+   "South Staffordshire",
+   "Wychavon",
+   "Wyre Forest"
+  ],
+  "outcode": "DY10",
+  "outcodes": [
+   "DY10",
+   "DY11",
+   "WV98"
+  ],
+  "wards": [
+   "Blakebrook & Habberley South",
+   "Foley Park & Hoobrook",
+   "Franche & Habberley North",
+   "Hartlebury",
+   "Kinver & Enville",
+   "Mitton",
+   "Wribbenhall & Arley",
+   "Wyre Forest Rural",
+   "Aggborough & Spennells",
+   "Broadwaters",
+   "Hagley West",
+   "Offmore & Comberton",
+   "St Peters"
+  ]
+ },
+ "leamington-spa-and-warwick": {
+  "query": "Royal Leamington Spa",
+  "name": "Royal Leamington Spa",
+  "type": "Town",
+  "lat": 52.29196,
+  "lon": -1.53581,
+  "county": "Warwickshire",
+  "district": [
+   "Warwick"
+  ],
+  "outcode": "CV32",
+  "outcodes": [
+   "CV31",
+   "CV32",
+   "CV34"
+  ],
+  "wards": [
+   "Cubbington & Leek Wootton",
+   "Leamington Clarendon",
+   "Leamington Lillington",
+   "Leamington Milverton",
+   "Leamington Willes",
+   "Harbury",
+   "Leamington Brunswick",
+   "Radford Semele",
+   "Warwick Myton & Heathcote",
+   "Whitnash",
+   "Bishop's Tachbrook",
+   "Warwick All Saints & Woodloes",
+   "Warwick Aylesford",
+   "Warwick Saltisford"
+  ]
+ },
+ "redditch": {
+  "query": "Redditch",
+  "name": "Redditch",
+  "type": "Town",
+  "lat": 52.30693,
+  "lon": -1.94152,
+  "county": "Worcestershire",
+  "district": [
+   "Bromsgrove",
+   "Redditch",
+   "Stratford-on-Avon"
+  ],
+  "outcode": "B97",
+  "outcodes": [
+   "B97",
+   "B98"
+  ],
+  "wards": [
+   "Alvechurch South",
+   "Astwood Bank & Feckenham",
+   "Batchley & Brockhill",
+   "Central",
+   "Greenlands & Lakeside",
+   "Headless Cross & Oakenshaw",
+   "Studley North",
+   "Tardebigge",
+   "Webheath & Callow Hill",
+   "Matchborough & Woodrow",
+   "North",
+   "Tanworth-in-Arden",
+   "Winyates",
+   "Wootton Wawen"
+  ]
+ },
+ "tamworth": {
+  "query": "Tamworth",
+  "name": "Tamworth",
+  "type": "Town",
+  "lat": 52.63343,
+  "lon": -1.69245,
+  "county": "Staffordshire",
+  "district": [
+   "Lichfield",
+   "North Warwickshire",
+   "North West Leicestershire",
+   "Tamworth"
+  ],
+  "outcode": "B79",
+  "outcodes": [
+   "B77",
+   "B78",
+   "B79"
+  ],
+  "wards": [
+   "Amington",
+   "Appleby",
+   "Bolehall",
+   "Castle",
+   "Mease Valley",
+   "Mercian",
+   "Newton Regis and Warton",
+   "Polesworth East",
+   "Spital",
+   "Whittington & Streethay",
+   "Belgrave",
+   "Dordon",
+   "Glascote",
+   "Hurley and Wood End",
+   "Stonydelph",
+   "Trinity",
+   "Wilnecote",
+   "Baddesley and Grendon"
+  ]
+ },
+ "burton-upon-trent": {
+  "query": "Burton upon Trent",
+  "name": "Burton upon Trent",
+  "type": "Town",
+  "lat": 52.80738,
+  "lon": -1.64479,
+  "county": "Staffordshire",
+  "district": [
+   "East Staffordshire"
+  ],
+  "outcode": "DE14",
+  "outcodes": [
+   "DE13",
+   "DE14",
+   "DE15"
+  ],
+  "wards": [
+   "Anglesey",
+   "Bagots & Needwood",
+   "Branston",
+   "Burton & Eton",
+   "Dove",
+   "Shobnall",
+   "Stretton",
+   "Brizlincote",
+   "Linton",
+   "Newhall and Stanton",
+   "Repton",
+   "Seales",
+   "Stapenhill",
+   "Winshill",
+   "Alrewas & Fradley",
+   "Armitage with Handsacre",
+   "Crown",
+   "Hatton"
+  ]
+ },
+ "cannock": {
+  "query": "Cannock",
+  "name": "Cannock",
+  "type": "Town",
+  "lat": 52.68995,
+  "lon": -2.03317,
+  "county": "Staffordshire",
+  "district": [
+   "Cannock Chase",
+   "South Staffordshire"
+  ],
+  "outcode": "WS11",
+  "outcodes": [
+   "WS6",
+   "WS11",
+   "WS12"
+  ],
+  "wards": [
+   "Cannock Longford & Bridgtown",
+   "Cannock Park & Old Fallow",
+   "Chadsmoor",
+   "Cheslyn Hay Village",
+   "Featherstone, Sharehill & Saredon",
+   "Great Wyrley Town",
+   "Hawks Green with Rumer Hill",
+   "Hednesford Green Heath",
+   "Hednesford Hills & Rawnsley",
+   "Huntington & Hatherton",
+   "Norton Canes",
+   "Etching Hill & the Heath",
+   "Heath Hayes & Wimblebury",
+   "Hednesford Pye Green",
+   "Milford",
+   "Penkridge North & Acton Trussell",
+   "Essington",
+   "Great Wyrley Landywood"
+  ]
+ },
+ "stratford-upon-avon": {
+  "query": "Stratford-upon-Avon",
+  "name": "Stratford-upon-Avon",
+  "type": "Town",
+  "lat": 52.19269,
+  "lon": -1.70635,
+  "county": "Warwickshire",
+  "district": [
+   "Stratford-on-Avon",
+   "Wychavon"
+  ],
+  "outcode": "CV37",
+  "outcodes": [
+   "CV37"
+  ],
+  "wards": [
+   "Bidford East",
+   "Claverdon & Snitterfield",
+   "Honeybourne, Pebworth & The Littletons",
+   "Kinwarton",
+   "Long Marston",
+   "Quinton",
+   "Salford Priors & Alcester Rural",
+   "Stratford Avenue",
+   "Stratford Bishopton",
+   "Stratford Clopton",
+   "Stratford Guildhall & Bridgetown",
+   "Stratford Hathaway",
+   "Stratford Orchard Hill",
+   "Stratford Shottery",
+   "Stratford Tiddington",
+   "Stratford Welcombe",
+   "Tredington",
+   "Tysoe"
+  ]
+ },
+ "nottingham": {
+  "query": "Nottingham",
+  "name": "Nottingham",
+  "type": "City",
+  "lat": 52.9562,
+  "lon": -1.1512,
+  "county": "City of Nottingham",
+  "district": [
+   "Nottingham"
+  ],
+  "outcode": "NG1",
+  "outcodes": [
+   "NG1",
+   "NG2",
+   "NG3",
+   "NG5",
+   "NG7",
+   "NG8",
+   "NG80",
+   "NG90"
+  ],
+  "wards": [
+   "Castle",
+   "Hyson Green & Arboretum",
+   "Mapperley",
+   "St. Ann's",
+   "Berridge",
+   "Bilborough",
+   "Lenton & Wollaton East",
+   "Radford",
+   "Carlton Hill",
+   "Coppice",
+   "Dales",
+   "Dumbles",
+   "Phoenix",
+   "Plains",
+   "Porchester",
+   "Sherwood",
+   "Woodthorpe",
+   "Abbey"
+  ]
+ },
+ "derby": {
+  "query": "Derby",
+  "name": "Derby",
+  "type": "City",
+  "lat": 52.92469,
+  "lon": -1.47805,
+  "county": "City of Derby",
+  "district": [
+   "Derby",
+   "South Derbyshire"
+  ],
+  "outcode": "DE1",
+  "outcodes": [
+   "DE1",
+   "DE3",
+   "DE21",
+   "DE22",
+   "DE23",
+   "DE24",
+   "DE99"
+  ],
+  "wards": [
+   "Abbey",
+   "Arboretum",
+   "Darley",
+   "Etwall",
+   "Mackworth & New Zealand",
+   "Allestree",
+   "Alport & South West Parishes",
+   "Duffield & Quarndon",
+   "Littleover",
+   "Mickleover",
+   "Blagreaves",
+   "Normanton",
+   "Stenson",
+   "Willington and Findern",
+   "Alvaston North",
+   "Chaddesden East",
+   "Chaddesden North",
+   "Chaddesden West"
+  ]
+ },
+ "leicester": {
+  "query": "Leicester",
+  "name": "Leicester",
+  "type": "City",
+  "lat": 52.63361,
+  "lon": -1.13346,
+  "county": "City of Leicester",
+  "district": [
+   "Blaby",
+   "Leicester"
+  ],
+  "outcode": "LE1",
+  "outcodes": [
+   "LE1",
+   "LE2",
+   "LE3",
+   "LE4",
+   "LE5",
+   "LE21",
+   "LE41",
+   "LE87",
+   "LE95"
+  ],
+  "wards": [
+   "Abbey",
+   "Belgrave",
+   "Castle",
+   "Thorpe Astley & St Mary's",
+   "Wycliffe",
+   "Cosby & South Whetstone",
+   "Wigston All Saints",
+   "Aylestone",
+   "Beaumont Leys",
+   "Braunstone Millfield",
+   "Braunstone Park & Rowley Fields",
+   "Braunstone Ravenhurst",
+   "Enderby",
+   "Fosse",
+   "Glenfield Ellis",
+   "Glenfield Faire",
+   "Groby",
+   "Kirby Muxloe"
+  ]
+ },
+ "northampton": {
+  "query": "Northampton",
+  "name": "Northampton",
+  "type": "Town",
+  "lat": 52.23786,
+  "lon": -0.89505,
+  "county": "West Northamptonshire",
+  "district": [
+   "West Northamptonshire"
+  ],
+  "outcode": "NN1",
+  "outcodes": [
+   "NN1",
+   "NN2",
+   "NN3",
+   "NN4",
+   "NN5",
+   "NN7"
+  ],
+  "wards": [
+   "Abington & Phippsville",
+   "Castle",
+   "Far Cotton, Delapre & Briar Hill",
+   "Kingsley & Semilong",
+   "Weston Favell & Abington Vale",
+   "Campion",
+   "Cogenhoe & The Houghtons",
+   "Hackleton & Roade",
+   "Hunsbury",
+   "Nene Valley",
+   "Upton",
+   "Billing",
+   "Kingsthorpe North",
+   "Kingsthorpe South",
+   "Moulton",
+   "Dallington Spencer",
+   "Duston",
+   "Long Buckby"
+  ]
+ },
+ "kettering": {
+  "query": "Kettering",
+  "name": "Kettering",
+  "type": "Town",
+  "lat": 52.39995,
+  "lon": -0.72831,
+  "county": "North Northamptonshire",
+  "district": [
+   "North Northamptonshire"
+  ],
+  "outcode": "NN16",
+  "outcodes": [
+   "NN14",
+   "NN15",
+   "NN16"
+  ],
+  "wards": [
+   "Avondale Grange",
+   "Geddington & Stanion",
+   "Kettering Central",
+   "Kettering North",
+   "Pipers Hill",
+   "Rothwell & Mawsley",
+   "St Peter",
+   "Thrapston",
+   "Desborough",
+   "Earls Barton",
+   "Irthlingborough",
+   "Oundle",
+   "Raunds",
+   "Barton Seagrave & Burton Latimer",
+   "Ise",
+   "St Michael"
+  ]
+ },
+ "lincoln": {
+  "query": "Lincoln",
+  "name": "Lincoln",
+  "type": "City",
+  "lat": 53.23484,
+  "lon": -0.53844,
+  "county": "Lincolnshire",
+  "district": [
+   "Lincoln",
+   "Newark and Sherwood",
+   "West Lindsey"
+  ],
+  "outcode": "LN1",
+  "outcodes": [
+   "LN1",
+   "LN2"
+  ],
+  "wards": [
+   "Abbey",
+   "Boultham",
+   "Carholme",
+   "Cherry Willingham",
+   "Dunholme and Welton",
+   "Glebe",
+   "Minster",
+   "Nettleham",
+   "Saxilby",
+   "Sudbrooke",
+   "Castle",
+   "Collingham",
+   "Scampton",
+   "Stow",
+   "Torksey"
+  ]
+ },
+ "corby": {
+  "query": "Corby",
+  "name": "Corby",
+  "type": "Town",
+  "lat": 52.48768,
+  "lon": -0.7013,
+  "county": "North Northamptonshire",
+  "district": [
+   "North Northamptonshire"
+  ],
+  "outcode": "NN17",
+  "outcodes": [
+   "NN17",
+   "NN18"
+  ],
+  "wards": [
+   "Corby West",
+   "Geddington & Stanion",
+   "Gretton & Weldon",
+   "Kingswood",
+   "Lloyds & Corby Village",
+   "Oakley",
+   "Desborough",
+   "Oundle"
+  ]
+ },
+ "mansfield": {
+  "query": "Mansfield",
+  "name": "Mansfield",
+  "type": "Town",
+  "lat": 53.14464,
+  "lon": -1.19635,
+  "county": "Nottinghamshire",
+  "district": [
+   "Ashfield",
+   "Mansfield",
+   "Newark and Sherwood"
+  ],
+  "outcode": "NG18",
+  "outcodes": [
+   "NG18",
+   "NG19"
+  ],
+  "wards": [
+   "Bancroft",
+   "Berry Hill",
+   "Brick Kiln",
+   "Carr Bank",
+   "Central",
+   "Eakring",
+   "Grange Farm",
+   "Kings Walk",
+   "Kingsway Forest Town",
+   "Lindhurst",
+   "Ling Forest",
+   "Mill Lane",
+   "Oakham",
+   "Oak Tree",
+   "Racecourse",
+   "Rainworth South & Blidworth",
+   "Rock Hill",
+   "Southwell"
+  ]
+ },
+ "loughborough": {
+  "query": "Loughborough",
+  "name": "Loughborough",
+  "type": "Town",
+  "lat": 52.7721,
+  "lon": -1.20616,
+  "county": "Leicestershire",
+  "district": [
+   "Charnwood"
+  ],
+  "outcode": "LE11",
+  "outcodes": [
+   "LE11",
+   "LE12"
+  ],
+  "wards": [
+   "Dishley, Hathern & Thorpe Acre",
+   "Loughborough Ashby",
+   "Loughborough East",
+   "Loughborough Nanpantan",
+   "Loughborough Outwoods & Shelthorpe",
+   "Loughborough Southfields",
+   "Loughborough Storer",
+   "Loughborough Woodthorpe",
+   "Shepshed West",
+   "Barrow upon Soar",
+   "Bunny",
+   "Castle Rock",
+   "Forest Bradgate",
+   "Gotham",
+   "Leake",
+   "Long Whatton & Diseworth",
+   "Mountsorrel",
+   "Quorn & Mountsorrel Castle"
+  ]
+ },
+ "wellingborough": {
+  "query": "Wellingborough",
+  "name": "Wellingborough",
+  "type": "Town",
+  "lat": 52.30217,
+  "lon": -0.6921,
+  "county": "North Northamptonshire",
+  "district": [
+   "North Northamptonshire"
+  ],
+  "outcode": "NN8",
+  "outcodes": [
+   "NN8"
+  ],
+  "wards": [
+   "Brickhill & Queensway",
+   "Croyland & Swanspool",
+   "Earls Barton",
+   "Finedon",
+   "Hatton Park",
+   "Irchester",
+   "Irthlingborough",
+   "Victoria"
+  ]
+ },
+ "grantham": {
+  "query": "Grantham",
+  "name": "Grantham",
+  "type": "Town",
+  "lat": 52.91209,
+  "lon": -0.64224,
+  "county": "Lincolnshire",
+  "district": [
+   "South Kesteven"
+  ],
+  "outcode": "NG31",
+  "outcodes": [
+   "NG31",
+   "NG32"
+  ],
+  "wards": [
+   "Belmont",
+   "Belvoir",
+   "Grantham Arnoldfield",
+   "Grantham Barrowby Gate",
+   "Grantham Earlesfield",
+   "Grantham Harrowby",
+   "Grantham Springfield",
+   "Grantham St Vincent's",
+   "Grantham St Wulfram's",
+   "Isaac Newton",
+   "Lincrest",
+   "Peascliffe & Ridgeway",
+   "Bottesford",
+   "Cranwell, Leasingham & Wilsford",
+   "Croxton Kerrial",
+   "Long Clawson and Stathern",
+   "Loveden Heath",
+   "Navenby & Brant Broughton"
+  ]
+ },
+ "chesterfield": {
+  "query": "Chesterfield",
+  "name": "Chesterfield",
+  "type": "Town",
+  "lat": 53.23633,
+  "lon": -1.42921,
+  "county": "Derbyshire",
+  "district": [
+   "Chesterfield",
+   "North East Derbyshire"
+  ],
+  "outcode": "S40",
+  "outcodes": [
+   "S40",
+   "S41",
+   "S42",
+   "S49"
+  ],
+  "wards": [
+   "Spire",
+   "Brampton East & Boythorpe",
+   "Brampton & Walton",
+   "Brampton West & Loundsley Green",
+   "Brockwell",
+   "Linacre",
+   "Rother",
+   "Walton",
+   "Brimington North",
+   "Brimington South",
+   "Dunston",
+   "Grassmoor",
+   "Hasland",
+   "Holmewood & Heath",
+   "Whittington",
+   "Whittington Moor",
+   "Ashover",
+   "Ault Hucknall"
+  ]
+ },
+ "boston": {
+  "query": "Boston",
+  "name": "Boston",
+  "type": "Town",
+  "lat": 52.97633,
+  "lon": -0.02715,
+  "county": "Lincolnshire",
+  "district": [
+   "Boston"
+  ],
+  "outcode": "PE21",
+  "outcodes": [
+   "PE21"
+  ],
+  "wards": [
+   "Coastal",
+   "Fenside",
+   "Fishtoft",
+   "Kirton and Frampton",
+   "Skirbeck",
+   "Staniland",
+   "Station",
+   "St Thomas'",
+   "Swineshead and Holland Fen",
+   "Trinity",
+   "West",
+   "Witham",
+   "Wyberton"
+  ]
+ },
+ "newark-on-trent": {
+  "query": "Newark-on-Trent",
+  "name": "Newark-on-Trent",
+  "type": "Town",
+  "lat": 53.07582,
+  "lon": -0.80772,
+  "county": "Nottinghamshire",
+  "district": [
+   "Newark and Sherwood"
+  ],
+  "outcode": "NG24",
+  "outcodes": [
+   "NG23",
+   "NG24"
+  ],
+  "wards": [
+   "Balderton North & Coddington",
+   "Balderton South",
+   "Beacon",
+   "Bridge",
+   "Castle",
+   "Collingham",
+   "Devon",
+   "Farndon & Fernwood",
+   "Trent",
+   "East Bridgford",
+   "Loveden Heath",
+   "Muskham",
+   "Saxilby",
+   "Skellingthorpe & Eagle",
+   "Sutton-on-Trent",
+   "Tuxford and Trent",
+   "Viking"
+  ]
+ },
+ "hinckley": {
+  "query": "Hinckley",
+  "name": "Hinckley",
+  "type": "Town",
+  "lat": 52.54105,
+  "lon": -1.37384,
+  "county": "Leicestershire",
+  "district": [
+   "Blaby",
+   "Hinckley and Bosworth",
+   "Rugby"
+  ],
+  "outcode": "LE10",
+  "outcodes": [
+   "LE10"
+  ],
+  "wards": [
+   "Burbage Sketchley and Stretton",
+   "Burbage St Catherines and Lash Hill",
+   "Fosse Highcross",
+   "Hinckley Castle",
+   "Hinckley Clarendon",
+   "Hinckley De Montfort",
+   "Hinckley Trinity",
+   "Wolvey and Shilton"
+  ]
+ },
+ "leeds": {
+  "query": "Leeds",
+  "name": "Leeds",
+  "type": "City",
+  "lat": 53.8007,
+  "lon": -1.55026,
+  "county": "Leeds",
+  "district": [
+   "Leeds"
+  ],
+  "outcode": "LS1",
+  "outcodes": [
+   "LS1",
+   "LS2",
+   "LS3",
+   "LS4",
+   "LS5",
+   "LS6",
+   "LS7",
+   "LS8",
+   "LS9",
+   "LS11",
+   "LS12",
+   "LS98"
+  ],
+  "wards": [
+   "Beeston & Holbeck",
+   "Hunslet & Riverside",
+   "Little London & Woodhouse",
+   "Headingley & Hyde Park",
+   "Chapel Allerton",
+   "Gipton & Harehills",
+   "Moortown",
+   "Weetwood",
+   "Armley",
+   "Kirkstall",
+   "Burmantofts & Richmond Hill",
+   "Cross Gates & Whinmoor",
+   "Garforth & Swillington",
+   "Temple Newsam",
+   "Middleton Park",
+   "Morley North",
+   "Farnley & Wortley",
+   "Killingbeck & Seacroft"
+  ]
+ },
+ "sheffield": {
+  "query": "Sheffield",
+  "name": "Sheffield",
+  "type": "City",
+  "lat": 53.38251,
+  "lon": -1.46854,
+  "county": "Sheffield",
+  "district": [
+   "Sheffield"
+  ],
+  "outcode": "S1",
+  "outcodes": [
+   "S1",
+   "S2",
+   "S3",
+   "S4",
+   "S6",
+   "S7",
+   "S9",
+   "S10",
+   "S11",
+   "S96",
+   "S98",
+   "S99"
+  ],
+  "wards": [
+   "City",
+   "Walkley",
+   "Broomhill and Sharrow Vale",
+   "Burngreave",
+   "Hillsborough",
+   "Darnall",
+   "Gleadless Valley",
+   "Manor Castle",
+   "Nether Edge and Sharrow",
+   "Park and Arbourthorne",
+   "Richmond",
+   "Shiregreen and Brightside",
+   "Crookes and Crosspool",
+   "Fulwood",
+   "Beauchief and Greenhill",
+   "Ecclesall",
+   "Dore and Totley",
+   "Hathersage"
+  ]
+ },
+ "bradford": {
+  "query": "Bradford",
+  "name": "Bradford",
+  "type": "City",
+  "lat": 53.79078,
+  "lon": -1.75456,
+  "county": "Bradford",
+  "district": [
+   "Bradford"
+  ],
+  "outcode": "BD1",
+  "outcodes": [
+   "BD1",
+   "BD2",
+   "BD3",
+   "BD4",
+   "BD5",
+   "BD6",
+   "BD7",
+   "BD8",
+   "BD9",
+   "BD14",
+   "BD98",
+   "BD99"
+  ],
+  "wards": [
+   "Bolton & Undercliffe",
+   "Bowling & Barkerend",
+   "City",
+   "Manningham",
+   "Great Horton",
+   "Holme Wood & Bierley",
+   "Little Horton",
+   "Wibsey & Odsal",
+   "Bradford Moor",
+   "Calverley & Farsley",
+   "Clayton & Fairweather Green",
+   "Royds",
+   "Thornton & Allerton",
+   "Toller",
+   "Birstall & Birkenshaw",
+   "Morley North",
+   "Pudsey",
+   "Wyke"
+  ]
+ },
+ "york": {
+  "query": "York",
+  "name": "York",
+  "type": "City",
+  "lat": 53.96201,
+  "lon": -1.08367,
+  "county": "York",
+  "district": [
+   "York"
+  ],
+  "outcode": "YO1",
+  "outcodes": [
+   "YO1",
+   "YO10",
+   "YO24",
+   "YO30",
+   "YO31",
+   "YO90"
+  ],
+  "wards": [
+   "Guildhall",
+   "Micklegate",
+   "Heworth",
+   "Heworth Without",
+   "Huntington & New Earswick",
+   "Osbaldwick & Derwent",
+   "Fishergate",
+   "Fulford & Heslington",
+   "Hull Road",
+   "Acomb",
+   "Dringhouses & Woodthorpe",
+   "Holgate",
+   "Westfield",
+   "Clifton",
+   "Easingwold",
+   "Huby & Tollerton",
+   "Rawcliffe & Clifton Without",
+   "Rural West York"
+  ]
+ },
+ "wakefield": {
+  "query": "Wakefield",
+  "name": "Wakefield",
+  "type": "City",
+  "lat": 53.6837,
+  "lon": -1.49817,
+  "county": "Wakefield",
+  "district": [
+   "Wakefield"
+  ],
+  "outcode": "WF1",
+  "outcodes": [
+   "WF1",
+   "WF2",
+   "WF3",
+   "WF4",
+   "WF90"
+  ],
+  "wards": [
+   "Crofton, Ryhill & Walton",
+   "Normanton",
+   "Stanley & Outwood East",
+   "Wakefield East",
+   "Wakefield North",
+   "Wakefield South",
+   "Wakefield West",
+   "Wrenthorpe & Outwood West",
+   "Ardsley & Robin Hood",
+   "Wakefield Rural",
+   "Ackworth, North Elmsall & Upton",
+   "Denby Dale",
+   "Dewsbury South",
+   "Featherstone",
+   "Hemsworth",
+   "Horbury & South Ossett",
+   "Kirkburton",
+   "Batley East"
+  ]
+ },
+ "hull": {
+  "query": "Kingston upon Hull",
+  "name": "Kingston upon Hull",
+  "type": "City",
+  "lat": 53.74459,
+  "lon": -0.33258,
+  "county": "City of Kingston upon Hull",
+  "district": [
+   "Kingston upon Hull, City of"
+  ],
+  "outcode": "HU1",
+  "outcodes": [
+   "HU1",
+   "HU2",
+   "HU3",
+   "HU4",
+   "HU5",
+   "HU6",
+   "HU8",
+   "HU9"
+  ],
+  "wards": [
+   "Central",
+   "Drypool",
+   "St Andrew's & Docklands",
+   "Avenue",
+   "Boothferry",
+   "Newington & Gipsyville",
+   "Ings",
+   "Longhill & Bilton Grange",
+   "Marfleet",
+   "Southcoates",
+   "Beverley & Newland",
+   "Bricknell",
+   "Cottingham South",
+   "Derringham",
+   "Tranby",
+   "Willerby and Kirk Ella",
+   "Holderness",
+   "Mid Holderness"
+  ]
+ },
+ "doncaster": {
+  "query": "Doncaster",
+  "name": "Doncaster",
+  "type": "City",
+  "lat": 53.52272,
+  "lon": -1.13235,
+  "county": "Doncaster",
+  "district": [
+   "Doncaster"
+  ],
+  "outcode": "DN1",
+  "outcodes": [
+   "DN1",
+   "DN2",
+   "DN4",
+   "DN5"
+  ],
+  "wards": [
+   "Edlington & Warmsworth",
+   "Hexthorpe & Balby North",
+   "Town",
+   "Balby South",
+   "Bessacarr",
+   "Finningley",
+   "Rossington & Bawtry",
+   "Tickhill & Wadsworth",
+   "Edenthorpe & Kirk Sandall",
+   "Wheatley Hills & Intake",
+   "Adwick le Street & Carcroft",
+   "Bentley",
+   "Dearne South",
+   "Norton & Askern",
+   "Roman Ridge",
+   "Sprotbrough"
+  ]
+ },
+ "huddersfield": {
+  "query": "Huddersfield",
+  "name": "Huddersfield",
+  "type": "Town",
+  "lat": 53.64428,
+  "lon": -1.7822,
+  "county": "Kirklees",
+  "district": [
+   "Kirklees"
+  ],
+  "outcode": "HD1",
+  "outcodes": [
+   "HD1",
+   "HD2",
+   "HD3",
+   "HD4",
+   "HD5"
+  ],
+  "wards": [
+   "Ashbrow",
+   "Colne Valley East",
+   "Crosland Moor",
+   "Dalton",
+   "Greenhead",
+   "Netherton & Newsome",
+   "Almondbury",
+   "Colne Valley West",
+   "Holme Valley North",
+   "Kirkburton",
+   "Brighouse",
+   "Mirfield",
+   "Elland",
+   "Lindley",
+   "Greetland",
+   "Ryburn"
+  ]
+ },
+ "harrogate": {
+  "query": "Harrogate",
+  "name": "Harrogate",
+  "type": "Town",
+  "lat": 53.99374,
+  "lon": -1.54309,
+  "county": "North Yorkshire",
+  "district": [
+   "North Yorkshire"
+  ],
+  "outcode": "HG1",
+  "outcodes": [
+   "HG1",
+   "HG2"
+  ],
+  "wards": [
+   "Bilton Grange & New Park",
+   "Bilton & Nidd Gorge",
+   "Coppice Valley & Duchy",
+   "Fairfax & Starbeck",
+   "High Harrogate & Kingsley",
+   "Knaresborough West",
+   "Valley Gardens & Central Harrogate",
+   "Harlow & St. Georges",
+   "Oatlands & Pannal",
+   "Stray, Woodlands & Hookstone"
+  ]
+ },
+ "halifax": {
+  "query": "Halifax",
+  "name": "Halifax",
+  "type": "Town",
+  "lat": 53.72283,
+  "lon": -1.86018,
+  "county": "Calderdale",
+  "district": [
+   "Calderdale"
+  ],
+  "outcode": "HX1",
+  "outcodes": [
+   "HX1",
+   "HX2",
+   "HX3",
+   "HX5"
+  ],
+  "wards": [
+   "Halifax Town",
+   "Park",
+   "Salterhebble, Southowram & Skircoat Green",
+   "Wainhouse",
+   "Warley",
+   "Brighouse",
+   "Hipperholme & Lightcliffe",
+   "Illingworth & Mixenden",
+   "Northowram & Shelf",
+   "Ovenden",
+   "Queensbury",
+   "Hebden Bridge & Todmorden East",
+   "Luddendenfoot",
+   "Ryburn",
+   "Sowerby Bridge",
+   "Elland",
+   "Greetland"
+  ]
+ },
+ "rotherham": {
+  "query": "Rotherham",
+  "name": "Rotherham",
+  "type": "Town",
+  "lat": 53.43072,
+  "lon": -1.35474,
+  "county": "Rotherham",
+  "district": [
+   "Rotherham",
+   "Sheffield"
+  ],
+  "outcode": "S60",
+  "outcodes": [
+   "S60",
+   "S61",
+   "S62",
+   "S65",
+   "S95"
+  ],
+  "wards": [
+   "Boston Castle",
+   "Brinsworth",
+   "Darnall",
+   "Rawmarsh East",
+   "Rawmarsh West",
+   "Rotherham East",
+   "Rotherham West",
+   "Rother Vale",
+   "Sitwell",
+   "Thurcroft & Wickersley South",
+   "Bramley & Ravenfield",
+   "Dalton & Thrybergh",
+   "Dinnington",
+   "Tickhill & Wadsworth",
+   "Wickersley North",
+   "East Ecclesfield",
+   "Greasbrough",
+   "Hoober"
+  ]
+ },
+ "barnsley": {
+  "query": "Barnsley",
+  "name": "Barnsley",
+  "type": "Town",
+  "lat": 53.55352,
+  "lon": -1.48259,
+  "county": "Barnsley",
+  "district": [
+   "Barnsley"
+  ],
+  "outcode": "S70",
+  "outcodes": [
+   "S70",
+   "S71",
+   "S75"
+  ],
+  "wards": [
+   "Central",
+   "Dodworth, Stainborough & Tankersley",
+   "Kingstone",
+   "Monk Bretton",
+   "Rockingham",
+   "Stairfoot",
+   "Worsbrough",
+   "Darton East",
+   "Darton West",
+   "Old Town",
+   "Penistone East",
+   "Wakefield Rural",
+   "Athersley & New Lodge",
+   "Crofton, Ryhill & Walton",
+   "Cudworth",
+   "Darfield & Great Houghton",
+   "Royston"
+  ]
+ },
+ "scarborough": {
+  "query": "Scarborough",
+  "name": "Scarborough",
+  "type": "Town",
+  "lat": 54.28158,
+  "lon": -0.40221,
+  "county": "North Yorkshire",
+  "district": [
+   "North Yorkshire"
+  ],
+  "outcode": "YO11",
+  "outcodes": [
+   "YO11",
+   "YO12"
+  ],
+  "wards": [
+   "Castle",
+   "Derwent Valley & Moor",
+   "Falsgrave & Stepney",
+   "Hunmanby & Sherburn",
+   "Newby",
+   "Northstead",
+   "Scalby & the Coast",
+   "Seamer",
+   "Woodlands",
+   "Cayton",
+   "Eastfield",
+   "Weaponness & Ramshill"
+  ]
+ },
+ "grimsby": {
+  "query": "Grimsby",
+  "name": "Grimsby",
+  "type": "Town",
+  "lat": 53.56511,
+  "lon": -0.08383,
+  "county": "North East Lincolnshire",
+  "district": [
+   "North East Lincolnshire"
+  ],
+  "outcode": "DN31",
+  "outcodes": [
+   "DN31",
+   "DN32",
+   "DN33",
+   "DN34",
+   "DN35",
+   "DN37"
+  ],
+  "wards": [
+   "East Marsh",
+   "Freshney",
+   "Immingham",
+   "Park",
+   "Sidney Sussex",
+   "West Marsh",
+   "Wolds",
+   "Yarborough",
+   "Heneage",
+   "South",
+   "Humberston and New Waltham",
+   "Scartho",
+   "Waltham",
+   "Croft Baker",
+   "Haverstoe",
+   "Caistor and Yarborough",
+   "Ferry",
+   "Holton-le-Clay & North Thoresby"
+  ]
+ },
+ "scunthorpe": {
+  "query": "Scunthorpe",
+  "name": "Scunthorpe",
+  "type": "Town",
+  "lat": 53.59189,
+  "lon": -0.64676,
+  "county": "North Lincolnshire",
+  "district": [
+   "North Lincolnshire"
+  ],
+  "outcode": "DN15",
+  "outcodes": [
+   "DN15",
+   "DN16",
+   "DN17"
+  ],
+  "wards": [
+   "Burringham & Gunness",
+   "Burton upon Stather & Winterton",
+   "Crosby & Park",
+   "Frodingham",
+   "Kingsway with Lincoln Gardens",
+   "Town",
+   "Ashby Central",
+   "Ashby Lakeside",
+   "Bottesford",
+   "Messingham",
+   "Axholme Central",
+   "Axholme North",
+   "Axholme South",
+   "Brumby",
+   "Scotter and Blyton"
+  ]
+ },
+ "manchester": {
+  "query": "Manchester",
+  "name": "Manchester",
+  "type": "City",
+  "lat": 53.47894,
+  "lon": -2.24528,
+  "county": "Manchester",
+  "district": [
+   "Manchester"
+  ],
+  "outcode": "M2",
+  "outcodes": [
+   "M1",
+   "M2",
+   "M3",
+   "M4",
+   "M7",
+   "M13",
+   "M15",
+   "M16",
+   "M60",
+   "M61",
+   "M99"
+  ],
+  "wards": [
+   "Deansgate",
+   "Piccadilly",
+   "Ardwick",
+   "Hulme",
+   "Blackfriars & Trinity",
+   "Broughton",
+   "Cheetham",
+   "Ordsall",
+   "Ancoats & Beswick",
+   "Miles Platting & Newton Heath",
+   "Gorse Hill & Cornbrook",
+   "Moss Side",
+   "Old Trafford",
+   "Longsight",
+   "Rusholme",
+   "Chorlton",
+   "Chorlton Park",
+   "Longford"
+  ]
+ },
+ "liverpool": {
+  "query": "Liverpool",
+  "name": "Liverpool",
+  "type": "City",
+  "lat": 53.40935,
+  "lon": -2.97849,
+  "county": "Liverpool",
+  "district": [
+   "Liverpool"
+  ],
+  "outcode": "L3",
+  "outcodes": [
+   "L1",
+   "L2",
+   "L3",
+   "L5",
+   "L6",
+   "L7",
+   "L8",
+   "L69",
+   "L70",
+   "L71",
+   "L74"
+  ],
+  "wards": [
+   "Brownlow Hill",
+   "Canning",
+   "City Centre North",
+   "City Centre South",
+   "Everton West",
+   "Festival Gardens",
+   "Vauxhall",
+   "Waterfront North",
+   "Waterfront South",
+   "Garston",
+   "Netherton South & Orrell",
+   "Northwood",
+   "Everton East",
+   "Everton North",
+   "Kirkdale East",
+   "Kirkdale West",
+   "Arundel",
+   "Edge Hill"
+  ]
+ },
+ "salford": {
+  "query": "Salford",
+  "name": "Salford",
+  "type": "City",
+  "lat": 53.48064,
+  "lon": -2.295,
+  "county": "Salford",
+  "district": [
+   "Salford"
+  ],
+  "outcode": "M5",
+  "outcodes": [
+   "M3",
+   "M5",
+   "M6",
+   "M7",
+   "M17",
+   "M50",
+   "M60"
+  ],
+  "wards": [
+   "Pendleton & Charlestown",
+   "Quays",
+   "Weaste & Seedley",
+   "Ordsall",
+   "Claremont",
+   "Eccles",
+   "Davyhulme",
+   "Gorse Hill & Cornbrook",
+   "Lostock & Barton",
+   "Blackfriars & Trinity",
+   "Broughton",
+   "Cheetham",
+   "Deansgate",
+   "Hulme",
+   "Crumpsall",
+   "Kersal & Broughton Park",
+   "St. Mary's",
+   "Piccadilly"
+  ]
+ },
+ "preston": {
+  "query": "Preston",
+  "name": "Preston",
+  "type": "City",
+  "lat": 53.76055,
+  "lon": -2.69853,
+  "county": "Lancashire",
+  "district": [
+   "Preston",
+   "South Ribble"
+  ],
+  "outcode": "PR1",
+  "outcodes": [
+   "PR0",
+   "PR1",
+   "PR2",
+   "PR5",
+   "PR11"
+  ],
+  "wards": [
+   "Ashton",
+   "Broad Oak",
+   "Brookfield",
+   "Charnock",
+   "City Centre",
+   "Deepdale",
+   "Fishwick & Frenchwood",
+   "Howick & Priory",
+   "Middleforth",
+   "Plungington",
+   "Ribbleton",
+   "St Matthew's",
+   "Walton-le-Dale West",
+   "Cadley",
+   "Garrison",
+   "Greyfriars",
+   "Ingol & Cottam",
+   "Lea & Larches"
+  ]
+ },
+ "stockport": {
+  "query": "Stockport",
+  "name": "Stockport",
+  "type": "Town",
+  "lat": 53.40802,
+  "lon": -2.15896,
+  "county": "Stockport",
+  "district": [
+   "Stockport"
+  ],
+  "outcode": "SK1",
+  "outcodes": [
+   "M19",
+   "SK1",
+   "SK2",
+   "SK3",
+   "SK4",
+   "SK5",
+   "SK7",
+   "SK8"
+  ],
+  "wards": [
+   "Brinnington & Stockport Central",
+   "Manor",
+   "Cheadle East & Cheadle Hulme North",
+   "Davenport & Cale Green",
+   "Edgeley",
+   "Norbury & Woodsmoor",
+   "Didsbury East",
+   "Heatons North",
+   "Heatons South",
+   "Reddish South",
+   "Hazel Grove",
+   "Offerton",
+   "Denton West",
+   "Reddish North",
+   "Burnage",
+   "Levenshulme",
+   "Longsight",
+   "Rusholme"
+  ]
+ },
+ "chester": {
+  "query": "Chester",
+  "name": "Chester",
+  "type": "City",
+  "lat": 53.1902,
+  "lon": -2.89164,
+  "county": "Cheshire West and Chester",
+  "district": [
+   "Cheshire West and Chester",
+   "Flintshire"
+  ],
+  "outcode": "CH1",
+  "outcodes": [
+   "CH1",
+   "CH2",
+   "CH4",
+   "CH70",
+   "CH88",
+   "CH99"
+  ],
+  "wards": [
+   "Chester City & the Garden Quarter",
+   "Christleton & Huntington",
+   "Blacon",
+   "Gowy Rural",
+   "Ledsham & Manor",
+   "Queensferry and Sealand",
+   "Saughall & Mollington",
+   "Upton",
+   "Newton & Hoole",
+   "Sandstone",
+   "Whitby Groves",
+   "Wolverham",
+   "Broughton North East",
+   "Broughton South",
+   "Handbridge Park",
+   "Higher Kinnerton",
+   "Hope",
+   "Lache"
+  ]
+ },
+ "warrington": {
+  "query": "Warrington",
+  "name": "Warrington",
+  "type": "Town",
+  "lat": 53.38957,
+  "lon": -2.5909,
+  "county": "Warrington",
+  "district": [
+   "Warrington"
+  ],
+  "outcode": "WA1",
+  "outcodes": [
+   "WA1",
+   "WA2",
+   "WA4",
+   "WA5",
+   "WA55"
+  ],
+  "wards": [
+   "Bewsey and Whitecross",
+   "Fairfield and Howley",
+   "Poulton North",
+   "Poulton South",
+   "Rixton and Woolston",
+   "Westbrook",
+   "Burtonwood and Winwick",
+   "Newton-le-Willows East",
+   "Orford",
+   "Poplars and Hulme",
+   "Appleton",
+   "Daresbury, Moore & Sandymoor",
+   "Grappenhall",
+   "Latchford East",
+   "Latchford West",
+   "Lymm North and Thelwall",
+   "Lymm South",
+   "Marbury"
+  ]
+ },
+ "bolton": {
+  "query": "Bolton",
+  "name": "Bolton",
+  "type": "Town",
+  "lat": 53.57771,
+  "lon": -2.43104,
+  "county": "Bolton",
+  "district": [
+   "Bolton"
+  ],
+  "outcode": "BL1",
+  "outcodes": [
+   "BL1",
+   "BL2",
+   "BL3",
+   "BL4",
+   "BL11",
+   "BL78"
+  ],
+  "wards": [
+   "Queens Park & Central",
+   "Farnworth North",
+   "Great Lever",
+   "Heaton, Lostock & Chew Moor",
+   "Hulton",
+   "Little Lever & Darcy Lever",
+   "Radcliffe West",
+   "Rumworth",
+   "Westhoughton North & Hunger Hill",
+   "Astley Bridge",
+   "Bradshaw",
+   "Halliwell",
+   "Horwich North",
+   "Smithills",
+   "Tonge with the Haulgh",
+   "Breightmet",
+   "Bromley Cross",
+   "Radcliffe North & Ainsworth"
+  ]
+ },
+ "wigan": {
+  "query": "Wigan",
+  "name": "Wigan",
+  "type": "Town",
+  "lat": 53.54554,
+  "lon": -2.62969,
+  "county": "Wigan",
+  "district": [
+   "Bolton",
+   "Wigan"
+  ],
+  "outcode": "WN1",
+  "outcodes": [
+   "WN1",
+   "WN2",
+   "WN3",
+   "WN5",
+   "WN6"
+  ],
+  "wards": [
+   "Aspull, New Springs & Whelley",
+   "Horwich South & Blackrod",
+   "Ince",
+   "Standish with Langtree",
+   "Wigan Central",
+   "Wigan West",
+   "Abram",
+   "Douglas",
+   "Winstanley",
+   "Worsley Mesnes",
+   "Hindley",
+   "Hindley Green",
+   "Leigh West",
+   "Westhoughton North & Hunger Hill",
+   "Westhoughton South",
+   "Billinge & Seneley Green",
+   "Orrell",
+   "Pemberton"
+  ]
+ },
+ "lancaster": {
+  "query": "Lancaster",
+  "name": "Lancaster",
+  "type": "City",
+  "lat": 54.05007,
+  "lon": -2.80316,
+  "county": "Lancashire",
+  "district": [
+   "Lancaster"
+  ],
+  "outcode": "LA1",
+  "outcodes": [
+   "LA1",
+   "LA3",
+   "LA4"
+  ],
+  "wards": [
+   "Bowerham",
+   "Bulk",
+   "Castle",
+   "Ellel",
+   "John O'Gaunt",
+   "Lower Lune Valley",
+   "Marsh",
+   "Scale Hall",
+   "Scotforth East",
+   "Scotforth West",
+   "Skerton",
+   "Torrisholme",
+   "University",
+   "Westgate",
+   "Bare",
+   "Poulton",
+   "West End",
+   "Heysham Central"
+  ]
+ },
+ "bury": {
+  "query": "Bury",
+  "name": "Bury",
+  "type": "Town",
+  "lat": 53.59269,
+  "lon": -2.29877,
+  "county": "Bury",
+  "district": [
+   "Bury",
+   "Rochdale",
+   "Rossendale"
+  ],
+  "outcode": "BL9",
+  "outcodes": [
+   "BL8",
+   "BL9",
+   "M26"
+  ],
+  "wards": [
+   "Besses",
+   "Bury East",
+   "Bury West",
+   "Greenfield & Eden",
+   "Moorside",
+   "Norden",
+   "North Manor",
+   "Pilkington Park",
+   "Radcliffe East",
+   "Ramsbottom",
+   "Redvales",
+   "Unsworth",
+   "West Heywood",
+   "Bradshaw",
+   "Elton",
+   "Helmshore",
+   "Radcliffe North & Ainsworth",
+   "Tottington"
+  ]
+ },
+ "carlisle": {
+  "query": "Carlisle",
+  "name": "Carlisle",
+  "type": "City",
+  "lat": 54.89262,
+  "lon": -2.93302,
+  "county": "Cumberland",
+  "district": [
+   "Cumberland"
+  ],
+  "outcode": "CA3",
+  "outcodes": [
+   "CA1",
+   "CA2",
+   "CA3"
+  ],
+  "wards": [
+   "Belle Vue",
+   "Castle",
+   "Currock",
+   "Dalston and Burgh",
+   "Denton Holme",
+   "Morton",
+   "Upperby",
+   "Wetheral",
+   "Yewdale",
+   "Botcherby",
+   "Harraby North",
+   "Harraby South",
+   "Belah",
+   "Houghton and Irthington",
+   "Stanwix Urban"
+  ]
+ },
+ "oldham": {
+  "query": "Oldham",
+  "name": "Oldham",
+  "type": "Town",
+  "lat": 53.54216,
+  "lon": -2.11596,
+  "county": "Oldham",
+  "district": [
+   "Oldham"
+  ],
+  "outcode": "OL1",
+  "outcodes": [
+   "M35",
+   "OL1",
+   "OL2",
+   "OL4",
+   "OL8",
+   "OL9"
+  ],
+  "wards": [
+   "Chadderton Central",
+   "Chadderton North",
+   "Coldhurst",
+   "Royton North",
+   "Royton South",
+   "Saddleworth North",
+   "Shaw",
+   "St James'",
+   "St Mary's",
+   "Alexandra",
+   "Failsworth East",
+   "Hollinwood",
+   "Medlock Vale",
+   "Werneth",
+   "Chadderton South",
+   "Saddleworth South",
+   "Saddleworth West & Lees",
+   "Waterhead"
+  ]
+ },
+ "rochdale": {
+  "query": "Rochdale",
+  "name": "Rochdale",
+  "type": "Town",
+  "lat": 53.61696,
+  "lon": -2.15671,
+  "county": "Rochdale",
+  "district": [
+   "Oldham",
+   "Rochdale"
+  ],
+  "outcode": "OL16",
+  "outcodes": [
+   "OL11",
+   "OL12",
+   "OL15",
+   "OL16"
+  ],
+  "wards": [
+   "Balderstone & Kirkholt",
+   "Bamford",
+   "Central Rochdale",
+   "Kingsway",
+   "Littleborough Lakeside",
+   "Milkstone & Deeplish",
+   "Milnrow & Newhey",
+   "Shaw",
+   "Smallbridge & Firgrove",
+   "Wardle, Shore & West Littleborough",
+   "Castleton",
+   "Norden",
+   "North Heywood",
+   "Spotland & Falinge",
+   "Healey",
+   "Whitworth",
+   "Todmorden West"
+  ]
+ },
+ "altrincham": {
+  "query": "Altrincham",
+  "name": "Altrincham",
+  "type": "Town",
+  "lat": 53.38809,
+  "lon": -2.35146,
+  "county": "Trafford",
+  "district": [
+   "Cheshire East",
+   "Trafford"
+  ],
+  "outcode": "WA14",
+  "outcodes": [
+   "M23",
+   "M33",
+   "WA14",
+   "WA15"
+  ],
+  "wards": [
+   "Altrincham",
+   "Bowdon",
+   "Broadheath",
+   "Hale",
+   "High Legh",
+   "Mobberley",
+   "Timperley North",
+   "Brooklands",
+   "Hale Barns & Timperley South",
+   "Timperley Central",
+   "Woodhouse Park",
+   "Ashton upon Mersey",
+   "Bucklow-St Martins",
+   "Manor",
+   "Sale Central",
+   "Sale Moor",
+   "Baguley",
+   "Northenden"
+  ]
+ },
+ "st-helens": {
+  "query": "St Helens",
+  "name": "St Helens",
+  "type": "Town",
+  "lat": 53.45534,
+  "lon": -2.73819,
+  "county": "St. Helens",
+  "district": [
+   "Knowsley",
+   "St. Helens"
+  ],
+  "outcode": "WA10",
+  "outcodes": [
+   "WA9",
+   "WA10",
+   "WA11"
+  ],
+  "wards": [
+   "Eccleston",
+   "Moss Bank",
+   "Peasley Cross & Fingerpost",
+   "Prescot North",
+   "St Helens Town Centre",
+   "Thatto Heath",
+   "West Park",
+   "Windle",
+   "Bold & Lea Green",
+   "Burtonwood and Winwick",
+   "Parr",
+   "Sutton North West",
+   "Sutton South East",
+   "Billinge & Seneley Green",
+   "Blackbrook",
+   "Haydock",
+   "Rainford",
+   "Rural South"
+  ]
+ },
+ "southport": {
+  "query": "Southport",
+  "name": "Southport",
+  "type": "Town",
+  "lat": 53.64729,
+  "lon": -3.00732,
+  "county": "Sefton",
+  "district": [
+   "Sefton",
+   "West Lancashire"
+  ],
+  "outcode": "PR8",
+  "outcodes": [
+   "PR8",
+   "PR9"
+  ],
+  "wards": [
+   "Ainsdale",
+   "Birkdale",
+   "Cambridge",
+   "Duke's",
+   "Formby West",
+   "Kew",
+   "Norwood",
+   "Rural West",
+   "Burscough Bridge & Rufford",
+   "Meols",
+   "North Meols & Hesketh Bank"
+  ]
+ },
+ "birkenhead": {
+  "query": "Birkenhead",
+  "name": "Birkenhead",
+  "type": "Town",
+  "lat": 53.39385,
+  "lon": -3.01449,
+  "county": "Wirral",
+  "district": [
+   "Wirral"
+  ],
+  "outcode": "CH41",
+  "outcodes": [
+   "CH25",
+   "CH27",
+   "CH41",
+   "CH42",
+   "CH43",
+   "CH44"
+  ],
+  "wards": [
+   "Birkenhead and Tranmere",
+   "Bidston and St James",
+   "Claughton",
+   "Oxton",
+   "Rock Ferry",
+   "Seacombe",
+   "Bromborough",
+   "Prenton",
+   "Leasowe and Moreton East",
+   "Liscard",
+   "Wallasey"
+  ]
+ },
+ "blackpool": {
+  "query": "Blackpool",
+  "name": "Blackpool",
+  "type": "Town",
+  "lat": 53.82086,
+  "lon": -3.05154,
+  "county": "Blackpool",
+  "district": [
+   "Blackpool"
+  ],
+  "outcode": "FY1",
+  "outcodes": [
+   "FY1",
+   "FY2",
+   "FY3",
+   "FY4"
+  ],
+  "wards": [
+   "Bloomfield",
+   "Brunswick",
+   "Claremont",
+   "Talbot",
+   "Tyldesley",
+   "Victoria",
+   "Warbreck",
+   "Waterloo",
+   "Hardhorn with High Cross",
+   "Layton",
+   "Marton",
+   "Park",
+   "Staining",
+   "Tithebarn",
+   "Bispham",
+   "Greenlands",
+   "Ingthorpe",
+   "Norbreck"
+  ]
+ },
+ "blackburn": {
+  "query": "Blackburn",
+  "name": "Blackburn",
+  "type": "Town",
+  "lat": 53.75007,
+  "lon": -2.48153,
+  "county": "Blackburn with Darwen",
+  "district": [
+   "Blackburn with Darwen",
+   "Hyndburn",
+   "Ribble Valley",
+   "Rossendale"
+  ],
+  "outcode": "BB1",
+  "outcodes": [
+   "BB1",
+   "BB2"
+  ],
+  "wards": [
+   "Audley & Queen's Park",
+   "Bastwell & Daisyfield",
+   "Billinge & Beardwood",
+   "Blackburn Central",
+   "Blackburn South East",
+   "Blackburn South & Lower Darwen",
+   "Clayton-le-Dale & Salesbury",
+   "Helmshore",
+   "Immanuel",
+   "Little Harwood & Whitebirk",
+   "Mellor",
+   "Overton",
+   "Rishton",
+   "Roe Lee",
+   "Shear Brow & Corporation Park",
+   "St Oswald's",
+   "West Pennine",
+   "Wilpshire & Ramsgreave"
+  ]
+ },
+ "burnley": {
+  "query": "Burnley",
+  "name": "Burnley",
+  "type": "Town",
+  "lat": 53.78752,
+  "lon": -2.24439,
+  "county": "Lancashire",
+  "district": [
+   "Burnley"
+  ],
+  "outcode": "BB11",
+  "outcodes": [
+   "BB10",
+   "BB11",
+   "BB12"
+  ],
+  "wards": [
+   "Bank Hall",
+   "Brunshaw",
+   "Cliviger with Worsthorne",
+   "Coal Clough with Deerplay",
+   "Daneshouse with Stoneyholme",
+   "Hapton with Park",
+   "Rosegrove with Lowerhouse",
+   "Rosehill with Burnley Wood",
+   "Trinity",
+   "Briercliffe",
+   "Brierfield East & Clover Hill",
+   "Brierfield West & Reedley",
+   "Lanehead",
+   "Marsden & Southfield",
+   "Queensgate",
+   "Barrowford & Pendleside",
+   "East Whalley, Read & Simonstone",
+   "Fence & Higham"
+  ]
+ },
+ "crewe": {
+  "query": "Crewe",
+  "name": "Crewe",
+  "type": "Town",
+  "lat": 53.09503,
+  "lon": -2.44176,
+  "county": "Cheshire East",
+  "district": [
+   "Cheshire East",
+   "Newcastle-under-Lyme"
+  ],
+  "outcode": "CW2",
+  "outcodes": [
+   "CW1",
+   "CW2",
+   "CW98"
+  ],
+  "wards": [
+   "Crewe East",
+   "Brereton Rural",
+   "Bunbury",
+   "Crewe Central",
+   "Crewe North",
+   "Crewe St Barnabas",
+   "Haslington",
+   "Leighton",
+   "Wistaston",
+   "Crewe South",
+   "Crewe West",
+   "Madeley & Betley",
+   "Shavington",
+   "Willaston and Rope",
+   "Wybunbury"
+  ]
+ },
+ "macclesfield": {
+  "query": "Macclesfield",
+  "name": "Macclesfield",
+  "type": "Town",
+  "lat": 53.2606,
+  "lon": -2.12554,
+  "county": "Cheshire East",
+  "district": [
+   "Cheshire East"
+  ],
+  "outcode": "SK10",
+  "outcodes": [
+   "SK10",
+   "SK11"
+  ],
+  "wards": [
+   "Bollington",
+   "Broken Cross and Upton",
+   "Chelford",
+   "Gawsworth",
+   "Macclesfield Central",
+   "Macclesfield East",
+   "Macclesfield Hurdsfield",
+   "Macclesfield Tytherington",
+   "Macclesfield West and Ivy",
+   "Poynton East and Pott Shrigley",
+   "Poynton West and Adlington",
+   "Prestbury",
+   "Sutton",
+   "Dane",
+   "Dane Valley",
+   "Horton",
+   "Macclesfield South"
+  ]
+ },
+ "barrow-in-furness": {
+  "query": "Barrow-in-Furness",
+  "name": "Barrow-in-Furness",
+  "type": "Town",
+  "lat": 54.11136,
+  "lon": -3.22716,
+  "county": "Westmorland and Furness",
+  "district": [
+   "Westmorland and Furness"
+  ],
+  "outcode": "LA14",
+  "outcodes": [
+   "LA13",
+   "LA14"
+  ],
+  "wards": [
+   "Dalton North",
+   "Hawcoat and Newbarns",
+   "Old Barrow and Hindpool",
+   "Ormsgill and Parkside",
+   "Walney Island",
+   "Dalton South",
+   "Low Furness",
+   "Risedale and Roosecote"
+  ]
+ },
+ "newcastle-upon-tyne": {
+  "query": "Newcastle upon Tyne",
+  "name": "Newcastle upon Tyne",
+  "type": "City",
+  "lat": 54.97801,
+  "lon": -1.61019,
+  "county": "Newcastle upon Tyne",
+  "district": [
+   "Newcastle upon Tyne"
+  ],
+  "outcode": "NE1",
+  "outcodes": [
+   "NE1",
+   "NE2",
+   "NE3",
+   "NE4",
+   "NE6",
+   "NE7",
+   "NE88",
+   "NE98",
+   "NE99"
+  ],
+  "wards": [
+   "Monument",
+   "Ouseburn",
+   "Dene & South Gosforth",
+   "Lobley Hill & Bensham",
+   "Arthur's Hill",
+   "Gosforth",
+   "Jesmond",
+   "Elswick",
+   "West Fenham",
+   "Wingrove",
+   "Byker",
+   "Heaton",
+   "Walker",
+   "Walkergate",
+   "Longbenton & Benton",
+   "Manor Park",
+   "Blakelaw & Cowgate",
+   "Fawdon & West Gosforth"
+  ]
+ },
+ "sunderland": {
+  "query": "Sunderland",
+  "name": "Sunderland",
+  "type": "City",
+  "lat": 54.90216,
+  "lon": -1.3838,
+  "county": "Sunderland",
+  "district": [
+   "Sunderland"
+  ],
+  "outcode": "SR2",
+  "outcodes": [
+   "SR1",
+   "SR2",
+   "SR3",
+   "SR4",
+   "SR5",
+   "SR6"
+  ],
+  "wards": [
+   "Deptford & Hendon",
+   "Barnes & Thornhill",
+   "Doxford Park",
+   "Grangetown",
+   "Pallion & Ford",
+   "Ryhope",
+   "Southwick",
+   "Tunstall & Humbledon",
+   "Grindon & Thorney Close",
+   "Herrington & Newbottle",
+   "Pennywell & South Hylton",
+   "Penshaw & Shiney Row",
+   "Cleadon Village & East Boldon",
+   "Fulwell",
+   "Hylton Castle",
+   "Redhouse",
+   "Roker",
+   "Washington East"
+  ]
+ },
+ "durham": {
+  "query": "Durham",
+  "name": "Durham",
+  "type": "City",
+  "lat": 54.77786,
+  "lon": -1.58261,
+  "county": "County Durham",
+  "district": [
+   "County Durham"
+  ],
+  "outcode": "DH1",
+  "outcodes": [
+   "DH1",
+   "DH97",
+   "DH98",
+   "DH99"
+  ],
+  "wards": [
+   "Belmont",
+   "Bowburn & Coxhoe",
+   "Brandon",
+   "Deerness",
+   "Easington & Shotton",
+   "Elvet, Gilesgate & Shincliffe",
+   "Framwellgate & Newton Hall",
+   "Neville's Cross",
+   "Pittington & Sherburn",
+   "Sacriston & Witton Gilbert"
+  ]
+ },
+ "middlesbrough": {
+  "query": "Middlesbrough",
+  "name": "Middlesbrough",
+  "type": "Town",
+  "lat": 54.57643,
+  "lon": -1.23682,
+  "county": "Middlesbrough",
+  "district": [
+   "Middlesbrough"
+  ],
+  "outcode": "TS1",
+  "outcodes": [
+   "TS1",
+   "TS2",
+   "TS3",
+   "TS4",
+   "TS5"
+  ],
+  "wards": [
+   "Central",
+   "Newport",
+   "Park",
+   "Billingham South",
+   "Ladgate",
+   "Longlands & Beechwood",
+   "Marton East",
+   "Acklam",
+   "Ayresome",
+   "Kader",
+   "Linthorpe",
+   "Trimdon",
+   "Berwick Hills & Pallister",
+   "Brambles & Thorntree",
+   "North Ormesby",
+   "Ormesby",
+   "Park End & Beckfield"
+  ]
+ },
+ "gateshead": {
+  "query": "Gateshead",
+  "name": "Gateshead",
+  "type": "Town",
+  "lat": 54.95991,
+  "lon": -1.60495,
+  "county": "Gateshead",
+  "district": [
+   "Gateshead"
+  ],
+  "outcode": "NE8",
+  "outcodes": [
+   "NE8",
+   "NE9",
+   "NE11",
+   "NE85",
+   "NE88",
+   "NE92",
+   "NE98"
+  ],
+  "wards": [
+   "Bridges",
+   "Deckham",
+   "Dunston, Teams & Riverside",
+   "Felling",
+   "Lobley Hill & Bensham",
+   "Saltwell",
+   "Dene & South Gosforth",
+   "Birtley North & Lamesley",
+   "Dunston Hill & Whickham East",
+   "Whickham North & Swalwell",
+   "Whickham South & Sunniside",
+   "Washington South",
+   "Chowdene",
+   "High Fell",
+   "Low Fell",
+   "Washington West",
+   "Windy Nook & Whitehills"
+  ]
+ },
+ "darlington": {
+  "query": "Darlington",
+  "name": "Darlington",
+  "type": "Town",
+  "lat": 54.52327,
+  "lon": -1.55361,
+  "county": "Darlington",
+  "district": [
+   "County Durham",
+   "Darlington"
+  ],
+  "outcode": "DL1",
+  "outcodes": [
+   "DL1",
+   "DL2",
+   "DL3",
+   "DL98"
+  ],
+  "wards": [
+   "Northgate",
+   "Aycliffe South",
+   "Bank Top & Lascelles",
+   "Eastbourne",
+   "Harrowgate Hill",
+   "Haughton & Springfield",
+   "Heighington & Coniscliffe",
+   "North Road",
+   "Park East",
+   "Park West",
+   "Red Hall & Lingfield",
+   "Sadberge & Middleton St George",
+   "Sedgefield",
+   "Stephenson",
+   "Whinfield",
+   "Brinkburn & Faverdale",
+   "Cockerton",
+   "College"
+  ]
+ },
+ "hartlepool": {
+  "query": "Hartlepool",
+  "name": "Hartlepool",
+  "type": "Town",
+  "lat": 54.68539,
+  "lon": -1.21291,
+  "county": "Hartlepool",
+  "district": [
+   "Hartlepool"
+  ],
+  "outcode": "TS24",
+  "outcodes": [
+   "TS24",
+   "TS25",
+   "TS26"
+  ],
+  "wards": [
+   "Burn Valley",
+   "De Bruce",
+   "Hart",
+   "Headland & Harbour",
+   "Throston",
+   "Victoria",
+   "Rural West",
+   "Fens & Greatham",
+   "Foggy Furze",
+   "Manor House",
+   "Rossmere",
+   "Seaton"
+  ]
+ },
+ "stockton-on-tees": {
+  "query": "Stockton-on-Tees",
+  "name": "Stockton-on-Tees",
+  "type": "Town",
+  "lat": 54.56397,
+  "lon": -1.31267,
+  "county": "Stockton-on-Tees",
+  "district": [
+   "Stockton-on-Tees"
+  ],
+  "outcode": "TS18",
+  "outcodes": [
+   "TS17",
+   "TS18",
+   "TS19",
+   "TS20"
+  ],
+  "wards": [
+   "Billingham South",
+   "Eaglescliffe East",
+   "Fairfield",
+   "Grangefield",
+   "Hartburn",
+   "Newtown",
+   "Norton South",
+   "Ropner",
+   "Stockton Town Centre",
+   "Bishopsgarth & Elm Tree",
+   "Hardwick & Salters Lane",
+   "Roseworth",
+   "Northern Parishes",
+   "Norton Central",
+   "Norton North",
+   "Ayresome",
+   "Ingleby Barwick North",
+   "Ingleby Barwick South"
+  ]
+ },
+ "south-shields": {
+  "query": "South Shields",
+  "name": "South Shields",
+  "type": "Town",
+  "lat": 54.99819,
+  "lon": -1.43165,
+  "county": "South Tyneside",
+  "district": [
+   "South Tyneside"
+  ],
+  "outcode": "NE33",
+  "outcodes": [
+   "NE32",
+   "NE33",
+   "NE34"
+  ],
+  "wards": [
+   "Beacon & Bents",
+   "Biddick & All Saints",
+   "Horsley Hill & Westoe Crown",
+   "Simonside & Rekendyke",
+   "Westoe",
+   "West Park",
+   "Bede",
+   "Cleadon Park & Harton Moor",
+   "Cleadon Village & East Boldon",
+   "Harton",
+   "Whitburn & Marsden",
+   "Whiteleas",
+   "Fellgate & Hedworth",
+   "Monkton",
+   "Primrose"
+  ]
+ },
+ "north-shields": {
+  "query": "North Shields",
+  "name": "North Shields",
+  "type": "Suburban Area",
+  "lat": 55.00888,
+  "lon": -1.44296,
+  "county": "North Tyneside",
+  "district": [
+   "North Tyneside"
+  ],
+  "outcode": "NE30",
+  "outcodes": [
+   "NE26",
+   "NE29",
+   "NE30"
+  ],
+  "wards": [
+   "Chirton & Percy Main",
+   "Cullercoats & Whitley Bay South",
+   "New York & Murton",
+   "North Shields",
+   "Preston with Preston Grange",
+   "Tynemouth",
+   "Hartley",
+   "St Mary's",
+   "Whitley Bay North"
+  ]
+ },
+ "cramlington": {
+  "query": "Cramlington",
+  "name": "Cramlington",
+  "type": "Town",
+  "lat": 55.0871,
+  "lon": -1.58776,
+  "county": "Northumberland",
+  "district": [
+   "North Tyneside",
+   "Northumberland"
+  ],
+  "outcode": "NE23",
+  "outcodes": [
+   "NE23"
+  ],
+  "wards": [
+   "Camperdown",
+   "Cramlington East & Double Row",
+   "Cramlington Eastfield",
+   "Cramlington North",
+   "Cramlington North West",
+   "Cramlington South East",
+   "Cramlington South West",
+   "Cramlington Village",
+   "Holywell",
+   "Seghill with Seaton Delaval",
+   "Weetslade"
+  ]
+ }
+}

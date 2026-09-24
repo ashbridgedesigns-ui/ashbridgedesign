@@ -1,5 +1,5 @@
 import { gbp, pageHero, ctaBand } from '../lib/layout.mjs';
-import { prices } from '../lib/parts.mjs';
+import { prices, site } from '../lib/parts.mjs';
 
 const single = prices.design[0];
 
@@ -108,6 +108,24 @@ const guides = [
   },
 ];
 
+// Authoritative sources cited at the foot of each guide.
+const NHQB = ['New Homes Quality Board: the New Homes Quality Code', 'https://www.nhqb.org.uk/the-code/'];
+const NHQB_P2 = ['NHQB Code V2, Part 2: inspection and completion', 'https://www.nhqb.org.uk/the-code/part-2-legal-documents-information-inspection-completion/'];
+const BRODIES = ['Brodies LLP: New Homes Quality Code Version 2, the key changes', 'https://brodies.com/insights/real-estate-litigation/new-homes-quality-code-version-2-the-key-changes-for-housebuilders/'];
+const PD = ['GOV.UK: Permitted development rights for householders, technical guidance', 'https://www.gov.uk/government/publications/permitted-development-rights-for-householders-technical-guidance'];
+const PP = ['Planning Portal: extensions', 'https://www.planningportal.co.uk/permission/common-projects/extensions/'];
+const AD = ['GOV.UK: Building Regulations Approved Documents', 'https://www.gov.uk/government/collections/approved-documents'];
+const SOURCES = {
+  'can-i-do-my-own-pre-completion-inspection': [NHQB_P2, BRODIES, NHQB],
+  'pre-completion-inspection-explained': [NHQB_P2, NHQB, BRODIES],
+  'do-i-need-planning-permission-for-an-extension': [PD, PP],
+  'planning-vs-building-regulations-drawings': [PP, AD],
+  'what-is-a-snagging-survey': [NHQB, AD],
+};
+const PUBLISHED = '2026-09-23';
+const UPDATED = '2026-09-24';
+const human = (d) => new Date(d + 'T12:00:00').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+
 export function guidePages() {
   const index = {
     path: '/guides/',
@@ -115,7 +133,7 @@ export function guidePages() {
     description: 'Plain-English guides to planning permission, building regulations, structural calculations and new-build snagging in England.',
     trail: [['/guides/', 'Guides']],
     body: `${pageHero({ trail: [['/guides/', 'Guides']], eyebrow: 'Guides', h1: 'Plain-English guides', lede: 'The questions we get asked most, answered by an engineer.' })}
-<section class="section"><div class="wrap grid-2">${guides.map((g) => `<a class="card" href="/guides/${g.slug}/" style="text-decoration:none"><h3>${g.title}</h3><p class="muted small">${g.summary}</p><span class="more">Read the guide</span></a>`).join('')}</div></section>
+<section class="section"><div class="wrap grid-2">${guides.map((g) => `<a class="card" href="/guides/${g.slug}/" style="text-decoration:none"><h2 class="card-title">${g.title}</h2><p class="muted small">${g.summary}</p><span class="more">Read the guide</span></a>`).join('')}</div></section>
 ${ctaBand()}`,
   };
   const pages = guides.map((g) => {
@@ -125,9 +143,20 @@ ${ctaBand()}`,
       title: g.title,
       description: g.summary,
       trail,
-      ld: [{ '@context': 'https://schema.org', '@type': 'Article', headline: g.title, description: g.summary, author: { '@type': 'Organization', name: 'Ashbridge Design' }, datePublished: '2026-09-23' }],
+      ld: [{
+        '@context': 'https://schema.org', '@type': 'Article', headline: g.title, description: g.summary,
+        datePublished: PUBLISHED, dateModified: UPDATED, inLanguage: 'en-GB',
+        mainEntityOfPage: site.url + `/guides/${g.slug}/`,
+        author: { '@type': 'Organization', '@id': site.url + '/#business', name: site.name, url: site.url },
+        publisher: { '@type': 'Organization', '@id': site.url + '/#business', name: site.name, logo: { '@type': 'ImageObject', url: site.url + '/assets/logo.jpg' } },
+        citation: (SOURCES[g.slug] || []).map(([, u]) => u),
+      }],
       body: `${pageHero({ trail, eyebrow: 'Guide', h1: g.title, lede: g.summary })}
-<section class="section"><div class="wrap"><article class="prose">${g.body}</article></div></section>
+<section class="section"><div class="wrap"><article class="prose">
+<p class="byline">By <a href="/about/">Ashbridge Design</a> · Reviewed by our lead engineer (MSc Civil Engineering, 15 years' experience) · Updated <time datetime="${UPDATED}">${human(UPDATED)}</time></p>
+${g.body}
+${SOURCES[g.slug] ? `<h2>Sources</h2><ul class="sources">${SOURCES[g.slug].map(([l, u]) => `<li><a href="${u}" rel="noopener">${l}</a></li>`).join('')}</ul>` : ''}
+</article></div></section>
 ${ctaBand()}`,
     };
   });

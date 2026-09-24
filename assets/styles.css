@@ -1,8 +1,11 @@
 /* Ashbridge Design — brand tokens sampled from the logo */
+/* Self-hosted fonts (SIL Open Font License), latin subset */
+@font-face{font-family: 'Archivo';font-style: normal;font-weight: 600 800;font-stretch: 100% 125%;font-display: swap;src: url(/assets/fonts/archivo-latin.woff2) format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+@font-face{font-family: 'Figtree';font-style: normal;font-weight: 400 700;font-display: swap;src: url(/assets/fonts/figtree-latin.woff2) format('woff2');unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
 :root{
   --slate:#3C4854; --deep:#26303A; --ink:#1E262E; --amber:#FBB424; --amber-dark:#D9941A;
   --paper:#FAF8F4; --white:#FFFFFF; --grey:#9CA3AE; --line:#DDE1E5; --mist:#EEF0F2; --muted:#5B6672;
-  --ok:#2E7D4F; --warn:#B4541F;
+  --ok:#2E7D4F; --warn:#B4541F; --amber-text:#8A5A00;
   --display:"Archivo","Arial Narrow",Arial,sans-serif;
   --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
   --radius:4px; --max:1180px;
@@ -125,7 +128,7 @@ p{margin:0}
 /* Steps (real sequences only) */
 .steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:18px;counter-reset:s}
 .steps li{counter-increment:s;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:22px;display:grid;gap:8px;align-content:start}
-.steps li::before{content:counter(s,decimal-leading-zero);font-family:var(--display);font-stretch:125%;font-weight:800;font-size:1.4rem;color:var(--amber-dark)}
+.steps li::before{content:counter(s,decimal-leading-zero);font-family:var(--display);font-stretch:125%;font-weight:800;font-size:1.4rem;color:var(--amber-text)}
 
 /* Tables */
 .table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:var(--radius);background:var(--white)}
@@ -153,7 +156,7 @@ fieldset{border:0;padding:0;margin:0;display:grid;gap:8px}
 .result{background:var(--paper);border:1px dashed var(--grey);border-radius:var(--radius);padding:22px;display:grid;gap:12px}
 .result .big{font-family:var(--display);font-stretch:125%;font-weight:800;font-size:clamp(2rem,5vw,2.8rem);color:var(--deep);line-height:1}
 .result .verdict{font-family:var(--display);font-stretch:112%;font-weight:800;font-size:1.35rem}
-.verdict.ok{color:var(--ok)} .verdict.warn{color:var(--amber-dark)} .verdict.no{color:var(--warn)}
+.verdict.ok{color:var(--ok)} .verdict.warn{color:var(--amber-text)} .verdict.no{color:var(--warn)}
 .note-box{border-left:4px solid var(--amber);background:#FFF7E6;padding:14px 18px;border-radius:0 var(--radius) var(--radius) 0;font-size:.95rem}
 .note-box.slate{border-color:var(--slate);background:var(--mist)}
 
@@ -193,6 +196,15 @@ fieldset{border:0;padding:0;margin:0;display:grid;gap:8px}
 .pill-amber{background:var(--amber);color:var(--deep)}
 .pill-slate{background:var(--mist);color:var(--slate)}
 
+.snag-title{font-size:1rem}
+.card-title{font-size:1.2rem;font-weight:700}
+.byline{font-size:.9rem;color:var(--muted);border-left:3px solid var(--amber);padding-left:12px}
+.sources{font-size:.92rem}
+
+/* Postcode districts */
+.postcodes{display:flex;flex-wrap:wrap;gap:6px}
+.postcodes span{font-family:var(--display);font-stretch:112%;font-weight:700;font-size:.85rem;padding:5px 10px;border:1.5px solid var(--line);border-radius:3px;background:var(--paper);color:var(--deep)}
+
 /* Report mock */
 .report{background:var(--white);border:1px solid var(--line);box-shadow:0 18px 40px rgba(38,48,58,.08);border-radius:var(--radius);overflow:hidden}
 .report-head{background:var(--deep);color:#fff;padding:18px 24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:.9rem}
@@ -209,7 +221,7 @@ fieldset{border:0;padding:0;margin:0;display:grid;gap:8px}
 .site-footer a{color:#E7EBEF;text-decoration:none}
 .site-footer a:hover{color:var(--amber)}
 .footer-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:32px}
-.footer-grid h4{color:var(--white);font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+.footer-grid .footer-h{color:var(--white);font-size:.85rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
 .footer-grid ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
 .footer-base{border-top:1px solid rgba(255,255,255,.12);margin-top:40px;padding-top:22px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:.84rem;color:#98A2AD}
 .footer-logo{background:var(--white);display:inline-block;padding:8px 10px;border-radius:var(--radius)}
@@ -230,9 +242,9 @@ fieldset{border:0;padding:0;margin:0;display:grid;gap:8px}
   .wa-fab{bottom:calc(78px + env(safe-area-inset-bottom,0px));right:16px;width:58px;height:58px;padding:0;justify-content:center}
   .wa-fab .wa-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 }
-.wa-inline{display:inline-flex;align-items:center;gap:8px;font-weight:700;color:#128C4A;text-decoration:none}
+.wa-inline{display:inline-flex;align-items:center;gap:8px;font-weight:700;color:#0E6B39;text-decoration:none}
 .wa-inline svg{width:22px;height:22px;color:#25D366}
-.wa-inline:hover{color:#0B6B36;text-decoration:underline}
+.wa-inline:hover{color:#0A5A2F;text-decoration:underline}
 @media print{.wa-fab{display:none}}
 
 /* Drafting motif */
