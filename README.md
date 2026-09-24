@@ -16,6 +16,7 @@ node serve.mjs     # preview at http://localhost:4321
 | Guides | `content/guides.mjs` |
 | Area pages + local notes | `content/areas.mjs`, data in `data/areas.csv` |
 | Header, footer, SEO tags, schema | `lib/layout.mjs` |
+| Enquiry form email sender | `api/enquiry.js` (Vercel function) |
 | Tools (instant quotes, inspection window, “Can I extend?”) | `assets/main.js`, markup in `lib/parts.mjs` |
 | Styles / brand colours | `assets/styles.css` |
 
@@ -31,10 +32,15 @@ Change a price in `site.config.mjs`, rebuild, and every page, table, tool and sc
 6. **Area pages:** 48 Tier 1 town pages are live, built from the council data. Add researched local notes (developments, conservation areas) to `LOCAL` in `content/areas.mjs`, then promote Tier 2 places by changing their tier in `data/areas.csv`.
 7. Check `/privacy/` with the final company details.
 
-## Deploy (Netlify, free tier)
+## Deploy (Vercel)
 
-1. Push this folder to a GitHub repo and import it in Netlify. `netlify.toml` already sets the build.
-2. Add the domains `ashbridgedesign.co.uk` (primary), `www.ashbridgedesign.co.uk`, `ashbridgedesign.com` and `www.ashbridgedesign.com`. The redirects in `netlify.toml` send everything to `https://ashbridgedesign.co.uk` with 301s.
-3. At GoDaddy, point the DNS for both domains at Netlify (Netlify shows the records).
-4. **Forms:** enquiries arrive in Netlify → Forms. Set up an email notification to hello@ashbridgedesign.co.uk.
+1. In Vercel, **Add New → Project** and import `ashbridgedesigns-ui/ashbridgedesign`. `vercel.json` sets the build (`node build.mjs`, output `dist`), so leave the framework as **Other**.
+2. **Enquiry emails:** create a free account at resend.com, verify the domain `ashbridgedesign.co.uk` (Resend gives DNS records for GoDaddy), and create an API key. In Vercel → Project → Settings → Environment Variables, add:
+   - `RESEND_API_KEY`: the key
+   - `ENQUIRY_TO`: the inbox for enquiries (defaults to hello@ashbridgedesign.co.uk)
+   - `ENQUIRY_FROM`: optional sender (defaults to website@ashbridgedesign.co.uk)
+
+   Then redeploy. Until this is set, the form shows an error asking people to email instead.
+3. **Domains:** in Vercel → Project → Settings → Domains, add `ashbridgedesign.co.uk`, `www.ashbridgedesign.co.uk`, `ashbridgedesign.com` and `www.ashbridgedesign.com`. `vercel.json` 301-redirects the others to `https://ashbridgedesign.co.uk`. At GoDaddy, set the DNS records Vercel shows (an A record for the apex and a CNAME for www).
+4. Every push to `main` deploys automatically.
 5. Submit `https://ashbridgedesign.co.uk/sitemap.xml` in Google Search Console, and link the site from the Google Business Profile.

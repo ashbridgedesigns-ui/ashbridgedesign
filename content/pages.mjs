@@ -430,8 +430,7 @@ ${ctaBand()}`,
     trail: [['/contact/', 'Get a price']],
     body: `${pageHero({ trail: [['/contact/', 'Get a price']], eyebrow: 'Get a price', h1: 'Tell us about your project', lede: 'You\'ll get a clear, fixed price, usually the same day. For snagging, you can also <a href="/snagging-prices/">get an instant price</a>.' })}
 <section class="section"><div class="wrap grid-2" style="align-items:start">
-  <form class="form card" name="enquiry" method="POST" data-netlify="true" netlify-honeypot="company" enctype="multipart/form-data" data-form>
-    <input type="hidden" name="form-name" value="enquiry">
+  <form class="form card" name="enquiry" method="POST" action="/api/enquiry" enctype="multipart/form-data" data-form>
     <p class="hp"><label>Leave this empty <input name="company" tabindex="-1" autocomplete="off"></label></p>
     <div class="row">
       <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" required autocomplete="name"></div>
@@ -448,7 +447,7 @@ ${ctaBand()}`,
       <option value="Pre-completion inspection">Pre-completion inspection</option>
       <option value="Other">Something else</option></select></div>
     <div class="field"><label for="f-msg">Your project or property</label><textarea id="f-msg" name="message" required placeholder="What do you want to build, or which new build are you buying (development, developer, bedrooms, completion date)?"></textarea></div>
-    <div class="field"><label for="f-files">Photos or plans (optional)</label><input id="f-files" name="files" type="file" multiple accept="image/*,.pdf"><span class="hint">Up to 8 MB in total</span></div>
+    <div class="field"><label for="f-files">Photos or plans (optional)</label><input id="f-files" name="files" type="file" multiple accept="image/*,.pdf"><span class="hint">Up to 4 MB in total. Larger files can be emailed after we reply.</span></div>
     <p class="small muted">We use your details only to reply about your enquiry. See our <a href="/privacy/">privacy notice</a>.</p>
     <div class="btn-row"><button class="btn btn-amber" type="submit">Send my enquiry</button></div>
     <p class="form-status" role="status"></p>
