@@ -7,7 +7,8 @@ export default {
   base: 'Birmingham',
   email: 'hello@ashbridgedesign.co.uk',
   phone: '',            // e.g. '0121 496 0000' — enables Call buttons when set
-  whatsapp: '',         // e.g. '447700900000' — international format, no +
+  whatsapp: '447466812272', // international format, no + (07466 812272)
+  whatsappDisplay: '07466 812272',
   founderName: '',      // shown on About and in the report sign-off
   companyNumber: '',    // Companies House number, shown in the footer
   googleReviewsUrl: '', // link to the Google Business Profile reviews

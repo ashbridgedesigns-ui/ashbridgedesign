@@ -1,4 +1,4 @@
-import { gbp, esc, pageHero, ctaBand, faqHtml, faqLd, tel } from '../lib/layout.mjs';
+import { gbp, esc, pageHero, ctaBand, faqHtml, faqLd, tel, waInline } from '../lib/layout.mjs';
 import { site, prices, heroArt, inspectArt, snagQuoteTool, designQuoteTool, pciTool, canExtendTool, designPriceTable, snagPriceTable, engineerBand } from '../lib/parts.mjs';
 
 const single = prices.design[0];
@@ -49,6 +49,7 @@ export const pages = [
     <h1>Design it properly.<br><span class="accent">Inspect it properly.</span></h1>
     <p class="lede">Extension drawings, planning support, structural calculations and independent new-build inspections, all led by a civil engineer. Based in ${site.base}, covering all of England.</p>
     <div class="btn-row"><a class="btn btn-amber" href="/extension-design/">Plan an extension</a><a class="btn btn-slate" href="/snagging-prices/">Book a snagging inspection</a></div>
+    ${waInline(`Questions? WhatsApp us on ${site.whatsappDisplay}`, 'home page')}
     <div class="trust"><span>Engineer-led · MSc Civil Engineering</span><span>15 years' experience</span><span>Fixed prices, no VAT to add</span><span>Snag reports in 24 hours</span></div>
   </div>
   <div class="hero-art">${heroArt}</div>
@@ -456,7 +457,7 @@ ${ctaBand()}`,
     <div class="card stack-sm"><h3>Contact</h3>
       <p><a href="mailto:${site.email}">${site.email}</a></p>
       ${site.phone ? `<p><a href="tel:${tel}">${esc(site.phone)}</a></p>` : ''}
-      ${site.whatsapp ? `<p><a href="https://wa.me/${site.whatsapp}">WhatsApp us</a></p>` : ''}
+      ${site.whatsapp ? `<p>${waInline(`WhatsApp ${site.whatsappDisplay}`, 'Get a price page')}</p><p class="small muted">Send photos of your home or plans straight from your phone.</p>` : ''}
       <p class="small muted">Based in ${site.base}. Covering all of England.</p></div>
     <div class="card stack-sm"><h3>What happens next</h3><ol class="steps" style="grid-template-columns:1fr">
       <li><p class="small">We review your details, and check planning history or your developer's NHQB status where it applies.</p></li>
