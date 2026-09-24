@@ -18,7 +18,7 @@ const guides = [
 <li>If issues breach the warranty provider's technical standards, the developer is responsible for fixing them, ideally before legal completion or within 30 days if that isn't possible.</li>
 </ul>
 <h2>The hard part: judging what counts as a defect</h2>
-<p>The checklist gives you a structure, but the developer judges your findings against the warranty provider's technical standards. Those standards set tolerances, for example for how level a floor or how straight a wall must be. Knowing the tolerance, and being able to measure it, is what separates a defect the developer must fix from one they can dispute. Download the current checklist from the <a href="https://www.nhqb.org.uk/the-code/" rel="noopener">NHQB website</a> before you start.</p>
+<p>The checklist gives you a structure, and it sets out how to inspect: for example, internal walls are viewed in natural daylight from at least two metres away, without shining a light across the surface. But the developer judges your findings against the warranty provider's technical standards. Those standards set tolerances, for example for how level a floor or how straight a wall must be. Knowing the tolerance, and being able to measure it, is what separates a defect the developer must fix from one they can dispute. Download the current checklist from the <a href="https://www.nhqb.org.uk/the-code/" rel="noopener">NHQB website</a> before you start.</p>
 <h2>When doing it yourself makes sense</h2>
 <ul>
 <li>You're confident with tools and happy to read technical standards.</li>
@@ -111,13 +111,12 @@ const guides = [
 // Authoritative sources cited at the foot of each guide.
 const NHQB = ['New Homes Quality Board: the New Homes Quality Code', 'https://www.nhqb.org.uk/the-code/'];
 const NHQB_P2 = ['NHQB Code V2, Part 2: inspection and completion', 'https://www.nhqb.org.uk/the-code/part-2-legal-documents-information-inspection-completion/'];
-const BRODIES = ['Brodies LLP: New Homes Quality Code Version 2, the key changes', 'https://brodies.com/insights/real-estate-litigation/new-homes-quality-code-version-2-the-key-changes-for-housebuilders/'];
 const PD = ['GOV.UK: Permitted development rights for householders, technical guidance', 'https://www.gov.uk/government/publications/permitted-development-rights-for-householders-technical-guidance'];
 const PP = ['Planning Portal: extensions', 'https://www.planningportal.co.uk/permission/common-projects/extensions/'];
 const AD = ['GOV.UK: Building Regulations Approved Documents', 'https://www.gov.uk/government/collections/approved-documents'];
 const SOURCES = {
-  'can-i-do-my-own-pre-completion-inspection': [NHQB_P2, BRODIES, NHQB],
-  'pre-completion-inspection-explained': [NHQB_P2, NHQB, BRODIES],
+  'can-i-do-my-own-pre-completion-inspection': [NHQB_P2, NHQB],
+  'pre-completion-inspection-explained': [NHQB_P2, NHQB],
   'do-i-need-planning-permission-for-an-extension': [PD, PP],
   'planning-vs-building-regulations-drawings': [PP, AD],
   'what-is-a-snagging-survey': [NHQB, AD],

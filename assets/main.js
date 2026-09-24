@@ -19,7 +19,12 @@
     var a = e.target.closest && e.target.closest('a[href]');
     if (!a) return;
     var href = a.getAttribute('href');
-    if (href.indexOf('https://wa.me/') === 0) track('whatsapp_click', { link_location: a.className || 'link' });
+    if (href.indexOf('https://wa.me/') === 0) {
+      // Add which page the visitor was on to the pre-filled message.
+      var ctx = a.getAttribute('data-wa-context') || document.title.split(' | ')[0];
+      if (ctx) a.href = href.split('?')[0] + '?text=' + encodeURIComponent('Hi Ashbridge Design, I\'m getting in touch from your website (' + ctx + ').');
+      track('whatsapp_click', { link_location: a.className || 'link' });
+    }
     else if (href.indexOf('tel:') === 0) track('phone_click');
     else if (href.indexOf('mailto:') === 0) track('email_click');
     else if (A.site.depositLink && href === A.site.depositLink) track('deposit_click');
