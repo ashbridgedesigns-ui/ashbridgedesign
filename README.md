@@ -14,7 +14,7 @@ node serve.mjs     # preview at http://localhost:4321
 | Phone, email, founder name, company no., deposit link, **all prices** | `site.config.mjs` |
 | Core pages (home, services, prices, tools, about, contact, privacy) | `content/pages.mjs` |
 | Guides | `content/guides.mjs` |
-| Area pages + local notes | `content/areas.mjs`, data in `data/areas.csv` |
+| Area pages + local notes | `content/areas.mjs`, places in `data/areas.csv`, location data in `data/geo.json` (re-run `node tools/fetch-geo.mjs` after adding places) |
 | Header, footer, SEO tags, schema | `lib/layout.mjs` |
 | Enquiry form email sender | `api/enquiry.js` (Vercel function) |
 | Tools (instant quotes, inspection window, “Can I extend?”) | `assets/main.js`, markup in `lib/parts.mjs` |
