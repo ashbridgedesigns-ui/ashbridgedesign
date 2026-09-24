@@ -43,4 +43,5 @@ Change a price in `site.config.mjs`, rebuild, and every page, table, tool and sc
    Then redeploy. Until this is set, the form shows an error asking people to email instead.
 3. **Domains:** in Vercel → Project → Settings → Domains, add `ashbridgedesign.co.uk`, `www.ashbridgedesign.co.uk`, `ashbridgedesign.com` and `www.ashbridgedesign.com`. The main address is `https://www.ashbridgedesign.co.uk`. `vercel.json` 301-redirects the other three to it. At GoDaddy, set the DNS records Vercel shows: an A record for each bare domain (`@`) and a CNAME for each `www`.
 4. Every push to `main` deploys automatically.
-5. Submit `https://www.ashbridgedesign.co.uk/sitemap.xml` in Google Search Console, and link the site from the Google Business Profile.
+5. **Bing and other IndexNow engines:** after a deploy goes live, run `node tools/indexnow.mjs` to submit every page, or `node tools/indexnow.mjs /path/ /other-path/` for just the changed pages. The key is in `site.config.mjs` and is served at `/<key>.txt`.
+6. Submit `https://www.ashbridgedesign.co.uk/sitemap.xml` in Google Search Console, and link the site from the Google Business Profile.

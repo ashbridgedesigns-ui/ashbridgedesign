@@ -39,5 +39,7 @@ ${indexable.map((p) => `  <url><loc>${site.url}${p.path}</loc><lastmod>${today}<
 </urlset>
 `);
 writeFileSync(join(dist, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${site.url}/sitemap.xml\n`);
+// IndexNow ownership file: search engines fetch /<key>.txt to confirm the key.
+if (site.indexNowKey) writeFileSync(join(dist, `${site.indexNowKey}.txt`), site.indexNowKey);
 
 console.log(`Built ${all.length + 1} pages into dist/ (${indexable.length} in sitemap).`);
