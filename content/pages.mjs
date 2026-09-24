@@ -32,15 +32,15 @@ const snagFaqs = [
   ['What is a snagging survey?', 'An independent inspection of a new-build home that finds defects: anything unfinished, damaged or not built to standard. You get a report the developer has to respond to.'],
   ['When should I book?', 'Ideally before legal completion, as a pre-completion inspection, while the developer still has every reason to fix things quickly. A post-completion snagging survey is still worthwhile in the first two years.'],
   ['How quickly do I get the report?', 'Within 24 hours of the inspection in most cases, as a PDF with photographs, locations and the relevant standard for each snag.'],
-  ['Who carries out the inspection?', 'Around Birmingham, Ashbridge\'s lead engineer inspects in person. Across the rest of England, an accredited Ashbridge inspector attends and every report is checked by the lead engineer before it reaches you.'],
+  ['Who carries out the inspection?', 'Around Birmingham, Ashbridge\'s lead engineer inspects in person. Across the rest of England, a qualified inspector who is a member of a recognised professional body for surveying (such as RICS, CIOB or CABE) attends, and every report is checked by the lead engineer before it reaches you.'],
 ];
 
 export const pages = [
   // ---------------- HOME ----------------
   {
     path: '/',
-    title: 'Ashbridge Design | Extension Drawings & New-Build Snagging Surveys, England',
-    description: `Engineer-led extension design, planning and building regs drawings from ${gbp(single.s1)}, structural calculations in-house, and new-build snagging surveys from ${gbp(minSnag)}. Based in Birmingham, covering England.`,
+    title: 'Ashbridge Design | Extension Drawings & Snagging Surveys',
+    description: `Engineer-led extension drawings from ${gbp(single.s1)}, in-house structural calcs and new-build snagging surveys from ${gbp(minSnag)}. Birmingham-based, covering England.`,
     ld: [faqLd(designFaqs.slice(0, 2).concat(snagFaqs.slice(0, 2)))],
     body: `<section class="hero"><div class="wrap hero-grid">
   <div class="stack">
@@ -68,6 +68,7 @@ export const pages = [
     <p>Find the defects before you move in, or while the developer still has to fix them. Clear, engineer-checked reports within 24 hours.</p>
     <p class="price-from">Inspections from <b>${gbp(minSnag)}</b></p>
     <div class="btn-row"><a class="btn btn-amber" href="/snagging-prices/">Get an instant price</a><a class="btn btn-ghost" href="/pre-completion-inspection/">Pre-completion inspections</a></div>
+    <a class="more" href="/sample-snagging-report/">See a sample report →</a>
   </article>
 </div></section>
 
@@ -95,7 +96,7 @@ ${engineerBand}
   <div class="stack">
     <p class="eyebrow">Buying from an NHQB-registered developer?</p>
     <h2>You can request an independent pre-completion inspection</h2>
-    <p>Under the New Homes Quality Code, registered developers must let your inspector in before completion. For homes reserved from 2 March 2026, the window opens five calendar days after your Notice to Complete is served. Defects found against warranty standards should be put right before completion, or within 30 days.</p>
+    <p>Under the New Homes Quality Code, registered developers must let your inspector in before completion. The inspection takes place after your Notice to Complete is served and before completion, and the notice period is normally at least 14 calendar days. Defects that breach warranty standards should be put right before completion, or within 30 days.</p>
     <div class="btn-row"><a class="btn btn-amber" href="/pre-completion-inspection/#window">Check my inspection window</a></div>
   </div>
   <div>${inspectArt}</div>
@@ -113,7 +114,7 @@ ${engineerBand}
 
 <section class="section section-white"><div class="wrap grid-2">
   <div class="stack"><p class="eyebrow">Areas we cover</p><h2>Based in Birmingham, covering all of England</h2>
-  <p>Around Birmingham, the West Midlands and nearby towns, our lead engineer inspects and surveys in person. Across the rest of England, accredited Ashbridge inspectors and survey partners work to the same checklist, and every report and drawing set is signed off by the lead engineer.</p>
+  <p>Around Birmingham, the West Midlands and nearby towns, our lead engineer inspects and surveys in person. Across the rest of England, qualified inspectors who belong to a recognised professional body for surveying, and our survey partners, work to the same checklist, and every report and drawing set is signed off by the lead engineer.</p>
   <div class="btn-row"><a class="btn btn-ghost" href="/areas/">See all areas</a><a class="btn btn-ghost" href="/areas/birmingham/">Birmingham</a></div></div>
   <div class="stack"><h3>Common questions</h3>${faqHtml(designFaqs.slice(0, 2).concat(snagFaqs.slice(0, 2)))}</div>
 </div></section>
@@ -150,7 +151,7 @@ ${ctaBand()}`,
   servicePage({
     path: '/planning-drawings/',
     title: `Planning Drawings from ${gbp(single.s1)}`,
-    description: `Planning drawings for extensions, lofts and garage conversions from ${gbp(single.s1)}. Measured survey, design, submission and management of your application. Engineer-led, England-wide.`,
+    description: `Planning drawings for extensions, lofts and garage conversions from ${gbp(single.s1)}: survey, design, submission and management of your application. Engineer-led.`,
     trail: [['/extension-design/', 'Extension design'], ['/planning-drawings/', 'Planning drawings']],
     eyebrow: 'Stage 1 · Planning',
     h1: `Planning drawings from ${gbp(single.s1)}`,
@@ -184,8 +185,8 @@ ${ctaBand()}`,
 
   servicePage({
     path: '/structural-calculations/',
-    title: `Structural Calculations from ${gbp(prices.beamCalc)}: Beams, Walls & Extensions`,
-    description: `In-house structural calculations for steel beams, wall removal, extensions and lofts, from ${gbp(prices.beamCalc)}. Done by a civil engineer, accepted by building control.`,
+    title: `Structural Calculations from ${gbp(prices.beamCalc)}: Beams & Walls`,
+    description: `In-house structural calculations for steel beams, wall removal, extensions and lofts, from ${gbp(prices.beamCalc)}. Prepared by a civil engineer for building control approval.`,
     trail: [['/extension-design/', 'Extension design'], ['/structural-calculations/', 'Structural calculations']],
     eyebrow: 'Structural calculations',
     h1: `Structural calculations from ${gbp(prices.beamCalc)}`,
@@ -199,7 +200,7 @@ ${prices.design.map((d) => `<tr><td>${d.name}, when booked with Stage 2</td><td 
 <p class="small muted">Builders: ask about repeat-work rates.</p>`,
     includes: ['Load take-down and beam sizing', 'Padstone and bearing checks', 'Lintel and connection details', 'Calculations and beam specification for building control', 'Answers to building control queries on the calculations'],
     excludes: ['Site supervision', 'Steel fabrication or installation'],
-    faqs: [['Will building control accept your calculations?', 'Yes. Calculations are prepared by a civil engineer (MSc) and set out to the relevant design standards. We answer any queries building control raises on them.'], ['How quickly can you turn them round?', 'Straightforward beam calculations are usually ready within 3–5 working days of receiving the measurements and photos.']],
+    faqs: [['Are the calculations suitable for building control?', 'They are prepared by a civil engineer (MSc) to the relevant design standards, for submission to building control. We answer any queries building control raises on them.'], ['How quickly can you turn them round?', 'Straightforward beam calculations are usually ready within 3–5 working days of receiving the measurements and photos.']],
     offer: { name: 'Structural calculations', price: prices.beamCalc },
   }),
 
@@ -237,7 +238,7 @@ ${prices.design.map((d) => `<tr><td>${d.name}, when booked with Stage 2</td><td 
   // ---------------- DESIGN PRICES ----------------
   {
     path: '/extension-design-prices/',
-    title: 'Extension Design Prices: Planning, Building Regs & Structural Calcs',
+    title: 'Extension Design Prices & Packages',
     description: `Fixed prices for extension drawings: planning from ${gbp(single.s1)}, both stages from ${gbp(single.both)}, Complete with structural calcs from ${gbp(single.complete)}.`,
     trail: [['/extension-design-prices/', 'Design prices']],
     ld: [{ '@context': 'https://schema.org', '@type': 'OfferCatalog', name: 'Extension design prices', itemListElement: prices.design.map((d) => ({ '@type': 'Offer', name: d.name + ' – planning and building regs', price: d.both, priceCurrency: 'GBP' })) }],
@@ -259,8 +260,8 @@ ${ctaBand()}`,
   // ---------------- CAN I EXTEND ----------------
   {
     path: '/can-i-extend/',
-    title: 'Can I Extend My House Without Planning Permission? Free Check',
-    description: 'Free feasibility check for extensions, lofts and garage conversions in England: find out whether your project is likely to be permitted development, need prior approval or need planning.',
+    title: 'Can I Extend Without Planning Permission? Free Check',
+    description: 'Free check for extensions, lofts and garage conversions in England: is your project likely permitted development, prior approval or full planning?',
     trail: [['/extension-design/', 'Extension design'], ['/can-i-extend/', 'Can I extend?']],
     body: `${pageHero({ trail: [['/extension-design/', 'Extension design'], ['/can-i-extend/', 'Can I extend?']], eyebrow: 'Free feasibility check', h1: 'Can I extend my house?', lede: 'A quick first guide to whether your project is permitted development, needs prior approval, or needs a planning application.' })}
 <section class="section"><div class="wrap">${canExtendTool()}</div></section>
@@ -303,20 +304,23 @@ ${ctaBand()}`,
     trail: [['/new-build-snagging/', 'New-build snagging'], ['/pre-completion-inspection/', 'Pre-completion inspection']],
     ld: [faqLd([
       ['Can I have my new build inspected before completion?', 'If your developer is registered with the New Homes Quality Board, you can request an independent pre-completion inspection under the New Homes Quality Code.'],
-      ['When does the inspection window open?', 'For homes reserved from 2 March 2026, the developer must give the inspector the chance to inspect from five calendar days after the Notice to Complete is served.'],
+      ['When can the inspection happen?', 'After the Notice to Complete is served and before the completion date, or earlier if you and the developer both agree. The notice period is normally at least 14 calendar days.'],
     ])],
     body: `${pageHero({ trail: [['/new-build-snagging/', 'New-build snagging'], ['/pre-completion-inspection/', 'Pre-completion inspection']], eyebrow: 'Pre-completion inspection', h1: 'Buying from an NHQB-registered developer? You can request an independent pre-completion inspection.', lede: `The best time to find defects is before you complete, while the developer still has every reason to fix them. Inspections from ${gbp(minSnag)}, at fixed prices.`, ctas: '<a class="btn btn-amber" href="#window">Check my inspection window</a><a class="btn btn-ghost" href="/snagging-prices/">Prices</a>' })}
 <section class="section"><div class="wrap grid-2">
   <div class="prose">
     <h2>How it works under the New Homes Quality Code</h2>
-    <p>The New Homes Quality Code applies to homes sold by developers registered with the <strong>New Homes Quality Board (NHQB)</strong>. It gives buyers the right to request a pre-completion inspection by a suitably qualified independent inspector.</p>
+    <p>The New Homes Quality Code applies to homes sold by developers registered with the <strong>New Homes Quality Board (NHQB)</strong>. It gives buyers the right to a pre-completion inspection before completion.</p>
     <p>Version 2 of the Code applies to homes reserved from <strong>2 March 2026</strong>:</p>
     <ul>
-      <li>The developer must give your inspector the chance to inspect from <strong>five calendar days after the Notice to Complete</strong> is served.</li>
+      <li>The inspection takes place <strong>after the Notice to Complete is served and before the completion date</strong>, or earlier if you and the developer both agree.</li>
+      <li>The Notice to Complete period is normally <strong>at least 14 calendar days</strong>, unless you agree otherwise.</li>
+      <li>You can appoint a <strong>suitably qualified inspector</strong>: a member of a recognised professional body for surveying (such as RICS, CIOB or CABE), with professional indemnity insurance. Since V2, you can also inspect yourself.</li>
+      <li>The inspection uses the <strong>NHQB Pre-Completion Inspection Checklist</strong>.</li>
       <li>Issues that breach the warranty provider's technical standards are the developer's responsibility, ideally fixed before legal completion, or within 30 days if that isn't possible.</li>
-      <li>Normal snags shouldn't delay completion. They're listed and dealt with through the developer's aftercare.</li>
     </ul>
-    <p>Not sure if your developer is registered? Check the <a href="https://www.nhqb.org.uk/" rel="noopener">NHQB website</a>, or ask us: we check it when you book.</p>
+    <p><strong>Who inspects for Ashbridge:</strong> every pre-completion inspection is carried out by an inspector who meets the Code's definition of suitably qualified, using the NHQB checklist. Your booking confirmation names your inspector and their professional body. <a href="/sample-snagging-report/">See how our reports are laid out</a>.</p>
+    <p>Thinking of doing it yourself? Read <a href="/guides/can-i-do-my-own-pre-completion-inspection/">can I do my own pre-completion inspection?</a> Not sure if your developer is registered? Check the <a href="https://www.nhqb.org.uk/" rel="noopener">NHQB website</a>, or ask us: we check it when you book.</p>
     <p class="small muted">This page summarises the Code for buyers and isn't legal advice. Your conveyancer can confirm the dates in your contract.</p>
   </div>
   <div>${pciTool()}</div>
@@ -327,7 +331,7 @@ ${ctaBand()}`,
 
   servicePage({
     path: '/two-year-warranty-inspection/',
-    title: `2-Year Warranty Inspection: Before the Developer's Liability Ends`,
+    title: '2-Year New-Build Warranty Inspection',
     description: `Inspection of your new-build home before the end of the developer's two-year defects period. ${gbp(prices.warranty)}, or ${gbp(prices.warrantyReturning)} for returning clients.`,
     trail: [['/new-build-snagging/', 'New-build snagging'], ['/two-year-warranty-inspection/', '2-year warranty inspection']],
     eyebrow: '2-year warranty inspection',
@@ -342,7 +346,7 @@ ${ctaBand()}`,
   {
     path: '/snagging-prices/',
     title: `Snagging Survey Prices from ${gbp(minSnag)}: Instant Quote`,
-    description: `Snagging survey and pre-completion inspection prices by bedrooms: ${prices.snag.map((r) => r.label + ' ' + gbp(r.price)).join(', ')}. Fixed prices. Book online.`,
+    description: `Snagging and pre-completion inspection prices by bedrooms, from ${gbp(minSnag)} for a flat to ${gbp(prices.snag[4].price)} for 5 bedrooms. Instant quote, book online.`,
     trail: [['/new-build-snagging/', 'New-build snagging'], ['/snagging-prices/', 'Prices']],
     ld: [{ '@context': 'https://schema.org', '@type': 'OfferCatalog', name: 'Snagging survey prices', itemListElement: prices.snag.map((r) => ({ '@type': 'Offer', name: 'Snagging survey – ' + r.label, price: r.price, priceCurrency: 'GBP' })) }],
     body: `${pageHero({ trail: [['/new-build-snagging/', 'New-build snagging'], ['/snagging-prices/', 'Prices']], eyebrow: 'Snagging prices', h1: 'Snagging survey prices', lede: `Fixed prices by bedrooms. Book online with a ${gbp(prices.deposit)} deposit and pay the balance when your report arrives.` })}
@@ -413,6 +417,7 @@ ${ctaBand()}`,
   {
     path: '/projects/',
     title: 'Projects & Planning Approvals',
+    noindex: true, // re-index once 2–3 real case studies are published
     description: 'Extension design projects and planning approvals by Ashbridge Design.',
     trail: [['/projects/', 'Projects']],
     body: `${pageHero({ trail: [['/projects/', 'Projects']], eyebrow: 'Projects', h1: 'Projects and planning approvals', lede: 'Real projects with drawings, before-and-after photos and council reference numbers you can check on the planning portal.' })}
@@ -478,7 +483,7 @@ ${ctaBand()}`,
   {
     path: '/privacy/',
     title: 'Privacy Notice',
-    description: 'How Ashbridge Design uses your personal information.',
+    description: 'How Ashbridge Design collects, uses and protects the personal information you share through this website and as a client.',
     trail: [['/privacy/', 'Privacy']],
     body: `${pageHero({ trail: [['/privacy/', 'Privacy']], h1: 'Privacy notice' })}
 <section class="section"><div class="wrap prose">

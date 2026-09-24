@@ -42,13 +42,13 @@ export function areaPages(areas) {
   out.push({
     path: '/areas/',
     title: 'Areas We Cover: All of England',
-    description: `Extension design and new-build snagging across England. Based in ${site.base}, with in-person surveys across the West Midlands and accredited inspectors nationwide.`,
+    description: `Extension design and new-build snagging across England. Based in ${site.base}, with in-person surveys across the West Midlands and qualified inspectors nationwide.`,
     trail: [['/areas/', 'Areas']],
-    body: `${pageHero({ trail: [['/areas/', 'Areas']], eyebrow: 'Coverage', h1: 'Based in Birmingham. Covering all of England.', lede: `Our lead engineer surveys and inspects in person across ${areas.filter((a) => a.inPerson).length} towns and cities around Birmingham. Everywhere else, accredited Ashbridge inspectors and survey partners work to the same standard, and every report is signed off by the lead engineer.` })}
+    body: `${pageHero({ trail: [['/areas/', 'Areas']], eyebrow: 'Coverage', h1: 'Based in Birmingham. Covering all of England.', lede: `Our lead engineer surveys and inspects in person across ${areas.filter((a) => a.inPerson).length} towns and cities around Birmingham. Everywhere else, qualified inspectors who belong to a recognised professional body for surveying, and our survey partners, work to the same standard, and every report is signed off by the lead engineer.` })}
 <section class="section"><div class="wrap stack">
   <div class="grid-2">
     <div class="card"><span class="pill pill-amber">In person</span><h3>Birmingham &amp; surrounding area</h3><p class="small muted">The West Midlands plus Leicester, Derby, Nottingham, Hinckley, Loughborough, Northampton and Banbury.</p></div>
-    <div class="card"><span class="pill pill-slate">Inspector network</span><h3>The rest of England</h3><p class="small muted">Accredited inspectors and survey partners, with every report checked by our lead engineer. Design work is done by our engineer wherever you are.</p></div>
+    <div class="card"><span class="pill pill-slate">Inspector network</span><h3>The rest of England</h3><p class="small muted">Qualified inspectors from recognised professional bodies for surveying, and survey partners, with every report checked by our lead engineer. Design work is done by our engineer wherever you are.</p></div>
   </div>
   ${regions.map((r) => `<div class="stack-sm" style="margin-top:22px"><h2 style="font-size:1.5rem"><a href="/areas/${r.slug}/" style="text-decoration:none;color:inherit">${r.name}</a></h2>
   <ul class="area-list">${r.places.map((a) => `<li>${link(a)}<span>${esc(a.planning_authority)}</span></li>`).join('')}</ul></div>`).join('')}
@@ -62,10 +62,10 @@ ${ctaBand()}`,
     const trail = [['/areas/', 'Areas'], [`/areas/${r.slug}/`, r.name]];
     out.push({
       path: `/areas/${r.slug}/`,
-      title: `Extension Drawings & Snagging Surveys in ${r.name}`,
+      title: `Extension Drawings & Snagging, ${r.name}`,
       description: `Extension design from ${gbp(single.s1)} and new-build snagging surveys from ${gbp(minSnag)} across ${r.name}. Engineer-led, fixed prices.`,
       trail,
-      body: `${pageHero({ trail, eyebrow: r.name, h1: `Extension design and snagging surveys across ${r.name}`, lede: inPersonCount ? `${inPersonCount} places in ${r.name} are covered in person by our Birmingham-based lead engineer.` : `Inspections across ${r.name} are carried out by accredited Ashbridge inspectors, with every report checked by our lead engineer. Extension design is handled by our engineer, with measured surveys by local partners or 3D scan.`, ctas: '<a class="btn btn-amber" href="/contact/">Get a price</a><a class="btn btn-ghost" href="/snagging-prices/">Snagging prices</a>' })}
+      body: `${pageHero({ trail, eyebrow: r.name, h1: `Extension design and snagging surveys across ${r.name}`, lede: inPersonCount ? `${inPersonCount} places in ${r.name} are covered in person by our Birmingham-based lead engineer.` : `Inspections across ${r.name} are carried out by qualified inspectors who belong to a recognised professional body for surveying, with every report checked by our lead engineer. Extension design is handled by our engineer, with measured surveys by local partners or 3D scan.`, ctas: '<a class="btn btn-amber" href="/contact/">Get a price</a><a class="btn btn-ghost" href="/snagging-prices/">Snagging prices</a>' })}
 <section class="section"><div class="wrap stack">
   <div class="table-wrap"><table><thead><tr><th>Place</th><th>Planning authority</th><th>Inspections</th></tr></thead><tbody>
   ${r.places.map((a) => `<tr><td>${link(a)}</td><td>${esc(a.planning_authority)}</td><td>${a.inPerson ? '<span class="pill pill-amber">In person</span>' : '<span class="pill pill-slate">Inspector network</span>'}</td></tr>`).join('')}
@@ -81,16 +81,18 @@ ${ctaBand()}`,
     const trail = [['/areas/', 'Areas'], [`/areas/${regionSlug}/`, a.region], [`/areas/${a.slug}/`, a.place]];
     const who = a.inPerson
       ? `Our Birmingham-based lead engineer carries out inspections and measured surveys in ${esc(a.place)} in person.`
-      : `Inspections in ${esc(a.place)} are carried out by an accredited Ashbridge inspector to our checklist, and every report is checked by our lead engineer before it reaches you. Design work is done by our engineer, with the measured survey by a local partner or 3D scan.`;
+      : `Inspections in ${esc(a.place)} are carried out by a qualified inspector who is a member of a recognised professional body for surveying (such as RICS, CIOB or CABE) to our checklist, and every report is checked by our lead engineer before it reaches you. Design work is done by our engineer, with the measured survey by a local partner or 3D scan.`;
     const nearby = areas.filter((x) => x.region === a.region && x.slug !== a.slug && !x.place.startsWith('London (')).slice(0, 12);
     const faqs = [
       [`How much are extension drawings in ${a.place}?`, `Planning drawings for a single-storey extension start at ${gbp(single.s1)}, both stages at ${gbp(single.both)}, and the Complete package with structural calculations at ${gbp(single.complete)}. Council fees are paid to ${a.planning_authority}.`],
       [`How much is a snagging survey in ${a.place}?`, `From ${gbp(minSnag)} for a flat, ${gbp(prices.snag[2].price)} for a 3-bedroom house and ${gbp(prices.snag[4].price)} for 5 bedrooms.`],
-      [`Who inspects homes in ${a.place}?`, a.inPerson ? 'Our lead engineer, in person.' : 'An accredited Ashbridge inspector, with the report checked and signed off by our lead engineer.'],
+      [`Who inspects homes in ${a.place}?`, a.inPerson ? 'Our lead engineer, in person.' : 'A qualified inspector who is a member of a recognised professional body for surveying, with the report checked and signed off by our lead engineer.'],
     ];
     out.push({
       path: `/areas/${a.slug}/`,
-      title: `Extension Drawings & Snagging Surveys in ${a.place}`,
+      // Out-of-area towns stay live for visitors but out of the index until they have real local content.
+      noindex: !a.inPerson && !LOCAL[a.slug],
+      title: `Extension Drawings & Snagging, ${a.place.replace(/ \(.*\)/, '')}`,
       description: `Engineer-led extension drawings from ${gbp(single.s1)} and new-build snagging surveys from ${gbp(minSnag)} in ${a.place}. ${a.inPerson ? 'In-person service from our Birmingham base.' : 'Covering all of England.'}`,
       trail,
       ld: [faqLd(faqs), { '@context': 'https://schema.org', '@type': 'Service', name: `Extension design and snagging surveys in ${a.place}`, provider: { '@id': site.url + '/#business' }, areaServed: { '@type': 'City', name: a.place.replace(/ \(.*\)/, '') } }],

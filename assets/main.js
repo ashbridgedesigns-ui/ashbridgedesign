@@ -6,6 +6,25 @@
   var $ = function (sel, root) { return (root || document).querySelector(sel); };
   var $$ = function (sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); };
 
+  // ---------- Conversion tracking ----------
+  // Sends GA4 events when analytics is configured; always records to dataLayer.
+  function track(name, params) {
+    params = params || {};
+    params.page_path = location.pathname;
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push(Object.assign({ event: name }, params));
+    if (typeof window.gtag === 'function') window.gtag('event', name, params);
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (!a) return;
+    var href = a.getAttribute('href');
+    if (href.indexOf('https://wa.me/') === 0) track('whatsapp_click', { link_location: a.className || 'link' });
+    else if (href.indexOf('tel:') === 0) track('phone_click');
+    else if (href.indexOf('mailto:') === 0) track('email_click');
+    else if (A.site.depositLink && href === A.site.depositLink) track('deposit_click');
+  });
+
   // ---------- Mobile menu ----------
   var toggle = $('.menu-toggle'), nav = $('#site-nav');
   if (toggle && nav) {
@@ -63,7 +82,7 @@
       var total = price + travel;
       var who = !cov.known ? 'Add your postcode to see who will inspect.' :
         cov.inPerson ? 'Inspected in person by our Birmingham-based lead engineer.' :
-        'Inspected by an accredited Ashbridge inspector, with every report checked by our lead engineer before you receive it.';
+        'Inspected by a qualified inspector who is a member of a recognised professional body for surveying, with every report checked by our lead engineer before you receive it.';
       var detail = labels[type] + ', ' + row.label + (pc ? ', ' + pc.toUpperCase() : '');
       var payHref = A.site.depositLink ? A.site.depositLink : bookHref('New-build snagging', detail + ', quoted ' + gbp(total));
       out.innerHTML =
@@ -104,22 +123,24 @@
   });
 
   // ---------- Pre-completion inspection window ----------
+  // NHQB Code V2: inspect after the Notice to Complete is served and before completion
+  // (earlier by agreement); the notice period is normally at least 14 calendar days.
   $$('[data-tool="pci-window"]').forEach(function (tool) {
     var out = $('.result', tool);
     var input = $('[name="ntc"]', tool);
     function fmt(d) { return d.toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' }); }
-    function addWorkingDays(d, n) { var x = new Date(d); while (n > 0) { x.setDate(x.getDate() + 1); var w = x.getDay(); if (w !== 0 && w !== 6) n--; } return x; }
     function calc() {
       if (!input.value) {
         out.innerHTML = '<p class="small muted">Enter the date your Notice to Complete was served to see your inspection window.</p>';
         return;
       }
       var ntc = new Date(input.value + 'T12:00:00');
-      var opens = new Date(ntc); opens.setDate(opens.getDate() + 5);
-      var typical = addWorkingDays(ntc, 10);
+      var earliest = new Date(ntc); earliest.setDate(earliest.getDate() + 14);
       out.innerHTML =
-        '<p class="small muted">Inspection window opens</p><p class="big" style="font-size:clamp(1.4rem,4vw,2rem)">' + fmt(opens) + '</p>' +
-        '<p class="small">Under the New Homes Quality Code, an NHQB-registered developer must give your inspector the chance to inspect from five calendar days after the Notice to Complete is served. Completion often follows about ten working days after the notice (around <strong>' + fmt(typical) + '</strong>), but <strong>your contract sets the real date</strong>, so check it with your conveyancer.</p>' +
+        '<p class="small muted">Your inspection window</p>' +
+        '<p class="big" style="font-size:clamp(1.3rem,3.6vw,1.8rem)">From ' + fmt(ntc) + '<br>until completion</p>' +
+        '<p class="small">Under Code V2, the inspection takes place after the Notice to Complete is served and before the completion date, or earlier if you and the developer both agree. The notice period is normally at least 14 calendar days, so completion is unlikely before <strong>' + fmt(earliest) + '</strong> unless you have agreed otherwise. <strong>Your contract sets the real date</strong>, so check it with your conveyancer.</p>' +
+        '<p class="small">Book as early in the window as you can, so the developer has time to put things right before you complete.</p>' +
         '<div class="btn-row"><a class="btn btn-amber" href="' + bookHref('Pre-completion inspection', 'Notice to Complete served ' + input.value) + '">Book my inspection</a></div>';
     }
     input.addEventListener('input', calc);
@@ -186,7 +207,7 @@
       var btn = $('button[type="submit"]', form);
       btn.disabled = true; status.className = 'form-status'; status.textContent = 'Sending…';
       fetch(form.getAttribute('action') || '/api/enquiry/', { method: 'POST', body: new FormData(form) })
-        .then(function (r) { if (!r.ok) throw new Error(r.status); location.href = '/thank-you/'; })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); track('generate_lead', { service: form.service ? form.service.value : '' }); setTimeout(function () { location.href = '/thank-you/'; }, 150); })
         .catch(function () {
           btn.disabled = false; status.className = 'form-status err';
           status.textContent = 'That didn\'t send. Please try again, or email ' + (A.site.email || 'us') + ' directly.';

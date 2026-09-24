@@ -12,6 +12,9 @@ export default {
   founderName: '',      // shown on About and in the report sign-off
   companyNumber: '',    // Companies House number, shown in the footer
   googleReviewsUrl: '', // link to the Google Business Profile reviews
+  // Google Analytics 4 measurement ID (e.g. 'G-XXXXXXXXXX'). Blank = no analytics loaded.
+  // Runs in Consent Mode with storage denied (no cookies), so no banner is needed as configured.
+  ga4Id: '',
   // Stripe Payment Links (or similar) for the £49 snagging deposit. Leave blank
   // and the "Book" buttons fall back to the booking form.
   depositLink: '',

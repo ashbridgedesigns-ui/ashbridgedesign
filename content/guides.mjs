@@ -5,6 +5,36 @@ const single = prices.design[0];
 
 const guides = [
   {
+    slug: 'can-i-do-my-own-pre-completion-inspection',
+    title: 'Can I do my own pre-completion inspection? (2026 rules)',
+    summary: 'Code V2 lets buyers inspect their own new build before completion. What the rules say, the hard part, and when a professional is worth it.',
+    body: `<p><strong>Yes, in most cases.</strong> If you reserved your home from an NHQB-registered developer on or after <strong>2 March 2026</strong>, Version 2 of the New Homes Quality Code lets you carry out the pre-completion inspection yourself. Under Version 1, the inspection had to be done by a suitably qualified inspector.</p>
+<h2>What the Code says</h2>
+<ul>
+<li>You can <strong>inspect yourself</strong>, or <strong>appoint a suitably qualified inspector</strong>: a member of a recognised professional body for surveying (such as RICS, CIOB or CABE) who holds professional indemnity insurance and works within their competency.</li>
+<li>Either way, the inspection must use the <strong>NHQB Pre-Completion Inspection Checklist</strong>.</li>
+<li>If you inspect yourself, the developer must tell you that the checklist was <strong>designed to be used by a professional</strong>, so you may miss things or interpret some requirements differently.</li>
+<li>The inspection takes place after the Notice to Complete is served and before the completion date, or earlier if you and the developer both agree. The notice period is normally at least 14 calendar days.</li>
+<li>If issues breach the warranty provider's technical standards, the developer is responsible for fixing them, ideally before legal completion or within 30 days if that isn't possible.</li>
+</ul>
+<h2>The hard part: judging what counts as a defect</h2>
+<p>The checklist gives you a structure, but the developer judges your findings against the warranty provider's technical standards. Those standards set tolerances, for example for how level a floor or how straight a wall must be. Knowing the tolerance, and being able to measure it, is what separates a defect the developer must fix from one they can dispute. Download the current checklist from the <a href="https://www.nhqb.org.uk/the-code/" rel="noopener">NHQB website</a> before you start.</p>
+<h2>When doing it yourself makes sense</h2>
+<ul>
+<li>You're confident with tools and happy to read technical standards.</li>
+<li>It's a small flat and you have time before completion.</li>
+<li>You plan to get a professional snagging survey after you move in anyway.</li>
+</ul>
+<h2>When a professional is worth it</h2>
+<ul>
+<li>It's the biggest purchase you'll make, and the developer's own team will review your findings.</li>
+<li>A professional report cites the relevant standard for each defect, which is harder to dismiss.</li>
+<li>Some of the most costly issues are easy to miss without experience: loft insulation gaps, drainage falls and poorly sealed service penetrations.</li>
+</ul>
+<p>An Ashbridge pre-completion inspection starts at ${gbp(prices.snag[0].price)} for a flat and ${gbp(prices.snag[2].price)} for a 3-bedroom house, with an engineer-checked report within 24 hours. <a href="/pre-completion-inspection/#window">Check your inspection window</a>, <a href="/sample-snagging-report/">see a sample report</a> or <a href="/snagging-prices/">get an instant price</a>.</p>
+<p class="small muted">This guide summarises the Code for buyers and isn't legal advice. Check the current Code on the <a href="https://www.nhqb.org.uk/the-code/" rel="noopener">NHQB website</a>, and your contract dates with your conveyancer.</p>`,
+  },
+  {
     slug: 'pre-completion-inspection-explained',
     title: 'Pre-completion inspections explained',
     summary: 'What the New Homes Quality Code lets you do before completion, when to book, and what happens to the defects found.',
@@ -15,9 +45,9 @@ const guides = [
 <ul>
 <li>It applies to homes bought from <strong>NHQB-registered developers</strong>. Most large national housebuilders are registered, but check yours.</li>
 <li>Version 2 of the Code applies to homes reserved from <strong>2 March 2026</strong>. Homes reserved earlier fall under Version 1, which also included pre-completion inspections.</li>
-<li>The developer must give your inspector the chance to inspect from <strong>five calendar days after the Notice to Complete</strong> is served.</li>
+<li>The inspection takes place <strong>after the Notice to Complete is served and before the completion date</strong>, or earlier if you and the developer both agree. The notice period is normally <strong>at least 14 calendar days</strong>.</li>
+<li>The inspector must be <strong>suitably qualified</strong>: a member of a recognised professional body for surveying (such as RICS, CIOB or CABE), with professional indemnity insurance. The inspection uses the <strong>NHQB Pre-Completion Inspection Checklist</strong>.</li>
 <li>Issues that breach the warranty provider's technical standards should be fixed before completion, or within 30 days if that isn't possible.</li>
-<li>Ordinary snags shouldn't delay completion. They're recorded and dealt with through the developer's aftercare.</li>
 </ul>
 <h2>How to arrange it</h2>
 <ol>
