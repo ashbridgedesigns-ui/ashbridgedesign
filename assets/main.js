@@ -185,7 +185,7 @@
       if (!form.checkValidity()) { form.reportValidity(); return; }
       var btn = $('button[type="submit"]', form);
       btn.disabled = true; status.className = 'form-status'; status.textContent = 'Sending…';
-      fetch(form.getAttribute('action') || '/api/enquiry', { method: 'POST', body: new FormData(form) })
+      fetch(form.getAttribute('action') || '/api/enquiry/', { method: 'POST', body: new FormData(form) })
         .then(function (r) { if (!r.ok) throw new Error(r.status); location.href = '/thank-you/'; })
         .catch(function () {
           btn.disabled = false; status.className = 'form-status err';

@@ -430,7 +430,7 @@ ${ctaBand()}`,
     trail: [['/contact/', 'Get a price']],
     body: `${pageHero({ trail: [['/contact/', 'Get a price']], eyebrow: 'Get a price', h1: 'Tell us about your project', lede: 'You\'ll get a clear, fixed price, usually the same day. For snagging, you can also <a href="/snagging-prices/">get an instant price</a>.' })}
 <section class="section"><div class="wrap grid-2" style="align-items:start">
-  <form class="form card" name="enquiry" method="POST" action="/api/enquiry" enctype="multipart/form-data" data-form>
+  <form class="form card" name="enquiry" method="POST" action="/api/enquiry/" enctype="multipart/form-data" data-form>
     <p class="hp"><label>Leave this empty <input name="company" tabindex="-1" autocomplete="off"></label></p>
     <div class="row">
       <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" required autocomplete="name"></div>
