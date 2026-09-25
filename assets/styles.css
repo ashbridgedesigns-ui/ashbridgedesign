@@ -217,7 +217,7 @@ fieldset{border:0;padding:0;margin:0;display:grid;gap:8px}
 @media (max-width:560px){.snag{grid-template-columns:1fr}.snag .ph{max-width:160px}}
 
 /* Footer */
-.site-footer{background:var(--deep);color:#C5CCD3;padding-block:56px 32px;font-size:.93rem}
+.site-footer{background:var(--deep);color:#C5CCD3;padding-block:56px 100px;font-size:.93rem}
 .site-footer a{color:#E7EBEF;text-decoration:none}
 .site-footer a:hover{color:var(--amber)}
 .footer-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:32px}
@@ -246,6 +246,18 @@ fieldset{border:0;padding:0;margin:0;display:grid;gap:8px}
 .wa-inline svg{width:22px;height:22px;color:#25D366}
 .wa-inline:hover{color:#0A5A2F;text-decoration:underline}
 @media print{.wa-fab{display:none}}
+
+/* Cookie consent */
+.consent{position:fixed;left:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:80;max-width:430px;background:var(--white);border:1px solid var(--line);border-top:4px solid var(--amber);border-radius:var(--radius);box-shadow:0 16px 40px rgba(38,48,58,.18);padding:18px 20px;display:grid;gap:14px;font-size:.92rem}
+.consent p{color:var(--ink)}
+.consent-btns{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.consent-btns .btn{padding:11px 12px;font-size:.92rem}
+.link-btn{background:none;border:0;padding:0;font:inherit;color:#E7EBEF;cursor:pointer;text-align:left}
+.link-btn:hover{color:var(--amber)}
+@media (max-width:760px){
+  .consent{left:10px;right:10px;max-width:none;bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+  body.consent-open .wa-fab{display:none}
+}
 
 /* Drafting motif */
 .draft-rule{height:14px;background:

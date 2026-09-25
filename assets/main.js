@@ -30,6 +30,48 @@
     else if (A.site.depositLink && href === A.site.depositLink) track('deposit_click');
   });
 
+  // ---------- Cookie consent (analytics only) ----------
+  // Google Analytics starts with analytics_storage denied (no cookies). Accepting grants it;
+  // rejecting keeps it denied and deletes any _ga cookies already set.
+  var CONSENT_KEY = 'ash-consent';
+  function readConsent() { try { return localStorage.getItem(CONSENT_KEY); } catch (e) { return null; } }
+  function clearGaCookies() {
+    document.cookie.split(';').forEach(function (c) {
+      var name = c.split('=')[0].trim();
+      if (name.indexOf('_ga') !== 0) return;
+      var host = location.hostname, parts = host.split('.');
+      [host, '.' + host, '.' + parts.slice(-3).join('.'), '.' + parts.slice(-2).join('.')].forEach(function (d) {
+        document.cookie = name + '=; Max-Age=0; path=/; domain=' + d;
+      });
+      document.cookie = name + '=; Max-Age=0; path=/';
+    });
+  }
+  function saveConsent(value) {
+    try { localStorage.setItem(CONSENT_KEY, value); } catch (e) {}
+    if (typeof window.gtag === 'function') window.gtag('consent', 'update', { analytics_storage: value === 'granted' ? 'granted' : 'denied' });
+    if (value !== 'granted') clearGaCookies();
+  }
+  function showConsent() {
+    if (typeof window.gtag !== 'function' || $('.consent')) return;
+    var box = document.createElement('div');
+    box.className = 'consent';
+    box.setAttribute('role', 'region');
+    box.setAttribute('aria-label', 'Cookie choices');
+    box.innerHTML = '<p><strong>Can we use analytics cookies?</strong> They help us see how people use this site so we can improve it. We don\'t use advertising cookies. <a href="/privacy/#cookies">How we use cookies</a></p>' +
+      '<div class="consent-btns"><button type="button" class="btn btn-slate" data-consent="granted">Accept analytics</button><button type="button" class="btn btn-slate" data-consent="denied">Reject</button></div>';
+    document.body.appendChild(box);
+    document.body.classList.add('consent-open');
+    box.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-consent]');
+      if (!b) return;
+      saveConsent(b.getAttribute('data-consent'));
+      box.remove();
+      document.body.classList.remove('consent-open');
+    });
+  }
+  if (typeof window.gtag === 'function' && !readConsent()) showConsent();
+  $$('[data-consent-open]').forEach(function (b) { b.addEventListener('click', function () { showConsent(); var f = $('.consent button'); if (f) f.focus(); }); });
+
   // ---------- Mobile menu ----------
   var toggle = $('.menu-toggle'), nav = $('#site-nav');
   if (toggle && nav) {
