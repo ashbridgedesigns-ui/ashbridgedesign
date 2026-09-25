@@ -290,7 +290,8 @@ ${ctaBand()}`,
 <div class="grid-2">
   <a class="card" href="/pre-completion-inspection/" style="text-decoration:none"><h3>Pre-completion inspection</h3><p class="small muted">Before you complete: the best time</p></a>
   <a class="card" href="/two-year-warranty-inspection/" style="text-decoration:none"><h3>2-year warranty inspection</h3><p class="small muted">Before the developer's liability ends</p></a>
-</div>`,
+</div>
+<p><strong>Buying from Barratt, Persimmon, Taylor Wimpey or another major builder?</strong> <a href="/developers/">Check your housebuilder</a>: whether they're covered by the New Homes Quality Code, and from when.</p>`,
     includes: ['Inspection of every room, the loft space and the outside', 'Checks against building regulations and warranty-provider standards', 'Windows, doors, finishes, plumbing, heating, electrics (visual and functional)', 'Photographs with each snag located and graded', 'PDF report within 24 hours, ready to send to the developer', 'Every report checked by our lead engineer'],
     excludes: ['Opening up of concealed structures', 'Specialist gas or electrical safety certification'],
     faqs: snagFaqs,
@@ -322,7 +323,7 @@ ${ctaBand()}`,
       <li>Issues that breach the warranty provider's technical standards are the developer's responsibility, ideally fixed before legal completion, or within 30 days if that isn't possible.</li>
     </ul>
     <p><strong>Who inspects for Ashbridge:</strong> every pre-completion inspection is carried out by an inspector who meets the Code's definition of suitably qualified, using the NHQB checklist. Your booking confirmation names your inspector and their professional body. <a href="/sample-snagging-report/">See how our reports are laid out</a>.</p>
-    <p>Thinking of doing it yourself? Read <a href="/guides/can-i-do-my-own-pre-completion-inspection/">can I do my own pre-completion inspection?</a> Not sure if your developer is registered? Check the <a href="https://www.nhqb.org.uk/" rel="noopener">NHQB website</a>, or ask us: we check it when you book.</p>
+    <p>Thinking of doing it yourself? Read <a href="/guides/can-i-do-my-own-pre-completion-inspection/">can I do my own pre-completion inspection?</a> Not sure if your developer is registered? See <a href="/developers/">our housebuilder pages</a>, check the <a href="https://www.nhqb.org.uk/register-of-developers/" rel="noopener">NHQB register</a>, or ask us: we check it when you book.</p>
     <p class="small muted">This page summarises the Code for buyers and isn't legal advice. Your conveyancer can confirm the dates in your contract.</p>
   </div>
   <div>${pciTool()}</div>

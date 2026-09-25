@@ -19,7 +19,7 @@ const listJoin = (arr) => arr.length < 2 ? arr.join('') : arr.slice(0, -1).join(
 const LOCAL = {
   birmingham: {
     notes: `<ul class="ticks">
-<li><strong>Langley, Sutton Coldfield:</strong> one of the largest single housing developments in the UK, planned for around 5,500–6,000 homes near Walmley. It's a key area for pre-completion inspections and snagging.</li>
+<li><strong>Langley, Sutton Coldfield:</strong> about 5,500 new homes approved near Walmley, one of the largest developments in the region. Read our <a href="/guides/langley-sutton-coldfield-new-build-guide/">Langley buyer's guide</a>.</li>
 <li><strong>Longbridge:</strong> new homes by several developers on the former car works site.</li>
 <li><strong>Extensions:</strong> Birmingham City Council decides householder applications, and parts of the city fall within conservation areas. We check your street before we design.</li>
 </ul>`,

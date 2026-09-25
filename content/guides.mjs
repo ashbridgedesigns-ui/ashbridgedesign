@@ -5,6 +5,94 @@ const single = prices.design[0];
 
 const guides = [
   {
+    slug: 'snagging-survey-cost',
+    published: '2026-09-25', updated: '2026-09-25',
+    title: 'How much does a snagging survey cost? (2026 prices)',
+    summary: 'What snagging surveys and pre-completion inspections cost in England in 2026, what changes the price, and what to check before you book.',
+    body: `<p>Most snagging surveys for a typical new home in England cost <strong>between about £325 and £500</strong>, based on the prices national snagging firms publish in 2026. Flats and smaller houses sit at the lower end; four- and five-bedroom houses at the top.</p>
+<h2>Ashbridge prices</h2>
+<ul>${prices.snag.map((r) => `<li>${r.label}: <strong>${gbp(r.price)}</strong></li>`).join('')}</ul>
+<p>The same price applies to a pre-completion inspection. Both together (before and after you move in) cost the snagging price plus ${gbp(prices.preAndPost)}. See <a href="/snagging-prices/">all snagging prices</a>, or get an instant quote.</p>
+<h2>What changes the price</h2>
+<ul>
+<li><strong>Size:</strong> most firms price by bedrooms, because more rooms mean a longer inspection and a longer report.</li>
+<li><strong>Timing:</strong> a pre-completion inspection and a post-completion snagging survey usually cost about the same. Booking both costs more.</li>
+<li><strong>Extras:</strong> thermal imaging, drone roof checks and re-inspections are often add-ons.</li>
+<li><strong>Location:</strong> some firms charge more for remote areas. Ours is a ${gbp(prices.travel)} supplement for TR, CA and TD postcodes only.</li>
+</ul>
+<h2>Is the cheapest worth it?</h2>
+<p>The report is only as useful as the person who writes it. Before you book any snagging firm, ask:</p>
+<ul>
+<li>Is the inspector a member of a recognised professional body for surveying? For a pre-completion inspection under the New Homes Quality Code, they need to be.</li>
+<li>Do they carry professional indemnity insurance?</li>
+<li>Will they use the NHQB Pre-Completion Inspection Checklist where it applies?</li>
+<li>Can you see a sample report, and how quickly will you get yours?</li>
+</ul>
+<p>Compare a few firms on those answers, not just the price. Our <a href="/sample-snagging-report/">sample report</a> shows what you get.</p>`,
+  },
+  {
+    slug: 'what-happens-after-your-snagging-report',
+    published: '2026-09-25', updated: '2026-09-25',
+    title: 'What happens after your snagging report?',
+    summary: 'How to get the developer to fix the snags: sending the report, the timescales in the New Homes Quality Code, complaints and the New Homes Ombudsman.',
+    body: `<p>A snagging report is only the start. Here's how to turn it into repairs, using the timescales in Version 2 of the New Homes Quality Code, which applies to homes reserved from 2 March 2026 with NHQB-registered developers.</p>
+<h2>1. Send it in writing</h2>
+<p>Send the full report to the developer's after-sales or customer care team by email, and keep a copy with the date you sent it. The Code requires developers to provide an after-sales service for at least two years after completion.</p>
+<h2>2. Expect action within 30 days</h2>
+<p>Developers should settle an after-sales issue within 30 days, unless there's a significant reason for delay. If it takes longer, they should update you monthly.</p>
+<h2>3. Check the repairs</h2>
+<p>When the developer says the work is done, check it against the report, or book a <a href="/snagging-prices/">re-inspection</a> (${gbp(prices.reinspection)}) so each item is signed off properly.</p>
+<h2>4. If it stalls, make a formal complaint</h2>
+<ul>
+<li>The developer should acknowledge your complaint within 5 days.</li>
+<li>They should send an assessment and response within 30 days of the complaint start date.</li>
+<li>If it isn't resolved, they should write to you no later than 56 days from the complaint start date.</li>
+</ul>
+<h2>5. Take it to the New Homes Ombudsman</h2>
+<p>If your complaint still isn't resolved, you can refer it to the New Homes Ombudsman Service after 56 days of the complaint start date, as long as the issue arose within two years of completion. The service is free for homebuyers.</p>
+<h2>Keep the paper trail</h2>
+<p>Dated emails, the original report, photos and any re-inspection report are what make a complaint straightforward. Check which Code version covers you, and whether your developer is registered, on the <a href="/developers/">housebuilder pages</a>.</p>`,
+  },
+  {
+    slug: 'new-build-warranty-first-two-years',
+    published: '2026-09-25', updated: '2026-09-25',
+    title: 'New-build warranty: what the builder must fix in 2 years',
+    summary: 'How new-home warranties split into a two-year builder period and years 3–10, what that means for defects, and when to get a 2-year inspection.',
+    body: `<p>Most new homes in England come with a 10-year warranty from a provider such as NHBC, Premier Guarantee or LABC Warranty. The details depend on the policy, so check your own documents, but they usually work in two stages. NHBC's Buildmark policy is the most common example.</p>
+<h2>Years 1–2: the builder fixes defects</h2>
+<p>Under NHBC Buildmark, for the first two years <strong>the builder is responsible for putting right defects caused by not building to NHBC's Technical Standards</strong>. If the builder doesn't, or has gone out of business, NHBC may step in. This is the period for workmanship and materials: cracks, doors and windows, leaks, finishes and services.</p>
+<h2>Years 3–10: structural cover only</h2>
+<p>From year three to year ten, NHBC covers defects to the <strong>structural and weatherproofing parts</strong> of the home caused by breaches of its Technical Standards, but only where damage has occurred. Everyday defects that would have been the builder's responsibility in years one and two usually aren't covered.</p>
+<h2>Why the end of year two matters</h2>
+<p>Some problems only show once a house has dried out and been through the seasons: settlement cracks, sticking doors, damp patches, drainage issues. Getting them on record <strong>before</strong> the two years are up keeps the builder responsible for them.</p>
+<p>A <a href="/two-year-warranty-inspection/">2-year warranty inspection</a> at around month 22 or 23 gives you time to report everything and for the builder to respond. It costs ${gbp(prices.warranty)}, or ${gbp(prices.warrantyReturning)} if we inspected your home before.</p>
+<h2>How this fits with the New Homes Quality Code</h2>
+<p>If your developer is registered with the NHQB, the Code also requires an after-sales service for at least two years after completion, with a route to the New Homes Ombudsman. See <a href="/guides/what-happens-after-your-snagging-report/">what happens after your snagging report</a>.</p>`,
+  },
+  {
+    slug: 'langley-sutton-coldfield-new-build-guide',
+    published: '2026-09-25', updated: '2026-09-25',
+    title: 'Buying a new build at Langley, Sutton Coldfield',
+    summary: 'The 5,500-home Langley development near Walmley: what\'s planned, who is behind it, and how to protect yourself when you buy there.',
+    body: `<p>Langley, on the edge of Sutton Coldfield next to Walmley, is one of the largest new housing developments in the West Midlands. As it grows, it will be a big source of new-build purchases in Birmingham's B76 area, and our home base is just down the road.</p>
+<h2>What's planned</h2>
+<ul>
+<li><strong>About 5,500 homes</strong>, of which over a third (about 2,000) are planned as affordable housing.</li>
+<li><strong>Around 14,000 residents</strong> once complete.</li>
+<li>New schools, community parks, local shops and services, walking and cycling routes, and a traffic-free bridge over the A38.</li>
+<li>Development is guided by Birmingham City Council's Langley Sustainable Urban Extension planning document.</li>
+</ul>
+<h2>Who is behind it</h2>
+<p>The planning application was submitted in 2022 by a consortium of Taylor Wimpey, Vistry Homes, New Hall Estates, William Davis, Homes England and Ciel Property Holdings. Which builders sell homes on each phase can change, so check the developer named in your reservation paperwork.</p>
+<h2>Protecting yourself as a buyer</h2>
+<ul>
+<li><strong>Check your developer on the NHQB register.</strong> If they're registered and you reserved on or after their registration date, you can have a pre-completion inspection and use the New Homes Ombudsman. Taylor Wimpey and Vistry Homes are both listed as active. See <a href="/developers/taylor-wimpey/">Taylor Wimpey</a> and <a href="/developers/">other housebuilders</a>.</li>
+<li><strong>Book a pre-completion inspection</strong> for after your Notice to Complete arrives. <a href="/pre-completion-inspection/#window">Check your inspection window</a>.</li>
+<li><strong>Plan a 2-year check</strong> before the builder's warranty period ends.</li>
+</ul>
+<p>Langley is inside our in-person area: our lead engineer inspects homes there in person, from ${gbp(prices.snag[0].price)} for a flat and ${gbp(prices.snag[2].price)} for a 3-bedroom house. <a href="/areas/birmingham/">More on Birmingham</a>.</p>`,
+  },
+  {
     slug: 'can-i-do-my-own-pre-completion-inspection',
     title: 'Can I do my own pre-completion inspection? (2026 rules)',
     summary: 'Code V2 lets buyers inspect their own new build before completion. What the rules say, the hard part, and when a professional is worth it.',
@@ -114,7 +202,19 @@ const NHQB_P2 = ['NHQB Code V2, Part 2: inspection and completion', 'https://www
 const PD = ['GOV.UK: Permitted development rights for householders, technical guidance', 'https://www.gov.uk/government/publications/permitted-development-rights-for-householders-technical-guidance'];
 const PP = ['Planning Portal: extensions', 'https://www.planningportal.co.uk/permission/common-projects/extensions/'];
 const AD = ['GOV.UK: Building Regulations Approved Documents', 'https://www.gov.uk/government/collections/approved-documents'];
+const HOA = ['HomeOwners Alliance: how much does a snagging survey cost?', 'https://hoa.org.uk/advice/guides-for-homeowners/i-am-buying/snagging-survey-cost/'];
+const NHQB_P3 = ['NHQB Code V2, Part 3: after-sales service, complaints and the New Homes Ombudsman', 'https://www.nhqb.org.uk/the-code/part-3-after-sales-service-complaints-and-the-new-homes-ombudsman/'];
+const NHOS = ['New Homes Ombudsman Service', 'https://www.nhos.org.uk/about-us'];
+const NHBC = ['NHBC: Buildmark cover for homeowners', 'https://www.nhbc.co.uk/homeowners/buildmark-cover'];
+const REG = ['NHQB Register of Developers', 'https://www.nhqb.org.uk/register-of-developers/'];
+const LANGLEY_SPD = ['Birmingham City Council: Langley SUE supplementary planning document', 'https://www.birmingham.gov.uk/download/downloads/id/12543/langley_sue_spd.pdf'];
+const LANGLEY_HT = ['Housing Today: 5,500-home Birmingham urban extension (Dec 2022)', 'https://www.housingtoday.co.uk/news/5500-home-birmingham-urban-extension-tipped-for-approval/5121008.article'];
+const LANGLEY_UKE = ['UK Estates: Langley approval (Oct 2025)', 'https://ukestates.uk/major-new-housing-community-of-5500-homes-gains-approval-at-langley-sutton-coldfield/'];
 const SOURCES = {
+  'snagging-survey-cost': [HOA, NHQB_P2],
+  'what-happens-after-your-snagging-report': [NHQB_P3, NHOS],
+  'new-build-warranty-first-two-years': [NHBC, NHQB_P3],
+  'langley-sutton-coldfield-new-build-guide': [LANGLEY_SPD, LANGLEY_UKE, LANGLEY_HT, REG],
   'can-i-do-my-own-pre-completion-inspection': [NHQB_P2, NHQB],
   'pre-completion-inspection-explained': [NHQB_P2, NHQB],
   'do-i-need-planning-permission-for-an-extension': [PD, PP],
@@ -144,7 +244,7 @@ ${ctaBand()}`,
       trail,
       ld: [{
         '@context': 'https://schema.org', '@type': 'Article', headline: g.title, description: g.summary,
-        datePublished: PUBLISHED, dateModified: UPDATED, inLanguage: 'en-GB',
+        datePublished: g.published || PUBLISHED, dateModified: g.updated || UPDATED, inLanguage: 'en-GB',
         mainEntityOfPage: site.url + `/guides/${g.slug}/`,
         author: { '@type': 'Organization', '@id': site.url + '/#business', name: site.name, url: site.url },
         publisher: { '@type': 'Organization', '@id': site.url + '/#business', name: site.name, logo: { '@type': 'ImageObject', url: site.url + '/assets/logo.jpg' } },
@@ -152,7 +252,7 @@ ${ctaBand()}`,
       }],
       body: `${pageHero({ trail, eyebrow: 'Guide', h1: g.title, lede: g.summary })}
 <section class="section"><div class="wrap"><article class="prose">
-<p class="byline">By <a href="/about/">Ashbridge Design</a> · Reviewed by our lead engineer (MSc Civil Engineering, 15 years' experience) · Updated <time datetime="${UPDATED}">${human(UPDATED)}</time></p>
+<p class="byline">By <a href="/about/">Ashbridge Design</a> · Reviewed by our lead engineer (MSc Civil Engineering, 15 years' experience) · Updated <time datetime="${g.updated || UPDATED}">${human(g.updated || UPDATED)}</time></p>
 ${g.body}
 ${SOURCES[g.slug] ? `<h2>Sources</h2><ul class="sources">${SOURCES[g.slug].map(([l, u]) => `<li><a href="${u}" rel="noopener">${l}</a></li>`).join('')}</ul>` : ''}
 </article></div></section>

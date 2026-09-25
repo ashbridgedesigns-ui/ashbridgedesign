@@ -8,6 +8,7 @@ import { page, pageHero } from './lib/layout.mjs';
 import { pages } from './content/pages.mjs';
 import { guidePages } from './content/guides.mjs';
 import { loadAreas, areaPages } from './content/areas.mjs';
+import { developerPages } from './content/developers.mjs';
 
 const root = dirname(fileURLToPath(import.meta.url));
 const dist = join(root, 'dist');
@@ -25,7 +26,7 @@ for (const [file, loader] of [['main.js', 'js'], ['styles.css', 'css']]) {
 }
 
 const areas = loadAreas(join(root, 'data', 'areas.csv'));
-const all = [...pages, ...guidePages(), ...areaPages(areas)];
+const all = [...pages, ...guidePages(), ...areaPages(areas), ...developerPages()];
 
 const seen = new Set();
 for (const p of all) {
