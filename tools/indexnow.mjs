@@ -2,24 +2,33 @@
 // Run after a deploy has gone live:
 //   node tools/indexnow.mjs                      submit every URL in the live sitemap
 //   node tools/indexnow.mjs /areas/solihull/ …   submit only these paths
+// Options: --no-verify skips the live key-file check (e.g. behind a filtering VPN);
+//          --from-build reads URLs from the local dist/sitemap.xml instead of the live one.
+import { readFileSync } from 'node:fs';
 import site from '../site.config.mjs';
 
 if (!site.indexNowKey) throw new Error('Set indexNowKey in site.config.mjs first.');
 const host = new URL(site.url).host;
 const keyLocation = `${site.url}/${site.indexNowKey}.txt`;
 
+const flags = process.argv.slice(2).filter((a) => a.startsWith('--'));
+const args = process.argv.slice(2).filter((a) => !a.startsWith('--'));
+
 // The key file must be live before engines will accept a submission.
-const keyRes = await fetch(keyLocation);
-if (!keyRes.ok || (await keyRes.text()).trim() !== site.indexNowKey) {
-  throw new Error(`Key file not live at ${keyLocation}. Deploy first, then run this again.`);
+if (!flags.includes('--no-verify')) {
+  const keyRes = await fetch(keyLocation);
+  if (!keyRes.ok || (await keyRes.text()).trim() !== site.indexNowKey) {
+    throw new Error(`Key file not live at ${keyLocation}. Deploy first, then run this again.`);
+  }
 }
 
-const args = process.argv.slice(2);
 let urlList;
 if (args.length) {
   urlList = args.map((p) => (p.startsWith('http') ? p : site.url + p));
 } else {
-  const xml = await (await fetch(`${site.url}/sitemap.xml`)).text();
+  const xml = flags.includes('--from-build')
+    ? readFileSync(new URL('../dist/sitemap.xml', import.meta.url), 'utf8')
+    : await (await fetch(`${site.url}/sitemap.xml`)).text();
   urlList = [...xml.matchAll(/<loc>(.*?)<\/loc>/g)].map((m) => m[1]);
 }
 
