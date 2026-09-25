@@ -14,7 +14,7 @@ export default {
   googleReviewsUrl: '', // link to the Google Business Profile reviews
   // Google Analytics 4 measurement ID (e.g. 'G-XXXXXXXXXX'). Blank = no analytics loaded.
   // Runs in Consent Mode with storage denied (no cookies), so no banner is needed as configured.
-  ga4Id: '',
+  ga4Id: 'G-SG8HQ3LFE9',
   // IndexNow key (Bing, Yandex, Seznam…). Served at /<key>.txt; submit URLs with: node tools/indexnow.mjs
   indexNowKey: '569acd782040d1bf094b714c12cc13e8',
   // Stripe Payment Links (or similar) for the £49 snagging deposit. Leave blank
