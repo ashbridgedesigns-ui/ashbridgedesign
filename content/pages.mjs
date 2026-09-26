@@ -278,7 +278,7 @@ ${ctaBand()}`,
   // ---------------- SNAGGING HUB ----------------
   servicePage({
     path: '/new-build-snagging/',
-    title: `New-Build Snagging Surveys from ${gbp(minSnag)}, England-wide`,
+    title: `New-build Snagging Surveys from ${gbp(minSnag)}, England-wide`,
     description: `Independent new-build snagging surveys and pre-completion inspections from ${gbp(minSnag)}. Engineer-checked reports within 24 hours. Based in Birmingham, covering England.`,
     trail: [['/new-build-snagging/', 'New-build Snagging']],
     eyebrow: 'New-build Snagging',
@@ -302,7 +302,7 @@ ${ctaBand()}`,
 
   {
     path: '/pre-completion-inspection/',
-    title: 'Pre-Completion Inspections: Your NHQB Inspection Window',
+    title: 'Pre-completion Inspections: Your NHQB Inspection Window',
     description: 'Buying from an NHQB-registered developer? You can request an independent pre-completion inspection. Check your inspection window and book an engineer-checked inspection.',
     trail: [['/new-build-snagging/', 'New-build Snagging'], ['/pre-completion-inspection/', 'Pre-completion inspection']],
     ld: [faqLd([
@@ -334,7 +334,7 @@ ${ctaBand()}`,
 
   servicePage({
     path: '/two-year-warranty-inspection/',
-    title: '2-Year New-Build Warranty Inspection',
+    title: '2-year New-build Warranty Inspection',
     description: `Inspection of your new-build home before the end of the developer's two-year defects period. ${gbp(prices.warranty)}, or ${gbp(prices.warrantyReturning)} for returning clients.`,
     trail: [['/new-build-snagging/', 'New-build Snagging'], ['/two-year-warranty-inspection/', '2-year warranty inspection']],
     eyebrow: '2-year warranty inspection',

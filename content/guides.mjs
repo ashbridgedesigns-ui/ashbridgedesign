@@ -1,4 +1,5 @@
 import { gbp, pageHero, ctaBand } from '../lib/layout.mjs';
+import { titleCase } from '../lib/titlecase.mjs';
 import { prices, site } from '../lib/parts.mjs';
 
 const single = prices.design[0];
@@ -228,7 +229,7 @@ const human = (d) => new Date(d + 'T12:00:00').toLocaleDateString('en-GB', { day
 export function guidePages() {
   const index = {
     path: '/guides/',
-    title: 'Guides: Extensions, Planning & New-Build Snagging',
+    title: 'Guides: Extensions, Planning & New-build Snagging',
     description: 'Plain-English guides to planning permission, Building Regulations, structural calculations and new-build snagging in England.',
     trail: [['/guides/', 'Guides']],
     body: `${pageHero({ trail: [['/guides/', 'Guides']], eyebrow: 'Guides', h1: 'Plain-English guides', lede: 'The questions we get asked most, answered by an engineer.' })}
@@ -243,7 +244,7 @@ ${ctaBand()}`,
       description: g.summary,
       trail,
       ld: [{
-        '@context': 'https://schema.org', '@type': 'Article', headline: g.title, description: g.summary,
+        '@context': 'https://schema.org', '@type': 'Article', headline: titleCase(g.title), description: g.summary,
         datePublished: g.published || PUBLISHED, dateModified: g.updated || UPDATED, inLanguage: 'en-GB',
         mainEntityOfPage: site.url + `/guides/${g.slug}/`,
         author: { '@type': 'Organization', '@id': site.url + '/#business', name: site.name, url: site.url },

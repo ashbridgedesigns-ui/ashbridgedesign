@@ -58,7 +58,7 @@
     box.setAttribute('role', 'region');
     box.setAttribute('aria-label', 'Cookie choices');
     box.innerHTML = '<p><strong>Can we use analytics cookies?</strong> They help us see how people use this site so we can improve it. We don\'t use advertising cookies. <a href="/privacy/#cookies">How we use cookies</a></p>' +
-      '<div class="consent-btns"><button type="button" class="btn btn-slate" data-consent="granted">Accept analytics</button><button type="button" class="btn btn-slate" data-consent="denied">Reject</button></div>';
+      '<div class="consent-btns"><button type="button" class="btn btn-slate" data-consent="granted">Accept Analytics</button><button type="button" class="btn btn-slate" data-consent="denied">Reject</button></div>';
     document.body.appendChild(box);
     document.body.classList.add('consent-open');
     box.addEventListener('click', function (e) {
@@ -112,7 +112,7 @@
       var pc = $('[name="postcode"]', tool).value.trim();
       var row = P.snag.filter(function (r) { return r.beds === beds; })[0];
       if (!row) {
-        out.innerHTML = '<p class="verdict warn">Six bedrooms or more?</p><p>Larger homes are quoted individually. Send the details and you\'ll have a fixed price the same day.</p><div class="btn-row"><a class="btn btn-amber" href="' + bookHref('New-build snagging', '6+ bedrooms') + '">Get a fixed price</a></div>';
+        out.innerHTML = '<p class="verdict warn">Six bedrooms or more?</p><p>Larger homes are quoted individually. Send the details and you\'ll have a fixed price the same day.</p><div class="btn-row"><a class="btn btn-amber" href="' + bookHref('New-build snagging', '6+ bedrooms') + '">Get a Fixed Price</a></div>';
         return;
       }
       var cov = coverage(pc);
@@ -137,7 +137,7 @@
         '<p class="big">' + gbp(total) + '</p>' +
         '<p class="small">Fixed price' + (travel ? ', including ' + gbp(travel) + ' travel for remote areas' : '') + '. Pay a ' + gbp(P.deposit) + ' deposit to book, and the balance when your report arrives.</p>' +
         '<p class="small"><strong>' + who + '</strong></p>' +
-        '<div class="btn-row"><a class="btn btn-amber" href="' + payHref + '">Book this inspection</a><a class="btn btn-ghost" href="/sample-snagging-report/">See a sample report</a></div>';
+        '<div class="btn-row"><a class="btn btn-amber" href="' + payHref + '">Book This Inspection</a><a class="btn btn-ghost" href="/sample-snagging-report/">See a Sample Report</a></div>';
     }
     tool.addEventListener('input', calc);
     tool.addEventListener('change', calc);
@@ -151,7 +151,7 @@
       var id = $('[name="project"]', tool).value;
       var stage = ($('[name="stage"]:checked', tool) || {}).value || 'both';
       if (id === 'beam') {
-        out.innerHTML = '<p class="small muted">Structural calculations · wall removal or single steel beam</p><p class="big">' + gbp(P.beamCalc) + '</p><p class="small">Calculations and beam specification for building control, done in-house by our engineer. Fixed price.</p><div class="btn-row"><a class="btn btn-amber" href="' + bookHref('Structural calculations', 'Wall removal / steel beam') + '">Request calculations</a></div>';
+        out.innerHTML = '<p class="small muted">Structural calculations · wall removal or single steel beam</p><p class="big">' + gbp(P.beamCalc) + '</p><p class="small">Calculations and beam specification for building control, done in-house by our engineer. Fixed price.</p><div class="btn-row"><a class="btn btn-amber" href="' + bookHref('Structural calculations', 'Wall removal / steel beam') + '">Request Calculations</a></div>';
         return;
       }
       var p = P.design.filter(function (d) { return d.id === id; })[0];
@@ -162,7 +162,7 @@
         complete: ['Complete · Planning, Building Regulations and structural calculations', p.complete, 'Both stages plus in-house structural calculations, so there is no third-party engineer to wait for.']
       };
       var m = map[stage];
-      out.innerHTML = '<p class="small muted">' + p.name + ' · ' + m[0] + '</p><p class="big">from ' + gbp(m[1]) + '</p><p class="small">' + m[2] + ' Council and building control fees are paid separately.</p><div class="btn-row"><a class="btn btn-amber" href="' + bookHref('Extension design', p.name + ', ' + m[0] + ', from ' + gbp(m[1])) + '">Get my fixed price</a></div>';
+      out.innerHTML = '<p class="small muted">' + p.name + ' · ' + m[0] + '</p><p class="big">from ' + gbp(m[1]) + '</p><p class="small">' + m[2] + ' Council and building control fees are paid separately.</p><div class="btn-row"><a class="btn btn-amber" href="' + bookHref('Extension design', p.name + ', ' + m[0] + ', from ' + gbp(m[1])) + '">Get My Fixed Price</a></div>';
     }
     tool.addEventListener('input', calc);
     tool.addEventListener('change', calc);
@@ -188,7 +188,7 @@
         '<p class="big" style="font-size:clamp(1.3rem,3.6vw,1.8rem)">From ' + fmt(ntc) + '<br>until completion</p>' +
         '<p class="small">Under Code V2, the inspection takes place after the Notice to Complete is served and before the completion date, or earlier if you and the developer both agree. The notice period is normally at least 14 calendar days, so completion is unlikely before <strong>' + fmt(earliest) + '</strong> unless you have agreed otherwise. <strong>Your contract sets the real date</strong>, so check it with your conveyancer.</p>' +
         '<p class="small">Book as early in the window as you can, so the developer has time to put things right before you complete.</p>' +
-        '<div class="btn-row"><a class="btn btn-amber" href="' + bookHref('Pre-completion inspection', 'Notice to Complete served ' + input.value) + '">Book my inspection</a></div>';
+        '<div class="btn-row"><a class="btn btn-amber" href="' + bookHref('Pre-completion inspection', 'Notice to Complete served ' + input.value) + '">Book My Inspection</a></div>';
     }
     input.addEventListener('input', calc);
     calc();
@@ -200,38 +200,38 @@
     function val(n) { var el = $('[name="' + n + '"]:checked', tool) || $('[name="' + n + '"]', tool); return el ? el.value : ''; }
     function render(kind, title, body, next) {
       out.innerHTML = '<p class="verdict ' + kind + '">' + title + '</p>' + body +
-        '<div class="btn-row"><a class="btn btn-amber" href="' + bookHref('Extension design', 'Feasibility: ' + title) + '">' + (next || 'Ask our engineer') + '</a></div>' +
+        '<div class="btn-row"><a class="btn btn-amber" href="' + bookHref('Extension design', 'Feasibility: ' + title) + '">' + (next || 'Ask Our Engineer') + '</a></div>' +
         '<p class="small muted">This is a first guide based on the permitted development rules for houses in England, not formal planning advice. A Lawful Development Certificate gives legal certainty.</p>';
     }
     function calc() {
       var home = val('home'), ext = val('ext'), area = val('area'), nb = val('newbuild');
       var depth = parseFloat(val('depth')) || 0;
       var detached = home === 'detached';
-      if (home === 'flat') return render('no', 'Planning permission needed', '<p>Flats and maisonettes don\'t have householder permitted development rights, so almost any extension needs a planning application.</p>', 'Get planning drawings');
-      if (area === 'listed') return render('no', 'Planning and listed building consent needed', '<p>Works to a listed building need listed building consent, and extensions need planning permission.</p>', 'Talk to our engineer');
+      if (home === 'flat') return render('no', 'Planning permission needed', '<p>Flats and maisonettes don\'t have householder permitted development rights, so almost any extension needs a planning application.</p>', 'Get Planning Drawings');
+      if (area === 'listed') return render('no', 'Planning and listed building consent needed', '<p>Works to a listed building need listed building consent, and extensions need planning permission.</p>', 'Talk to Our Engineer');
       var designated = area === 'conservation';
       var caveat = nb === 'yes' ? '<p class="note-box">On newer estates, permitted development rights are often removed by a condition on the original planning permission. Check your property\'s planning history before relying on this. We check it as part of every quote.</p>' : '';
       if (ext === 'rear1') {
         var limit = detached ? 4 : 3, big = detached ? 8 : 6;
-        if (depth <= limit) return render('ok', 'Likely permitted development', '<p>A single-storey rear extension up to ' + limit + ' m deep on a ' + (detached ? 'detached' : 'semi-detached or terraced') + ' house is usually permitted development, subject to the height, eaves and garden-coverage limits.</p>' + caveat, 'Get drawings and a Lawful Development Certificate');
-        if (depth <= big && !designated) return render('warn', 'Possible under prior approval', '<p>Between ' + limit + ' m and ' + big + ' m you can use the larger home extension prior approval route: neighbours are notified and the council decides within 42 days.</p>' + caveat, 'Get prior approval drawings');
-        return render('no', 'Planning permission likely needed', '<p>At ' + depth + ' m deep' + (designated ? ' in a conservation area' : '') + ', this goes beyond permitted development limits, so a householder planning application is the route.</p>' + caveat, 'Get planning drawings from £' + P.design[0].s1);
+        if (depth <= limit) return render('ok', 'Likely permitted development', '<p>A single-storey rear extension up to ' + limit + ' m deep on a ' + (detached ? 'detached' : 'semi-detached or terraced') + ' house is usually permitted development, subject to the height, eaves and garden-coverage limits.</p>' + caveat, 'Get Drawings and a Lawful Development Certificate');
+        if (depth <= big && !designated) return render('warn', 'Possible under prior approval', '<p>Between ' + limit + ' m and ' + big + ' m you can use the larger home extension prior approval route: neighbours are notified and the council decides within 42 days.</p>' + caveat, 'Get Prior Approval Drawings');
+        return render('no', 'Planning permission likely needed', '<p>At ' + depth + ' m deep' + (designated ? ' in a conservation area' : '') + ', this goes beyond permitted development limits, so a householder planning application is the route.</p>' + caveat, 'Get Planning Drawings From £' + P.design[0].s1);
       }
       if (ext === 'rear2') {
-        if (designated) return render('no', 'Planning permission needed', '<p>Two-storey rear extensions are not permitted development in conservation areas.</p>', 'Get planning drawings from £' + P.design[1].s1);
-        if (depth <= 3) return render('warn', 'Possibly permitted development', '<p>A two-storey rear extension can be permitted development up to 3 m deep, but only if it is at least 7 m from the rear boundary and matches the existing materials. Many don\'t meet the 7 m rule, so check before you rely on it.</p>' + caveat, 'Check it with our engineer');
-        return render('no', 'Planning permission likely needed', '<p>Two-storey rear extensions deeper than 3 m need planning permission.</p>' + caveat, 'Get planning drawings from £' + P.design[1].s1);
+        if (designated) return render('no', 'Planning permission needed', '<p>Two-storey rear extensions are not permitted development in conservation areas.</p>', 'Get Planning Drawings From £' + P.design[1].s1);
+        if (depth <= 3) return render('warn', 'Possibly permitted development', '<p>A two-storey rear extension can be permitted development up to 3 m deep, but only if it is at least 7 m from the rear boundary and matches the existing materials. Many don\'t meet the 7 m rule, so check before you rely on it.</p>' + caveat, 'Check It With Our Engineer');
+        return render('no', 'Planning permission likely needed', '<p>Two-storey rear extensions deeper than 3 m need planning permission.</p>' + caveat, 'Get Planning Drawings From £' + P.design[1].s1);
       }
       if (ext === 'side') {
-        if (designated) return render('no', 'Planning permission needed', '<p>Side extensions are not permitted development in conservation areas.</p>', 'Get planning drawings');
-        return render('warn', 'Possibly permitted development', '<p>A single-storey side extension can be permitted development if it is no more than 4 m high and no wider than half the width of the original house. Two-storey side extensions and wraparounds need planning permission.</p>' + caveat, 'Check it with our engineer');
+        if (designated) return render('no', 'Planning permission needed', '<p>Side extensions are not permitted development in conservation areas.</p>', 'Get Planning Drawings');
+        return render('warn', 'Possibly permitted development', '<p>A single-storey side extension can be permitted development if it is no more than 4 m high and no wider than half the width of the original house. Two-storey side extensions and wraparounds need planning permission.</p>' + caveat, 'Check It With Our Engineer');
       }
       if (ext === 'loft') {
-        if (designated) return render('no', 'Planning permission likely needed', '<p>Roof extensions such as dormers are not permitted development in conservation areas. Rooflights may still be possible.</p>', 'Get loft drawings');
-        return render('ok', 'Likely permitted development', '<p>Loft dormers are usually permitted development within ' + (home === 'terraced' ? '40' : '50') + ' m³ of extra volume, as long as they don\'t face the road and use similar materials. Building Regulations always apply.</p>' + caveat, 'Get loft conversion drawings');
+        if (designated) return render('no', 'Planning permission likely needed', '<p>Roof extensions such as dormers are not permitted development in conservation areas. Rooflights may still be possible.</p>', 'Get Loft Drawings');
+        return render('ok', 'Likely permitted development', '<p>Loft dormers are usually permitted development within ' + (home === 'terraced' ? '40' : '50') + ' m³ of extra volume, as long as they don\'t face the road and use similar materials. Building Regulations always apply.</p>' + caveat, 'Get Loft Conversion Drawings');
       }
       if (ext === 'garage') {
-        return render(nb === 'yes' ? 'warn' : 'ok', nb === 'yes' ? 'Check your planning conditions' : 'Often no planning needed', '<p>Converting an integral or attached garage is often permitted development when the only external change is swapping the door for a window. Building Regulations approval is always needed.</p>' + caveat, 'Get garage conversion drawings');
+        return render(nb === 'yes' ? 'warn' : 'ok', nb === 'yes' ? 'Check your planning conditions' : 'Often no planning needed', '<p>Converting an integral or attached garage is often permitted development when the only external change is swapping the door for a window. Building Regulations approval is always needed.</p>' + caveat, 'Get Garage Conversion Drawings');
       }
     }
     tool.addEventListener('input', calc);
