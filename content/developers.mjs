@@ -30,6 +30,7 @@ export const DEVELOPERS = [
   { slug: 'cala-homes', short: 'CALA', brand: 'CALA Homes', entity: 'CALA Management Limited', from: '2023-10-03' },
 ];
 
+const withArticle = (name) => (/^[AEIOU]/i.test(name) ? 'an ' : 'a ') + name;
 const human = (d) => new Date(d + 'T12:00:00').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
 const bySlug = Object.fromEntries(DEVELOPERS.map((d) => [d.slug, d]));
 const minSnag = prices.snag[0].price;
@@ -64,12 +65,12 @@ ${ctaBand()}`,
       [`Can I have my ${d.short || d.brand} home inspected before completion?`, `Yes, if you reserved it on or after ${since}. ${d.entity} is listed as active on the NHQB Register of Developers from that date, and the New Homes Quality Code lets buyers of registered developers have a pre-completion inspection after the Notice to Complete is served and before completion.`],
       [`Do I have to use ${d.short || d.brand}'s own inspection?`, `No. You can appoint your own suitably qualified inspector: a member of a recognised professional body for surveying, with professional indemnity insurance. Homes reserved from 2 March 2026 can also be inspected by the buyer themselves, using the NHQB checklist.`],
       [`What if ${d.brand} doesn't fix the snags?`, `Report issues in writing through the after-sales service. Under Version 2 of the Code, developers should settle after-sales issues within 30 days unless there is a significant reason for delay. If you make a formal complaint and it isn't resolved, you can refer it to the New Homes Ombudsman Service after 56 days.`],
-      [`How much is a snagging survey on a ${d.short || d.brand} home?`, `From ${gbp(minSnag)} for a flat, ${gbp(prices.snag[2].price)} for a 3-bedroom house and ${gbp(prices.snag[4].price)} for 5 bedrooms, the same whichever developer built it.`],
+      [`How much is a snagging survey on ${withArticle(d.short || d.brand)} home?`, `From ${gbp(minSnag)} for a flat, ${gbp(prices.snag[2].price)} for a 3-bedroom house and ${gbp(prices.snag[4].price)} for 5 bedrooms, the same whichever developer built it.`],
     ];
     out.push({
       path: `/developers/${d.slug}/`,
       title: `${d.brand} Snagging Inspections`,
-      description: `Buying a ${d.short || d.brand} home? Engineer-checked snagging and pre-completion inspections from ${gbp(minSnag)}. On the NHQB register from ${since}.`,
+      description: `Buying ${withArticle(d.short || d.brand)} home? Engineer-checked snagging and pre-completion inspections from ${gbp(minSnag)}. On the NHQB register from ${since}.`,
       trail,
       ld: [faqLd(faqs), { '@context': 'https://schema.org', '@type': 'Service', name: `Snagging and pre-completion inspections for ${d.short || d.brand} homes`, serviceType: 'New-build snagging inspection', provider: { '@id': site.url + '/#business' }, areaServed: { '@type': 'Country', name: 'England' }, offers: { '@type': 'Offer', price: minSnag, priceCurrency: 'GBP' } }],
       body: `${pageHero({ trail, eyebrow: `${d.brand} · New-build inspections`, h1: `${esc(d.brand)} snagging survey and pre-completion inspection`, lede: `Buying a new ${esc(d.short || d.brand)} home? Get it independently inspected before you complete, with an engineer-checked report within 24 hours. From ${gbp(minSnag)}, anywhere in England.`, ctas: '<a class="btn btn-amber" href="/snagging-prices/">Get an instant price</a><a class="btn btn-ghost" href="/sample-snagging-report/">See a sample report</a>' })}
@@ -83,7 +84,7 @@ ${ctaBand()}`,
   </div>
   <div class="card card-door">
     <p class="eyebrow">Your options</p>
-    <h2>When to inspect a ${esc(d.short || d.brand)} home</h2>
+    <h2>When to inspect ${esc(withArticle(d.short || d.brand))} home</h2>
     <ul class="ticks">
       <li><strong>Before completion:</strong> after the Notice to Complete is served and before the completion date. The notice period is normally at least 14 calendar days. <a href="/pre-completion-inspection/#window">Check your window</a>.</li>
       <li><strong>After you move in:</strong> a full snagging survey, ideally in the first few months.</li>

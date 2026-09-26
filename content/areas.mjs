@@ -139,7 +139,7 @@ ${LOCAL[a.slug] ? `<section class="section section-white"><div class="wrap narro
     <p class="eyebrow">Coverage</p><h2>Where we work in ${esc(core)}</h2>
     <p>${whereLine}</p>
     ${outcodes.length ? `<h3>Postcode districts</h3><p class="postcodes">${outcodes.map((o) => `<span>${o}</span>`).join('')}</p>` : ''}
-    ${wards.length ? `<h3>Neighbourhoods in and around ${esc(core)}</h3><p>${esc(listJoin(wards))}.</p>` : ''}
+    ${wards.length ? `<h3>Neighbourhoods around ${esc(core)}</h3><p>${esc(listJoin(wards))}.</p>` : ''}
   </div>
   <div class="stack"><h3>Nearest places we cover</h3><ul class="area-list" style="columns:2 180px">${nearby.map(({ x, d }) => `<li>${link(x)}<span>${Math.max(1, Math.round(d))} miles</span></li>`).join('')}</ul><a class="more" href="/areas/${regionSlug}/">All of ${a.region}</a></div>
 </div></section>
