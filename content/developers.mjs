@@ -36,7 +36,7 @@ const minSnag = prices.snag[0].price;
 
 export function developerPages() {
   const out = [];
-  const indexTrail = [['/new-build-snagging/', 'New-build snagging'], ['/developers/', 'Developers']];
+  const indexTrail = [['/new-build-snagging/', 'New-build Snagging'], ['/developers/', 'Developers']];
 
   out.push({
     path: '/developers/',

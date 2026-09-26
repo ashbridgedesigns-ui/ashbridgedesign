@@ -162,23 +162,23 @@ const guides = [
 <h2>When you always need planning</h2>
 <ul><li>Flats and maisonettes, which have no householder permitted development rights</li><li>Listed buildings, which also need listed building consent</li><li>Where rights are removed by an <strong>Article 4 direction</strong> or a <strong>planning condition</strong>. This is very common on estates built in the last 15–20 years.</li></ul>
 <h2>Even if it's permitted development…</h2>
-<p>Get a <strong>Lawful Development Certificate</strong>. It proves the extension was lawful, which your buyer's solicitor will ask about when you sell. Building regulations approval is needed either way.</p>
+<p>Get a <strong>Lawful Development Certificate</strong>. It proves the extension was lawful, which your buyer's solicitor will ask about when you sell. Building Regulations approval is needed either way.</p>
 <p>Try our <a href="/can-i-extend/">free feasibility check</a>, or <a href="/planning-drawings/">get planning drawings from ${gbp(single.s1)}</a>.</p>
 <p class="small muted">A general guide to the rules for houses in England. Your own case depends on your property's planning history. We check it as part of every quote.</p>`,
   },
   {
     slug: 'planning-vs-building-regulations-drawings',
-    title: 'Planning drawings vs building regs drawings: what\'s the difference?',
+    title: 'Planning drawings vs Building Regulations drawings: what\'s the difference?',
     summary: 'Why most extensions need two sets of drawings, what each one shows, and where structural calculations fit.',
-    body: `<p>Planning permission and building regulations are two separate approvals, and they need different drawings.</p>
+    body: `<p>Planning permission and Building Regulations are two separate approvals, and they need different drawings.</p>
 <h2>Planning drawings: what it looks like</h2>
 <p>Planning is about how the extension affects the street, the neighbours and the character of the area. The drawings show size, shape, position, windows and materials: existing and proposed floor plans, elevations, a roof plan, and a location and site plan.</p>
-<h2>Building regs drawings: how it's built</h2>
-<p>Building regulations are about safety and performance: structure, fire safety, insulation, ventilation, drainage and access. The drawings are technical, with sections, construction details and specification notes. They're what building control approves and what your builder prices from.</p>
+<h2>Building Regulations drawings: how it's built</h2>
+<p>Building Regulations are about safety and performance: structure, fire safety, insulation, ventilation, drainage and access. The drawings are technical, with sections, construction details and specification notes. They're what building control approves and what your builder prices from.</p>
 <h2>Structural calculations</h2>
 <p>If there's a steel beam, a new opening or a loft floor, building control needs calculations proving the structure works. Many firms send these to a separate engineer. At Ashbridge they're done in-house.</p>
 <h2>What it costs</h2>
-<p>For a single-storey extension: planning ${gbp(single.s1)}, building regs ${gbp(single.s2)}, both stages ${gbp(single.both)}, or Complete with calculations ${gbp(single.complete)}. <a href="/extension-design-prices/">See all prices</a>.</p>`,
+<p>For a single-storey extension: planning ${gbp(single.s1)}, Building Regulations ${gbp(single.s2)}, both stages ${gbp(single.both)}, or Complete with calculations ${gbp(single.complete)}. <a href="/extension-design-prices/">See all prices</a>.</p>`,
   },
   {
     slug: 'what-is-a-snagging-survey',
@@ -229,7 +229,7 @@ export function guidePages() {
   const index = {
     path: '/guides/',
     title: 'Guides: Extensions, Planning & New-Build Snagging',
-    description: 'Plain-English guides to planning permission, building regulations, structural calculations and new-build snagging in England.',
+    description: 'Plain-English guides to planning permission, Building Regulations, structural calculations and new-build snagging in England.',
     trail: [['/guides/', 'Guides']],
     body: `${pageHero({ trail: [['/guides/', 'Guides']], eyebrow: 'Guides', h1: 'Plain-English guides', lede: 'The questions we get asked most, answered by an engineer.' })}
 <section class="section"><div class="wrap grid-2">${guides.map((g) => `<a class="card" href="/guides/${g.slug}/" style="text-decoration:none"><h2 class="card-title">${g.title}</h2><p class="muted small">${g.summary}</p><span class="more">Read the guide</span></a>`).join('')}</div></section>

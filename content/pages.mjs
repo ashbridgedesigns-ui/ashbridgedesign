@@ -21,10 +21,10 @@ ${ctaBand()}`;
 }
 
 const designFaqs = [
-  ['How much do extension drawings cost?', `Planning drawings for a single-storey extension start at ${gbp(single.s1)}. Planning and building regs together start at ${gbp(single.both)}, and the Complete package with structural calculations starts at ${gbp(single.complete)}.`],
+  ['How much do extension drawings cost?', `Planning drawings for a single-storey extension start at ${gbp(single.s1)}. Planning and Building Regulations together start at ${gbp(single.both)}, and the Complete package with structural calculations starts at ${gbp(single.complete)}.`],
   ['Do you visit the property?', 'Yes. Every project starts with a measured survey. Around Birmingham and the West Midlands our engineer visits in person. Elsewhere in England, the survey is carried out by a partner surveyor or by 3D scan, depending on the project.'],
   ['What if planning is refused?', 'If you book both stages, a resubmission is included free. We also design to your council\'s own guidance from the start, to give the application the best chance first time.'],
-  ['Are you architects?', '<p>No. “Architect” is a protected title in the UK. Ashbridge is an engineer-led design practice run by a civil engineer (MSc) with 15 years\' experience, producing planning drawings, building regulations drawings and structural calculations.</p>'],
+  ['Are you architects?', '<p>No. “Architect” is a protected title in the UK. Ashbridge is an engineer-led design practice run by a civil engineer (MSc) with 15 years\' experience, producing planning drawings, Building Regulations drawings and structural calculations.</p>'],
   ['Do council fees come on top?', 'Yes. Planning application fees and building control fees are paid directly to the council or building control body. We tell you the exact amounts before anything is submitted.'],
 ];
 
@@ -40,7 +40,7 @@ export const pages = [
   {
     path: '/',
     title: 'Ashbridge Design | Extension Drawings & Snagging Surveys',
-    description: `Engineer-led extension drawings from ${gbp(single.s1)}, in-house structural calcs and new-build snagging surveys from ${gbp(minSnag)}. Birmingham-based, covering England.`,
+    description: `Engineer-led extension drawings from ${gbp(single.s1)}, in-house structural calculations and new-build snagging surveys from ${gbp(minSnag)}. Birmingham-based, covering England.`,
     ld: [faqLd(designFaqs.slice(0, 2).concat(snagFaqs.slice(0, 2)))],
     body: `<section class="hero"><div class="wrap hero-grid">
   <div class="stack">
@@ -58,7 +58,7 @@ export const pages = [
   <article class="card card-door">
     <p class="eyebrow">Extending or converting?</p>
     <h2>Extension design, from planning to build</h2>
-    <p>Planning drawings, building regs drawings and structural calculations from one engineer. Single and double-storey extensions, lofts and garage conversions.</p>
+    <p>Planning drawings, Building Regulations drawings and structural calculations from one engineer. Single and double-storey extensions, lofts and garage conversions.</p>
     <p class="price-from">Planning drawings from <b>${gbp(single.s1)}</b></p>
     <div class="btn-row"><a class="btn btn-amber" href="/extension-design-prices/">See design prices</a><a class="btn btn-ghost" href="/can-i-extend/">Can I extend?</a></div>
   </article>
@@ -68,7 +68,7 @@ export const pages = [
     <p>Find the defects before you move in, or while the developer still has to fix them. Clear, engineer-checked reports within 24 hours.</p>
     <p class="price-from">Inspections from <b>${gbp(minSnag)}</b></p>
     <div class="btn-row"><a class="btn btn-amber" href="/snagging-prices/">Get an instant price</a><a class="btn btn-ghost" href="/pre-completion-inspection/">Pre-completion inspections</a></div>
-    <a class="more" href="/sample-snagging-report/">See a sample report →</a>
+    <a class="more" href="/sample-snagging-report/">See a sample report</a>
   </article>
 </div></section>
 
@@ -81,11 +81,11 @@ ${engineerBand}
       <li><h4>Free scope review</h4><p class="small">Send photos and your idea. You get a fixed price, usually the same day.</p></li>
       <li><h4>Measured survey</h4><p class="small">We measure the house and check your planning history and council rules.</p></li>
       <li><h4>Design &amp; drawings</h4><p class="small">Options, then planning drawings. We submit and manage the application.</p></li>
-      <li><h4>Building regs &amp; calcs</h4><p class="small">Technical drawings and in-house structural calculations, ready for your builder.</p></li>
+      <li><h4>Building Regulations &amp; calculations</h4><p class="small">Technical drawings and in-house structural calculations, ready for your builder.</p></li>
     </ol></div>
     <div class="stack"><h3>New-build inspection</h3><ol class="steps">
       <li><h4>Instant price</h4><p class="small">Priced by bedrooms. Book online with a ${gbp(prices.deposit)} deposit.</p></li>
-      <li><h4>Inspection</h4><p class="small">A room-by-room inspection, plus the loft and outside, against building regs and warranty standards.</p></li>
+      <li><h4>Inspection</h4><p class="small">A room-by-room inspection, plus the loft and outside, against Building Regulations and warranty standards.</p></li>
       <li><h4>Report in 24 hours</h4><p class="small">Photographed, located, graded and ready to send to the developer.</p></li>
       <li><h4>Re-inspection</h4><p class="small">Optional: we come back and check the developer's fixes.</p></li>
     </ol></div>
@@ -106,8 +106,8 @@ ${engineerBand}
   <div class="section-head"><p class="eyebrow">Clear, fixed prices</p><h2>What it costs</h2><p class="muted">Fixed prices, no hidden extras. Council fees are paid separately.</p></div>
   <div class="grid-4">
     <div class="card"><h3>Planning drawings</h3><p class="price-from">from <b>${gbp(single.s1)}</b></p><a class="more" href="/planning-drawings/">Planning drawings</a></div>
-    <div class="card"><h3>Planning + building regs</h3><p class="price-from">from <b>${gbp(single.both)}</b></p><a class="more" href="/extension-design-prices/">Design prices</a></div>
-    <div class="card"><h3>Structural calculations</h3><p class="price-from">from <b>${gbp(prices.beamCalc)}</b></p><a class="more" href="/structural-calculations/">Structural calcs</a></div>
+    <div class="card"><h3>Planning + Building Regulations</h3><p class="price-from">from <b>${gbp(single.both)}</b></p><a class="more" href="/extension-design-prices/">Design prices</a></div>
+    <div class="card"><h3>Structural calculations</h3><p class="price-from">from <b>${gbp(prices.beamCalc)}</b></p><a class="more" href="/structural-calculations/">Structural calculations</a></div>
     <div class="card"><h3>Snagging survey</h3><p class="price-from">from <b>${gbp(minSnag)}</b></p><a class="more" href="/snagging-prices/">Snagging prices</a></div>
   </div>
 </div></section>
@@ -124,28 +124,28 @@ ${ctaBand()}`,
   // ---------------- EXTENSION DESIGN HUB ----------------
   servicePage({
     path: '/extension-design/',
-    title: 'Extension Design, Planning & Building Regs Drawings',
-    description: `Engineer-led extension design across England: planning drawings from ${gbp(single.s1)}, building regs drawings, and structural calculations in-house. Fixed prices.`,
-    trail: [['/extension-design/', 'Extension design']],
-    eyebrow: 'Extension design',
+    title: 'Extension Design, Planning & Building Regulations Drawings',
+    description: `Engineer-led extension design across England: planning drawings from ${gbp(single.s1)}, Building Regulations drawings, and structural calculations in-house. Fixed prices.`,
+    trail: [['/extension-design/', 'Extension Design']],
+    eyebrow: 'Extension Design',
     h1: 'Extension design by an engineer, from planning to build',
-    lede: 'Planning drawings, building regulations drawings and structural calculations for extensions, lofts and garage conversions, all from one engineer, at fixed prices.',
+    lede: 'Planning drawings, Building Regulations drawings and structural calculations for extensions, lofts and garage conversions, all from one engineer, at fixed prices.',
     ctas: `<a class="btn btn-amber" href="/extension-design-prices/">See prices</a><a class="btn btn-ghost" href="/can-i-extend/">Can I extend?</a>`,
     intro: `<h2>One engineer, every stage</h2>
-<p>Most extension projects need two approvals: <strong>planning permission</strong>, or confirmation it isn't needed, and <strong>building regulations approval</strong>. Most also need <strong>structural calculations</strong> for beams and foundations. Other firms split this between a designer and an outside engineer. Ashbridge does all three, so nothing gets lost between two firms and there's no waiting for a third-party engineer.</p>
+<p>Most extension projects need two approvals: <strong>planning permission</strong>, or confirmation it isn't needed, and <strong>Building Regulations approval</strong>. Most also need <strong>structural calculations</strong> for beams and foundations. Other firms split this between a designer and an outside engineer. Ashbridge does all three, so nothing gets lost between two firms and there's no waiting for a third-party engineer.</p>
 <div class="grid-2">
   <a class="card" href="/planning-drawings/" style="text-decoration:none"><h3>Planning drawings</h3><p class="small muted">from ${gbp(single.s1)}</p></a>
-  <a class="card" href="/building-regulations-drawings/" style="text-decoration:none"><h3>Building regs drawings</h3><p class="small muted">from ${gbp(single.s2)}</p></a>
+  <a class="card" href="/building-regulations-drawings/" style="text-decoration:none"><h3>Building Regulations drawings</h3><p class="small muted">from ${gbp(single.s2)}</p></a>
   <a class="card" href="/structural-calculations/" style="text-decoration:none"><h3>Structural calculations</h3><p class="small muted">from ${gbp(prices.beamCalc)}</p></a>
   <a class="card" href="/loft-conversion-drawings/" style="text-decoration:none"><h3>Loft conversions</h3><p class="small muted">from ${gbp(prices.design[2].s1)}</p></a>
   <a class="card" href="/garage-conversion-drawings/" style="text-decoration:none"><h3>Garage conversions</h3><p class="small muted">from ${gbp(prices.design[3].s1)}</p></a>
   <a class="card" href="/can-i-extend/" style="text-decoration:none"><h3>Can I extend?</h3><p class="small muted">Free feasibility check</p></a>
 </div>`,
-    includes: ['Measured survey of your home', 'Planning history and council policy check', 'Design options and concept drawings', 'Planning or Lawful Development Certificate drawings, submission and management', 'Building regs technical drawings and specification', 'Structural calculations in-house (Complete package)', 'Free planning resubmission when both stages are booked', 'Free location and site plan when both stages are booked'],
+    includes: ['Measured survey of your home', 'Planning history and council policy check', 'Design options and concept drawings', 'Planning or Lawful Development Certificate drawings, submission and management', 'Building Regulations technical drawings and specification', 'Structural calculations in-house (Complete package)', 'Free planning resubmission when both stages are booked', 'Free location and site plan when both stages are booked'],
     excludes: ['Council planning and building control fees', 'Party wall surveyor, if your project needs one', 'Topographical or drainage surveys, if needed'],
     faqs: designFaqs,
     extra: `<section class="section-tight"><div class="wrap">${designQuoteTool()}</div></section>
-<section class="section section-white"><div class="wrap narrow stack"><p class="eyebrow">Standards we work to</p><h2>What our work is checked against</h2><ul class="ticks"><li><strong>Planning:</strong> your council’s local plan and design guidance, and the national rules on <a href="https://www.gov.uk/government/publications/permitted-development-rights-for-householders-technical-guidance" rel="noopener">permitted development for householders</a>.</li><li><strong>Building regulations:</strong> technical drawings and specifications prepared to the <a href="https://www.gov.uk/government/collections/approved-documents" rel="noopener">Approved Documents</a> for England.</li><li><strong>Structural calculations:</strong> prepared by a civil engineer (MSc) to the relevant British Standards and Eurocodes, for building control approval.</li><li><strong>Honest titles:</strong> we are an engineer-led design practice, not architects. “Architect” is a title protected by the <a href="https://arb.org.uk/" rel="noopener">Architects Registration Board</a>.</li></ul></div></section>`,
+<section class="section section-white"><div class="wrap narrow stack"><p class="eyebrow">Standards we work to</p><h2>What our work is checked against</h2><ul class="ticks"><li><strong>Planning:</strong> your council’s local plan and design guidance, and the national rules on <a href="https://www.gov.uk/government/publications/permitted-development-rights-for-householders-technical-guidance" rel="noopener">permitted development for householders</a>.</li><li><strong>Building Regulations:</strong> technical drawings and specifications prepared to the <a href="https://www.gov.uk/government/collections/approved-documents" rel="noopener">Approved Documents</a> for England.</li><li><strong>Structural calculations:</strong> prepared by a civil engineer (MSc) to the relevant British Standards and Eurocodes, for building control approval.</li><li><strong>Honest titles:</strong> we are an engineer-led design practice, not architects. “Architect” is a title protected by the <a href="https://arb.org.uk/" rel="noopener">Architects Registration Board</a>.</li></ul></div></section>`,
     offer: { name: 'Extension design', price: single.s1 },
   }),
 
@@ -153,7 +153,7 @@ ${ctaBand()}`,
     path: '/planning-drawings/',
     title: `Planning Drawings from ${gbp(single.s1)}`,
     description: `Planning drawings for extensions, lofts and garage conversions from ${gbp(single.s1)}: survey, design, submission and management of your application. Engineer-led.`,
-    trail: [['/extension-design/', 'Extension design'], ['/planning-drawings/', 'Planning drawings']],
+    trail: [['/extension-design/', 'Extension Design'], ['/planning-drawings/', 'Planning drawings']],
     eyebrow: 'Stage 1 · Planning',
     h1: `Planning drawings from ${gbp(single.s1)}`,
     lede: 'Everything needed to get planning permission, or a Lawful Development Certificate, for your extension, loft or garage conversion.',
@@ -170,25 +170,25 @@ ${ctaBand()}`,
   servicePage({
     path: '/building-regulations-drawings/',
     title: `Building Regulations Drawings from ${gbp(single.s2)}`,
-    description: `Building regulations drawings and specifications drawn by a civil engineer, from ${gbp(single.s2)}, with structural calculations in-house. England-wide.`,
-    trail: [['/extension-design/', 'Extension design'], ['/building-regulations-drawings/', 'Building regs drawings']],
-    eyebrow: 'Stage 2 · Building regulations',
-    h1: 'Building regs drawings that builders can actually build from',
+    description: `Building Regulations drawings and specifications drawn by a civil engineer, from ${gbp(single.s2)}, with structural calculations in-house. England-wide.`,
+    trail: [['/extension-design/', 'Extension Design'], ['/building-regulations-drawings/', 'Building Regulations drawings']],
+    eyebrow: 'Stage 2 · Building Regulations',
+    h1: 'Building Regulations drawings that builders can actually build from',
     lede: 'Technical plans, sections, details and specification for building control, drawn by an engineer who understands how it goes together on site.',
     ctas: `<a class="btn btn-amber" href="/contact/?service=Extension%20design">Get my fixed price</a>`,
-    intro: `<h2>Where engineering matters most</h2><p>Building regulations drawings show <em>how</em> your extension is built: foundations, beams, insulation, drainage, fire safety and ventilation. They're what building control approves and what your builder prices from. Vague drawings lead to vague quotes and extra costs part-way through.</p>
+    intro: `<h2>Where engineering matters most</h2><p>Building Regulations drawings show <em>how</em> your extension is built: foundations, beams, insulation, drainage, fire safety and ventilation. They're what building control approves and what your builder prices from. Vague drawings lead to vague quotes and extra costs part-way through.</p>
 <p>Because Ashbridge is engineer-led, beams, foundations and drainage are designed properly from the start. Add in-house structural calculations with the <strong>Complete</strong> package, so building control gets one consistent set of documents.</p>`,
     includes: ['Technical floor plans and sections', 'Technical elevations', 'Construction details: foundations, walls, roof, junctions', 'Specification notes to Approved Documents', 'Building control submission and management', 'Changes requested by building control'],
     excludes: ['Building control fees', 'Structural calculations (included in the Complete package)'],
-    faqs: [['Do I need building regs drawings if I have planning permission?', 'Yes. Planning covers what the extension looks like. Building regulations cover how it\'s built, and apply to almost all extensions, lofts and garage conversions.'], designFaqs[1], designFaqs[4]],
-    offer: { name: 'Building regulations drawings', price: single.s2 },
+    faqs: [['Do I need Building Regulations drawings if I have planning permission?', 'Yes. Planning covers what the extension looks like. Building Regulations cover how it\'s built, and apply to almost all extensions, lofts and garage conversions.'], designFaqs[1], designFaqs[4]],
+    offer: { name: 'Building Regulations drawings', price: single.s2 },
   }),
 
   servicePage({
     path: '/structural-calculations/',
     title: `Structural Calculations from ${gbp(prices.beamCalc)}: Beams & Walls`,
     description: `In-house structural calculations for steel beams, wall removal, extensions and lofts, from ${gbp(prices.beamCalc)}. Prepared by a civil engineer for building control approval.`,
-    trail: [['/extension-design/', 'Extension design'], ['/structural-calculations/', 'Structural calculations']],
+    trail: [['/extension-design/', 'Extension Design'], ['/structural-calculations/', 'Structural Calculations']],
     eyebrow: 'Structural calculations',
     h1: `Structural calculations from ${gbp(prices.beamCalc)}`,
     lede: 'Steel beam and wall removal calculations, and full structural packs for extensions and lofts. Done in-house by our civil engineer, with no third party to wait for.',
@@ -208,14 +208,14 @@ ${prices.design.map((d) => `<tr><td>${d.name}, when booked with Stage 2</td><td 
   servicePage({
     path: '/loft-conversion-drawings/',
     title: `Loft Conversion Drawings from ${gbp(prices.design[2].s1)}`,
-    description: `Loft conversion drawings: planning or lawful development from ${gbp(prices.design[2].s1)}, building regs drawings, and structural calculations in-house. Engineer-led, fixed prices.`,
-    trail: [['/extension-design/', 'Extension design'], ['/loft-conversion-drawings/', 'Loft conversions']],
+    description: `Loft conversion drawings: planning or lawful development from ${gbp(prices.design[2].s1)}, Building Regulations drawings, and structural calculations in-house. Engineer-led, fixed prices.`,
+    trail: [['/extension-design/', 'Extension Design'], ['/loft-conversion-drawings/', 'Loft conversions']],
     eyebrow: 'Loft conversions',
     h1: 'Loft conversion drawings and structural design',
     lede: 'Dormers, hip-to-gable and rooflight conversions, with floor joists, steels and fire escape routes designed by an engineer.',
     ctas: `<a class="btn btn-amber" href="/contact/?service=Extension%20design&detail=Loft%20conversion">Get my fixed price</a>`,
-    intro: `<h2>Structure is the hard part of a loft</h2><p>A loft conversion is mostly a structural job: new floor joists, steel beams, a staircase with enough headroom and a protected escape route. Because we design the structure in-house, the drawings and calculations come from one engineer and match each other.</p><p>Many dormer lofts are permitted development. We confirm it with a Lawful Development Certificate, or prepare a planning application where it's needed.</p><p><strong>Prices:</strong> Stage 1 ${gbp(prices.design[2].s1)} · Stage 2 ${gbp(prices.design[2].s2)} · Both ${gbp(prices.design[2].both)} · Complete with calcs ${gbp(prices.design[2].complete)}.</p>`,
-    includes: ['Measured survey including the roof space', 'Planning or Lawful Development Certificate drawings', 'Building regs drawings: floor, stairs, fire escape, insulation', 'Structural calculations for joists and steels (Complete package)'],
+    intro: `<h2>Structure is the hard part of a loft</h2><p>A loft conversion is mostly a structural job: new floor joists, steel beams, a staircase with enough headroom and a protected escape route. Because we design the structure in-house, the drawings and calculations come from one engineer and match each other.</p><p>Many dormer lofts are permitted development. We confirm it with a Lawful Development Certificate, or prepare a planning application where it's needed.</p><p><strong>Prices:</strong> Stage 1 ${gbp(prices.design[2].s1)} · Stage 2 ${gbp(prices.design[2].s2)} · Both ${gbp(prices.design[2].both)} · Complete with calculations ${gbp(prices.design[2].complete)}.</p>`,
+    includes: ['Measured survey including the roof space', 'Planning or Lawful Development Certificate drawings', 'Building Regulations drawings: floor, stairs, fire escape, insulation', 'Structural calculations for joists and steels (Complete package)'],
     excludes: ['Council and building control fees', 'Party wall surveyor, if needed'],
     faqs: [['Do I need planning permission for a loft conversion?', 'Often not. Dormers within 40 m³ (terraced) or 50 m³ (other houses) that don\'t face the road are usually permitted development, except in conservation areas or where rights have been removed. <a href="/can-i-extend/">Check yours</a>.']],
     offer: { name: 'Loft conversion drawings', price: prices.design[2].s1 },
@@ -224,14 +224,14 @@ ${prices.design.map((d) => `<tr><td>${d.name}, when booked with Stage 2</td><td 
   servicePage({
     path: '/garage-conversion-drawings/',
     title: `Garage Conversion Drawings from ${gbp(prices.design[3].s1)}`,
-    description: `Garage conversion drawings from ${gbp(prices.design[3].s1)}: lawful development or planning, building regs, and structural calculations. Engineer-led, fixed prices.`,
-    trail: [['/extension-design/', 'Extension design'], ['/garage-conversion-drawings/', 'Garage conversions']],
+    description: `Garage conversion drawings from ${gbp(prices.design[3].s1)}: lawful development or planning, Building Regulations, and structural calculations. Engineer-led, fixed prices.`,
+    trail: [['/extension-design/', 'Extension Design'], ['/garage-conversion-drawings/', 'Garage conversions']],
     eyebrow: 'Garage conversions',
     h1: 'Garage conversion drawings',
     lede: 'Turn the garage into a room you\'ll actually use, with the right approvals, insulation and foundations for the new front wall.',
     ctas: `<a class="btn btn-amber" href="/contact/?service=Extension%20design&detail=Garage%20conversion">Get my fixed price</a>`,
-    intro: `<h2>Simple, but not planning-free on every estate</h2><p>Converting an integral garage is often permitted development. On many newer estates, though, permitted development rights or garage use are restricted by a planning condition. We check before you spend anything. Building regulations approval is always needed, for insulation, the new wall and its foundation, ventilation and fire safety.</p><p><strong>Prices:</strong> Stage 1 ${gbp(prices.design[3].s1)} · Stage 2 ${gbp(prices.design[3].s2)} · Both ${gbp(prices.design[3].both)} · Complete with calcs ${gbp(prices.design[3].complete)}.</p>`,
-    includes: ['Planning history and conditions check', 'Lawful Development Certificate or planning drawings', 'Building regs drawings and specification', 'Structural calculations for the new opening or wall (Complete package)'],
+    intro: `<h2>Simple, but not planning-free on every estate</h2><p>Converting an integral garage is often permitted development. On many newer estates, though, permitted development rights or garage use are restricted by a planning condition. We check before you spend anything. Building Regulations approval is always needed, for insulation, the new wall and its foundation, ventilation and fire safety.</p><p><strong>Prices:</strong> Stage 1 ${gbp(prices.design[3].s1)} · Stage 2 ${gbp(prices.design[3].s2)} · Both ${gbp(prices.design[3].both)} · Complete with calculations ${gbp(prices.design[3].complete)}.</p>`,
+    includes: ['Planning history and conditions check', 'Lawful Development Certificate or planning drawings', 'Building Regulations drawings and specification', 'Structural calculations for the new opening or wall (Complete package)'],
     excludes: ['Council and building control fees'],
     offer: { name: 'Garage conversion drawings', price: prices.design[3].s1 },
   }),
@@ -240,15 +240,15 @@ ${prices.design.map((d) => `<tr><td>${d.name}, when booked with Stage 2</td><td 
   {
     path: '/extension-design-prices/',
     title: 'Extension Design Prices & Packages',
-    description: `Fixed prices for extension drawings: planning from ${gbp(single.s1)}, both stages from ${gbp(single.both)}, Complete with structural calcs from ${gbp(single.complete)}.`,
+    description: `Fixed prices for extension drawings: planning from ${gbp(single.s1)}, both stages from ${gbp(single.both)}, Complete with structural calculations from ${gbp(single.complete)}.`,
     trail: [['/extension-design-prices/', 'Design prices']],
-    ld: [{ '@context': 'https://schema.org', '@type': 'OfferCatalog', name: 'Extension design prices', itemListElement: prices.design.map((d) => ({ '@type': 'Offer', name: d.name + ' – planning and building regs', price: d.both, priceCurrency: 'GBP' })) }],
+    ld: [{ '@context': 'https://schema.org', '@type': 'OfferCatalog', name: 'Extension design prices', itemListElement: prices.design.map((d) => ({ '@type': 'Offer', name: d.name + ' – planning and Building Regulations', price: d.both, priceCurrency: 'GBP' })) }],
     body: `${pageHero({ trail: [['/extension-design-prices/', 'Design prices']], eyebrow: 'Prices', h1: 'Extension design prices', lede: 'Fixed “from” prices in two stages. Book both stages together for a saving, a free resubmission and a free site plan.' })}
 <section class="section"><div class="wrap stack">
   ${designPriceTable()}
   <div class="grid-3">
     <div class="card"><h3>Stage 1 · Planning</h3><ul class="ticks small"><li>Measured survey</li><li>Existing drawings</li><li>Concept designs and options</li><li>Planning drawings</li><li>Submission and management</li><li>Changes the council asks for</li></ul></div>
-    <div class="card"><h3>Stage 2 · Building regs</h3><ul class="ticks small"><li>Technical plans and elevations</li><li>Construction details</li><li>Technical specification</li><li>Engineer's input on beams, foundations and drainage</li><li>Building control management</li><li>Changes building control asks for</li></ul></div>
+    <div class="card"><h3>Stage 2 · Building Regulations</h3><ul class="ticks small"><li>Technical plans and elevations</li><li>Construction details</li><li>Technical specification</li><li>Engineer's input on beams, foundations and drainage</li><li>Building control management</li><li>Changes building control asks for</li></ul></div>
     <div class="card"><h3>Complete</h3><ul class="ticks small"><li>Both stages</li><li>Structural calculations in-house</li><li>Free planning resubmission</li><li>Free location and site plan</li><li>One engineer, one consistent set of documents</li></ul></div>
   </div>
   <div class="note-box slate"><strong>What can change the price:</strong> two-storey or wraparound designs, conservation areas and listed buildings, sites that need a topographical survey, and redesigns you request after the design is agreed. You'll always get a fixed price before any work starts. <strong>Payment:</strong> Stage 1 at booking, Stage 2 when it starts. For both stages together, 50% at booking and 50% before Stage 2.</div>
@@ -263,13 +263,13 @@ ${ctaBand()}`,
     path: '/can-i-extend/',
     title: 'Can I Extend Without Planning Permission? Free Check',
     description: 'Free check for extensions, lofts and garage conversions in England: is your project likely permitted development, prior approval or full planning?',
-    trail: [['/extension-design/', 'Extension design'], ['/can-i-extend/', 'Can I extend?']],
-    body: `${pageHero({ trail: [['/extension-design/', 'Extension design'], ['/can-i-extend/', 'Can I extend?']], eyebrow: 'Free feasibility check', h1: 'Can I extend my house?', lede: 'A quick first guide to whether your project is permitted development, needs prior approval, or needs a planning application.' })}
+    trail: [['/extension-design/', 'Extension Design'], ['/can-i-extend/', 'Can I extend?']],
+    body: `${pageHero({ trail: [['/extension-design/', 'Extension Design'], ['/can-i-extend/', 'Can I extend?']], eyebrow: 'Free feasibility check', h1: 'Can I extend my house?', lede: 'A quick first guide to whether your project is permitted development, needs prior approval, or needs a planning application.' })}
 <section class="section"><div class="wrap">${canExtendTool()}</div></section>
 <section class="section section-white"><div class="wrap narrow prose">
   <h2>How permitted development works</h2>
   <p>Houses in England have “permitted development” rights: some extensions can be built without a planning application, within set limits on depth, height, width and materials. Flats and maisonettes don't have these rights. Conservation areas, National Parks and National Landscapes (formerly AONBs) have tighter limits, and a council can remove rights with an Article 4 direction or a planning condition, which is common on newer estates.</p>
-  <p>Even when a project is permitted development, a <strong>Lawful Development Certificate</strong> is worth getting. It proves the work was lawful when you come to sell, and building regulations approval is still needed.</p>
+  <p>Even when a project is permitted development, a <strong>Lawful Development Certificate</strong> is worth getting. It proves the work was lawful when you come to sell, and Building Regulations approval is still needed.</p>
   <p>We check your property's planning history and local restrictions as part of every quote. <a href="/contact/?service=Extension%20design">Send us your address and idea</a>.</p>
 </div></section>
 ${ctaBand()}`,
@@ -280,10 +280,10 @@ ${ctaBand()}`,
     path: '/new-build-snagging/',
     title: `New-Build Snagging Surveys from ${gbp(minSnag)}, England-wide`,
     description: `Independent new-build snagging surveys and pre-completion inspections from ${gbp(minSnag)}. Engineer-checked reports within 24 hours. Based in Birmingham, covering England.`,
-    trail: [['/new-build-snagging/', 'New-build snagging']],
-    eyebrow: 'New-build snagging',
+    trail: [['/new-build-snagging/', 'New-build Snagging']],
+    eyebrow: 'New-build Snagging',
     h1: 'Independent new-build snagging surveys',
-    lede: 'Find every defect before it becomes your problem. Room-by-room inspections against building regulations and warranty standards, with a clear report within 24 hours.',
+    lede: 'Find every defect before it becomes your problem. Room-by-room inspections against Building Regulations and warranty standards, with a clear report within 24 hours.',
     ctas: `<a class="btn btn-amber" href="#quote">Get an instant price</a><a class="btn btn-ghost" href="/sample-snagging-report/">See a sample report</a>`,
     intro: `<h2>Built properly, or put right</h2><p>New homes are built quickly, and most have defects: some cosmetic, some that matter, like missing insulation, poor drainage falls, badly fitted windows or unsealed service penetrations. A snagging survey records them in a format the developer has to respond to.</p>
 <p>We are <strong>independent</strong>. We don't work for developers and we only act for the buyer.</p>
@@ -292,7 +292,7 @@ ${ctaBand()}`,
   <a class="card" href="/two-year-warranty-inspection/" style="text-decoration:none"><h3>2-year warranty inspection</h3><p class="small muted">Before the developer's liability ends</p></a>
 </div>
 <p><strong>Buying from Barratt, Persimmon, Taylor Wimpey or another major builder?</strong> <a href="/developers/">Check your housebuilder</a>: whether they're covered by the New Homes Quality Code, and from when.</p>`,
-    includes: ['Inspection of every room, the loft space and the outside', 'Checks against building regulations and warranty-provider standards', 'Windows, doors, finishes, plumbing, heating, electrics (visual and functional)', 'Photographs with each snag located and graded', 'PDF report within 24 hours, ready to send to the developer', 'Every report checked by our lead engineer'],
+    includes: ['Inspection of every room, the loft space and the outside', 'Checks against Building Regulations and warranty-provider standards', 'Windows, doors, finishes, plumbing, heating, electrics (visual and functional)', 'Photographs with each snag located and graded', 'PDF report within 24 hours, ready to send to the developer', 'Every report checked by our lead engineer'],
     excludes: ['Opening up of concealed structures', 'Specialist gas or electrical safety certification'],
     faqs: snagFaqs,
     extra: `<section class="section-tight"><div class="wrap">${snagQuoteTool()}</div></section>
@@ -304,12 +304,12 @@ ${ctaBand()}`,
     path: '/pre-completion-inspection/',
     title: 'Pre-Completion Inspections: Your NHQB Inspection Window',
     description: 'Buying from an NHQB-registered developer? You can request an independent pre-completion inspection. Check your inspection window and book an engineer-checked inspection.',
-    trail: [['/new-build-snagging/', 'New-build snagging'], ['/pre-completion-inspection/', 'Pre-completion inspection']],
+    trail: [['/new-build-snagging/', 'New-build Snagging'], ['/pre-completion-inspection/', 'Pre-completion inspection']],
     ld: [faqLd([
       ['Can I have my new build inspected before completion?', 'If your developer is registered with the New Homes Quality Board, you can request an independent pre-completion inspection under the New Homes Quality Code.'],
       ['When can the inspection happen?', 'After the Notice to Complete is served and before the completion date, or earlier if you and the developer both agree. The notice period is normally at least 14 calendar days.'],
     ])],
-    body: `${pageHero({ trail: [['/new-build-snagging/', 'New-build snagging'], ['/pre-completion-inspection/', 'Pre-completion inspection']], eyebrow: 'Pre-completion inspection', h1: 'Buying from an NHQB-registered developer? You can request an independent pre-completion inspection.', lede: `The best time to find defects is before you complete, while the developer still has every reason to fix them. Inspections from ${gbp(minSnag)}, at fixed prices.`, ctas: '<a class="btn btn-amber" href="#window">Check my inspection window</a><a class="btn btn-ghost" href="/snagging-prices/">Prices</a>' })}
+    body: `${pageHero({ trail: [['/new-build-snagging/', 'New-build Snagging'], ['/pre-completion-inspection/', 'Pre-completion inspection']], eyebrow: 'Pre-completion inspection', h1: 'Buying from an NHQB-registered developer? You can request an independent pre-completion inspection.', lede: `The best time to find defects is before you complete, while the developer still has every reason to fix them. Inspections from ${gbp(minSnag)}, at fixed prices.`, ctas: '<a class="btn btn-amber" href="#window">Check my inspection window</a><a class="btn btn-ghost" href="/snagging-prices/">Prices</a>' })}
 <section class="section"><div class="wrap grid-2">
   <div class="prose">
     <h2>How it works under the New Homes Quality Code</h2>
@@ -336,7 +336,7 @@ ${ctaBand()}`,
     path: '/two-year-warranty-inspection/',
     title: '2-Year New-Build Warranty Inspection',
     description: `Inspection of your new-build home before the end of the developer's two-year defects period. ${gbp(prices.warranty)}, or ${gbp(prices.warrantyReturning)} for returning clients.`,
-    trail: [['/new-build-snagging/', 'New-build snagging'], ['/two-year-warranty-inspection/', '2-year warranty inspection']],
+    trail: [['/new-build-snagging/', 'New-build Snagging'], ['/two-year-warranty-inspection/', '2-year warranty inspection']],
     eyebrow: '2-year warranty inspection',
     h1: 'Get defects on record before your two years are up',
     lede: `Under most new-home warranties, the developer is responsible for putting defects right in the first two years. After that, cover is mainly structural. An inspection at month 22–23 makes sure nothing is missed. ${gbp(prices.warranty)}.`,
@@ -350,9 +350,9 @@ ${ctaBand()}`,
     path: '/snagging-prices/',
     title: `Snagging Survey Prices from ${gbp(minSnag)}: Instant Quote`,
     description: `Snagging and pre-completion inspection prices by bedrooms, from ${gbp(minSnag)} for a flat to ${gbp(prices.snag[4].price)} for 5 bedrooms. Instant quote, book online.`,
-    trail: [['/new-build-snagging/', 'New-build snagging'], ['/snagging-prices/', 'Prices']],
+    trail: [['/new-build-snagging/', 'New-build Snagging'], ['/snagging-prices/', 'Prices']],
     ld: [{ '@context': 'https://schema.org', '@type': 'OfferCatalog', name: 'Snagging survey prices', itemListElement: prices.snag.map((r) => ({ '@type': 'Offer', name: 'Snagging survey – ' + r.label, price: r.price, priceCurrency: 'GBP' })) }],
-    body: `${pageHero({ trail: [['/new-build-snagging/', 'New-build snagging'], ['/snagging-prices/', 'Prices']], eyebrow: 'Snagging prices', h1: 'Snagging survey prices', lede: `Fixed prices by bedrooms. Book online with a ${gbp(prices.deposit)} deposit and pay the balance when your report arrives.` })}
+    body: `${pageHero({ trail: [['/new-build-snagging/', 'New-build Snagging'], ['/snagging-prices/', 'Prices']], eyebrow: 'Snagging prices', h1: 'Snagging survey prices', lede: `Fixed prices by bedrooms. Book online with a ${gbp(prices.deposit)} deposit and pay the balance when your report arrives.` })}
 <section class="section-tight"><div class="wrap">${snagQuoteTool()}</div></section>
 <section class="section"><div class="wrap stack">${snagPriceTable()}</div></section>
 ${ctaBand()}`,
@@ -362,8 +362,8 @@ ${ctaBand()}`,
     path: '/sample-snagging-report/',
     title: 'Sample Snagging Report: What You Receive',
     description: 'See how an Ashbridge snagging report is laid out: every snag photographed, located, graded and referenced to the relevant standard.',
-    trail: [['/new-build-snagging/', 'New-build snagging'], ['/sample-snagging-report/', 'Sample report']],
-    body: `${pageHero({ trail: [['/new-build-snagging/', 'New-build snagging'], ['/sample-snagging-report/', 'Sample report']], eyebrow: 'Sample report', h1: 'What your report looks like', lede: 'Clear enough for you, precise enough for the developer. Every snag is photographed, located, graded and referenced.' })}
+    trail: [['/new-build-snagging/', 'New-build Snagging'], ['/sample-snagging-report/', 'Sample report']],
+    body: `${pageHero({ trail: [['/new-build-snagging/', 'New-build Snagging'], ['/sample-snagging-report/', 'Sample report']], eyebrow: 'Sample report', h1: 'What your report looks like', lede: 'Clear enough for you, precise enough for the developer. Every snag is photographed, located, graded and referenced.' })}
 <section class="section"><div class="wrap grid-2" style="align-items:start">
   <div class="report" aria-label="Example report layout">
     <div class="report-head"><b>ASHBRIDGE DESIGN · SNAGGING REPORT</b><span>Example layout: not a real property</span></div>
@@ -378,7 +378,7 @@ ${ctaBand()}`,
       <li>A summary of snags by room and by priority</li>
       <li>A photo of every snag, with its exact location</li>
       <li>A grade: priority, standard or cosmetic</li>
-      <li>The relevant standard where one applies (building regulations or warranty-provider tolerances)</li>
+      <li>The relevant standard where one applies (Building Regulations or warranty-provider tolerances)</li>
       <li>A clear remedy, written so the developer can act on it</li>
       <li>Sign-off by our lead engineer</li>
     </ul>
@@ -412,7 +412,7 @@ ${ctaBand()}`,
   <div class="card stack">
     <div class="stamp" style="background:var(--deep);margin-inline:auto">MSc<br>CIVIL ENG<small>15 YEARS</small></div>
     <h3>At a glance</h3>
-    <ul class="ticks"><li>Based in ${site.base}</li><li>Covering all of England</li><li>Extension design, planning and building regs drawings</li><li>Structural calculations in-house</li><li>New-build snagging and pre-completion inspections</li><li>Fixed, published prices</li></ul>
+    <ul class="ticks"><li>Based in ${site.base}</li><li>Covering all of England</li><li>Extension design, planning and Building Regulations drawings</li><li>Structural calculations in-house</li><li>New-build snagging and pre-completion inspections</li><li>Fixed, published prices</li></ul>
   </div>
 </div></section>
 ${ctaBand()}`,

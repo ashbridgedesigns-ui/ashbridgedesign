@@ -157,9 +157,9 @@
       var p = P.design.filter(function (d) { return d.id === id; })[0];
       var map = {
         s1: ['Stage 1 · Planning drawings', p.s1, 'Measured survey, existing drawings, design options, planning drawings, submission and management of the application.'],
-        s2: ['Stage 2 · Building regs drawings', p.s2, 'Technical plans, elevations, construction details and specification, and building control liaison.'],
-        both: ['Stages 1 + 2 · Planning and building regs', p.both, 'Everything in both stages, plus a free planning resubmission if needed and a free location/site plan. Saves ' + gbp(p.s1 + p.s2 - p.both) + '.'],
-        complete: ['Complete · Planning, building regs and structural calcs', p.complete, 'Both stages plus in-house structural calculations, so there is no third-party engineer to wait for.']
+        s2: ['Stage 2 · Building Regulations drawings', p.s2, 'Technical plans, elevations, construction details and specification, and building control liaison.'],
+        both: ['Stages 1 + 2 · Planning and Building Regulations', p.both, 'Everything in both stages, plus a free planning resubmission if needed and a free location/site plan. Saves ' + gbp(p.s1 + p.s2 - p.both) + '.'],
+        complete: ['Complete · Planning, Building Regulations and structural calculations', p.complete, 'Both stages plus in-house structural calculations, so there is no third-party engineer to wait for.']
       };
       var m = map[stage];
       out.innerHTML = '<p class="small muted">' + p.name + ' · ' + m[0] + '</p><p class="big">from ' + gbp(m[1]) + '</p><p class="small">' + m[2] + ' Council and building control fees are paid separately.</p><div class="btn-row"><a class="btn btn-amber" href="' + bookHref('Extension design', p.name + ', ' + m[0] + ', from ' + gbp(m[1])) + '">Get my fixed price</a></div>';
@@ -228,10 +228,10 @@
       }
       if (ext === 'loft') {
         if (designated) return render('no', 'Planning permission likely needed', '<p>Roof extensions such as dormers are not permitted development in conservation areas. Rooflights may still be possible.</p>', 'Get loft drawings');
-        return render('ok', 'Likely permitted development', '<p>Loft dormers are usually permitted development within ' + (home === 'terraced' ? '40' : '50') + ' m³ of extra volume, as long as they don\'t face the road and use similar materials. Building regulations always apply.</p>' + caveat, 'Get loft conversion drawings');
+        return render('ok', 'Likely permitted development', '<p>Loft dormers are usually permitted development within ' + (home === 'terraced' ? '40' : '50') + ' m³ of extra volume, as long as they don\'t face the road and use similar materials. Building Regulations always apply.</p>' + caveat, 'Get loft conversion drawings');
       }
       if (ext === 'garage') {
-        return render(nb === 'yes' ? 'warn' : 'ok', nb === 'yes' ? 'Check your planning conditions' : 'Often no planning needed', '<p>Converting an integral or attached garage is often permitted development when the only external change is swapping the door for a window. Building regulations approval is always needed.</p>' + caveat, 'Get garage conversion drawings');
+        return render(nb === 'yes' ? 'warn' : 'ok', nb === 'yes' ? 'Check your planning conditions' : 'Often no planning needed', '<p>Converting an integral or attached garage is often permitted development when the only external change is swapping the door for a window. Building Regulations approval is always needed.</p>' + caveat, 'Get garage conversion drawings');
       }
     }
     tool.addEventListener('input', calc);

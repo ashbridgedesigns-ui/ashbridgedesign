@@ -122,7 +122,7 @@ ${ctaBand()}`,
       ld: [faqLd(faqs), { '@context': 'https://schema.org', '@type': 'Service', name: `Extension design and snagging surveys in ${a.place}`, provider: { '@id': site.url + '/#business' }, areaServed: { '@type': a.type === 'Borough' ? 'AdministrativeArea' : 'City', name: core, geo: { '@type': 'GeoCoordinates', latitude: g.lat, longitude: g.lon } } }],
       body: `${pageHero({ trail, eyebrow: `${a.place} · ${a.region}`, h1: `Extension drawings and snagging surveys in ${esc(a.place)}`, lede: `Engineer-led extension design, structural calculations and independent new-build inspections in ${esc(a.place)}. ${a.inPerson ? 'Covered in person from our Birmingham base.' : 'Part of our England-wide service.'}`, ctas: '<a class="btn btn-amber" href="/contact/">Get a price</a><a class="btn btn-slate" href="/snagging-prices/">Instant snagging price</a>' })}
 <section class="section"><div class="wrap grid-2">
-  <div class="card card-door"><p class="eyebrow">Extensions in ${esc(a.place)}</p><h2>Planning, building regs and structural calcs</h2>
+  <div class="card card-door"><p class="eyebrow">Extensions in ${esc(a.place)}</p><h2>Planning, Building Regulations and structural calculations</h2>
     <p>Householder planning applications in the ${kind} of ${esc(a.place)} are decided by <strong>${esc(a.planning_authority)}</strong>. ${planningNote}</p>
     ${sameCouncil.length ? `<p class="small muted">${esc(a.planning_authority)} also handles planning for ${sameCouncil.map((x) => `<a href="/areas/${x.slug}/">${esc(x.place)}</a>`).join(', ')}.</p>` : ''}
     <p class="price-from">Planning drawings from <b>${gbp(single.s1)}</b></p>
