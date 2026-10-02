@@ -28,7 +28,18 @@
     else if (href.indexOf('tel:') === 0) track('phone_click');
     else if (href.indexOf('mailto:') === 0) track('email_click');
     else if (A.site.depositLink && href === A.site.depositLink) track('deposit_click');
+    // The main button inside a quote tool's result.
+    var tool = a.closest('[data-tool]');
+    if (tool && a.closest('.result') && /\bbtn-amber\b/.test(a.className)) track('booking_cta_click', { tool: tool.getAttribute('data-tool'), label: a.textContent.trim() });
   });
+  // A visitor's first interaction with each quote tool counts as a quote generated.
+  $$('[data-tool]').forEach(function (tool) {
+    var done = false;
+    function once() { if (done) return; done = true; track('quote_generated', { tool: tool.getAttribute('data-tool') }); }
+    tool.addEventListener('input', once);
+    tool.addEventListener('change', once);
+  });
+  if (location.pathname === '/thank-you/') track('thank_you_view');
 
   // ---------- Cookie consent (analytics only) ----------
   // Google Analytics starts with analytics_storage denied (no cookies). Accepting grants it;
@@ -135,9 +146,10 @@
       out.innerHTML =
         '<p class="small muted">' + labels[type] + ' · ' + row.label + '</p>' +
         '<p class="big">' + gbp(total) + '</p>' +
-        '<p class="small">Fixed price' + (travel ? ', including ' + gbp(travel) + ' travel for remote areas' : '') + '. Pay a ' + gbp(P.deposit) + ' deposit to book, and the balance when your report arrives.</p>' +
+        // Only promise online booking when a deposit payment link is configured.
+        '<p class="small">Fixed price' + (travel ? ', including ' + gbp(travel) + ' travel for remote areas' : '') + (A.site.depositLink ? '. Pay a ' + gbp(P.deposit) + ' deposit to book, and the balance when your report arrives.' : '. Send your request and we\'ll confirm the date. No payment is taken online.') + '</p>' +
         '<p class="small"><strong>' + who + '</strong></p>' +
-        '<div class="btn-row"><a class="btn btn-amber" href="' + payHref + '">Book This Inspection</a><a class="btn btn-ghost" href="/sample-snagging-report/">See a Sample Report</a></div>';
+        '<div class="btn-row"><a class="btn btn-amber" href="' + payHref + '">' + (A.site.depositLink ? 'Book This Inspection' : 'Request This Inspection') + '</a><a class="btn btn-ghost" href="/sample-snagging-report/">See a Sample Report</a></div>';
     }
     tool.addEventListener('input', calc);
     tool.addEventListener('change', calc);
@@ -188,7 +200,7 @@
         '<p class="big" style="font-size:clamp(1.3rem,3.6vw,1.8rem)">From ' + fmt(ntc) + '<br>until completion</p>' +
         '<p class="small">Under Code V2, the inspection takes place after the Notice to Complete is served and before the completion date, or earlier if you and the developer both agree. The notice period is normally at least 14 calendar days, so completion is unlikely before <strong>' + fmt(earliest) + '</strong> unless you have agreed otherwise. <strong>Your contract sets the real date</strong>, so check it with your conveyancer.</p>' +
         '<p class="small">Book as early in the window as you can, so the developer has time to put things right before you complete.</p>' +
-        '<div class="btn-row"><a class="btn btn-amber" href="' + bookHref('Pre-completion inspection', 'Notice to Complete served ' + input.value) + '">Book My Inspection</a></div>';
+        '<div class="btn-row"><a class="btn btn-amber" href="' + bookHref('Pre-completion inspection', 'Notice to Complete served ' + input.value) + '">Request My Inspection</a></div>';
     }
     input.addEventListener('input', calc);
     calc();
@@ -248,6 +260,19 @@
     }
     if (detail && form.message && !form.message.value) form.message.value = 'I\'m interested in: ' + detail + '\n\n';
     var status = $('.form-status', form);
+    var started = false;
+    form.addEventListener('input', function (e) {
+      if (!started) { started = true; track('form_start', { service: form.service ? form.service.value : '' }); }
+      if (e.target && e.target.type === 'file' && e.target.files && e.target.files.length) track('file_upload_selected', { files: e.target.files.length });
+    });
+    // The browser blocks an incomplete form before "submit" fires, so listen for "invalid"
+    // (once per attempt; it fires for every invalid field).
+    var invalidSeen = false;
+    form.addEventListener('invalid', function (e) {
+      if (invalidSeen) return;
+      invalidSeen = true; setTimeout(function () { invalidSeen = false; }, 500);
+      track('form_error', { reason: 'validation', field: e.target && e.target.name });
+    }, true);
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       if (!form.checkValidity()) { form.reportValidity(); return; }
@@ -256,6 +281,7 @@
       fetch(form.getAttribute('action') || '/api/enquiry/', { method: 'POST', body: new FormData(form) })
         .then(function (r) { if (!r.ok) throw new Error(r.status); track('generate_lead', { service: form.service ? form.service.value : '' }); setTimeout(function () { location.href = '/thank-you/'; }, 150); })
         .catch(function () {
+          track('form_error', { reason: 'send_failed' });
           btn.disabled = false; status.className = 'form-status err';
           status.textContent = 'That didn\'t send. Please try again' + (A.site.email ? ', or email ' + A.site.email + ' directly.' : A.site.whatsappDisplay ? ', or message us on WhatsApp on ' + A.site.whatsappDisplay + '.' : '.');
         });

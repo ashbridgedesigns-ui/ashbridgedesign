@@ -57,7 +57,7 @@ const guides = [
   {
     slug: 'new-build-warranty-first-two-years',
     published: '2026-09-25', updated: '2026-09-25',
-    title: 'New-build warranty: what the builder must fix in 2 years',
+    title: 'New-build warranty explained: the 10-year cover and the first 2 years',
     summary: 'How new-home warranties split into a two-year builder period and years 3–10, what that means for defects, and when to get a 2-year inspection.',
     body: `<p>Most new homes in England come with a 10-year warranty from a provider such as NHBC, Premier Guarantee or LABC Warranty. The details depend on the policy, so check your own documents, but they usually work in two stages. NHBC's Buildmark policy is the most common example.</p>
 <h2>Years 1–2: the builder fixes defects</h2>

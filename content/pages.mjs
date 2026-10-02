@@ -1,5 +1,5 @@
 import { gbp, esc, pageHero, ctaBand, faqHtml, faqLd, tel, waInline } from '../lib/layout.mjs';
-import { site, prices, heroArt, inspectArt, snagQuoteTool, designQuoteTool, pciTool, canExtendTool, designPriceTable, snagPriceTable, engineerBand } from '../lib/parts.mjs';
+import { site, prices, heroArt, inspectArt, snagQuoteTool, designQuoteTool, pciTool, canExtendTool, designPriceTable, snagPriceTable, engineerBand, bookLine } from '../lib/parts.mjs';
 
 const single = prices.design[0];
 const minSnag = prices.snag[0].price;
@@ -44,8 +44,8 @@ export const pages = [
     ld: [faqLd(designFaqs.slice(0, 2).concat(snagFaqs.slice(0, 2)))],
     body: `<section class="hero"><div class="wrap hero-grid">
   <div class="stack">
-    <p class="eyebrow">Home design &amp; new-build inspections</p>
-    <h1>Design it properly.<br><span class="accent">Inspect it properly.</span></h1>
+    <p class="hero-slogan">Design It Properly. <span class="accent">Inspect It Properly.</span></p>
+    <h1>Engineer-led extension design and new-build inspections</h1>
     <p class="lede">Extension drawings, planning support, structural calculations and independent new-build inspections, all led by a civil engineer. Based in ${site.base}, covering all of England.</p>
     <div class="btn-row"><a class="btn btn-amber" href="/extension-design/">Plan an extension</a><a class="btn btn-slate" href="/snagging-prices/">Book a snagging inspection</a></div>
     ${waInline(`Questions? WhatsApp us on ${site.whatsappDisplay}`, 'home page')}
@@ -84,7 +84,7 @@ ${engineerBand}
       <li><h4>Building Regulations &amp; calculations</h4><p class="small">Technical drawings and in-house structural calculations, ready for your builder.</p></li>
     </ol></div>
     <div class="stack"><h3>New-build inspection</h3><ol class="steps">
-      <li><h4>Instant price</h4><p class="small">Priced by bedrooms. Book online with a ${gbp(prices.deposit)} deposit.</p></li>
+      <li><h4>Instant price</h4><p class="small">Priced by bedrooms. ${bookLine}</p></li>
       <li><h4>Inspection</h4><p class="small">A room-by-room inspection, plus the loft and outside, against Building Regulations and warranty standards.</p></li>
       <li><h4>Report in 24 hours</h4><p class="small">Photographed, located, graded and ready to send to the developer.</p></li>
       <li><h4>Re-inspection</h4><p class="small">Optional: we come back and check the developer's fixes.</p></li>
@@ -340,7 +340,7 @@ ${ctaBand()}`,
     eyebrow: '2-year warranty inspection',
     h1: 'Get defects on record before your two years are up',
     lede: `Under most new-home warranties, the developer is responsible for putting defects right in the first two years. After that, cover is mainly structural. An inspection at month 22–23 makes sure nothing is missed. ${gbp(prices.warranty)}.`,
-    ctas: `<a class="btn btn-amber" href="/contact/?service=New-build%20snagging&detail=2-year%20warranty%20inspection">Book my inspection</a>`,
+    ctas: `<a class="btn btn-amber" href="/contact/?service=New-build%20snagging&detail=2-year%20warranty%20inspection">Request my inspection</a>`,
     intro: `<h2>Problems that show up after you move in</h2><p>Settlement cracking, sticking doors and windows, damp patches, poor drainage, failing sealant and heating issues often appear after the first year, once the house has dried out and been through the seasons. They are much easier to get fixed while the developer is still responsible.</p><p>Returning Ashbridge clients pay ${gbp(prices.warrantyReturning)}.</p>`,
     includes: ['Full re-inspection of the home, inside and out', 'Comparison with any earlier snagging report', 'Photographed, graded report within 24 hours', 'Guidance on raising issues with the developer and warranty provider'],
     offer: { name: '2-year warranty inspection', price: prices.warranty },
@@ -349,10 +349,10 @@ ${ctaBand()}`,
   {
     path: '/snagging-prices/',
     title: `Snagging Survey Prices from ${gbp(minSnag)}: Instant Quote`,
-    description: `Snagging and pre-completion inspection prices by bedrooms, from ${gbp(minSnag)} for a flat to ${gbp(prices.snag[4].price)} for 5 bedrooms. Instant quote, book online.`,
+    description: `Snagging and pre-completion inspection prices by bedrooms, from ${gbp(minSnag)} for a flat to ${gbp(prices.snag[4].price)} for 5 bedrooms. ${site.depositLink ? 'Instant quote, book online.' : 'Get an instant quote online.'}`,
     trail: [['/new-build-snagging/', 'New-build Snagging'], ['/snagging-prices/', 'Prices']],
     ld: [{ '@context': 'https://schema.org', '@type': 'OfferCatalog', name: 'Snagging survey prices', itemListElement: prices.snag.map((r) => ({ '@type': 'Offer', name: 'Snagging survey – ' + r.label, price: r.price, priceCurrency: 'GBP' })) }],
-    body: `${pageHero({ trail: [['/new-build-snagging/', 'New-build Snagging'], ['/snagging-prices/', 'Prices']], eyebrow: 'Snagging prices', h1: 'Snagging survey prices', lede: `Fixed prices by bedrooms. Book online with a ${gbp(prices.deposit)} deposit and pay the balance when your report arrives.` })}
+    body: `${pageHero({ trail: [['/new-build-snagging/', 'New-build Snagging'], ['/snagging-prices/', 'Prices']], eyebrow: 'Snagging prices', h1: 'Snagging survey prices', lede: site.depositLink ? `Fixed prices by bedrooms. Book online with a ${gbp(prices.deposit)} deposit and pay the balance when your report arrives.` : `Fixed prices by bedrooms. Get an instant price, send your request and we'll confirm the date.` })}
 <section class="section-tight"><div class="wrap">${snagQuoteTool()}</div></section>
 <section class="section"><div class="wrap stack">${snagPriceTable()}</div></section>
 ${ctaBand()}`,
@@ -440,7 +440,7 @@ ${ctaBand()}`,
     body: `${pageHero({ trail: [['/contact/', 'Get a price']], eyebrow: 'Get a price', h1: 'Tell us about your project', lede: 'You\'ll get a clear, fixed price, usually the same day. For snagging, you can also <a href="/snagging-prices/">get an instant price</a>.' })}
 <section class="section"><div class="wrap grid-2" style="align-items:start">
   <form class="form card" name="enquiry" method="POST" action="/api/enquiry/" enctype="multipart/form-data" data-form>
-    <p class="hp"><label>Leave this empty <input name="company" tabindex="-1" autocomplete="off"></label></p>
+    <p class="hp" aria-hidden="true"><label>Leave this empty <input name="company" tabindex="-1" autocomplete="off"></label></p>
     <div class="row">
       <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" required autocomplete="name"></div>
       <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
@@ -470,7 +470,7 @@ ${ctaBand()}`,
     <div class="card stack-sm"><h3>What happens next</h3><ol class="steps" style="grid-template-columns:1fr">
       <li><p class="small">We review your details, and check planning history or your developer's NHQB status where it applies.</p></li>
       <li><p class="small">You get a fixed price and the earliest available date.</p></li>
-      <li><p class="small">Book with a deposit, or pay for Stage 1, and we get started.</p></li>
+      <li><p class="small">Confirm the booking and we get started.</p></li>
     </ol></div>
   </div>
 </div></section>`,

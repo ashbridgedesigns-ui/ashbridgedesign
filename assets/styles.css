@@ -91,7 +91,9 @@ p{margin:0}
 /* Hero */
 .hero{background:var(--white);border-bottom:1px solid var(--line);position:relative;overflow:hidden}
 .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding-block:64px 56px}
-.hero h1 .accent{box-shadow:inset 0 -.28em 0 rgba(251,180,36,.55)}
+.hero .accent{box-shadow:inset 0 -.28em 0 rgba(251,180,36,.55)}
+.hero h1{font-size:clamp(1.9rem,4.1vw,3rem)}
+.hero-slogan{font-family:var(--display);font-stretch:112%;font-weight:800;font-size:1.05rem;color:var(--slate);letter-spacing:.01em}
 .hero-art{position:relative}
 .trust{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:6px;font-size:.92rem;color:var(--muted)}
 .trust span{display:inline-flex;align-items:center;gap:8px}
@@ -230,7 +232,7 @@ fieldset{border:0;padding:0;margin:0;display:grid;gap:8px}
 @media (max-width:520px){.footer-grid{grid-template-columns:1fr}}
 
 /* WhatsApp */
-.wa-fab{--wa:#25D366;position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:70;display:flex;align-items:center;gap:10px;height:60px;min-width:60px;padding:0 18px 0 16px;border-radius:999px;background:var(--wa);color:#fff;text-decoration:none;font-family:var(--display);font-stretch:112%;font-weight:700;font-size:.95rem;box-shadow:0 8px 24px rgba(18,140,74,.35);transition:transform .15s,box-shadow .15s}
+.wa-fab{--wa:#0E7F41;position:fixed;right:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:70;display:flex;align-items:center;gap:10px;height:60px;min-width:60px;padding:0 18px 0 16px;border-radius:999px;background:var(--wa);color:#fff;text-decoration:none;font-family:var(--display);font-stretch:112%;font-weight:700;font-size:.95rem;box-shadow:0 8px 24px rgba(18,140,74,.35);transition:transform .15s,box-shadow .15s}
 .wa-fab:hover{color:#fff;transform:translateY(-2px);box-shadow:0 12px 28px rgba(18,140,74,.45)}
 .wa-fab:focus-visible{outline:3px solid var(--deep);outline-offset:3px}
 .wa-fab svg{width:30px;height:30px;flex-shrink:0;position:relative}
@@ -256,11 +258,13 @@ fieldset{border:0;padding:0;margin:0;display:grid;gap:8px}
 .link-btn:hover{color:var(--amber)}
 @media (max-width:760px){
   .consent{left:10px;right:10px;max-width:none;bottom:calc(76px + env(safe-area-inset-bottom,0px))}
-  body.consent-open .wa-fab{display:none}
+  body.consent-open .wa-fab,body.consent-open .action-bar{display:none}
+  body.consent-open .consent{bottom:calc(10px + env(safe-area-inset-bottom,0px))}
 }
 
 /* Drafting motif */
 .draft-rule{height:14px;background:
   linear-gradient(var(--grey),var(--grey)) left center/100% 1px no-repeat,
   repeating-linear-gradient(90deg,var(--grey) 0 1px,transparent 1px 40px) left center/100% 9px no-repeat;opacity:.55}
+.nw{white-space:nowrap}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
