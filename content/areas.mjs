@@ -56,8 +56,8 @@ export function areaPages(areas) {
     body: `${pageHero({ trail: [['/areas/', 'Areas']], eyebrow: 'Coverage', h1: 'Based in Birmingham. Covering all of England.', lede: `Our lead engineer surveys and inspects in person across ${areas.filter((a) => a.inPerson).length} towns and cities around Birmingham. Everywhere else, qualified inspectors who belong to a recognised professional body for surveying, and our survey partners, work to the same standard, and every report is signed off by the lead engineer.` })}
 <section class="section"><div class="wrap stack">
   <div class="grid-2">
-    <div class="card"><span class="pill pill-amber">In person</span><h3>Birmingham &amp; surrounding area</h3><p class="small muted">The West Midlands plus Leicester, Derby, Nottingham, Hinckley, Loughborough, Northampton and Banbury.</p></div>
-    <div class="card"><span class="pill pill-slate">Inspector network</span><h3>The rest of England</h3><p class="small muted">Qualified inspectors from recognised professional bodies for surveying, and survey partners, with every report checked by our lead engineer. Design work is done by our engineer wherever you are.</p></div>
+    <div class="card"><span class="pill pill-amber">In person</span><h2 class="card-title">Birmingham &amp; surrounding area</h2><p class="small muted">The West Midlands plus Leicester, Derby, Nottingham, Hinckley, Loughborough, Northampton and Banbury.</p></div>
+    <div class="card"><span class="pill pill-slate">Inspector network</span><h2 class="card-title">The rest of England</h2><p class="small muted">Qualified inspectors from recognised professional bodies for surveying, and survey partners, with every report checked by our lead engineer. Design work is done by our engineer wherever you are.</p></div>
   </div>
   ${regions.map((r) => `<div class="stack-sm" style="margin-top:22px"><h2 style="font-size:1.5rem"><a href="/areas/${r.slug}/" style="text-decoration:none;color:inherit">${r.name}</a></h2>
   <ul class="area-list">${r.places.map((a) => `<li>${link(a)}<span>${esc(a.planning_authority)}</span></li>`).join('')}</ul></div>`).join('')}

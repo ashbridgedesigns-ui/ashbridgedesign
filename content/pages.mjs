@@ -247,9 +247,9 @@ ${prices.design.map((d) => `<tr><td>${d.name}, when booked with Stage 2</td><td 
 <section class="section"><div class="wrap stack">
   ${designPriceTable()}
   <div class="grid-3">
-    <div class="card"><h3>Stage 1 · Planning</h3><ul class="ticks small"><li>Measured survey</li><li>Existing drawings</li><li>Concept designs and options</li><li>Planning drawings</li><li>Submission and management</li><li>Changes the council asks for</li></ul></div>
-    <div class="card"><h3>Stage 2 · Building Regulations</h3><ul class="ticks small"><li>Technical plans and elevations</li><li>Construction details</li><li>Technical specification</li><li>Engineer's input on beams, foundations and drainage</li><li>Building control management</li><li>Changes building control asks for</li></ul></div>
-    <div class="card"><h3>Complete</h3><ul class="ticks small"><li>Both stages</li><li>Structural calculations in-house</li><li>Free planning resubmission</li><li>Free location and site plan</li><li>One engineer, one consistent set of documents</li></ul></div>
+    <div class="card"><h2 class="card-title">Stage 1 · Planning</h2><ul class="ticks small"><li>Measured survey</li><li>Existing drawings</li><li>Concept designs and options</li><li>Planning drawings</li><li>Submission and management</li><li>Changes the council asks for</li></ul></div>
+    <div class="card"><h2 class="card-title">Stage 2 · Building Regulations</h2><ul class="ticks small"><li>Technical plans and elevations</li><li>Construction details</li><li>Technical specification</li><li>Engineer's input on beams, foundations and drainage</li><li>Building control management</li><li>Changes building control asks for</li></ul></div>
+    <div class="card"><h2 class="card-title">Complete</h2><ul class="ticks small"><li>Both stages</li><li>Structural calculations in-house</li><li>Free planning resubmission</li><li>Free location and site plan</li><li>One engineer, one consistent set of documents</li></ul></div>
   </div>
   <div class="note-box slate"><strong>What can change the price:</strong> two-storey or wraparound designs, conservation areas and listed buildings, sites that need a topographical survey, and redesigns you request after the design is agreed. You'll always get a fixed price before any work starts. <strong>Payment:</strong> Stage 1 at booking, Stage 2 when it starts. For both stages together, 50% at booking and 50% before Stage 2.</div>
   <div class="note-box">Council planning and building control fees are paid directly to the council and aren't included. Measured surveys outside our in-person area may carry a travel supplement, which we confirm in your quote.</div>
@@ -462,12 +462,12 @@ ${ctaBand()}`,
     <p class="form-status" role="status"></p>
   </form>
   <div class="stack">
-    <div class="card stack-sm"><h3>Contact</h3>
+    <div class="card stack-sm"><h2 class="card-title">Contact</h2>
       ${site.email ? `<p><a href="mailto:${site.email}">${site.email}</a></p>` : ''}
       ${site.phone ? `<p><a href="tel:${tel}">${esc(site.phone)}</a></p>` : ''}
       ${site.whatsapp ? `<p>${waInline(`WhatsApp ${site.whatsappDisplay}`, 'Get a price page')}</p><p class="small muted">Send photos of your home or plans straight from your phone.</p>` : ''}
       <p class="small muted">Based in ${site.base}. Covering all of England.</p></div>
-    <div class="card stack-sm"><h3>What happens next</h3><ol class="steps" style="grid-template-columns:1fr">
+    <div class="card stack-sm"><h2 class="card-title">What happens next</h2><ol class="steps" style="grid-template-columns:1fr">
       <li><p class="small">We review your details, and check planning history or your developer's NHQB status where it applies.</p></li>
       <li><p class="small">You get a fixed price and the earliest available date.</p></li>
       <li><p class="small">Confirm the booking and we get started.</p></li>
