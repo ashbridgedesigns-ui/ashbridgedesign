@@ -50,6 +50,8 @@ ${indexable.map((p) => `  <url><loc>${site.url}${p.path}</loc><lastmod>${today}<
 </urlset>
 `);
 writeFileSync(join(dist, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${site.url}/sitemap.xml\n`);
+// Browsers and Google look for /favicon.ico at the site root.
+cpSync(join(root, 'assets', 'favicon.ico'), join(dist, 'favicon.ico'));
 // IndexNow ownership file: search engines fetch /<key>.txt to confirm the key.
 if (site.indexNowKey) writeFileSync(join(dist, `${site.indexNowKey}.txt`), site.indexNowKey);
 
