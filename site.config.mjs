@@ -20,7 +20,7 @@ export default {
   piInsurance: '',           // e.g. 'Professional indemnity insurance: £1m, Hiscox'
   sameAs: [],                // business profiles: Google Business Profile, Checkatrade, Trustpilot, LinkedIn page
   companyNumber: '',    // Companies House number, shown in the footer
-  googleReviewsUrl: '', // link to the Google Business Profile reviews
+  googleReviewsUrl: 'https://maps.google.com/?cid=2595146317807223932', // Google Business Profile (Ashbridge Design, Shirley, Solihull)
   // Google Analytics 4 measurement ID (e.g. 'G-XXXXXXXXXX'). Blank = no analytics loaded.
   // Consent Mode: no analytics cookies until the visitor accepts in the cookie banner.
   ga4Id: 'G-SG8HQ3LFE9',
