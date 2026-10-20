@@ -43,10 +43,11 @@ const REGION_ORDER = ['West Midlands', 'East Midlands', 'London', 'South East', 
 export function areaPages(areas) {
   const live = areas.filter((a) => a.slug !== 'london');
   const liveSet = new Set(live.map((a) => a.slug));
-  // Only tier 1 town pages are indexed: the in-person area plus towns where Search
-  // Console shows real rankings. Other town pages stay up for visitors (noindex, follow)
-  // until they have researched local content; promote them by changing the tier in data/areas.csv.
-  const indexed = live.filter((a) => a.tier === '1');
+  // Every town page is indexed (owner's decision, 20 Oct 2026). To take tier 2/3 pages
+  // out of Google again, set INDEX_ALL_TIERS to false: they become noindex, follow and
+  // drop out of the sitemap, and nearby-place links point only at tier 1 pages.
+  const INDEX_ALL_TIERS = true;
+  const indexed = INDEX_ALL_TIERS ? live : live.filter((a) => a.tier === '1');
   const link = (a) => liveSet.has(a.slug) ? `<a href="/areas/${a.slug}/">${esc(a.place)}</a>` : esc(a.place);
   const regions = REGION_ORDER.map((r) => ({ name: r, slug: slug(r), places: areas.filter((a) => a.region === r && !a.place.startsWith('London (')) }));
   const out = [];
@@ -123,7 +124,7 @@ ${ctaBand()}`,
       title: `Extension Drawings & Snagging, ${a.place.replace(/ \(.*\)/, '')}`,
       description: `Engineer-led extension drawings from ${gbp(single.s1)} and new-build snagging surveys from ${gbp(minSnag)} in ${a.place}. ${a.inPerson ? 'In-person service from our Birmingham base.' : 'Covering all of England.'}`,
       trail,
-      noindex: a.tier !== '1',
+      noindex: !INDEX_ALL_TIERS && a.tier !== '1',
       ld: [faqLd(faqs), { '@context': 'https://schema.org', '@type': 'Service', name: `Extension design and snagging surveys in ${a.place}`, provider: { '@id': site.url + '/#business' }, areaServed: { '@type': a.type === 'Borough' ? 'AdministrativeArea' : 'City', name: core, geo: { '@type': 'GeoCoordinates', latitude: g.lat, longitude: g.lon } } }],
       body: `${pageHero({ trail, eyebrow: `${a.place} · ${a.region}`, h1: `Extension drawings and snagging surveys in ${esc(a.place)}`, lede: `Engineer-led extension design, structural calculations and independent new-build inspections in ${esc(a.place)}. ${a.inPerson ? 'Covered in person from our Birmingham base.' : 'Part of our England-wide service.'}`, ctas: '<a class="btn btn-amber" href="/contact/">Get a price</a><a class="btn btn-slate" href="/snagging-prices/">Instant snagging price</a>' })}
 <section class="section"><div class="wrap grid-2">

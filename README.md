@@ -29,7 +29,7 @@ Change a price in `site.config.mjs`, rebuild, and every page, table, tool and sc
 3. **Logo:** replace `assets/logo.jpg` with a transparent SVG from the designer, and update the `<img>` tags in `lib/layout.mjs`.
 4. **Photos:** add real inspection and project photos as they come in. The site currently uses drawn illustrations only. Nothing is stock and nothing is invented.
 5. **Sample report:** add a real anonymised PDF to `/sample-snagging-report/`.
-6. **Area pages:** every place in `data/areas.csv` gets a page, but only **tier 1** pages are indexed and listed in the sitemap: the in-person area, the large cities, and towns where Search Console showed real rankings. Tier 2 and 3 pages are `noindex, follow` until they have researched local notes. To promote one, add notes to `LOCAL` in `content/areas.mjs` and change its tier to 1.
+6. **Area pages:** every place in `data/areas.csv` gets an indexed page (`INDEX_ALL_TIERS` in `content/areas.mjs`). Setting it to `false` indexes only **tier 1** pages and makes the rest `noindex, follow`. Add researched local notes to `LOCAL` in `content/areas.mjs` to make town pages more distinct.
 7. Check `/privacy/` with the final company details.
 
 ## Deploy (Vercel)
