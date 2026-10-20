@@ -6,7 +6,7 @@ export default {
   url: 'https://www.ashbridgedesign.co.uk',
   base: 'Birmingham',
   email: '',           // public contact email; blank hides it everywhere (e.g. 'hello@ashbridgedesign.co.uk')
-  phone: '',            // e.g. '0121 496 0000' — enables Call buttons when set
+  phone: '07466 812272', // enables Call buttons; must match the Google Business Profile
   whatsapp: '447466812272', // international format, no + (07466 812272)
   whatsappDisplay: '07466 812272',
   founderName: '',      // shown on About and in the report sign-off
@@ -19,7 +19,10 @@ export default {
   founderLinkedIn: '',       // full URL
   piInsurance: '',           // e.g. 'Professional indemnity insurance: £1m, Hiscox'
   sameAs: [],                // business profiles: Google Business Profile, Checkatrade, Trustpilot, LinkedIn page
-  companyNumber: '',    // Companies House number, shown in the footer
+  companyNumber: '17526702', // Companies House number, shown in the footer
+  legalName: 'Ashbridge Design Ltd',
+  // Registered office (Companies House) and Google Business Profile address. Keep all three identical.
+  office: { street: '135 Marshall Lake Road', locality: 'Solihull', postcode: 'B90 4RB', region: 'West Midlands' },
   googleReviewsUrl: 'https://maps.google.com/?cid=2595146317807223932', // Google Business Profile (Ashbridge Design, Shirley, Solihull)
   // Google Analytics 4 measurement ID (e.g. 'G-XXXXXXXXXX'). Blank = no analytics loaded.
   // Consent Mode: no analytics cookies until the visitor accepts in the cookie banner.
