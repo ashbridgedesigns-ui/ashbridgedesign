@@ -1,4 +1,4 @@
-import { gbp, pageHero, ctaBand } from '../lib/layout.mjs';
+import { gbp, esc, pageHero, ctaBand, founderLd } from '../lib/layout.mjs';
 import { titleCase } from '../lib/titlecase.mjs';
 import { prices, site } from '../lib/parts.mjs';
 
@@ -34,9 +34,14 @@ const guides = [
   {
     slug: 'what-happens-after-your-snagging-report',
     published: '2026-09-25', updated: '2026-09-25',
+    updated: '2026-10-20',
     title: 'What happens after your snagging report?',
-    summary: 'How to get the developer to fix the snags: sending the report, the timescales in the New Homes Quality Code, complaints and the New Homes Ombudsman.',
+    summary: 'Do builders have to fix snags, and how long do you have to report them? Sending the report, the Code timescales, complaints and the New Homes Ombudsman.',
     body: `<p>A snagging report is only the start. Here's how to turn it into repairs, using the timescales in Version 2 of the New Homes Quality Code, which applies to homes reserved from 2 March 2026 with NHQB-registered developers.</p>
+<h2>Do builders have to fix snags?</h2>
+<p>Yes, where the snag is a defect. Under most new-home warranties, such as NHBC Buildmark, the builder must put right defects that breach the warranty's technical standards during the first two years. Cosmetic issues within the published tolerances, and damage after you moved in, usually aren't covered. See <a href="/guides/new-build-warranty-first-two-years/">how new-build warranties work</a>.</p>
+<h2>How long do you have to report snags?</h2>
+<p>Report them as soon as you find them, in writing. The builder's responsibility for defects normally runs for <strong>two years from completion</strong>, and the New Homes Ombudsman can only consider issues that arose within two years of completion. Snags reported late in that period still count, but leave little time for the complaints process.</p>
 <h2>1. Send it in writing</h2>
 <p>Send the full report to the developer's after-sales or customer care team by email, and keep a copy with the date you sent it. The Code requires developers to provide an after-sales service for at least two years after completion.</p>
 <h2>2. Expect action within 30 days</h2>
@@ -57,7 +62,7 @@ const guides = [
   {
     slug: 'new-build-warranty-first-two-years',
     published: '2026-09-25', updated: '2026-09-25',
-    title: 'New-build warranty explained: the 10-year cover and the first 2 years',
+    title: 'New-build warranty explained: 10-year cover and the first 2 years',
     summary: 'How new-home warranties split into a two-year builder period and years 3–10, what that means for defects, and when to get a 2-year inspection.',
     body: `<p>Most new homes in England come with a 10-year warranty from a provider such as NHBC, Premier Guarantee or LABC Warranty. The details depend on the policy, so check your own documents, but they usually work in two stages. NHBC's Buildmark policy is the most common example.</p>
 <h2>Years 1–2: the builder fixes defects</h2>
@@ -169,7 +174,7 @@ const guides = [
   },
   {
     slug: 'planning-vs-building-regulations-drawings',
-    title: 'Planning drawings vs Building Regulations drawings: what\'s the difference?',
+    title: 'Planning vs Building Regulations drawings: the difference',
     summary: 'Why most extensions need two sets of drawings, what each one shows, and where structural calculations fit.',
     body: `<p>Planning permission and Building Regulations are two separate approvals, and they need different drawings.</p>
 <h2>Planning drawings: what it looks like</h2>
@@ -183,17 +188,217 @@ const guides = [
   },
   {
     slug: 'what-is-a-snagging-survey',
-    title: 'What is a snagging survey, and is it worth it?',
-    summary: 'What gets checked, what a report looks like, when to book and what it costs.',
-    body: `<p>A <strong>snag</strong> is any defect in a new home: unfinished, damaged, or not built to the required standard. A <strong>snagging survey</strong> is an independent inspection that finds and records them.</p>
+    updated: '2026-10-20',
+    title: 'Is a snagging survey worth it?',
+    summary: 'What a professional snagging survey checks that you might miss, when it pays for itself, when to book and what it costs.',
+    body: `<p><strong>For most new-build buyers, yes.</strong> A snagging survey is an independent inspection that finds and records defects in a new home, called snags, in a report the developer has to respond to. New to the term? Start with <a href="/guides/what-is-snagging/">what snagging means</a>.</p>
 <h2>What gets checked</h2>
 <ul><li>Walls, ceilings, floors and finishes</li><li>Windows and doors: fit, seals, operation and security</li><li>Kitchen and bathrooms: sealing, fittings, water flow and drainage</li><li>Heating, hot water and electrical fittings (visual and functional)</li><li>Loft: insulation, ventilation and services</li><li>Outside: brickwork, pointing, render, roof line, gutters, drainage and paving falls</li></ul>
 <h2>Is it worth it?</h2>
 <p>Most new homes have defects, and buyers find it hard to spot the ones that matter. A professional report is specific, photographed and referenced, so it's much harder for a developer to dismiss than a buyer's own list.</p>
+<p>It's most worth it when you're buying from an NHQB-registered developer and can inspect <strong>before completion</strong>, when you're short of time or confidence, or when the home is large. If you'd rather do it yourself, use our <a href="/guides/new-build-snagging-checklist/">snagging checklist</a>, and read <a href="/guides/choosing-a-snagging-company/">how to choose a snagging company</a> before you book anyone.</p>
 <h2>When to book</h2>
 <p>Before completion, if your developer is NHQB-registered: see <a href="/guides/pre-completion-inspection-explained/">pre-completion inspections explained</a>. After completion is still worthwhile, and again just before the developer's two-year defects period ends.</p>
 <h2>Cost</h2>
 <p>From ${gbp(prices.snag[0].price)} for a flat, ${gbp(prices.snag[2].price)} for a 3-bedroom house. <a href="/snagging-prices/">Get an instant price</a>.</p>`,
+  },
+  {
+    slug: 'what-is-snagging',
+    published: '2026-10-20', updated: '2026-10-20',
+    title: 'What is snagging? Meaning, snag lists and what happens next',
+    summary: 'What snagging means for a new home and in construction, what counts as a snag, when snagging happens and who has to fix the problems.',
+    body: `<p><strong>Snagging means checking a newly built or newly finished home for defects, called snags, and getting them put right.</strong> A snag is anything unfinished, damaged or not built to the required standard: a door that sticks, a cracked tile, a gap in the loft insulation. A <strong>snag list</strong> is the written record of those defects, room by room, that the builder works through.</p>
+<h2>What counts as a snag?</h2>
+<p>A snag is a defect the builder is responsible for. Most are cosmetic, but some matter far more than they look.</p>
+<div class="table-wrap"><table><thead><tr><th>Usually a snag</th><th>Usually not a snag</th></tr></thead><tbody>
+<tr><td>Doors and windows that stick, don't latch or don't lock</td><td>Wear and tear, or damage after you moved in</td></tr>
+<tr><td>Missing or broken sealant around baths, showers and worktops</td><td>A finish you dislike but that was specified</td></tr>
+<tr><td>Paint runs, missed areas and damaged plaster</td><td>Marks only visible with a torch held against the wall</td></tr>
+<tr><td>Gaps or uneven loft insulation, unlagged pipes</td><td>Minor drying-out (shrinkage) cracks, which most warranties treat as normal in a new home</td></tr>
+<tr><td>Paving or ground that falls towards the house, blocked airbricks</td><td>Anything within the tolerance set by the warranty provider's technical standards</td></tr>
+</tbody></table></div>
+<p>The dividing line is the <strong>technical standard</strong> the home was built to. Warranty providers such as NHBC and LABC Warranty publish tolerances, for example for how flat a wall or how level a floor must be. A defect outside the tolerance is the builder's to fix. That's why a professional report names the standard for each snag.</p>
+<h2>When does snagging happen?</h2>
+<ol>
+<li><strong>Before completion.</strong> If your developer is registered with the New Homes Quality Board, you can have a <a href="/pre-completion-inspection/">pre-completion inspection</a> after the Notice to Complete and before you legally complete. This is when the developer has most reason to fix things fast.</li>
+<li><strong>After you move in.</strong> A full snagging survey in the first weeks or months, once you can see the home furnished and lived in.</li>
+<li><strong>Before the end of year two.</strong> Most new-home warranties make the builder responsible for defects for the first two years. A <a href="/two-year-warranty-inspection/">2-year inspection</a> gets late-appearing problems on record in time.</li>
+</ol>
+<h2>Who fixes the snags?</h2>
+<p>The developer. Under most new-home warranties, the builder must put right defects that breach the warranty's technical standards in the first two years. If your developer is NHQB-registered, Version 2 of the New Homes Quality Code also expects after-sales issues to be settled within 30 days unless there's a significant reason for delay, with a route to the free New Homes Ombudsman Service if a complaint isn't resolved. See <a href="/guides/what-happens-after-your-snagging-report/">what happens after your snagging report</a>.</p>
+<h2>Snagging in construction</h2>
+<p>On a building project, snagging is the stage around <strong>practical completion</strong>, when the contractor, the client or their representative walks the finished work and lists everything still to finish or correct. The snag list then becomes part of handover. If you're having an extension built, the same applies to you: read <a href="/guides/snagging-an-extension/">snagging your extension</a>.</p>
+<h2>Can I do my own snagging?</h2>
+<p>Yes. Our <a href="/guides/new-build-snagging-checklist/">room-by-room snagging checklist</a> is free to print. A professional inspection adds what most buyers can't judge: whether a defect is outside tolerance, and the problems in places you won't look, like the loft, drainage and service penetrations. Read <a href="/guides/what-is-a-snagging-survey/">is a snagging survey worth it?</a></p>`,
+  },
+  {
+    slug: 'new-build-snagging-checklist',
+    published: '2026-10-20', updated: '2026-10-20',
+    title: 'New-build snagging checklist: room by room (free to print)',
+    summary: 'A room-by-room snagging list for new-build homes in England, written by an engineer. Print it or save it as a PDF and take it round your home.',
+    body: `<p>Use this checklist to snag your own new build, or alongside a professional report. Tick each item as you check it, and photograph anything wrong with something in the shot for scale.</p>
+<p class="no-print"><button class="btn btn-ghost" type="button" onclick="window.print()">Print or save as PDF</button></p>
+<h2>Before you start</h2>
+<ul>
+<li>Inspect in <strong>daylight</strong>. The NHQB Pre-Completion Inspection Checklist asks for internal walls to be viewed in natural daylight from at least two metres away, not with a light shone across the surface. Marks you can only see that way usually won't count.</li>
+<li>Take a phone charger or plug-in socket tester, a spirit level, masking tape to mark snags, and a notebook.</li>
+<li>Work in the same order in every room: ceiling, walls, windows, doors, floor, fittings.</li>
+</ul>
+<h2>Outside</h2>
+<ul class="checklist">
+<li>Brickwork clean, with no cracked or chipped bricks and no mortar smears</li>
+<li>Pointing complete and even, with no gaps</li>
+<li>Render free of cracks and hollow-sounding patches</li>
+<li>Roof line straight, with no slipped, cracked or missing tiles (look from the street)</li>
+<li>Gutters and downpipes secure, joined and draining into gullies</li>
+<li>Paths and patios fall away from the house, not towards it</li>
+<li>Damp-proof course visible and not bridged: soil and paving should normally sit at least 150 mm below it</li>
+<li>Airbricks clear and not covered by soil or paving</li>
+<li>Manhole and gully covers level, undamaged and not rocking</li>
+<li>Fences, gates and boundary walls complete, with gates that latch</li>
+<li>Outside taps, lights and sockets working</li>
+</ul>
+<h2>Doors and windows</h2>
+<ul class="checklist">
+<li>Front and back doors open, close and lock without force, with even gaps around the frame</li>
+<li>Thresholds sealed, with level access where it was specified</li>
+<li>Every window opens, closes and locks, with keys provided</li>
+<li>Seals intact, glass unscratched, and no condensation between the panes</li>
+<li>Trickle vents present and working where fitted</li>
+<li>Frames sealed to the wall inside and out</li>
+</ul>
+<h2>Every room</h2>
+<ul class="checklist">
+<li>Ceilings: no cracks, nail pops or uneven patches</li>
+<li>Walls: even finish, with no missed paint, runs or damaged plaster</li>
+<li>Internal doors close and latch without catching, and handles are secure</li>
+<li>Skirting and architrave fitted tight, with joints filled and painted</li>
+<li>Floors: no squeaks, bounce or obvious slope, and flooring finished at the edges</li>
+<li>Every socket and light switch works (test sockets with a charger)</li>
+<li>Radiators get hot, valves turn, and there are no leaks at the joints</li>
+<li>Smoke and heat alarms fitted and working</li>
+</ul>
+<h2>Kitchen</h2>
+<ul class="checklist">
+<li>Units level and aligned, with doors and drawers that close evenly</li>
+<li>Worktop joints tight, with sealant along the wall and around the sink</li>
+<li>Taps: hot and cold the right way round, good flow, no drips</li>
+<li>Sink drains quickly, with no leaks under the unit</li>
+<li>Appliances installed and working, with manuals</li>
+<li>Extractor works and vents outside where it's meant to</li>
+</ul>
+<h2>Bathrooms and en-suites</h2>
+<ul class="checklist">
+<li>Sealant complete around the bath, shower tray and basin</li>
+<li>Tiles level and fully grouted, with none cracked or hollow</li>
+<li>Toilet flushes, refills properly and is fixed firmly</li>
+<li>Bath, shower and basin drain quickly, with no leaks</li>
+<li>Shower has good pressure and temperature, and the screen is sealed</li>
+<li>Extractor fan works, and runs on after the light where designed to</li>
+</ul>
+<h2>Stairs and landing</h2>
+<ul class="checklist">
+<li>Handrail and balustrade firm, with no loose spindles</li>
+<li>Treads don't creak or move</li>
+<li>Smoke alarm fitted on each floor</li>
+</ul>
+<h2>Loft</h2>
+<ul class="checklist">
+<li>Insulation laid evenly across the whole loft, with no gaps at the edges or around the hatch</li>
+<li>Pipes and water tanks insulated</li>
+<li>Ventilation at the eaves not blocked by insulation</li>
+<li>Hatch closes, and is insulated and sealed</li>
+<li>No daylight through the roof and no water staining</li>
+</ul>
+<h2>Heating, electrics and services</h2>
+<ul class="checklist">
+<li>Boiler or heat pump works, with controls set up and explained</li>
+<li>Consumer unit circuits labelled</li>
+<li>Meters accessible, with readings noted on the day you complete</li>
+<li>Gaps where pipes and cables pass through walls are sealed</li>
+</ul>
+<h2>Paperwork to ask for</h2>
+<ul class="checklist">
+<li>Warranty certificate (NHBC, LABC Warranty, Premier Guarantee or another provider)</li>
+<li>Building control completion certificate</li>
+<li>Energy Performance Certificate</li>
+<li>Electrical installation certificate, and gas or heat pump commissioning records</li>
+<li>Appliance and boiler manuals and guarantees</li>
+<li>All keys, including window keys and meter cupboard keys</li>
+</ul>
+<h2>What a DIY check usually misses</h2>
+<p>Most buyers can find cosmetic snags. The expensive ones are harder: loft insulation that looks complete but isn't, drainage falls, missing cavity trays over openings, poorly sealed service penetrations, and anything that's out of tolerance but looks fine. A professional report also names the standard for each defect, which makes it harder for the developer to dismiss.</p>
+<p>Our inspectors work to the NHQB checklist where the New Homes Quality Code applies, and every report is checked by our lead engineer. <a href="/snagging-prices/">Get an instant price</a> or <a href="/sample-snagging-report/">see what a report looks like</a>.</p>`,
+  },
+  {
+    slug: 'choosing-a-snagging-company',
+    published: '2026-10-20', updated: '2026-10-20',
+    title: 'How to choose a snagging company: 9 checks before you book',
+    summary: 'Qualifications, insurance, independence and the report itself: what to check before you pay any snagging company or inspector.',
+    body: `<p>Quality varies a lot between snagging firms. These nine checks separate a report the developer has to act on from one they can ignore. They apply to any firm, including us.</p>
+<h2>1. Are they members of a professional body?</h2>
+<p>For a pre-completion inspection under the New Homes Quality Code, the inspector must be <strong>suitably qualified</strong>: a member of a recognised professional body for surveying, such as RICS, CIOB or CABE. Ask which body, and check the membership on that body's own directory.</p>
+<h2>2. Do they have professional indemnity insurance?</h2>
+<p>The Code requires it for pre-completion inspections, and it protects you if something serious is missed. Ask who the insurer is and what the cover is.</p>
+<h2>3. Are they independent of the developer?</h2>
+<p>An inspector recommended by the sales office, or one who also works for developers, has a conflict. Ask directly whether they take work or referral fees from housebuilders.</p>
+<h2>4. Who inspects, and who signs the report?</h2>
+<p>Some firms sell the job and pass it on. You should know the inspector's name and professional body before the day, and who checks the report before you get it.</p>
+<h2>5. Can you see a sample report?</h2>
+<p>A good report gives every snag a photo, an exact location, a priority and a clear remedy, and references the standard where one applies. If a firm won't show you an example, be wary.</p>
+<h2>6. Do they use the NHQB checklist?</h2>
+<p>If your developer is NHQB-registered, the pre-completion inspection must use the NHQB Pre-Completion Inspection Checklist. Ask whether they use it.</p>
+<h2>7. Can they fit your inspection window?</h2>
+<p>The Notice to Complete period is normally at least 14 calendar days, and the inspection has to happen inside it. Ask how quickly they can attend and how soon the report arrives after the visit.</p>
+<h2>8. What's included, and what's extra?</h2>
+<p>Check whether the price covers the loft and the outside, whether thermal imaging is included or extra, and what a re-inspection of the developer's repairs costs.</p>
+<h2>9. Is the price fixed?</h2>
+<p>Most firms price by bedrooms. Make sure the quote is fixed, including any travel charge. Typical prices are in our guide to <a href="/guides/snagging-survey-cost/">what a snagging survey costs</a>.</p>
+<h2>How Ashbridge answers these</h2>
+<div class="table-wrap"><table><thead><tr><th>Check</th><th>Ashbridge</th></tr></thead><tbody>
+<tr><td>Professional body</td><td>Inspectors are members of a recognised professional body for surveying. Your booking confirmation names your inspector and their body.</td></tr>
+<tr><td>Independence</td><td>We act only for buyers and homeowners, never for developers.</td></tr>
+<tr><td>Who signs off</td><td>Every report is checked by our lead engineer before it reaches you.</td></tr>
+<tr><td>Checklist</td><td>The NHQB Pre-Completion Inspection Checklist, where the Code applies.</td></tr>
+<tr><td>Report</td><td>Within 24 hours, with photos, locations, grades and remedies. <a href="/sample-snagging-report/">See the layout</a>.</td></tr>
+<tr><td>Price</td><td>Fixed by bedrooms, from ${gbp(prices.snag[0].price)}. Re-inspection ${gbp(prices.reinspection)}. <a href="/snagging-prices/">Get an instant price</a>.</td></tr>
+</tbody></table></div>`,
+  },
+  {
+    slug: 'snagging-an-extension',
+    published: '2026-10-20', updated: '2026-10-20',
+    title: 'Snagging your extension: practical completion and final checks',
+    summary: 'How to snag a finished extension or loft conversion with your builder: the walk-round, the paperwork, holding back a retention, and what to check.',
+    body: `<p>Snagging isn't only for new builds. When your builder says the extension is finished, you go round it together, list everything that isn't right, and agree when it will be fixed. Doing it properly protects the money you still owe and the paperwork you'll need when you sell.</p>
+<h2>Practical completion: what it means</h2>
+<p><strong>Practical completion</strong> is the point at which the work is finished apart from minor defects and the extension can be used. Depending on your contract, it usually triggers the final payment (less any retention) and the start of the <strong>defects period</strong>, during which the builder must come back and fix problems that appear.</p>
+<h2>The snagging walk-round</h2>
+<ul>
+<li>Do it in daylight, with the builder, and write the list as you go.</li>
+<li>Photograph every snag and agree a date for each fix.</li>
+<li>Email the list afterwards, so it's dated and in writing.</li>
+</ul>
+<h2>What to check</h2>
+<ul>
+<li><strong>Where old meets new:</strong> cracks at the junction with the existing house, inside and out, and how the new roof meets the old wall (flashings and lead work).</li>
+<li><strong>Floors:</strong> a level, step-free transition into the extension if that was designed, and no bounce.</li>
+<li><strong>Openings:</strong> bifold and sliding doors that run smoothly, lock and seal, with no cracking around beams or lintels.</li>
+<li><strong>Weathering:</strong> roof coverings finished, gutters and downpipes connected, and no sign of water getting in.</li>
+<li><strong>Drainage:</strong> gullies and manholes accessible, and rainwater going where the drawings show.</li>
+<li><strong>Finishes:</strong> the same checks as a new home. Our <a href="/guides/new-build-snagging-checklist/">snagging checklist</a> works room by room.</li>
+</ul>
+<h2>Paperwork before the final payment</h2>
+<ul>
+<li><strong>Building control completion certificate.</strong> This shows the work was signed off under the Building Regulations. Without it you'll have problems when you sell.</li>
+<li><strong>Electrical installation certificate</strong> for new circuits, with the work notified under Part P.</li>
+<li><strong>Window and door certificates</strong> (such as FENSA or CERTASS) where they were fitted by a registered installer.</li>
+<li><strong>Gas Safe certificate</strong> if any gas work was done.</li>
+<li>Guarantees for the roof, windows and any insurance-backed warranty the builder offered.</li>
+</ul>
+<h2>Retention: keep some money back</h2>
+<p>Many building contracts let you hold back a small percentage of the price, called a <strong>retention</strong>, until the end of the defects period. It gives the builder a reason to come back. Agree the amount and the length of the defects period in writing <em>before</em> work starts; it's much harder to agree afterwards.</p>
+<h2>If something looks structural</h2>
+<p>Diagonal cracks, doors that start sticking months later, sagging over openings or cracks that get wider deserve an engineer's view, not just the builder's reassurance. Good <a href="/building-regulations-drawings/">Building Regulations drawings</a> and <a href="/structural-calculations/">structural calculations</a> prevent most of these problems in the first place. Worried about yours? <a href="/contact/?service=Structural%20calculations">Send us photos</a>.</p>`,
   },
 ];
 
@@ -211,6 +416,12 @@ const REG = ['NHQB Register of Developers', 'https://www.nhqb.org.uk/register-of
 const LANGLEY_SPD = ['Birmingham City Council: Langley SUE supplementary planning document', 'https://www.birmingham.gov.uk/download/downloads/id/12543/langley_sue_spd.pdf'];
 const LANGLEY_HT = ['Housing Today: 5,500-home Birmingham urban extension (Dec 2022)', 'https://www.housingtoday.co.uk/news/5500-home-birmingham-urban-extension-tipped-for-approval/5121008.article'];
 const LANGLEY_UKE = ['UK Estates: Langley approval (Oct 2025)', 'https://ukestates.uk/major-new-housing-community-of-5500-homes-gains-approval-at-langley-sutton-coldfield/'];
+const AD_C = ['GOV.UK: Approved Document C (site preparation and resistance to moisture)', 'https://www.gov.uk/government/publications/site-preparation-and-resistance-to-contaminates-and-moisture-approved-document-c'];
+const RICS = ['RICS: find a surveyor', 'https://www.ricsfirms.com/'];
+const CIOB = ['CIOB: Chartered Institute of Building', 'https://www.ciob.org/'];
+const CABE = ['CABE: Chartered Association of Building Engineers', 'https://cbuilde.com/'];
+const PP_BC = ['GOV.UK: Building Regulations approval', 'https://www.gov.uk/building-regulations-approval'];
+const PARTP = ['GOV.UK: Approved Document P (electrical safety in dwellings)', 'https://www.gov.uk/government/publications/electrical-safety-approved-document-p'];
 const SOURCES = {
   'snagging-survey-cost': [HOA, NHQB_P2],
   'what-happens-after-your-snagging-report': [NHQB_P3, NHOS],
@@ -221,19 +432,73 @@ const SOURCES = {
   'do-i-need-planning-permission-for-an-extension': [PD, PP],
   'planning-vs-building-regulations-drawings': [PP, AD],
   'what-is-a-snagging-survey': [NHQB, AD],
+  'what-is-snagging': [NHQB_P2, NHQB_P3, NHBC],
+  'new-build-snagging-checklist': [NHQB_P2, NHBC, AD_C],
+  'choosing-a-snagging-company': [NHQB_P2, RICS, CIOB, CABE],
+  'snagging-an-extension': [PP_BC, PARTP, AD],
 };
 const PUBLISHED = '2026-09-23';
 const UPDATED = '2026-09-24';
 const human = (d) => new Date(d + 'T12:00:00').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
 
+// Each guide links on to related guides and to the service page it supports, so no
+// guide relies on the index page alone for internal links.
+const RELATED = {
+  'what-is-snagging': ['new-build-snagging-checklist', 'what-is-a-snagging-survey', 'what-happens-after-your-snagging-report'],
+  'new-build-snagging-checklist': ['what-is-snagging', 'choosing-a-snagging-company', 'can-i-do-my-own-pre-completion-inspection'],
+  'choosing-a-snagging-company': ['snagging-survey-cost', 'what-is-a-snagging-survey', 'new-build-snagging-checklist'],
+  'what-is-a-snagging-survey': ['what-is-snagging', 'snagging-survey-cost', 'choosing-a-snagging-company'],
+  'snagging-survey-cost': ['choosing-a-snagging-company', 'what-is-a-snagging-survey', 'pre-completion-inspection-explained'],
+  'what-happens-after-your-snagging-report': ['new-build-warranty-first-two-years', 'what-is-snagging', 'pre-completion-inspection-explained'],
+  'new-build-warranty-first-two-years': ['what-happens-after-your-snagging-report', 'what-is-snagging', 'new-build-snagging-checklist'],
+  'langley-sutton-coldfield-new-build-guide': ['pre-completion-inspection-explained', 'new-build-snagging-checklist', 'new-build-warranty-first-two-years'],
+  'can-i-do-my-own-pre-completion-inspection': ['new-build-snagging-checklist', 'pre-completion-inspection-explained', 'choosing-a-snagging-company'],
+  'pre-completion-inspection-explained': ['can-i-do-my-own-pre-completion-inspection', 'new-build-snagging-checklist', 'what-happens-after-your-snagging-report'],
+  'do-i-need-planning-permission-for-an-extension': ['planning-vs-building-regulations-drawings', 'snagging-an-extension'],
+  'planning-vs-building-regulations-drawings': ['do-i-need-planning-permission-for-an-extension', 'snagging-an-extension'],
+  'snagging-an-extension': ['planning-vs-building-regulations-drawings', 'new-build-snagging-checklist', 'do-i-need-planning-permission-for-an-extension'],
+};
+const NEXT_STEP = {
+  'what-is-snagging': ['/new-build-snagging/', 'New-build snagging surveys'],
+  'new-build-snagging-checklist': ['/snagging-prices/', 'Instant snagging price'],
+  'choosing-a-snagging-company': ['/new-build-snagging/', 'Our snagging surveys'],
+  'what-is-a-snagging-survey': ['/snagging-prices/', 'Instant snagging price'],
+  'snagging-survey-cost': ['/snagging-prices/', 'Instant snagging price'],
+  'what-happens-after-your-snagging-report': ['/two-year-warranty-inspection/', '2-year warranty inspection'],
+  'new-build-warranty-first-two-years': ['/two-year-warranty-inspection/', '2-year warranty inspection'],
+  'langley-sutton-coldfield-new-build-guide': ['/pre-completion-inspection/', 'Pre-completion inspections'],
+  'can-i-do-my-own-pre-completion-inspection': ['/pre-completion-inspection/', 'Pre-completion inspections'],
+  'pre-completion-inspection-explained': ['/pre-completion-inspection/', 'Check your inspection window'],
+  'do-i-need-planning-permission-for-an-extension': ['/can-i-extend/', 'Free "Can I extend?" check'],
+  'planning-vs-building-regulations-drawings': ['/extension-design-prices/', 'Extension design prices'],
+  'snagging-an-extension': ['/extension-design/', 'Extension design'],
+};
+const SNAGGING = new Set(['what-is-snagging', 'new-build-snagging-checklist', 'choosing-a-snagging-company', 'what-is-a-snagging-survey', 'snagging-survey-cost', 'what-happens-after-your-snagging-report', 'new-build-warranty-first-two-years', 'langley-sutton-coldfield-new-build-guide', 'can-i-do-my-own-pre-completion-inspection', 'pre-completion-inspection-explained']);
+const bySlug = Object.fromEntries(guides.map((g) => [g.slug, g]));
+
+// A "Related guides" block for any page: pass guide slugs.
+export function relatedGuides(slugs, heading = 'Related guides') {
+  const list = slugs.map((s) => bySlug[s]).filter(Boolean);
+  if (!list.length) return '';
+  return `<section class="section-tight no-print"><div class="wrap stack-sm"><h2 style="font-size:1.35rem">${heading}</h2><div class="related">${list.map((g) => `<a href="/guides/${g.slug}/">${titleCase(esc(g.title))}<span>${esc(g.summary)}</span></a>`).join('')}</div></div></section>`;
+}
+
+const author = site.founderName
+  ? `By <a href="/about/#founder">${esc(site.founderName)}</a>, ${esc(site.founderRole.toLowerCase())}${site.founderQualifications.length ? ` (${esc(site.founderQualifications[0])})` : ' (MSc Civil Engineering, 15 years\' experience)'}`
+  : 'By <a href="/about/">Ashbridge Design</a> · Reviewed by our lead engineer (MSc Civil Engineering, 15 years\' experience)';
+const authorLd = founderLd ? { '@id': founderLd['@id'], '@type': 'Person', name: site.founderName, url: site.url + '/about/' } : { '@type': 'Organization', '@id': site.url + '/#business', name: site.name, url: site.url };
+
 export function guidePages() {
+  const card = (g) => `<a class="card" href="/guides/${g.slug}/" style="text-decoration:none"><h3 class="card-title">${g.title}</h3><p class="muted small">${g.summary}</p><span class="more">Read the guide</span></a>`;
   const index = {
     path: '/guides/',
     title: 'Guides: Extensions, Planning & New-build Snagging',
-    description: 'Plain-English guides to planning permission, Building Regulations, structural calculations and new-build snagging in England.',
+    description: 'Plain-English guides to new-build snagging, pre-completion inspections, planning permission and Building Regulations in England, reviewed by an engineer.',
     trail: [['/guides/', 'Guides']],
-    body: `${pageHero({ trail: [['/guides/', 'Guides']], eyebrow: 'Guides', h1: 'Plain-English guides', lede: 'The questions we get asked most, answered by an engineer.' })}
-<section class="section"><div class="wrap grid-2">${guides.map((g) => `<a class="card" href="/guides/${g.slug}/" style="text-decoration:none"><h2 class="card-title">${g.title}</h2><p class="muted small">${g.summary}</p><span class="more">Read the guide</span></a>`).join('')}</div></section>
+    ld: [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Ashbridge Design guides', url: site.url + '/guides/', hasPart: guides.map((g) => ({ '@type': 'Article', headline: titleCase(g.title), url: site.url + `/guides/${g.slug}/` })) }],
+    body: `${pageHero({ trail: [['/guides/', 'Guides']], eyebrow: 'Guides', h1: 'Plain-English guides', lede: 'The questions we get asked most, answered by an engineer, with the sources listed on every guide.' })}
+<section class="section"><div class="wrap stack"><h2>New-build snagging and inspections</h2><div class="grid-2">${guides.filter((g) => SNAGGING.has(g.slug)).map(card).join('')}</div></div></section>
+<section class="section section-white"><div class="wrap stack"><h2>Extensions, planning and Building Regulations</h2><div class="grid-2">${guides.filter((g) => !SNAGGING.has(g.slug)).map(card).join('')}</div></div></section>
 ${ctaBand()}`,
   };
   const pages = guides.map((g) => {
@@ -247,16 +512,19 @@ ${ctaBand()}`,
         '@context': 'https://schema.org', '@type': 'Article', headline: titleCase(g.title), description: g.summary,
         datePublished: g.published || PUBLISHED, dateModified: g.updated || UPDATED, inLanguage: 'en-GB',
         mainEntityOfPage: site.url + `/guides/${g.slug}/`,
-        author: { '@type': 'Organization', '@id': site.url + '/#business', name: site.name, url: site.url },
+        author: authorLd,
+        ...(founderLd ? { reviewedBy: { '@id': founderLd['@id'] } } : {}),
         publisher: { '@type': 'Organization', '@id': site.url + '/#business', name: site.name, logo: { '@type': 'ImageObject', url: site.url + '/assets/logo.jpg' } },
         citation: (SOURCES[g.slug] || []).map(([, u]) => u),
       }],
       body: `${pageHero({ trail, eyebrow: 'Guide', h1: g.title, lede: g.summary })}
 <section class="section"><div class="wrap"><article class="prose">
-<p class="byline">By <a href="/about/">Ashbridge Design</a> · Reviewed by our lead engineer (MSc Civil Engineering, 15 years' experience) · Updated <time datetime="${g.updated || UPDATED}">${human(g.updated || UPDATED)}</time></p>
+<p class="byline">${author} · Updated <time datetime="${g.updated || UPDATED}">${human(g.updated || UPDATED)}</time></p>
 ${g.body}
+${NEXT_STEP[g.slug] ? `<p class="no-print"><a class="btn btn-amber" href="${NEXT_STEP[g.slug][0]}">${NEXT_STEP[g.slug][1]}</a></p>` : ''}
 ${SOURCES[g.slug] ? `<h2>Sources</h2><ul class="sources">${SOURCES[g.slug].map(([l, u]) => `<li><a href="${u}" rel="noopener">${l}</a></li>`).join('')}</ul>` : ''}
 </article></div></section>
+${relatedGuides(RELATED[g.slug] || [])}
 ${ctaBand()}`,
     };
   });

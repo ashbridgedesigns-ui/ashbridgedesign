@@ -10,6 +10,15 @@ export default {
   whatsapp: '447466812272', // international format, no + (07466 812272)
   whatsappDisplay: '07466 812272',
   founderName: '',      // shown on About and in the report sign-off
+  // The lead engineer's public profile. Each item appears on About, in guide bylines and
+  // in the Person schema as soon as it's filled; blanks are left out, never shown as gaps.
+  founderRole: 'Founder and lead engineer',
+  founderQualifications: [], // e.g. ['MSc Civil Engineering, University of Birmingham (2011)']
+  founderMemberships: [],    // e.g. ['Member of the Institution of Civil Engineers (MICE), no. 12345678']
+  founderPhoto: '',          // e.g. '/assets/founder.jpg' (square, at least 400 x 400)
+  founderLinkedIn: '',       // full URL
+  piInsurance: '',           // e.g. 'Professional indemnity insurance: £1m, Hiscox'
+  sameAs: [],                // business profiles: Google Business Profile, Checkatrade, Trustpilot, LinkedIn page
   companyNumber: '',    // Companies House number, shown in the footer
   googleReviewsUrl: '', // link to the Google Business Profile reviews
   // Google Analytics 4 measurement ID (e.g. 'G-XXXXXXXXXX'). Blank = no analytics loaded.

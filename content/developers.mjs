@@ -1,5 +1,6 @@
 import { gbp, esc, pageHero, ctaBand, faqHtml, faqLd } from '../lib/layout.mjs';
 import { site, prices } from '../lib/parts.mjs';
+import { relatedGuides } from './guides.mjs';
 
 // Registration details from the NHQB Register of Developers (nhqb.org.uk/register-of-developers),
 // checked on the date below. Re-check before changing anything here.
@@ -108,6 +109,7 @@ ${ctaBand()}`,
 <section class="section"><div class="wrap narrow stack"><h2>${esc(d.brand)} inspection questions</h2>${faqHtml(faqs)}
   <p class="small muted">Ashbridge Design is independent and not affiliated with ${esc(d.brand)}${d.group ? ` or ${esc(d.group)}` : ''}. The name is used only to identify the developer. <a href="/developers/">Other housebuilders</a>.</p>
 </div></section>
+${relatedGuides(['pre-completion-inspection-explained', 'new-build-snagging-checklist', 'what-happens-after-your-snagging-report'])}
 ${ctaBand()}`,
     });
   }

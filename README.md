@@ -24,12 +24,12 @@ Change a price in `site.config.mjs`, rebuild, and every page, table, tool and sc
 
 ## Before going live
 
-1. **Fill `site.config.mjs`:** phone (turns on the Call buttons), founder name, company number, Google reviews link.
+1. **Fill `site.config.mjs`:** phone (turns on the Call buttons), founder name, qualifications, memberships, photo, LinkedIn, PI insurance, company number, Google reviews link and other profiles (`sameAs`). Each one appears on About, in every guide byline and in the Person/Organization schema as soon as it's set.
 2. **Deposit payments:** create a £49 Stripe Payment Link and paste it into `depositLink`. Until then, “Book” goes to the enquiry form.
 3. **Logo:** replace `assets/logo.jpg` with a transparent SVG from the designer, and update the `<img>` tags in `lib/layout.mjs`.
 4. **Photos:** add real inspection and project photos as they come in. The site currently uses drawn illustrations only. Nothing is stock and nothing is invented.
 5. **Sample report:** add a real anonymised PDF to `/sample-snagging-report/`.
-6. **Area pages:** 48 Tier 1 town pages are live, built from the council data. Add researched local notes (developments, conservation areas) to `LOCAL` in `content/areas.mjs`, then promote Tier 2 places by changing their tier in `data/areas.csv`.
+6. **Area pages:** every place in `data/areas.csv` gets a page, but only **tier 1** pages are indexed and listed in the sitemap: the in-person area, the large cities, and towns where Search Console showed real rankings. Tier 2 and 3 pages are `noindex, follow` until they have researched local notes. To promote one, add notes to `LOCAL` in `content/areas.mjs` and change its tier to 1.
 7. Check `/privacy/` with the final company details.
 
 ## Deploy (Vercel)

@@ -39,9 +39,9 @@ South East,Southampton,City,Southampton City Council,1,Inspector network
 South East,Brighton & Hove,City,Brighton & Hove City Council,1,Inspector network
 South East,Oxford,City,Oxford City Council,1,Inspector network
 South East,Portsmouth,City,Portsmouth City Council,2,Inspector network
-South East,Canterbury,City,Canterbury City Council,2,Inspector network
+South East,Canterbury,City,Canterbury City Council,1,Inspector network
 South East,Ashford,Town,Ashford Borough Council,2,Inspector network
-South East,Maidstone,Town,Maidstone Borough Council,2,Inspector network
+South East,Maidstone,Town,Maidstone Borough Council,1,Inspector network
 South East,Basingstoke,Town,Basingstoke and Deane Borough Council,2,Inspector network
 South East,Bicester,Town,Cherwell District Council,2,Inspector network
 South East,Aylesbury,Town,Buckinghamshire Council,2,Inspector network
@@ -58,11 +58,11 @@ South East,High Wycombe,Town,Buckinghamshire Council,3,Inspector network
 South East,Eastbourne,Town,Eastbourne Borough Council,3,Inspector network
 South East,Hastings,Town,Hastings Borough Council,3,Inspector network
 South East,Worthing,Town,Worthing Borough Council,3,Inspector network
-South East,Chatham & Gillingham (Medway),Town,Medway Council,3,Inspector network
-South East,Tunbridge Wells,Town,Tunbridge Wells Borough Council,3,Inspector network
+South East,Chatham & Gillingham (Medway),Town,Medway Council,1,Inspector network
+South East,Tunbridge Wells,Town,Tunbridge Wells Borough Council,1,Inspector network
 South East,Gravesend,Town,Gravesham Borough Council,3,Inspector network
 South East,Folkestone,Town,Folkestone & Hythe District Council,3,Inspector network
-South East,Margate,Town,Thanet District Council,3,Inspector network
+South East,Margate,Town,Thanet District Council,1,Inspector network
 South East,Bognor Regis,Town,Arun District Council,3,Inspector network
 South East,Horsham,Town,Horsham District Council,3,Inspector network
 South East,Newbury,Town,West Berkshire Council,3,Inspector network
@@ -92,7 +92,7 @@ East of England,Hemel Hempstead,Town,Dacorum Borough Council,3,Inspector network
 East of England,Harlow,Town,Harlow District Council,3,Inspector network
 East of England,Braintree,Town,Braintree District Council,3,Inspector network
 East of England,Great Yarmouth,Town,Great Yarmouth Borough Council,3,Inspector network
-East of England,King's Lynn,Town,Borough Council of King's Lynn & West Norfolk,3,Inspector network
+East of England,King's Lynn,Town,Borough Council of King's Lynn & West Norfolk,1,Inspector network
 East of England,Bury St Edmunds,Town,West Suffolk Council,3,Inspector network
 East of England,Lowestoft,Town,East Suffolk Council,3,Inspector network
 East of England,Welwyn Garden City,Town,Welwyn Hatfield Borough Council,3,Inspector network
@@ -151,7 +151,7 @@ East Midlands,Corby,Town,North Northamptonshire Council,2,Inspector network
 East Midlands,Mansfield,Town,Mansfield District Council,2,Inspector network
 East Midlands,Loughborough,Town,Charnwood Borough Council,1,In person (Birmingham)
 East Midlands,Wellingborough,Town,North Northamptonshire Council,3,Inspector network
-East Midlands,Chesterfield,Town,Chesterfield Borough Council,3,Inspector network
+East Midlands,Chesterfield,Town,Chesterfield Borough Council,1,Inspector network
 East Midlands,Grantham,Town,South Kesteven District Council,3,Inspector network
 East Midlands,Boston,Town,Boston Borough Council,3,Inspector network
 East Midlands,Hinckley,Town,Hinckley & Bosworth Borough Council,1,In person (Birmingham)
@@ -169,8 +169,8 @@ Yorkshire and the Humber,Halifax,Town,Calderdale Council,3,Inspector network
 Yorkshire and the Humber,Rotherham,Town,Rotherham Metropolitan Borough Council,3,Inspector network
 Yorkshire and the Humber,Barnsley,Town,Barnsley Metropolitan Borough Council,3,Inspector network
 Yorkshire and the Humber,Scarborough,Town,North Yorkshire Council,3,Inspector network
-Yorkshire and the Humber,Grimsby,Town,North East Lincolnshire Council,3,Inspector network
-Yorkshire and the Humber,Scunthorpe,Town,North Lincolnshire Council,3,Inspector network
+Yorkshire and the Humber,Grimsby,Town,North East Lincolnshire Council,1,Inspector network
+Yorkshire and the Humber,Scunthorpe,Town,North Lincolnshire Council,1,Inspector network
 North West,Manchester,City,Manchester City Council,1,Inspector network
 North West,Liverpool,City,Liverpool City Council,1,Inspector network
 North West,Salford,City,Salford City Council,2,Inspector network

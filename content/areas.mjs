@@ -43,6 +43,10 @@ const REGION_ORDER = ['West Midlands', 'East Midlands', 'London', 'South East', 
 export function areaPages(areas) {
   const live = areas.filter((a) => a.slug !== 'london');
   const liveSet = new Set(live.map((a) => a.slug));
+  // Only tier 1 town pages are indexed: the in-person area plus towns where Search
+  // Console shows real rankings. Other town pages stay up for visitors (noindex, follow)
+  // until they have researched local content; promote them by changing the tier in data/areas.csv.
+  const indexed = live.filter((a) => a.tier === '1');
   const link = (a) => liveSet.has(a.slug) ? `<a href="/areas/${a.slug}/">${esc(a.place)}</a>` : esc(a.place);
   const regions = REGION_ORDER.map((r) => ({ name: r, slug: slug(r), places: areas.filter((a) => a.region === r && !a.place.startsWith('London (')) }));
   const out = [];
@@ -84,17 +88,17 @@ ${ctaBand()}`,
     });
   }
 
-  // Town pages (tier 1)
+  // Town pages
   for (const a of live) {
     const regionSlug = slug(a.region);
     const trail = [['/areas/', 'Areas'], [`/areas/${regionSlug}/`, a.region], [`/areas/${a.slug}/`, a.place]];
     const who = a.inPerson
       ? `Our Birmingham-based lead engineer carries out inspections and measured surveys in ${esc(a.place)} in person.`
-      : `Inspections in ${esc(a.place)} are carried out by a qualified inspector who is a member of a recognised professional body for surveying (such as RICS, CIOB or CABE) to our checklist, and every report is checked by our lead engineer before it reaches you. Design work is done by our engineer, with the measured survey by a local partner or 3D scan.`;
+      : `Inspections in ${esc(a.place)} are carried out by a qualified inspector who is a member of a recognised professional body for surveying (such as RICS, CIOB or CABE) to our checklist, and every report is checked by our lead engineer before it reaches you. Design work is done by our engineer, working from a site visit arranged through a local partner or a 3D scan.`;
     const g = GEO[a.slug];
     const core = a.place.replace(/ \(.*\)/, '');
     // Nearest places we cover, by straight-line distance.
-    const nearby = live.filter((x) => x.slug !== a.slug && GEO[x.slug])
+    const nearby = indexed.filter((x) => x.slug !== a.slug && GEO[x.slug])
       .map((x) => ({ x, d: miles(g, GEO[x.slug]) })).sort((p, q) => p.d - q.d).slice(0, 10);
     const outcodes = g.outcodes.filter((o) => !NON_GEO.has(o));
     const wards = g.wards.slice(0, 12);
@@ -119,6 +123,7 @@ ${ctaBand()}`,
       title: `Extension Drawings & Snagging, ${a.place.replace(/ \(.*\)/, '')}`,
       description: `Engineer-led extension drawings from ${gbp(single.s1)} and new-build snagging surveys from ${gbp(minSnag)} in ${a.place}. ${a.inPerson ? 'In-person service from our Birmingham base.' : 'Covering all of England.'}`,
       trail,
+      noindex: a.tier !== '1',
       ld: [faqLd(faqs), { '@context': 'https://schema.org', '@type': 'Service', name: `Extension design and snagging surveys in ${a.place}`, provider: { '@id': site.url + '/#business' }, areaServed: { '@type': a.type === 'Borough' ? 'AdministrativeArea' : 'City', name: core, geo: { '@type': 'GeoCoordinates', latitude: g.lat, longitude: g.lon } } }],
       body: `${pageHero({ trail, eyebrow: `${a.place} · ${a.region}`, h1: `Extension drawings and snagging surveys in ${esc(a.place)}`, lede: `Engineer-led extension design, structural calculations and independent new-build inspections in ${esc(a.place)}. ${a.inPerson ? 'Covered in person from our Birmingham base.' : 'Part of our England-wide service.'}`, ctas: '<a class="btn btn-amber" href="/contact/">Get a price</a><a class="btn btn-slate" href="/snagging-prices/">Instant snagging price</a>' })}
 <section class="section"><div class="wrap grid-2">

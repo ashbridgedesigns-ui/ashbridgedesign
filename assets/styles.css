@@ -249,6 +249,15 @@ fieldset{border:0;padding:0;margin:0;display:grid;gap:8px}
 .wa-inline:hover{color:#0A5A2F;text-decoration:underline}
 @media print{.wa-fab{display:none}}
 
+/* Printable checklist (guides/new-build-snagging-checklist) */
+.checklist{list-style:none;padding-left:0!important}
+.checklist li{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start}
+.checklist li::before{content:"";width:16px;height:16px;border:2px solid var(--muted);border-radius:3px;margin-top:4px}
+.related{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.related a{display:block;text-decoration:none;border:1px solid var(--line);border-radius:var(--radius);padding:14px 16px;background:var(--white)}
+.related a span{display:block;font-size:.88rem;color:var(--muted);margin-top:4px}
+@media print{.site-header,.site-footer,.action-bar,.cta-band,.consent,.crumbs,.no-print{display:none!important}.section,.page-hero{padding:8px 0!important}.checklist li{break-inside:avoid}}
+
 /* Cookie consent */
 .consent{position:fixed;left:20px;bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:80;max-width:430px;background:var(--white);border:1px solid var(--line);border-top:4px solid var(--amber);border-radius:var(--radius);box-shadow:0 16px 40px rgba(38,48,58,.18);padding:18px 20px;display:grid;gap:14px;font-size:.92rem}
 .consent p{color:var(--ink)}
