@@ -1,6 +1,6 @@
 {
  "/": {
-  "hash": "bd8ae71f2b0b",
+  "hash": "69c34c468bc4",
   "date": "2026-10-31"
  },
  "/about/": {
@@ -1016,11 +1016,11 @@
   "date": "2026-10-20"
  },
  "/guides/snagging-survey-cost/": {
-  "hash": "d5c02f8c8f46",
-  "date": "2026-10-20"
+  "hash": "eaa5832d0fb9",
+  "date": "2026-10-31"
  },
  "/guides/what-happens-after-your-snagging-report/": {
-  "hash": "86f3a67b8fdf",
+  "hash": "2f9ab43630de",
   "date": "2026-10-31"
  },
  "/guides/what-is-a-snagging-survey/": {
@@ -1032,7 +1032,7 @@
   "date": "2026-10-20"
  },
  "/guides/when-do-you-need-structural-calculations/": {
-  "hash": "a844ff36dac8",
+  "hash": "b3a4f24b1c17",
   "date": "2026-10-31"
  },
  "/loft-conversion-drawings/": {
@@ -1040,7 +1040,7 @@
   "date": "2026-10-20"
  },
  "/new-build-snagging/": {
-  "hash": "f03b7e9ea52c",
+  "hash": "c6597110f8c1",
   "date": "2026-10-31"
  },
  "/planning-drawings/": {
@@ -1048,8 +1048,8 @@
   "date": "2026-10-20"
  },
  "/pre-completion-inspection/": {
-  "hash": "ca7461be13fd",
-  "date": "2026-10-20"
+  "hash": "12b3ced2e6cc",
+  "date": "2026-10-31"
  },
  "/privacy/": {
   "hash": "4e8641bb4c0a",
@@ -1064,7 +1064,7 @@
   "date": "2026-10-20"
  },
  "/snagging-prices/": {
-  "hash": "ac0bc8faca8a",
+  "hash": "387dfe2e6291",
   "date": "2026-10-31"
  },
  "/snagging-survey-birmingham/": {
@@ -1080,7 +1080,7 @@
   "date": "2026-10-02"
  },
  "/two-year-warranty-inspection/": {
-  "hash": "c219c6153507",
-  "date": "2026-10-20"
+  "hash": "b3c5f9fb5f87",
+  "date": "2026-10-31"
  }
 }

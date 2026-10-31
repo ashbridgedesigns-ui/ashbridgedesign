@@ -31,6 +31,7 @@ const designFaqs = [
 ];
 
 const snagFaqs = [
+  ['When do thermal imaging or drone checks add value?', 'Thermal imaging can point to likely insulation gaps, draughts or hidden leaks, but works best when inside and outside temperatures differ clearly, and findings usually need checking another way. A drone can help where a roof is hard to see from the ground. Both are most useful when you have a specific concern, such as cold spots, unexplained damp or a suspected roof problem. We do not currently offer them, so ask a specialist if you need one.'],
   ['What is a snagging survey?', 'An independent inspection of a new-build home that finds defects: anything unfinished, damaged or not built to standard. You get a report the developer has to respond to.'],
   ['When should I book?', 'Ideally before legal completion, as a pre-completion inspection, while the developer still has every reason to fix things quickly. A post-completion snagging survey is still worthwhile in the first two years.'],
   ['How quickly do I get the report?', 'Within 24 hours of the inspection in most cases, as a PDF with photographs, locations and the relevant standard for each snag.'],
@@ -38,6 +39,7 @@ const snagFaqs = [
 ];
 
 const snagPriceFaqs = [
+  ['When do thermal imaging or drone checks add value?', 'Thermal imaging can point to likely insulation gaps, draughts or hidden leaks, but works best when inside and outside temperatures differ clearly, and findings usually need checking another way. A drone can help where a roof is hard to see from the ground. Both are most useful when you have a specific concern, such as cold spots, unexplained damp or a suspected roof problem. We do not currently offer them, so ask a specialist if you need one.'],
   ['Are thermal imaging or drone checks included?', 'No. We do not currently offer them. Our inspection covers every room, the loft space and the outside.'],
   ['Why is the price based on bedrooms?', 'More bedrooms means more rooms, fittings and bathrooms to inspect, and a longer report. Pricing by bedrooms keeps it fixed and predictable.'],
   ['Is a pre-completion inspection the same price?', `Yes. Both before and after you move in costs the snagging price plus ${gbp(prices.preAndPost)}.`],
@@ -356,7 +358,7 @@ ${ctaBand()}`,
 <p><strong>In Birmingham?</strong> See <a href="/snagging-survey-birmingham/">snagging surveys in Birmingham</a>, inspected in person by our lead engineer.</p>
 <p><strong>Buying from Barratt, Persimmon, Taylor Wimpey or another major builder?</strong> <a href="/developers/">Check your housebuilder</a>: whether they're covered by the New Homes Quality Code, and from when.</p>`,
     includes: ['Inspection of every room, the loft space and the outside', 'Checks against Building Regulations and warranty-provider standards', 'Windows, doors, finishes, plumbing, heating, electrics (visual and functional)', 'Photographs with each snag located and graded', 'PDF report within 24 hours, ready to send to the developer', 'Every report checked by our lead engineer'],
-    excludes: ['Opening up of concealed structures', 'Specialist gas or electrical safety certification'],
+    excludes: ['Opening up of concealed structures', 'Specialist gas or electrical safety certification', 'Thermal imaging and drone roof checks'],
     faqs: snagFaqs,
     guides: ['what-is-snagging', 'new-build-snagging-checklist', 'choosing-a-snagging-company', 'snagging-survey-cost'],
     extra: `<section class="section-tight"><div class="wrap">${snagQuoteTool()}</div></section>
@@ -392,6 +394,13 @@ ${ctaBand()}`,
   </div>
   <div>${pciTool()}</div>
 </div></section>
+<section class="section section-white"><div class="wrap narrow stack"><p class="eyebrow">Which should you book?</p><h2>Pre-completion inspection or snagging survey</h2>
+  <div class="table-wrap"><table><thead><tr><th></th><th>Pre-completion inspection</th><th>Snagging survey</th></tr></thead><tbody>
+  <tr><th scope="row">When</th><td>After the Notice to Complete, before completion</td><td>After you move in, ideally in the first few months</td></tr>
+  <tr><th scope="row">Choose it if</th><td>Your developer is NHQB-registered and your window is open</td><td>You've already completed, or the developer isn't registered</td></tr>
+  <tr><th scope="row">Price</th><td>From ${gbp(minSnag)}</td><td>From ${gbp(minSnag)}</td></tr>
+  </tbody></table></div>
+  <p>Want both? It costs the snagging price plus ${gbp(prices.preAndPost)}. Read the full <a href="/guides/pre-completion-inspection-explained/">pre-completion guide</a>.</p></div></section>
 <section class="section-tight"><div class="wrap">${snagQuoteTool('Pre-completion inspection price')}</div></section>
 ${relatedGuides(['pre-completion-inspection-explained', 'can-i-do-my-own-pre-completion-inspection', 'new-build-snagging-checklist'])}
 ${ctaBand()}`,
@@ -413,8 +422,9 @@ ${ctaBand()}`,
     <ol class="steps" style="grid-template-columns:1fr">
       <li><h3>Month 21–22: book</h3><p class="small">Find your completion date on your warranty certificate or completion statement.</p></li>
       <li><h3>Month 22–23: inspection and report</h3><p class="small">Report within 24 hours, ready to send to the developer.</p></li>
-      <li><h3>Before month 24: report it in writing</h3><p class="small">Send the report to the developer's after-sales team, so every defect is on record while they're still responsible.</p></li>
-    </ol></div>
+      <li><h3>Before month 24: report it in writing</h3><p class="small">Send the report to the developer's after-sales team, so every defect is on record while they're still responsible. Track each item in our <a href="/assets/defect-log.csv" download>defect log</a>.</p></li>
+    </ol>
+    <p class="small">Doing your own check first? Use the <a href="/guides/new-build-warranty-first-two-years/">year-two timeline</a>.</p></div>
   <div class="stack"><p class="eyebrow">What we look for</p><h2>Defects that appear after the first year</h2>
     <ul class="ticks"><li>Cracking at plasterboard joints, corners and around openings</li><li>Doors and windows that have dropped, stick or no longer seal</li><li>Damp patches, condensation and blocked ventilation</li><li>Leaks at bath and shower seals, and under kitchen units</li><li>Paving or ground that has settled and now falls towards the house</li><li>Loft insulation that has been disturbed, and roof leaks</li></ul></div>
 </div></section>`,

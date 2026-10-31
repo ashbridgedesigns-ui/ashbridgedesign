@@ -8,6 +8,7 @@ const guides = [
   {
     slug: 'snagging-survey-cost',
     published: '2026-09-25', updated: '2026-09-25',
+    updated: '2026-10-31',
     title: 'How much does a snagging survey cost? (2026 prices)',
     summary: 'What snagging surveys and pre-completion inspections cost in England in 2026, what changes the price, and what to check before you book.',
     body: `<p>Most snagging surveys for a typical new home in England cost <strong>between about £325 and £500</strong>, based on the prices national snagging firms publish in 2026. Flats and smaller houses sit at the lower end; four- and five-bedroom houses at the top.</p>
@@ -21,6 +22,12 @@ const guides = [
 <li><strong>Extras:</strong> thermal imaging, drone roof checks and re-inspections are often add-ons.</li>
 <li><strong>Location:</strong> some firms charge more for remote areas. Ours is a ${gbp(prices.travel)} supplement for TR, CA and TD postcodes only.</li>
 </ul>
+<h2>Are thermal imaging and drone checks worth paying for?</h2>
+<ul>
+<li><strong>Thermal imaging</strong> can point to likely insulation gaps, draughts or hidden leaks. It works best when inside and outside temperatures differ clearly, and findings usually need checking another way.</li>
+<li><strong>Drone checks</strong> can help where a roof is hard to see from the ground.</li>
+</ul>
+<p>Both are most useful when you have a specific concern, such as cold spots, unexplained damp or a suspected roof problem. We don't currently offer either, so if you need one, ask a specialist what it covers and what it costs.</p>
 <h2>Is the cheapest worth it?</h2>
 <p>The report is only as useful as the person who writes it. Before you book any snagging firm, ask:</p>
 <ul>
@@ -62,6 +69,8 @@ const guides = [
 <div class="table-wrap"><table><thead><tr><th>Ref</th><th>Defect and location</th><th>Reported</th><th>Developer's reply</th><th>Promised by</th><th>Fixed and checked</th></tr></thead><tbody>
 <tr><td>1</td><td>Example: bedroom 2 door catches the frame</td><td>Date sent</td><td>Date and summary</td><td>Date</td><td>Date</td></tr>
 </tbody></table></div>
+<p class="no-print"><a class="btn btn-ghost" href="/assets/defect-log.csv" download>Download the defect log (CSV)</a></p>
+<p class="small muted">Opens in Excel, Google Sheets or Numbers, ready to fill in or print.</p>
 <h2>If the developer disputes an item</h2>
 <ul>
 <li>Ask for the reason in writing, including the standard or tolerance they rely on.</li>
@@ -494,6 +503,9 @@ const guides = [
 <li><strong>Loft conversions:</strong> new floor joists, steels and support for the altered roof.</li>
 <li><strong>Removing a chimney breast:</strong> anything left above needs proper support.</li>
 </ul>
+<h2>What the calculations have to prove</h2>
+<p>When a load-bearing wall comes out, the load above it still has to reach the ground. The calculations show that the beam, its supports and what sits beneath them can safely carry it.</p>
+<figure style="margin:0"><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:16px"><svg viewBox="0 0 340 260" role="img" aria-label="Before: a load-bearing wall carries the floor above straight down to its foundation."><path d="M70 6V28m-5-7 5 7 5-7" fill="none" stroke="#26303A" stroke-width="2"/><path d="M130 6V28m-5-7 5 7 5-7" fill="none" stroke="#26303A" stroke-width="2"/><path d="M210 6V28m-5-7 5 7 5-7" fill="none" stroke="#26303A" stroke-width="2"/><path d="M270 6V28m-5-7 5 7 5-7" fill="none" stroke="#26303A" stroke-width="2"/><rect x="20" y="30" width="300" height="12" fill="#3C4854"/><rect x="10" y="210" width="320" height="26" fill="#EEF0F2" stroke="#9CA3AE"/><rect x="40" y="42" width="260" height="168" fill="#DDE1E5" stroke="#3C4854"/><text x="170" y="120" text-anchor="middle" font-size="13" font-weight="600" fill="#26303A">Load-bearing wall</text><text x="170" y="140" text-anchor="middle" font-size="13" font-weight="600" fill="#26303A">carries the floor above</text><text x="170" y="228" text-anchor="middle" font-size="13" font-weight="600" fill="#26303A">Foundation</text><text x="170" y="255" text-anchor="middle" font-size="13" font-weight="600" fill="#26303A">Before</text></svg><svg viewBox="0 0 340 260" role="img" aria-label="After: a steel beam spans the new opening and rests on padstones, sending the load down through the remaining wall at each side."><path d="M70 6V28m-5-7 5 7 5-7" fill="none" stroke="#26303A" stroke-width="2"/><path d="M130 6V28m-5-7 5 7 5-7" fill="none" stroke="#26303A" stroke-width="2"/><path d="M210 6V28m-5-7 5 7 5-7" fill="none" stroke="#26303A" stroke-width="2"/><path d="M270 6V28m-5-7 5 7 5-7" fill="none" stroke="#26303A" stroke-width="2"/><rect x="20" y="30" width="300" height="12" fill="#3C4854"/><rect x="10" y="210" width="320" height="26" fill="#EEF0F2" stroke="#9CA3AE"/><rect x="40" y="42" width="260" height="30" fill="#DDE1E5" stroke="#3C4854"/><rect x="40" y="72" width="45" height="138" fill="#DDE1E5" stroke="#3C4854"/><rect x="255" y="72" width="45" height="138" fill="#DDE1E5" stroke="#3C4854"/><rect x="62" y="72" width="216" height="20" fill="#FBB424" stroke="#26303A"/><rect x="60" y="92" width="25" height="10" fill="#3C4854"/><rect x="255" y="92" width="25" height="10" fill="#3C4854"/><path d="M62 106V202m-5-7 5 7 5-7" fill="none" stroke="#26303A" stroke-width="2"/><path d="M278 106V202m-5-7 5 7 5-7" fill="none" stroke="#26303A" stroke-width="2"/><text x="170" y="87" text-anchor="middle" font-size="13" font-weight="600" fill="#26303A">Steel beam</text><text x="170" y="125" text-anchor="middle" font-size="13" font-weight="600" fill="#26303A">New opening</text><text x="170" y="150" text-anchor="middle" font-size="13" font-weight="600" fill="#26303A">Padstone under</text><text x="170" y="166" text-anchor="middle" font-size="13" font-weight="600" fill="#26303A">each beam end</text><text x="170" y="228" text-anchor="middle" font-size="13" font-weight="600" fill="#26303A">Foundation</text><text x="170" y="255" text-anchor="middle" font-size="13" font-weight="600" fill="#26303A">After</text></svg></div><figcaption class="small muted">How load moves when a wall is removed. Simplified illustration, not a design: every beam and support must be sized for the actual building.</figcaption></figure>
 <h2>What about a wall that isn't load-bearing?</h2>
 <p>Don't assume. Stud walls can still carry loads, and a thin wall can be supporting a floor above. An engineer should confirm it before anything comes down.</p>
 <h2>What building control looks for</h2>
