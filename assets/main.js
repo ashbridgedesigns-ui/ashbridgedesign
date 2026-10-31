@@ -93,7 +93,7 @@
   }
 
   // ---------- Postcode helpers ----------
-  // Outward-code areas the Birmingham-based lead engineer covers in person.
+  // Outward-code areas the Solihull-based lead engineer covers in person.
   var IN_PERSON = ['B', 'CV', 'WV', 'WS', 'DY', 'WR', 'ST', 'TF', 'SY', 'HR', 'LE', 'DE', 'NG', 'NN'];
   var REMOTE = ['TR', 'CA', 'TD'];
   var NOT_ENGLAND = ['AB', 'DD', 'DG', 'EH', 'FK', 'G', 'HS', 'IV', 'KA', 'KW', 'KY', 'ML', 'PA', 'PH', 'ZE', 'CF', 'SA', 'NP', 'LL', 'LD', 'BT', 'IM', 'JE', 'GY'];
@@ -139,7 +139,7 @@
       var travel = cov.remote ? P.travel : 0;
       var total = price + travel;
       var who = !cov.known ? 'Add your postcode to see who will inspect.' :
-        cov.inPerson ? 'Inspected in person by our Birmingham-based lead engineer.' :
+        cov.inPerson ? 'Inspected in person by our Solihull-based lead engineer.' :
         'Inspected by a qualified inspector who is a member of a recognised professional body for surveying, with every report checked by our lead engineer before you receive it.';
       var detail = labels[type] + ', ' + row.label + (pc ? ', ' + pc.toUpperCase() : '');
       var payHref = A.site.depositLink ? A.site.depositLink : bookHref('New-build snagging', detail + ', quoted ' + gbp(total));

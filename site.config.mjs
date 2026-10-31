@@ -4,7 +4,7 @@ export default {
   name: 'Ashbridge Design',
   tagline: 'Engineer-led extension design & new-build inspections',
   url: 'https://www.ashbridgedesign.co.uk',
-  base: 'Birmingham',
+  base: 'Shirley, Solihull',
   email: '',           // public contact email; blank hides it everywhere (e.g. 'hello@ashbridgedesign.co.uk')
   phone: '07466 812272', // enables Call buttons; must match the Google Business Profile
   whatsapp: '447466812272', // international format, no + (07466 812272)
