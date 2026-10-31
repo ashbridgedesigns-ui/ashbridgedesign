@@ -7,7 +7,7 @@ const minSnag = prices.snag[0].price;
 
 // Location data from postcodes.io (OS Open Names / ONS), fetched by tools/fetch-geo.mjs.
 const GEO = JSON.parse(readFileSync(new URL('../data/geo.json', import.meta.url), 'utf8'));
-const BASE = { lat: 52.4814, lon: -1.8998 }; // Birmingham city centre
+const BASE = { lat: 52.401655, lon: -1.8134027 }; // Shirley, Solihull (Google Business Profile)
 // Non-geographic districts (PO boxes, large users) that shouldn't be listed as areas.
 const NON_GEO = new Set(['W1A', 'NW1W', 'N1P', 'EC1P', 'EC2P', 'EC3P', 'EC4P', 'SE1P', 'E98', 'CR9', 'CR44', 'CR90', 'BN50', 'BN51', 'BN52', 'BN88', 'BN91', 'BN95', 'BN99', 'NE82', 'NE83', 'NE85', 'NE88', 'NE92', 'NE98', 'NE99', 'LS88', 'LS98', 'LS99', 'S95', 'S96', 'S97', 'S98', 'S99', 'BD97', 'BD98', 'BD99', 'B99', 'M60', 'M61', 'M99', 'WV98', 'WV99', 'DH98', 'DH99', 'L70', 'L80', 'NG70', 'NG80', 'NG90', 'LE87', 'LE94', 'LE95', 'CV35X', 'PO12X', 'SO97', 'BS80', 'BS98', 'BS99', 'IG6X', 'SM6X', 'NN99', 'MK77', 'SN38', 'SN99', 'OX4X', 'GU95', 'RG94', 'NR99', 'IP98', 'PE99', 'DE99', 'DN55', 'HU20X', 'YO90', 'YO91', 'CA95', 'L67', 'L68', 'L69', 'L71', 'L72', 'L73', 'L74', 'L75', 'M90']);
 const RAD = Math.PI / 180;
@@ -58,7 +58,7 @@ export function areaPages(areas) {
     title: 'Areas We Cover: All of England',
     description: `Extension design and new-build snagging across England. Based in ${site.base}, with in-person surveys across the West Midlands and qualified inspectors nationwide.`,
     trail: [['/areas/', 'Areas']],
-    body: `${pageHero({ trail: [['/areas/', 'Areas']], eyebrow: 'Coverage', h1: 'Based in Birmingham. Covering all of England.', lede: `Our lead engineer surveys and inspects in person across ${areas.filter((a) => a.inPerson).length} towns and cities around Birmingham. Everywhere else, qualified inspectors who belong to a recognised professional body for surveying, and our survey partners, work to the same standard, and every report is signed off by the lead engineer.` })}
+    body: `${pageHero({ trail: [['/areas/', 'Areas']], eyebrow: 'Coverage', h1: 'Based in Solihull. Covering Birmingham and all of England.', lede: `Our lead engineer surveys and inspects in person across ${areas.filter((a) => a.inPerson).length} towns and cities around Birmingham. Everywhere else, qualified inspectors who belong to a recognised professional body for surveying, and our survey partners, work to the same standard, and every report is signed off by the lead engineer.` })}
 <section class="section"><div class="wrap stack">
   <div class="grid-2">
     <div class="card"><span class="pill pill-amber">In person</span><h2 class="card-title">Birmingham &amp; surrounding area</h2><p class="small muted">The West Midlands plus Leicester, Derby, Nottingham, Hinckley, Loughborough, Northampton and Banbury.</p></div>
@@ -77,9 +77,10 @@ ${ctaBand()}`,
     out.push({
       path: `/areas/${r.slug}/`,
       title: `Extension Drawings & Snagging, ${r.name}`,
+      brandIfFits: true,
       description: `Extension design from ${gbp(single.s1)} and new-build snagging surveys from ${gbp(minSnag)} across ${r.name}. Engineer-led, fixed prices.`,
       trail,
-      body: `${pageHero({ trail, eyebrow: r.name, h1: `Extension design and snagging surveys across ${r.name}`, lede: inPersonCount ? `${inPersonCount} places in ${r.name} are covered in person by our Birmingham-based lead engineer.` : `Inspections across ${r.name} are carried out by qualified inspectors who belong to a recognised professional body for surveying, with every report checked by our lead engineer. Extension design is handled by our engineer, with measured surveys by local partners or 3D scan.`, ctas: '<a class="btn btn-amber" href="/contact/">Get a price</a><a class="btn btn-ghost" href="/snagging-prices/">Snagging prices</a>' })}
+      body: `${pageHero({ trail, eyebrow: r.name, h1: `Extension design and snagging surveys across ${r.name}`, lede: inPersonCount ? `${inPersonCount} places in ${r.name} are covered in person by our Solihull-based lead engineer.` : `Inspections across ${r.name} are carried out by qualified inspectors who belong to a recognised professional body for surveying, with every report checked by our lead engineer. Extension design is handled by our engineer, with measured surveys by local partners or 3D scan.`, ctas: '<a class="btn btn-amber" href="/contact/">Get a price</a><a class="btn btn-ghost" href="/snagging-prices/">Snagging prices</a>' })}
 <section class="section"><div class="wrap stack">
   <div class="table-wrap"><table><thead><tr><th>Place</th><th>Planning authority</th><th>Inspections</th></tr></thead><tbody>
   ${r.places.map((a) => `<tr><td>${link(a)}</td><td>${esc(a.planning_authority)}</td><td>${a.inPerson ? '<span class="pill pill-amber">In person</span>' : '<span class="pill pill-slate">Inspector network</span>'}</td></tr>`).join('')}
@@ -94,7 +95,7 @@ ${ctaBand()}`,
     const regionSlug = slug(a.region);
     const trail = [['/areas/', 'Areas'], [`/areas/${regionSlug}/`, a.region], [`/areas/${a.slug}/`, a.place]];
     const who = a.inPerson
-      ? `Our Birmingham-based lead engineer carries out inspections and measured surveys in ${esc(a.place)} in person.`
+      ? `Our Solihull-based lead engineer carries out inspections and measured surveys in ${esc(a.place)} in person.`
       : `Inspections in ${esc(a.place)} are carried out by a qualified inspector who is a member of a recognised professional body for surveying (such as RICS, CIOB or CABE) to our checklist, and every report is checked by our lead engineer before it reaches you. Design work is done by our engineer, working from a site visit arranged through a local partner or a 3D scan.`;
     const g = GEO[a.slug];
     const core = a.place.replace(/ \(.*\)/, '');
@@ -105,9 +106,11 @@ ${ctaBand()}`,
     const wards = g.wards.slice(0, 12);
     const fromBase = Math.round(miles(BASE, g));
     const county = g.county && !g.county.toLowerCase().includes(core.toLowerCase().split(' ')[0]) ? g.county : '';
-    const whereLine = a.slug === 'birmingham'
-      ? 'Birmingham is our home base, so projects across the city are surveyed and inspected in person by our lead engineer.'
-      : `${esc(core)} is${county ? ` in ${esc(county)},` : ''} about ${fromBase} miles ${direction(BASE, g)} of our Birmingham base as the crow flies. ${a.inPerson ? 'That puts it inside our in-person area: our lead engineer carries out surveys and inspections here in person.' : 'Inspections here are carried out through our England-wide inspector network, and design work is done by our engineer.'}`;
+    const whereLine = a.slug === 'solihull'
+      ? 'Solihull is our home base: we are in Shirley, so projects across the borough are surveyed and inspected in person by our lead engineer.'
+      : a.slug === 'birmingham'
+      ? 'We are based in Shirley, Solihull, next to south Birmingham, so projects across the city are surveyed and inspected in person by our lead engineer.'
+      : `${esc(core)} is${county ? ` in ${esc(county)},` : ''} about ${fromBase} miles ${direction(BASE, g)} of our Solihull base as the crow flies. ${a.inPerson ? 'That puts it inside our in-person area: our lead engineer carries out surveys and inspections here in person.' : 'Inspections here are carried out through our England-wide inspector network, and design work is done by our engineer.'}`;
     const sameCouncil = areas.filter((x) => x.planning_authority === a.planning_authority && x.slug !== a.slug);
     const kind = a.type === 'Borough' ? 'London borough' : a.type === 'City' ? 'city' : 'town';
     const planningNote = a.type === 'Borough'
@@ -116,23 +119,25 @@ ${ctaBand()}`,
     const faqs = [
       [`How much are extension drawings in ${a.place}?`, `Planning drawings for a single-storey extension start at ${gbp(single.s1)}, both stages at ${gbp(single.both)}, and the Complete package with structural calculations at ${gbp(single.complete)}. Council fees are paid to ${a.planning_authority}.`],
       [`How much is a snagging survey in ${a.place}?`, `From ${gbp(minSnag)} for a flat, ${gbp(prices.snag[2].price)} for a 3-bedroom house and ${gbp(prices.snag[4].price)} for 5 bedrooms.`],
-      ...(outcodes.length ? [[`Do you cover all ${core} postcodes?`, `Yes. We cover ${core} and the surrounding area, including the ${listJoin(outcodes)} postcode districts, as part of ${a.inPerson ? 'our in-person service from Birmingham' : 'our England-wide service'}.`]] : []),
+      ...(outcodes.length ? [[`Do you cover all ${core} postcodes?`, `Yes. We cover ${core} and the surrounding area, including the ${listJoin(outcodes)} postcode districts, as part of ${a.inPerson ? 'our in-person service' : 'our England-wide service'}.`]] : []),
       [`Who inspects homes in ${a.place}?`, a.inPerson ? 'Our lead engineer, in person.' : 'A qualified inspector who is a member of a recognised professional body for surveying, with the report checked and signed off by our lead engineer.'],
     ];
     out.push({
       path: `/areas/${a.slug}/`,
-      title: `Extension Drawings & Snagging, ${a.place.replace(/ \(.*\)/, '')}`,
-      description: `Engineer-led extension drawings from ${gbp(single.s1)} and new-build snagging surveys from ${gbp(minSnag)} in ${a.place}. ${a.inPerson ? 'In-person service from our Birmingham base.' : 'Covering all of England.'}`,
+      title: `Extension Drawings & Snagging, ${core}`,
+      brandIfFits: true,
+      description: `Engineer-led extension drawings from ${gbp(single.s1)} and new-build snagging surveys from ${gbp(minSnag)} in ${a.place}. ${a.inPerson ? 'In-person service from our Solihull base.' : 'Covering all of England.'}`,
       trail,
       noindex: !INDEX_ALL_TIERS && a.tier !== '1',
       ld: [faqLd(faqs), { '@context': 'https://schema.org', '@type': 'Service', name: `Extension design and snagging surveys in ${a.place}`, provider: { '@id': site.url + '/#business' }, areaServed: { '@type': a.type === 'Borough' ? 'AdministrativeArea' : 'City', name: core, geo: { '@type': 'GeoCoordinates', latitude: g.lat, longitude: g.lon } } }],
-      body: `${pageHero({ trail, eyebrow: `${a.place} · ${a.region}`, h1: `Extension drawings and snagging surveys in ${esc(a.place)}`, lede: `Engineer-led extension design, structural calculations and independent new-build inspections in ${esc(a.place)}. ${a.inPerson ? 'Covered in person from our Birmingham base.' : 'Part of our England-wide service.'}`, ctas: '<a class="btn btn-amber" href="/contact/">Get a price</a><a class="btn btn-slate" href="/snagging-prices/">Instant snagging price</a>' })}
+      body: `${pageHero({ trail, eyebrow: `${a.place} · ${a.region}`, h1: `Extension drawings and snagging surveys in ${esc(a.place)}`, lede: `Engineer-led extension design, structural calculations and independent new-build inspections in ${esc(a.place)}. ${a.inPerson ? 'Covered in person from our Solihull base.' : 'Part of our England-wide service.'}`, ctas: '<a class="btn btn-amber" href="/contact/">Get a price</a><a class="btn btn-slate" href="/snagging-prices/">Instant snagging price</a>' })}
 <section class="section"><div class="wrap grid-2">
   <div class="card card-door"><p class="eyebrow">Extensions in ${esc(a.place)}</p><h2>Planning, Building Regulations and structural calculations</h2>
     <p>Householder planning applications in the ${kind} of ${esc(a.place)} are decided by <strong>${esc(a.planning_authority)}</strong>. ${planningNote}</p>
     ${sameCouncil.length ? `<p class="small muted">${esc(a.planning_authority)} also handles planning for ${sameCouncil.map((x) => `<a href="/areas/${x.slug}/">${esc(x.place)}</a>`).join(', ')}.</p>` : ''}
     <p class="price-from">Planning drawings from <b>${gbp(single.s1)}</b></p>
-    <div class="btn-row"><a class="btn btn-amber" href="/extension-design-prices/">Design prices</a><a class="btn btn-ghost" href="/can-i-extend/">Can I extend?</a></div></div>
+    <div class="btn-row"><a class="btn btn-amber" href="/extension-design-prices/">Design prices</a><a class="btn btn-ghost" href="/can-i-extend/">Can I extend?</a></div>
+    <a class="more" href="/extension-design/">How our extension design service works</a></div>
   <div class="card card-door"><p class="eyebrow">New builds in ${esc(a.place)}</p><h2>Snagging and pre-completion inspections</h2>
     <p>${who}</p>
     <p>Buying from an NHQB-registered developer? You can request an independent pre-completion inspection. <a href="/pre-completion-inspection/#window">Check your window</a>.</p>

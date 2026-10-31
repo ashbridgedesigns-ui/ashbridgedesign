@@ -48,14 +48,14 @@ export const pages = [
   {
     path: '/',
     title: 'Ashbridge Design | Extension Drawings & Snagging Surveys',
-    description: `Engineer-led extension drawings from ${gbp(single.s1)}, in-house structural calculations and new-build snagging surveys from ${gbp(minSnag)}. Birmingham-based, covering England.`,
+    description: `Engineer-led extension drawings from ${gbp(single.s1)}, in-house structural calculations and new-build snagging surveys from ${gbp(minSnag)}. Based in Solihull, covering Birmingham and all of England.`,
     ld: [faqLd(designFaqs.slice(0, 2).concat(snagFaqs.slice(0, 2)))],
     body: `<section class="hero"><div class="wrap hero-grid">
   <div class="stack">
     <p class="hero-slogan">Design It Properly. <span class="accent">Inspect It Properly.</span></p>
     <h1>Engineer-led extension design and new-build inspections</h1>
     <p class="lede">Extension drawings, planning support, structural calculations and independent new-build inspections, all led by a civil engineer. Based in ${site.base}, covering all of England.</p>
-    <div class="btn-row"><a class="btn btn-amber" href="/extension-design/">Plan an extension</a><a class="btn btn-slate" href="/snagging-prices/">Book a snagging inspection</a></div>
+    <div class="btn-row"><a class="btn btn-amber" href="/extension-design/">Plan an extension</a><a class="btn btn-slate" href="/snagging-prices/">${site.depositLink ? 'Book' : 'Request'} a snagging inspection</a></div>
     ${waInline(`Questions? WhatsApp us on ${site.whatsappDisplay}`, 'home page')}
     <div class="trust"><span>Engineer-led · MSc Civil Engineering</span><span>15 years' experience</span><span>Fixed prices</span><span>Snag reports in 24 hours</span></div>
   </div>
@@ -121,7 +121,7 @@ ${engineerBand}
 </div></section>
 
 <section class="section section-white"><div class="wrap grid-2">
-  <div class="stack"><p class="eyebrow">Areas we cover</p><h2>Based in Birmingham, covering all of England</h2>
+  <div class="stack"><p class="eyebrow">Areas we cover</p><h2>Based in Solihull, covering Birmingham and all of England</h2>
   <p>Around Birmingham, the West Midlands and nearby towns, our lead engineer inspects and surveys in person. Across the rest of England, qualified inspectors who belong to a recognised professional body for surveying, and our survey partners, work to the same checklist, and every report and drawing set is signed off by the lead engineer.</p>
   <div class="btn-row"><a class="btn btn-ghost" href="/areas/">See all areas</a><a class="btn btn-ghost" href="/areas/birmingham/">Birmingham</a></div></div>
   <div class="stack"><h3>Common questions</h3>${faqHtml(designFaqs.slice(0, 2).concat(snagFaqs.slice(0, 2)))}</div>
@@ -300,7 +300,7 @@ ${ctaBand()}`,
   servicePage({
     path: '/new-build-snagging/',
     title: `New-build Snagging Surveys from ${gbp(minSnag)}, England-wide`,
-    description: `Independent new-build snagging surveys and pre-completion inspections from ${gbp(minSnag)}. Engineer-checked reports within 24 hours. Based in Birmingham, covering England.`,
+    description: `Independent new-build snagging surveys and pre-completion inspections from ${gbp(minSnag)}. Engineer-checked reports within 24 hours. Based in Solihull, covering England.`,
     trail: [['/new-build-snagging/', 'New-build Snagging']],
     eyebrow: 'New-build Snagging',
     h1: 'Independent new-build snagging surveys',
@@ -436,10 +436,10 @@ ${ctaBand()}`,
   {
     path: '/about/',
     title: 'About Ashbridge Design',
-    description: 'Ashbridge Design is an engineer-led practice based in Birmingham: extension design, structural calculations and new-build inspections across England.',
+    description: 'Ashbridge Design is an engineer-led practice based in Solihull: extension design, structural calculations and new-build inspections across England.',
     trail: [['/about/', 'About']],
     ld: [{ '@context': 'https://schema.org', '@type': 'AboutPage', name: 'About Ashbridge Design', url: site.url + '/about/', about: { '@id': site.url + '/#business' }, ...(founderLd ? { mainEntity: { '@id': founderLd['@id'] } } : {}) }, founderLd].filter(Boolean),
-    body: `${pageHero({ trail: [['/about/', 'About']], eyebrow: 'About', h1: 'An engineer, not a call centre', lede: 'Ashbridge Design is a Birmingham-based practice for two jobs that both come down to the same thing: a home that\'s built properly.' })}
+    body: `${pageHero({ trail: [['/about/', 'About']], eyebrow: 'About', h1: 'An engineer, not a call centre', lede: 'Ashbridge Design is a Solihull-based practice, serving Birmingham and beyond, for two jobs that both come down to the same thing: a home that\'s built properly.' })}
 <section class="section"><div class="wrap grid-2">
   <div class="prose">
     <h2 id="founder">${site.founderName ? esc(site.founderName) + ', ' + esc(site.founderRole.toLowerCase()) : 'Led by a civil engineer'}</h2>
