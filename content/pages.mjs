@@ -38,6 +38,7 @@ const snagFaqs = [
 ];
 
 const snagPriceFaqs = [
+  ['Are thermal imaging or drone checks included?', 'No. We do not currently offer them. Our inspection covers every room, the loft space and the outside.'],
   ['Why is the price based on bedrooms?', 'More bedrooms means more rooms, fittings and bathrooms to inspect, and a longer report. Pricing by bedrooms keeps it fixed and predictable.'],
   ['Is a pre-completion inspection the same price?', `Yes. Both before and after you move in costs the snagging price plus ${gbp(prices.preAndPost)}.`],
   ['Does the price change depending on the developer?', 'No. The price is the same whichever housebuilder built your home.'],
@@ -296,6 +297,46 @@ ${relatedGuides(['do-i-need-planning-permission-for-an-extension', 'planning-vs-
 ${ctaBand()}`,
   },
 
+  // ---------------- BIRMINGHAM SNAGGING ----------------
+  servicePage({
+    path: '/snagging-survey-birmingham/',
+    title: `Snagging Survey Birmingham from ${gbp(minSnag)}`,
+    description: `Independent snagging surveys and pre-completion inspections across Birmingham from ${gbp(minSnag)}, inspected in person by our lead engineer. Report within 24 hours.`,
+    trail: [['/new-build-snagging/', 'New-build Snagging'], ['/snagging-survey-birmingham/', 'Birmingham']],
+    eyebrow: 'Birmingham · New-build snagging',
+    h1: 'Snagging surveys in Birmingham',
+    lede: 'Buying or just moved into a new-build in Birmingham? Our lead engineer inspects it in person from our base in Shirley, Solihull, with a photographed report within 24 hours.',
+    ctas: `<a class="btn btn-amber" href="#quote">Get an instant price</a><a class="btn btn-ghost" href="/sample-snagging-report/">See a sample report</a>`,
+    intro: `<h2>Inspected in person, not passed on</h2><p>Across Birmingham, the person inspecting your home is our lead engineer, a civil engineer who also designs and calculates structures. We act only for buyers, never for developers.</p>
+<h2>Which inspection do you need?</h2>
+<ul class="ticks">
+<li><strong>Before completion:</strong> a <a href="/pre-completion-inspection/">pre-completion inspection</a>, if your developer is NHQB-registered. <a href="/pre-completion-inspection/#window">Check your window</a>.</li>
+<li><strong>After you move in:</strong> a snagging survey, ideally in the first few months.</li>
+<li><strong>Near the end of year two:</strong> a <a href="/two-year-warranty-inspection/">2-year warranty inspection</a>.</li>
+</ul>`,
+    includes: ['Inspection of every room, the loft space and the outside', 'Checks against Building Regulations and warranty-provider standards', 'Windows, doors, finishes, plumbing, heating, electrics (visual and functional)', 'Photographs with each snag located and graded', 'PDF report within 24 hours, ready to send to the developer'],
+    excludes: ['Opening up of concealed structures', 'Specialist gas or electrical safety certification', 'Thermal imaging and drone roof checks'],
+    faqs: [
+      ['How much is a snagging survey in Birmingham?', `From ${gbp(minSnag)} for a flat, ${gbp(prices.snag[2].price)} for a 3-bedroom house and ${gbp(prices.snag[4].price)} for 5 bedrooms. There is no travel charge in Birmingham.`],
+      ['How much does a re-inspection cost?', `${gbp(prices.reinspection)}. We return to check the developer's repairs against the original report, so each item is signed off properly.`],
+      ['Do you cover Sutton Coldfield and Langley?', 'Yes. Our lead engineer inspects across Sutton Coldfield, including new homes at Langley.'],
+      ['Who arranges access with the developer?', 'For pre-completion inspections, we confirm the access arrangements with the site team once you have your inspection window.'],
+    ],
+    guides: ['pre-completion-inspection-explained', 'new-build-snagging-checklist', 'what-happens-after-your-snagging-report'],
+    extra: `<section class="section-tight"><div class="wrap">${snagQuoteTool()}</div></section>
+<section class="section section-white"><div class="wrap narrow stack"><p class="eyebrow">Local knowledge</p><h2>New-build areas we inspect around Birmingham</h2>
+<ul class="ticks">
+<li><strong>Langley, Sutton Coldfield:</strong> about 5,500 homes approved near Walmley. <a href="/guides/langley-sutton-coldfield-new-build-guide/">Read the guide</a>.</li>
+<li><strong>Longbridge:</strong> new homes by several developers on the former car works site.</li>
+<li><strong>Frankley Park, Birmingham:</strong> listed by <a href="/developers/bloor-homes/">Bloor Homes</a>.</li>
+<li><strong>Lindridge Chase, Sutton Coldfield:</strong> listed by <a href="/developers/taylor-wimpey/">Taylor Wimpey</a>.</li>
+<li><strong>Lucas Green, Shirley:</strong> listed by <a href="/developers/bellway/">Bellway</a>.</li>
+<li><strong>Ashtree Grove, Hampton-in-Arden:</strong> listed by <a href="/developers/david-wilson-homes/">David Wilson Homes</a>.</li>
+</ul>
+<p class="small muted">Developments as listed on the builders' websites on 20 October 2026. Availability changes quickly. See also <a href="/areas/birmingham/">extension design and coverage in Birmingham</a>.</p></div></section>`,
+    offer: { name: 'New-build snagging survey in Birmingham', price: minSnag },
+  }),
+
   // ---------------- SNAGGING HUB ----------------
   servicePage({
     path: '/new-build-snagging/',
@@ -312,6 +353,7 @@ ${ctaBand()}`,
   <a class="card" href="/pre-completion-inspection/" style="text-decoration:none"><h3>Pre-completion inspection</h3><p class="small muted">Before you complete: the best time</p></a>
   <a class="card" href="/two-year-warranty-inspection/" style="text-decoration:none"><h3>2-year warranty inspection</h3><p class="small muted">Before the developer's liability ends</p></a>
 </div>
+<p><strong>In Birmingham?</strong> See <a href="/snagging-survey-birmingham/">snagging surveys in Birmingham</a>, inspected in person by our lead engineer.</p>
 <p><strong>Buying from Barratt, Persimmon, Taylor Wimpey or another major builder?</strong> <a href="/developers/">Check your housebuilder</a>: whether they're covered by the New Homes Quality Code, and from when.</p>`,
     includes: ['Inspection of every room, the loft space and the outside', 'Checks against Building Regulations and warranty-provider standards', 'Windows, doors, finishes, plumbing, heating, electrics (visual and functional)', 'Photographs with each snag located and graded', 'PDF report within 24 hours, ready to send to the developer', 'Every report checked by our lead engineer'],
     excludes: ['Opening up of concealed structures', 'Specialist gas or electrical safety certification'],

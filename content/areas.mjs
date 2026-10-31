@@ -21,7 +21,16 @@ const LOCAL = {
     notes: `<ul class="ticks">
 <li><strong>Langley, Sutton Coldfield:</strong> about 5,500 new homes approved near Walmley, one of the largest developments in the region. Read our <a href="/guides/langley-sutton-coldfield-new-build-guide/">Langley buyer's guide</a>.</li>
 <li><strong>Longbridge:</strong> new homes by several developers on the former car works site.</li>
-<li><strong>Extensions:</strong> Birmingham City Council decides householder applications, and parts of the city fall within conservation areas. We check your street before we design.</li>
+<li><strong>New-build inspections:</strong> see <a href="/snagging-survey-birmingham/">snagging surveys in Birmingham</a>.</li>
+<li><strong>Extensions:</strong> Birmingham City Council lists about 30 conservation areas. Householder Article 4 controls include Moseley, Bournville Village, Moor Pool in Harborne, Selly Park and part of Edgbaston, where even minor work can need permission. <a href="/guides/do-i-need-planning-permission-for-an-extension/">Check the rules</a>.</li>
+<li><strong>Costs:</strong> see our <a href="/guides/extension-drawings-total-cost/">Birmingham worked example</a>, including council and building control costs.</li>
+</ul>`,
+  },
+  solihull: {
+    notes: `<ul class="ticks">
+<li><strong>Our home base:</strong> we are in Shirley, so surveys and inspections across the borough are carried out in person by our lead engineer.</li>
+<li><strong>Extensions:</strong> Solihull Council lists 20 conservation areas, including Knowle, Solihull and White House Way. Some have Article 4 directions, so we check your exact address before we design. <a href="/guides/do-i-need-planning-permission-for-an-extension/">Check the rules</a>.</li>
+<li><strong>New builds:</strong> developments listed by builders on 20 October 2026 include Lucas Green in Shirley (<a href="/developers/bellway/">Bellway</a>) and Ashtree Grove in Hampton-in-Arden (<a href="/developers/david-wilson-homes/">David Wilson Homes</a>). Availability changes quickly.</li>
 </ul>`,
   },
 };
@@ -119,7 +128,7 @@ ${ctaBand()}`,
     const faqs = [
       [`How much are extension drawings in ${a.place}?`, `Planning drawings for a single-storey extension start at ${gbp(single.s1)}, both stages at ${gbp(single.both)}, and the Complete package with structural calculations at ${gbp(single.complete)}. Council fees are paid to ${a.planning_authority}.`],
       [`How much is a snagging survey in ${a.place}?`, `From ${gbp(minSnag)} for a flat, ${gbp(prices.snag[2].price)} for a 3-bedroom house and ${gbp(prices.snag[4].price)} for 5 bedrooms.`],
-      ...(outcodes.length ? [[`Do you cover all ${core} postcodes?`, `Yes. We cover ${core} and the surrounding area, including the ${listJoin(outcodes)} postcode districts, as part of ${a.inPerson ? 'our in-person service' : 'our England-wide service'}.`]] : []),
+      ...(outcodes.length ? [[`Do you cover all ${core} postcodes?`, `Yes. We cover all of ${core} and the surrounding area. Its postcode districts include ${listJoin(outcodes)}, as part of ${a.inPerson ? 'our in-person service' : 'our England-wide service'}.`]] : []),
       [`Who inspects homes in ${a.place}?`, a.inPerson ? 'Our lead engineer, in person.' : 'A qualified inspector who is a member of a recognised professional body for surveying, with the report checked and signed off by our lead engineer.'],
     ];
     out.push({
