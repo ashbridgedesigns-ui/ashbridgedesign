@@ -1,10 +1,11 @@
 import { gbp, esc, pageHero, ctaBand, founderLd } from '../lib/layout.mjs';
 import { titleCase } from '../lib/titlecase.mjs';
 import { prices, site } from '../lib/parts.mjs';
+import { seoGuides, seoGuideUpdates } from './seo-guides.mjs';
 
 const single = prices.design[0];
 
-const guides = [
+const originalGuides = [
   {
     slug: 'snagging-survey-cost',
     published: '2026-09-25', updated: '2026-09-25',
@@ -576,6 +577,11 @@ const guides = [
   },
 ];
 
+const guides = [
+  ...originalGuides.map((guide) => ({ ...guide, ...seoGuideUpdates[guide.slug] })),
+  ...seoGuides,
+];
+
 // Authoritative sources cited at the foot of each guide.
 const NHQB = ['New Homes Quality Board: the New Homes Quality Code', 'https://www.nhqb.org.uk/the-code/'];
 const NHQB_P2 = ['NHQB Code V2, Part 2: inspection and completion', 'https://www.nhqb.org.uk/the-code/part-2-legal-documents-information-inspection-completion/'];
@@ -683,45 +689,48 @@ export function relatedGuides(slugs, heading = 'Related guides') {
 const author = site.founderName
   ? `By <a href="/about/#founder">${esc(site.founderName)}</a>, ${esc(site.founderRole.toLowerCase())}${site.founderQualifications.length ? ` (${esc(site.founderQualifications[0])})` : ' (MSc Civil Engineering, 15 years\' experience)'}`
   : 'By <a href="/about/">Ashbridge Design</a> · Reviewed by our lead engineer (MSc Civil Engineering, 15 years\' experience)';
-const authorLd = founderLd ? { '@id': founderLd['@id'], '@type': 'Person', name: site.founderName, url: site.url + '/about/' } : { '@type': 'Organization', '@id': site.url + '/#business', name: site.name, url: site.url };
+const organizationAuthorLd = { '@type': 'Organization', '@id': site.url + '/#business', name: site.name, url: site.url };
+const authorLd = founderLd ? { '@id': founderLd['@id'], '@type': 'Person', name: site.founderName, url: site.url + '/about/' } : organizationAuthorLd;
 
 export function guidePages() {
   const card = (g) => `<a class="card" href="/guides/${g.slug}/" style="text-decoration:none"><h3 class="card-title">${g.title}</h3><p class="muted small">${g.summary}</p><span class="more">Read the guide</span></a>`;
   const index = {
     path: '/guides/',
     title: 'Guides: Extensions, Planning & New-build Snagging',
-    description: 'Plain-English guides to new-build snagging, pre-completion inspections, planning permission and Building Regulations in England, reviewed by an engineer.',
+    description: 'Practical guides to new-build snagging, pre-completion inspections, planning permission and Building Regulations in England, with sources and checklists.',
     trail: [['/guides/', 'Guides']],
     ld: [{ '@context': 'https://schema.org', '@type': 'CollectionPage', name: 'Ashbridge Design guides', url: site.url + '/guides/', hasPart: guides.map((g) => ({ '@type': 'Article', headline: titleCase(g.title), url: site.url + `/guides/${g.slug}/` })) }],
-    body: `${pageHero({ trail: [['/guides/', 'Guides']], eyebrow: 'Guides', h1: 'Plain-English guides', lede: 'The questions we get asked most, answered by an engineer, with the sources listed on every guide.' })}
-<section class="section"><div class="wrap stack"><h2>New-build snagging and inspections</h2><div class="grid-2">${guides.filter((g) => SNAGGING.has(g.slug)).map(card).join('')}</div></div></section>
-<section class="section section-white"><div class="wrap stack"><h2>Extensions, planning and Building Regulations</h2><div class="grid-2">${guides.filter((g) => !SNAGGING.has(g.slug)).map(card).join('')}</div></div></section>
+    body: `${pageHero({ trail: [['/guides/', 'Guides']], eyebrow: 'Guides', h1: 'Plain-English guides', lede: 'Practical answers for homeowners and new-build buyers, with sources listed on every guide.' })}
+<section class="section"><div class="wrap stack"><h2>New-build snagging and inspections</h2><div class="grid-2">${guides.filter((g) => g.category === 'snagging' || SNAGGING.has(g.slug)).map(card).join('')}</div></div></section>
+<section class="section section-white"><div class="wrap stack"><h2>Extensions, planning and Building Regulations</h2><div class="grid-2">${guides.filter((g) => g.category !== 'snagging' && !SNAGGING.has(g.slug)).map(card).join('')}</div></div></section>
 ${ctaBand()}`,
   };
   const pages = guides.map((g) => {
     const trail = [['/guides/', 'Guides'], [`/guides/${g.slug}/`, g.title]];
+    const sources = g.sources || SOURCES[g.slug] || [];
+    const byline = g.reviewed === false ? 'By <a href="/about/">Ashbridge Design</a>' : author;
     return {
       path: `/guides/${g.slug}/`,
-      title: g.title,
+      title: g.seoTitle || g.title,
       description: g.summary,
       trail,
       ld: [{
         '@context': 'https://schema.org', '@type': 'Article', headline: titleCase(g.title), description: g.summary,
         datePublished: g.published || PUBLISHED, dateModified: g.updated || UPDATED, inLanguage: 'en-GB',
         mainEntityOfPage: site.url + `/guides/${g.slug}/`,
-        author: authorLd,
-        ...(founderLd ? { reviewedBy: { '@id': founderLd['@id'] } } : {}),
+        author: g.reviewed === false ? organizationAuthorLd : authorLd,
+        ...(founderLd && g.reviewed !== false ? { reviewedBy: { '@id': founderLd['@id'] } } : {}),
         publisher: { '@type': 'Organization', '@id': site.url + '/#business', name: site.name, logo: { '@type': 'ImageObject', url: site.url + '/assets/logo.jpg' } },
-        citation: (SOURCES[g.slug] || []).map(([, u]) => u),
+        citation: sources.map(([, u]) => u),
       }],
       body: `${pageHero({ trail, eyebrow: 'Guide', h1: g.title, lede: g.summary })}
 <section class="section"><div class="wrap"><article class="prose">
-<p class="byline">${author} · Updated <time datetime="${g.updated || UPDATED}">${human(g.updated || UPDATED)}</time></p>
+<p class="byline">${byline} · Updated <time datetime="${g.updated || UPDATED}">${human(g.updated || UPDATED)}</time></p>
 ${g.body}
 ${NEXT_STEP[g.slug] ? `<p class="no-print"><a class="btn btn-amber" href="${NEXT_STEP[g.slug][0]}">${NEXT_STEP[g.slug][1]}</a></p>` : ''}
-${SOURCES[g.slug] ? `<h2>Sources</h2><ul class="sources">${SOURCES[g.slug].map(([l, u]) => `<li><a href="${u}" rel="noopener">${l}</a></li>`).join('')}</ul>` : ''}
+${sources.length ? `<h2>Sources</h2><ul class="sources">${sources.map(([l, u]) => `<li><a href="${u}" rel="noopener">${l}</a></li>`).join('')}</ul>` : ''}
 </article></div></section>
-${relatedGuides(RELATED[g.slug] || [])}
+${relatedGuides(g.related || RELATED[g.slug] || [])}
 ${ctaBand()}`,
     };
   });

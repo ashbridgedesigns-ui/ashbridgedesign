@@ -176,7 +176,7 @@ ${ctaBand()}`,
     includes: ['Measured survey of your property', 'Existing plans and elevations', 'Concept designs and options', 'Proposed plans, elevations and roof plan', 'Planning or Lawful Development Certificate submission', 'Managing the application and speaking with the planning officer', 'Changes requested by the planning department'],
     excludes: ['The council\'s application fee', 'Location and site plan (free when both stages are booked)'],
     faqs: designFaqs.slice(0, 3).concat([designFaqs[4]]),
-    guides: ['do-i-need-planning-permission-for-an-extension', 'planning-vs-building-regulations-drawings'],
+    guides: ['do-i-need-planning-permission-for-an-extension', 'planning-vs-building-regulations-drawings', 'what-drawings-are-needed-for-a-planning-application', 'how-much-do-planning-drawings-cost-for-an-extension'],
     offer: { name: 'Planning drawings', price: single.s1 },
   }),
 
@@ -194,7 +194,7 @@ ${ctaBand()}`,
     includes: ['Technical floor plans and sections', 'Technical elevations', 'Construction details: foundations, walls, roof, junctions', 'Specification notes to Approved Documents', 'Building control submission and management', 'Changes requested by building control'],
     excludes: ['Building control fees', 'Structural calculations (included in the Complete package)'],
     faqs: [['Do I need Building Regulations drawings if I have planning permission?', 'Yes. Planning covers what the extension looks like. Building Regulations cover how it\'s built, and apply to almost all extensions, lofts and garage conversions.'], designFaqs[1], designFaqs[4]],
-    guides: ['planning-vs-building-regulations-drawings', 'snagging-an-extension'],
+    guides: ['planning-vs-building-regulations-drawings', 'snagging-an-extension', 'what-is-included-in-building-regulations-drawings', 'building-notice-vs-full-plans-extension'],
     offer: { name: 'Building Regulations drawings', price: single.s2 },
   }),
 
@@ -216,7 +216,7 @@ ${prices.design.map((d) => `<tr><td>${d.name}, when booked with Stage 2</td><td 
     includes: ['Load take-down and beam sizing', 'Padstone and bearing checks', 'Lintel and connection details', 'Calculations and beam specification for building control', 'Answers to building control queries on the calculations'],
     excludes: ['Site supervision', 'Steel fabrication or installation'],
     faqs: [['Are the calculations suitable for building control?', 'They are prepared by a civil engineer (MSc) to the relevant design standards, for submission to building control. We answer any queries building control raises on them.'], ['How quickly can you turn them round?', 'Straightforward beam calculations are usually ready within 3–5 working days of receiving the measurements and photos.']],
-    guides: ['planning-vs-building-regulations-drawings', 'snagging-an-extension'],
+    guides: ['planning-vs-building-regulations-drawings', 'snagging-an-extension', 'steel-beam-calculations-for-removing-a-load-bearing-wall', 'do-i-need-a-structural-engineer-for-a-loft-conversion'],
     offer: { name: 'Structural calculations', price: prices.beamCalc },
   }),
 
@@ -360,7 +360,7 @@ ${ctaBand()}`,
     includes: ['Inspection of every room, the loft space and the outside', 'Checks against Building Regulations and warranty-provider standards', 'Windows, doors, finishes, plumbing, heating, electrics (visual and functional)', 'Photographs with each snag located and graded', 'PDF report within 24 hours, ready to send to the developer', 'Every report checked by our lead engineer'],
     excludes: ['Opening up of concealed structures', 'Specialist gas or electrical safety certification', 'Thermal imaging and drone roof checks'],
     faqs: snagFaqs,
-    guides: ['what-is-snagging', 'new-build-snagging-checklist', 'choosing-a-snagging-company', 'snagging-survey-cost'],
+    guides: ['what-is-snagging', 'new-build-snagging-checklist', 'choosing-a-snagging-company', 'snagging-survey-cost', 'snagging-survey-for-new-build-flats', 'how-to-prepare-for-a-snagging-survey'],
     extra: `<section class="section-tight"><div class="wrap">${snagQuoteTool()}</div></section>
 <section class="section section-white"><div class="wrap narrow stack"><p class="eyebrow">Standards we work to</p><h2>What our work is checked against</h2><ul class="ticks"><li><strong>Pre-completion inspections:</strong> carried out under the <a href="https://www.nhqb.org.uk/the-code/" rel="noopener">New Homes Quality Code</a>, using the NHQB Pre-Completion Inspection Checklist.</li><li><strong>Inspectors:</strong> as the Code requires, a member of a recognised professional body for surveying, with professional indemnity insurance, working within their competency.</li><li><strong>Defects:</strong> judged against the <a href="https://www.gov.uk/government/collections/approved-documents" rel="noopener">Building Regulations Approved Documents</a> and the technical standards of the home’s warranty provider.</li><li><strong>Reports:</strong> every snag photographed, located, graded and referenced, then checked by our lead engineer before it reaches you.</li></ul></div></section>`,
     offer: { name: 'New-build snagging survey', price: minSnag },
@@ -507,7 +507,7 @@ ${ctaBand()}`,
     <ul>
       <li><strong>Drawings and calculations:</strong> prepared to the Building Regulations Approved Documents for England and the relevant British Standards and Eurocodes, and signed off by the lead engineer.</li>
       <li><strong>Inspections:</strong> carried out to the NHQB Pre-Completion Inspection Checklist where the New Homes Quality Code applies, with defects judged against the warranty provider's technical standards.</li>
-      <li><strong>Guides:</strong> written from the primary sources (the Code, GOV.UK guidance, warranty providers) and reviewed by the lead engineer. Each guide lists its sources and the date it was last checked.</li>
+      <li><strong>Guides:</strong> based on primary sources including the Code, GOV.UK guidance and warranty providers. Each guide lists its sources, publication details and any completed engineer review.</li>
     </ul>
     <h3>What we promise</h3>
     <ul>

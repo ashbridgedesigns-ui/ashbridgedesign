@@ -4,8 +4,8 @@
   "date": "2026-10-31"
  },
  "/about/": {
-  "hash": "c35d71bc690d",
-  "date": "2026-10-31"
+  "hash": "39bd23afeadc",
+  "date": "2026-11-07"
  },
  "/areas/": {
   "hash": "6d85e5aabde3",
@@ -872,8 +872,8 @@
   "date": "2026-10-02"
  },
  "/building-regulations-drawings/": {
-  "hash": "00c858065d4c",
-  "date": "2026-10-20"
+  "hash": "556214519226",
+  "date": "2026-11-07"
  },
  "/can-i-extend/": {
   "hash": "3e62838d3045",
@@ -964,8 +964,20 @@
   "date": "2026-10-20"
  },
  "/guides/": {
-  "hash": "ea4790c3bacb",
-  "date": "2026-10-31"
+  "hash": "a7d13417c52b",
+  "date": "2026-11-07"
+ },
+ "/guides/build-over-agreement-extension/": {
+  "hash": "e49931912114",
+  "date": "2026-11-07"
+ },
+ "/guides/building-control-for-house-extensions-birmingham/": {
+  "hash": "cd8d6cf0be7d",
+  "date": "2026-11-07"
+ },
+ "/guides/building-notice-vs-full-plans-extension/": {
+  "hash": "984ad5088e08",
+  "date": "2026-11-07"
  },
  "/guides/can-i-do-my-own-pre-completion-inspection/": {
   "hash": "ee9ede9f343f",
@@ -975,21 +987,69 @@
   "hash": "310ae0bb85f9",
   "date": "2026-10-20"
  },
+ "/guides/do-i-need-a-structural-engineer-for-a-loft-conversion/": {
+  "hash": "de855bfb7107",
+  "date": "2026-11-07"
+ },
  "/guides/do-i-need-planning-permission-for-an-extension/": {
   "hash": "daba56480073",
   "date": "2026-10-31"
  },
+ "/guides/extension-drawings-for-conservation-areas-birmingham/": {
+  "hash": "620f7f9eb816",
+  "date": "2026-11-07"
+ },
  "/guides/extension-drawings-total-cost/": {
-  "hash": "fc88c488ca2c",
-  "date": "2026-10-31"
+  "hash": "c1795f79332c",
+  "date": "2026-11-07"
+ },
+ "/guides/extension-planning-permission-refused/": {
+  "hash": "42e03c93eec6",
+  "date": "2026-11-07"
+ },
+ "/guides/garage-conversion-building-regulations-drawings/": {
+  "hash": "5de4a2c6f02f",
+  "date": "2026-11-07"
+ },
+ "/guides/how-much-do-planning-drawings-cost-for-an-extension/": {
+  "hash": "82a28a7df94c",
+  "date": "2026-11-07"
  },
  "/guides/how-to-compare-extension-drawing-quotes/": {
-  "hash": "df583000e6b6",
-  "date": "2026-10-31"
+  "hash": "168428732fe7",
+  "date": "2026-11-07"
+ },
+ "/guides/how-to-prepare-for-a-snagging-survey/": {
+  "hash": "6bea617e6d67",
+  "date": "2026-11-07"
  },
  "/guides/langley-sutton-coldfield-new-build-guide/": {
   "hash": "ec3022c5a429",
   "date": "2026-10-20"
+ },
+ "/guides/lawful-development-certificate-house-extension/": {
+  "hash": "a72fc9177180",
+  "date": "2026-11-07"
+ },
+ "/guides/measured-survey-for-house-extension/": {
+  "hash": "1657a0c83047",
+  "date": "2026-11-07"
+ },
+ "/guides/new-build-garden-drainage-snagging/": {
+  "hash": "68eb7a8c45f8",
+  "date": "2026-11-07"
+ },
+ "/guides/new-build-handover-checklist-solihull/": {
+  "hash": "cc0319375e24",
+  "date": "2026-11-07"
+ },
+ "/guides/new-build-loft-insulation-snagging/": {
+  "hash": "b82edb585ad7",
+  "date": "2026-11-07"
+ },
+ "/guides/new-build-snagging-before-flooring-is-fitted/": {
+  "hash": "92dabda62107",
+  "date": "2026-11-07"
  },
  "/guides/new-build-snagging-checklist/": {
   "hash": "618b80995960",
@@ -999,9 +1059,25 @@
   "hash": "a58ce8a25fab",
   "date": "2026-10-31"
  },
+ "/guides/new-build-window-and-door-snagging/": {
+  "hash": "eaed251974d8",
+  "date": "2026-11-07"
+ },
  "/guides/party-wall-agreements-for-extensions/": {
   "hash": "784dca309594",
   "date": "2026-10-31"
+ },
+ "/guides/permitted-development-on-new-build-estates-solihull/": {
+  "hash": "a2c1737d4342",
+  "date": "2026-11-07"
+ },
+ "/guides/planning-permission-for-garage-conversion-solihull/": {
+  "hash": "74f955bd558f",
+  "date": "2026-11-07"
+ },
+ "/guides/planning-permission-side-return-extension/": {
+  "hash": "4aeac361ef4d",
+  "date": "2026-11-07"
  },
  "/guides/planning-vs-building-regulations-drawings/": {
   "hash": "8a126297aec8",
@@ -1011,13 +1087,49 @@
   "hash": "5a3c7ed007ce",
   "date": "2026-10-31"
  },
+ "/guides/pre-completion-inspection-sutton-coldfield/": {
+  "hash": "a3e5ea91bb1e",
+  "date": "2026-11-07"
+ },
+ "/guides/rear-extension-planning-permission-coventry/": {
+  "hash": "a0e525651ea1",
+  "date": "2026-11-07"
+ },
+ "/guides/shared-ownership-new-build-snagging/": {
+  "hash": "fde798110a33",
+  "date": "2026-11-07"
+ },
  "/guides/snagging-an-extension/": {
   "hash": "6cc4143f893b",
   "date": "2026-10-20"
  },
+ "/guides/snagging-reinspection-after-repairs/": {
+  "hash": "e13c0b62a26d",
+  "date": "2026-11-07"
+ },
  "/guides/snagging-survey-cost/": {
   "hash": "eaa5832d0fb9",
   "date": "2026-10-31"
+ },
+ "/guides/snagging-survey-for-new-build-flats/": {
+  "hash": "c8d7ec441e8f",
+  "date": "2026-11-07"
+ },
+ "/guides/solihull-house-extension-planning-application-checklist/": {
+  "hash": "fe6c4a76e08a",
+  "date": "2026-11-07"
+ },
+ "/guides/steel-beam-calculations-for-removing-a-load-bearing-wall/": {
+  "hash": "a4ffcb16b931",
+  "date": "2026-11-07"
+ },
+ "/guides/what-drawings-are-needed-for-a-planning-application/": {
+  "hash": "3ac6a362f955",
+  "date": "2026-11-07"
+ },
+ "/guides/what-drawings-does-a-builder-need-to-quote-for-an-extension/": {
+  "hash": "325abfaa9196",
+  "date": "2026-11-07"
  },
  "/guides/what-happens-after-your-snagging-report/": {
   "hash": "2f9ab43630de",
@@ -1026,6 +1138,10 @@
  "/guides/what-is-a-snagging-survey/": {
   "hash": "36aef66aeb3a",
   "date": "2026-10-20"
+ },
+ "/guides/what-is-included-in-building-regulations-drawings/": {
+  "hash": "9e57c7a32803",
+  "date": "2026-11-07"
  },
  "/guides/what-is-snagging/": {
   "hash": "2c5603452b8b",
@@ -1040,12 +1156,12 @@
   "date": "2026-10-20"
  },
  "/new-build-snagging/": {
-  "hash": "c6597110f8c1",
-  "date": "2026-10-31"
+  "hash": "cc5c3aeab125",
+  "date": "2026-11-07"
  },
  "/planning-drawings/": {
-  "hash": "00872393e6bd",
-  "date": "2026-10-20"
+  "hash": "55191c91b7aa",
+  "date": "2026-11-07"
  },
  "/pre-completion-inspection/": {
   "hash": "12b3ced2e6cc",
@@ -1072,8 +1188,8 @@
   "date": "2026-10-31"
  },
  "/structural-calculations/": {
-  "hash": "72d7e7fc7e50",
-  "date": "2026-10-20"
+  "hash": "b76e48136253",
+  "date": "2026-11-07"
  },
  "/thank-you/": {
   "hash": "375a74ac5dfe",
