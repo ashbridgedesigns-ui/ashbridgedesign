@@ -1,7 +1,7 @@
 {
  "/": {
-  "hash": "69c34c468bc4",
-  "date": "2026-10-31"
+  "hash": "04a5355c59f1",
+  "date": "2026-11-18"
  },
  "/about/": {
   "hash": "39bd23afeadc",
@@ -16,8 +16,8 @@
   "date": "2026-10-31"
  },
  "/areas/andover/": {
-  "hash": "48fc77deb645",
-  "date": "2026-10-31"
+  "hash": "9af8b9ea30fa",
+  "date": "2026-11-18"
  },
  "/areas/ashford/": {
   "hash": "54814c2f6aa5",
@@ -80,8 +80,8 @@
   "date": "2026-10-31"
  },
  "/areas/birmingham/": {
-  "hash": "b8a07e7b123a",
-  "date": "2026-10-31"
+  "hash": "97cf58fc4b39",
+  "date": "2026-11-18"
  },
  "/areas/blackburn/": {
   "hash": "635c195d4285",
@@ -212,8 +212,8 @@
   "date": "2026-10-31"
  },
  "/areas/coventry/": {
-  "hash": "0e8bfd5cfdcc",
-  "date": "2026-10-31"
+  "hash": "788f9ebcf316",
+  "date": "2026-11-18"
  },
  "/areas/cramlington/": {
   "hash": "5209233a3654",
@@ -412,8 +412,8 @@
   "date": "2026-10-31"
  },
  "/areas/hull/": {
-  "hash": "bc491cc0f57b",
-  "date": "2026-10-31"
+  "hash": "18eb15240ffa",
+  "date": "2026-11-18"
  },
  "/areas/huntingdon/": {
   "hash": "9398d7d415f4",
@@ -672,8 +672,8 @@
   "date": "2026-10-31"
  },
  "/areas/solihull/": {
-  "hash": "0c2e36a1e875",
-  "date": "2026-10-31"
+  "hash": "40029589bbc0",
+  "date": "2026-11-18"
  },
  "/areas/south-east/": {
   "hash": "c03e3fec14fa",
@@ -740,8 +740,8 @@
   "date": "2026-10-31"
  },
  "/areas/sutton/": {
-  "hash": "dfe4b7928022",
-  "date": "2026-10-31"
+  "hash": "4e3a047792dd",
+  "date": "2026-11-18"
  },
  "/areas/swindon/": {
   "hash": "9bae7d422b12",
@@ -876,8 +876,8 @@
   "date": "2026-11-07"
  },
  "/can-i-extend/": {
-  "hash": "3e62838d3045",
-  "date": "2026-10-20"
+  "hash": "b3df786335a3",
+  "date": "2026-11-18"
  },
  "/contact/": {
   "hash": "b933151e8a85",
@@ -888,84 +888,84 @@
   "date": "2026-10-20"
  },
  "/developers/avant-homes/": {
-  "hash": "99afc129144d",
-  "date": "2026-10-20"
+  "hash": "de18d2bb049c",
+  "date": "2026-11-18"
  },
  "/developers/barratt-homes/": {
-  "hash": "7215103bce5e",
-  "date": "2026-10-20"
+  "hash": "172783fe285a",
+  "date": "2026-11-18"
  },
  "/developers/bellway/": {
-  "hash": "936f77787c2a",
-  "date": "2026-10-20"
+  "hash": "54d20ce0d82a",
+  "date": "2026-11-18"
  },
  "/developers/bloor-homes/": {
-  "hash": "034798d9d9a5",
-  "date": "2026-10-20"
+  "hash": "e1b8d76695d6",
+  "date": "2026-11-18"
  },
  "/developers/bovis-homes/": {
-  "hash": "bb7d071f33df",
-  "date": "2026-10-20"
+  "hash": "1839770cb5c6",
+  "date": "2026-11-18"
  },
  "/developers/cala-homes/": {
-  "hash": "507446f850b9",
-  "date": "2026-10-20"
+  "hash": "8b1a06f98ebe",
+  "date": "2026-11-18"
  },
  "/developers/charles-church/": {
-  "hash": "2dd74515719c",
-  "date": "2026-10-20"
+  "hash": "ef20047f0d86",
+  "date": "2026-11-18"
  },
  "/developers/countryside-homes/": {
-  "hash": "07a7f537bfdc",
-  "date": "2026-10-20"
+  "hash": "186396616930",
+  "date": "2026-11-18"
  },
  "/developers/crest-nicholson/": {
-  "hash": "760d27aa81da",
-  "date": "2026-10-20"
+  "hash": "924882303354",
+  "date": "2026-11-18"
  },
  "/developers/david-wilson-homes/": {
-  "hash": "72a275ea8516",
-  "date": "2026-10-20"
+  "hash": "1ae66ad4619b",
+  "date": "2026-11-18"
  },
  "/developers/keepmoat/": {
-  "hash": "6227c4d2148e",
-  "date": "2026-10-20"
+  "hash": "724dd3087e10",
+  "date": "2026-11-18"
  },
  "/developers/linden-homes/": {
-  "hash": "1bcb8ba46e83",
-  "date": "2026-10-20"
+  "hash": "7ccf6f12e47d",
+  "date": "2026-11-18"
  },
  "/developers/miller-homes/": {
-  "hash": "c234c73f04c7",
-  "date": "2026-10-20"
+  "hash": "7e5da154f03f",
+  "date": "2026-11-18"
  },
  "/developers/persimmon-homes/": {
-  "hash": "ad294b783800",
-  "date": "2026-10-20"
+  "hash": "04b75e528b34",
+  "date": "2026-11-18"
  },
  "/developers/redrow/": {
-  "hash": "953496bdfa99",
-  "date": "2026-10-20"
+  "hash": "a9e0784e0f0b",
+  "date": "2026-11-18"
  },
  "/developers/taylor-wimpey/": {
-  "hash": "90102394eb78",
-  "date": "2026-10-20"
+  "hash": "e83024977cdc",
+  "date": "2026-11-18"
  },
  "/extension-design-prices/": {
   "hash": "b3f245856449",
   "date": "2026-10-02"
  },
  "/extension-design/": {
-  "hash": "b3079e171d3e",
-  "date": "2026-10-20"
+  "hash": "294ba341347b",
+  "date": "2026-11-18"
  },
  "/garage-conversion-drawings/": {
-  "hash": "52ba3931bf4c",
-  "date": "2026-10-20"
+  "hash": "b79348584ff3",
+  "date": "2026-11-18"
  },
  "/guides/": {
-  "hash": "a7d13417c52b",
-  "date": "2026-11-07"
+  "hash": "c5f2590a0bb4",
+  "date": "2026-11-18"
  },
  "/guides/build-over-agreement-extension/": {
   "hash": "e49931912114",
@@ -982,6 +982,10 @@
  "/guides/can-i-do-my-own-pre-completion-inspection/": {
   "hash": "ee9ede9f343f",
   "date": "2026-10-20"
+ },
+ "/guides/can-i-extend-my-garage/": {
+  "hash": "9cad111e6575",
+  "date": "2026-11-18"
  },
  "/guides/choosing-a-snagging-company/": {
   "hash": "310ae0bb85f9",
@@ -1000,8 +1004,8 @@
   "date": "2026-11-07"
  },
  "/guides/extension-drawings-total-cost/": {
-  "hash": "c1795f79332c",
-  "date": "2026-11-07"
+  "hash": "9226de3b5360",
+  "date": "2026-11-18"
  },
  "/guides/extension-planning-permission-refused/": {
   "hash": "42e03c93eec6",
@@ -1010,6 +1014,10 @@
  "/guides/garage-conversion-building-regulations-drawings/": {
   "hash": "5de4a2c6f02f",
   "date": "2026-11-07"
+ },
+ "/guides/hbf-star-ratings-2026-housebuilders-ranked/": {
+  "hash": "6879c3a140da",
+  "date": "2026-11-18"
  },
  "/guides/how-much-do-planning-drawings-cost-for-an-extension/": {
   "hash": "82a28a7df94c",
@@ -1056,20 +1064,24 @@
   "date": "2026-10-31"
  },
  "/guides/new-build-warranty-first-two-years/": {
-  "hash": "a58ce8a25fab",
-  "date": "2026-10-31"
+  "hash": "564e7a8db251",
+  "date": "2026-11-18"
  },
  "/guides/new-build-window-and-door-snagging/": {
   "hash": "eaed251974d8",
   "date": "2026-11-07"
  },
  "/guides/party-wall-agreements-for-extensions/": {
-  "hash": "784dca309594",
-  "date": "2026-10-31"
+  "hash": "95b1332ab16c",
+  "date": "2026-11-18"
  },
  "/guides/permitted-development-on-new-build-estates-solihull/": {
   "hash": "a2c1737d4342",
   "date": "2026-11-07"
+ },
+ "/guides/planning-application-fees-december-2026/": {
+  "hash": "c1505449d0ef",
+  "date": "2026-11-18"
  },
  "/guides/planning-permission-for-garage-conversion-solihull/": {
   "hash": "74f955bd558f",
@@ -1091,6 +1103,10 @@
   "hash": "a3e5ea91bb1e",
   "date": "2026-11-07"
  },
+ "/guides/professional-consultants-certificate-new-build/": {
+  "hash": "3900acdabc75",
+  "date": "2026-11-18"
+ },
  "/guides/rear-extension-planning-permission-coventry/": {
   "hash": "a0e525651ea1",
   "date": "2026-11-07"
@@ -1108,8 +1124,8 @@
   "date": "2026-11-07"
  },
  "/guides/snagging-survey-cost/": {
-  "hash": "eaa5832d0fb9",
-  "date": "2026-10-31"
+  "hash": "e4f962883b55",
+  "date": "2026-11-18"
  },
  "/guides/snagging-survey-for-new-build-flats/": {
   "hash": "c8d7ec441e8f",
@@ -1148,16 +1164,16 @@
   "date": "2026-10-20"
  },
  "/guides/when-do-you-need-structural-calculations/": {
-  "hash": "b3a4f24b1c17",
-  "date": "2026-10-31"
+  "hash": "79f96d5e4154",
+  "date": "2026-11-18"
  },
  "/loft-conversion-drawings/": {
   "hash": "1eaf2abf8393",
   "date": "2026-10-20"
  },
  "/new-build-snagging/": {
-  "hash": "cc5c3aeab125",
-  "date": "2026-11-07"
+  "hash": "11eaf35a2e0e",
+  "date": "2026-11-18"
  },
  "/planning-drawings/": {
   "hash": "55191c91b7aa",
@@ -1196,7 +1212,7 @@
   "date": "2026-10-02"
  },
  "/two-year-warranty-inspection/": {
-  "hash": "b3c5f9fb5f87",
-  "date": "2026-10-31"
+  "hash": "23675ba72593",
+  "date": "2026-11-18"
  }
 }

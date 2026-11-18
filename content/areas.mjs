@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { gbp, esc, slug, pageHero, ctaBand, faqHtml, faqLd } from '../lib/layout.mjs';
 import { site, prices } from '../lib/parts.mjs';
+import { relatedGuides, guideSlugs } from './guides.mjs';
 
 const single = prices.design[0];
 const minSnag = prices.snag[0].price;
@@ -164,6 +165,7 @@ ${LOCAL[a.slug] ? `<section class="section section-white"><div class="wrap narro
   <div class="stack"><h3>Nearest places we cover</h3><ul class="area-list" style="columns:2 180px">${nearby.map(({ x, d }) => `<li>${link(x)}<span>${Math.max(1, Math.round(d))} miles</span></li>`).join('')}</ul><a class="more" href="/areas/${regionSlug}/">All of ${a.region}</a></div>
 </div></section>
 <section class="section"><div class="wrap narrow stack"><h2>${esc(core)} questions</h2>${faqHtml(faqs)}</div></section>
+${relatedGuides(guideSlugs((x) => x.slug.includes(a.slug) || (a.slug === 'birmingham' && /sutton-coldfield|langley/.test(x.slug))), `Guides for ${esc(core)}`)}
 ${ctaBand()}`,
     });
   }

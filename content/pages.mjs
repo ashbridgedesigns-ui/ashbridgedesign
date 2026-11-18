@@ -1,5 +1,5 @@
 import { gbp, esc, pageHero, ctaBand, faqHtml, faqLd, tel, waInline, founderLd } from '../lib/layout.mjs';
-import { relatedGuides } from './guides.mjs';
+import { relatedGuides, guideSlugs } from './guides.mjs';
 import { site, prices, heroArt, inspectArt, snagQuoteTool, designQuoteTool, pciTool, canExtendTool, designPriceTable, snagPriceTable, engineerBand, bookLine } from '../lib/parts.mjs';
 
 const single = prices.design[0];
@@ -51,7 +51,7 @@ export const pages = [
   {
     path: '/',
     title: 'Ashbridge Design | Extension Drawings & Snagging Surveys',
-    description: `Engineer-led extension drawings from ${gbp(single.s1)}, in-house structural calculations and new-build snagging surveys from ${gbp(minSnag)}. Based in Solihull, covering Birmingham and all of England.`,
+    description: `Engineer-led extension drawings from ${gbp(single.s1)}, in-house structural calculations and new-build snagging surveys from ${gbp(minSnag)}. Based in Solihull, covering England.`,
     ld: [faqLd(designFaqs.slice(0, 2).concat(snagFaqs.slice(0, 2)))],
     body: `<section class="hero"><div class="wrap hero-grid">
   <div class="stack">
@@ -155,7 +155,7 @@ ${ctaBand()}`,
     includes: ['Measured survey of your home', 'Planning history and council policy check', 'Design options and concept drawings', 'Planning or Lawful Development Certificate drawings, submission and management', 'Building Regulations technical drawings and specification', 'Structural calculations in-house (Complete package)', 'Free planning resubmission when both stages are booked', 'Free location and site plan when both stages are booked'],
     excludes: ['Council planning and building control fees', 'Party wall surveyor, if your project needs one', 'Topographical or drainage surveys, if needed'],
     faqs: designFaqs,
-    guides: ['do-i-need-planning-permission-for-an-extension', 'planning-vs-building-regulations-drawings', 'snagging-an-extension'],
+    guides: guideSlugs('design'),
     extra: `<section class="section-tight"><div class="wrap">${designQuoteTool()}</div></section>
 <section class="section section-white"><div class="wrap narrow stack"><p class="eyebrow">Standards we work to</p><h2>What our work is checked against</h2><ul class="ticks"><li><strong>Planning:</strong> your council’s local plan and design guidance, and the national rules on <a href="https://www.gov.uk/government/publications/permitted-development-rights-for-householders-technical-guidance" rel="noopener">permitted development for householders</a>.</li><li><strong>Building Regulations:</strong> technical drawings and specifications prepared to the <a href="https://www.gov.uk/government/collections/approved-documents" rel="noopener">Approved Documents</a> for England.</li><li><strong>Structural calculations:</strong> prepared by a civil engineer (MSc) to the relevant British Standards and Eurocodes, for building control approval.</li><li><strong>Honest titles:</strong> we are an engineer-led design practice, not architects. “Architect” is a title protected by the <a href="https://arb.org.uk/" rel="noopener">Architects Registration Board</a>.</li></ul></div></section>`,
     offer: { name: 'Extension design', price: single.s1 },
@@ -255,7 +255,7 @@ ${prices.design.map((d) => `<tr><td>${d.name}, when booked with Stage 2</td><td 
     faqs: [['Do I need planning permission to convert my garage?', 'Often not, if the work is internal and the house still has its permitted development rights. On many newer estates a planning condition keeps the garage for parking, so we check your planning history first and apply for a Lawful Development Certificate or planning permission as needed.'],
       ['Do I need Building Regulations approval?', 'Yes. Converting a garage into a habitable room needs Building Regulations approval for the new wall and its foundation, insulation of the floor, walls and roof, ventilation, fire safety and escape.'],
       ['Can the new front wall sit on the old garage foundations?', 'Sometimes, but not always: the existing slab and footings often weren\'t designed to carry a wall. We check what\'s there and design the foundation detail so building control can approve it.']],
-    guides: ['do-i-need-planning-permission-for-an-extension', 'planning-vs-building-regulations-drawings'],
+    guides: ['do-i-need-planning-permission-for-an-extension', 'can-i-extend-my-garage', 'planning-vs-building-regulations-drawings'],
     offer: { name: 'Garage conversion drawings', price: prices.design[3].s1 },
   }),
 
@@ -295,7 +295,7 @@ ${ctaBand()}`,
   <p>Even when a project is permitted development, a <strong>Lawful Development Certificate</strong> is worth getting. It proves the work was lawful when you come to sell, and Building Regulations approval is still needed.</p>
   <p>We check your property's planning history and local restrictions as part of every quote. <a href="/contact/?service=Extension%20design">Send us your address and idea</a>.</p>
 </div></section>
-${relatedGuides(['do-i-need-planning-permission-for-an-extension', 'planning-vs-building-regulations-drawings'])}
+${relatedGuides(['do-i-need-planning-permission-for-an-extension', 'can-i-extend-my-garage', 'planning-vs-building-regulations-drawings'])}
 ${ctaBand()}`,
   },
 
@@ -360,7 +360,7 @@ ${ctaBand()}`,
     includes: ['Inspection of every room, the loft space and the outside', 'Checks against Building Regulations and warranty-provider standards', 'Windows, doors, finishes, plumbing, heating, electrics (visual and functional)', 'Photographs with each snag located and graded', 'PDF report within 24 hours, ready to send to the developer', 'Every report checked by our lead engineer'],
     excludes: ['Opening up of concealed structures', 'Specialist gas or electrical safety certification', 'Thermal imaging and drone roof checks'],
     faqs: snagFaqs,
-    guides: ['what-is-snagging', 'new-build-snagging-checklist', 'choosing-a-snagging-company', 'snagging-survey-cost', 'snagging-survey-for-new-build-flats', 'how-to-prepare-for-a-snagging-survey'],
+    guides: guideSlugs('snagging'),
     extra: `<section class="section-tight"><div class="wrap">${snagQuoteTool()}</div></section>
 <section class="section section-white"><div class="wrap narrow stack"><p class="eyebrow">Standards we work to</p><h2>What our work is checked against</h2><ul class="ticks"><li><strong>Pre-completion inspections:</strong> carried out under the <a href="https://www.nhqb.org.uk/the-code/" rel="noopener">New Homes Quality Code</a>, using the NHQB Pre-Completion Inspection Checklist.</li><li><strong>Inspectors:</strong> as the Code requires, a member of a recognised professional body for surveying, with professional indemnity insurance, working within their competency.</li><li><strong>Defects:</strong> judged against the <a href="https://www.gov.uk/government/collections/approved-documents" rel="noopener">Building Regulations Approved Documents</a> and the technical standards of the home’s warranty provider.</li><li><strong>Reports:</strong> every snag photographed, located, graded and referenced, then checked by our lead engineer before it reaches you.</li></ul></div></section>`,
     offer: { name: 'New-build snagging survey', price: minSnag },
@@ -430,7 +430,7 @@ ${ctaBand()}`,
 </div></section>`,
     faqs: [['Is the developer still responsible after two years?', 'Usually only for structural problems. Under most new-home warranties, such as NHBC Buildmark, the builder must fix defects in the first two years; from years three to ten the cover is mainly structural, and only where damage has occurred.'],
       ['I didn\'t have a snagging survey when I moved in. Is it too late?', 'No. A 2-year inspection covers the whole home, inside and out, not just items from an earlier report.']],
-    guides: ['new-build-warranty-first-two-years', 'what-happens-after-your-snagging-report'],
+    guides: ['new-build-warranty-first-two-years', 'what-happens-after-your-snagging-report', 'professional-consultants-certificate-new-build'],
     offer: { name: '2-year warranty inspection', price: prices.warranty },
   }),
 

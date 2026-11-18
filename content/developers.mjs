@@ -225,8 +225,8 @@ ${ctaBand()}`,
     ];
     out.push({
       path: `/developers/${d.slug}/`,
-      title: `${d.brand} Snagging Inspections`,
-      description: `Buying ${withArticle(d.short || d.brand)} home? Engineer-checked snagging and pre-completion inspections from ${gbp(minSnag)}. On the NHQB register from ${since}.`,
+      title: `${d.brand} Snagging Survey: Rating, Warranty & Inspections`,
+      description: `Buying ${withArticle(d.short || d.brand)} home? ${d.facts?.hbf ? `HBF ${d.facts.hbf.stars}-star (${d.facts.hbf.year}). ` : ''}Warranty, after-sales contacts and engineer-checked snagging from ${gbp(minSnag)}.`,
       trail,
       ld: [faqLd(faqs), { '@context': 'https://schema.org', '@type': 'Service', name: `Snagging and pre-completion inspections for ${d.short || d.brand} homes`, serviceType: 'New-build snagging inspection', provider: { '@id': site.url + '/#business' }, areaServed: { '@type': 'Country', name: 'England' }, offers: { '@type': 'Offer', price: minSnag, priceCurrency: 'GBP' } }],
       body: `${pageHero({ trail, eyebrow: `${d.brand} · New-build inspections`, h1: `${esc(d.brand)} snagging survey and pre-completion inspection`, lede: `Buying a new ${esc(d.short || d.brand)} home? Get it independently inspected before you complete, with an engineer-checked report within 24 hours. From ${gbp(minSnag)}, anywhere in England.`, ctas: '<a class="btn btn-amber" href="/snagging-prices/">Get an instant price</a><a class="btn btn-ghost" href="/sample-snagging-report/">See a sample report</a>' })}
@@ -265,7 +265,7 @@ ${factsSection(d)}
 <section class="section section-white"><div class="wrap narrow stack"><h2>${esc(d.brand)} inspection questions</h2>${faqHtml(faqs)}
   <p class="small muted">Ashbridge Design is independent and not affiliated with ${esc(d.brand)}${d.group ? ` or ${esc(d.group)}` : ''}. The name is used only to identify the developer. <a href="/developers/">Other housebuilders</a>.</p>
 </div></section>
-${relatedGuides(['pre-completion-inspection-explained', 'new-build-snagging-checklist', 'what-happens-after-your-snagging-report'])}
+${relatedGuides(['hbf-star-ratings-2026-housebuilders-ranked', 'pre-completion-inspection-explained', 'new-build-warranty-first-two-years', 'what-happens-after-your-snagging-report'])}
 ${ctaBand()}`,
     });
   }
