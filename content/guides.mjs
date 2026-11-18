@@ -4,15 +4,27 @@ import { prices, site } from '../lib/parts.mjs';
 import { seoGuides, seoGuideUpdates } from './seo-guides.mjs';
 
 const single = prices.design[0];
+// HBF 2026 star rating results (survey year Oct 2024 to Sept 2025): [builder, sample surveyed, composite score], ranked.
+const HBF_2026_TABLE = [["Riverdale Developments",24,4.84],["Rose Builder",57,4.72],["Campion Homes",51,4.69],["Malcolm Allan",54,4.61],["Stancliffe Homes",39,4.6],["3West Group",29,4.56],["Kingswood Homes",80,4.56],["Bloor Homes",2920,4.54],["Denbury Homes",92,4.53],["Lioncourt Homes",142,4.53],["Newett Homes",80,4.52],["Homes by Honey",83,4.51],["Captiva Homes",32,4.5],["Dandara Homes",616,4.46],["Kebbell Development",41,4.46],["Thakeham Homes",89,4.44],["Orbit Group",88,4.42],["Deanfield Homes",37,4.4],["Morris Homes Group",410,4.4],["Churchill Living",392,4.39],["William Davis",165,4.39],["Bellway Homes",6900,4.38],["Robertson Homes",244,4.37],["CALA Group",1851,4.35],["Castle Green Homes",204,4.33],["Freeman Homes",44,4.33],["Barratt Redrow",12411,4.32],["Jones Homes",270,4.32],["Miller Homes",3398,4.32],["Keepmoat Homes",1758,4.31],["Persimmon Homes",8459,4.3],["Stonebond",53,4.28],["Story Homes",693,4.28],["Cameron Homes",96,4.27],["Beal Developments",151,4.26],["Hill Group",362,4.24],["Taylor Wimpey",6431,4.24],["Allison Homes",229,4.22],["Spitfire Bespoke Homes",219,4.22],["Croudace Homes",233,4.21],["Amethyst Homes",30,4.2],["Bargate Homes",73,4.2],["Davidsons Homes",581,4.2],["Vistry Homes",4078,4.2],["Crest Nicholson",818,4.19],["Durkan",87,4.17],["Cruden Homes",77,4.16],["Strata Group",271,4.15]];
+const HBF_LINKS = {"Barratt Redrow":"/developers/barratt-homes/","Bellway Homes":"/developers/bellway/","Bloor Homes":"/developers/bloor-homes/","CALA Group":"/developers/cala-homes/","Crest Nicholson":"/developers/crest-nicholson/","Keepmoat Homes":"/developers/keepmoat/","Miller Homes":"/developers/miller-homes/","Persimmon Homes":"/developers/persimmon-homes/","Taylor Wimpey":"/developers/taylor-wimpey/","Vistry Homes":"/developers/bovis-homes/"};
 
 const originalGuides = [
   {
     slug: 'snagging-survey-cost',
     published: '2026-09-25', updated: '2026-09-25',
     updated: '2026-10-31',
+    updated: '2026-11-18',
     title: 'How much does a snagging survey cost? (2026 prices)',
     summary: 'What snagging surveys and pre-completion inspections cost in England in 2026, what changes the price, and what to check before you book.',
     body: `<p>Most snagging surveys for a typical new home in England cost <strong>between about £325 and £500</strong>, based on the prices national snagging firms publish in 2026. Flats and smaller houses sit at the lower end; four- and five-bedroom houses at the top.</p>
+<h2>Published prices compared</h2>
+<div class="table-wrap"><table><thead><tr><th>Firm</th><th>Published price</th><th>Notes</th></tr></thead><tbody>
+<tr><td>Ashbridge Design</td><td>${gbp(prices.snag[0].price)} (flat) to ${gbp(prices.snag[4].price)} (5 bedrooms)</td><td>Same price before or after completion; re-inspection ${gbp(prices.reinspection)}</td></tr>
+<tr><td>HomeSnag (Midlands page)</td><td>Snagging survey from £395 inc. VAT; pre-completion from £295 inc. VAT</td><td>Prices "from", by survey type</td></tr>
+<tr><td>Professional Snagging Company (Birmingham page)</td><td>Add-ons: drone £45, thermal imaging £45, re-inspection £350</td><td>Base price not compared here</td></tr>
+<tr><td>Snagging Solutions (prices page)</td><td>£300 to £450, by size</td><td>Several price bands by property size</td></tr>
+</tbody></table></div>
+<p class="small muted">Taken from each firm's website: HomeSnag and Professional Snagging Company on 18 November 2026, Snagging Solutions on 31 October 2026. Prices change, so check before you book.</p>
 <h2>Ashbridge prices</h2>
 <ul>${prices.snag.map((r) => `<li>${r.label}: <strong>${gbp(r.price)}</strong></li>`).join('')}</ul>
 <p>The same price applies to a pre-completion inspection. Both together (before and after you move in) cost the snagging price plus ${gbp(prices.preAndPost)}. See <a href="/snagging-prices/">all snagging prices</a>, or get an instant quote.</p>
@@ -85,13 +97,25 @@ const originalGuides = [
     slug: 'new-build-warranty-first-two-years',
     published: '2026-09-25', updated: '2026-09-25',
     updated: '2026-10-31',
+    updated: '2026-11-18',
     title: 'New-build warranty explained: 10-year cover and the first 2 years',
     summary: 'How new-home warranties split into a two-year builder period and years 3–10, what that means for defects, and when to get a 2-year inspection.',
     body: `<p>Most new homes in England come with a 10-year warranty from a provider such as NHBC, Premier Guarantee or LABC Warranty. The details depend on the policy, so check your own documents, but they usually work in two stages. NHBC's Buildmark policy is the most common example.</p>
+<h2>The main providers at a glance</h2>
+<div class="table-wrap"><table><thead><tr><th>Provider</th><th>New homes for sale</th><th>How the cover splits</th></tr></thead><tbody>
+<tr><td>NHBC Buildmark</td><td>10 years</td><td>Builder responsible for defects in years 1–2, then NHBC insurance for years 3–10</td></tr>
+<tr><td>Premier Guarantee</td><td>10 years</td><td>2-year defects period (builder or developer), then an 8-year structural period (insurer)</td></tr>
+<tr><td>LABC Warranty</td><td>10 years</td><td>Check your policy document for how cover is split</td></tr>
+</tbody></table></div>
+<p>Your warranty certificate names the provider. Each <a href="/developers/">housebuilder page</a> also lists the provider the builder says it normally uses.</p>
 <h2>Years 1–2: the builder fixes defects</h2>
 <p>Under NHBC Buildmark, for the first two years <strong>the builder is responsible for putting right defects caused by not building to NHBC's Technical Standards</strong>. If the builder doesn't, or has gone out of business, NHBC may step in. This is the period for workmanship and materials: cracks, doors and windows, leaks, finishes and services.</p>
 <h2>Years 3–10: structural cover only</h2>
 <p>From year three to year ten, NHBC covers defects to the <strong>structural and weatherproofing parts</strong> of the home caused by breaches of its Technical Standards, but only where damage has occurred. Everyday defects that would have been the builder's responsibility in years one and two usually aren't covered.</p>
+<h2>Do all new builds have a 10-year warranty?</h2>
+<p>Not by law, but almost all do. Mortgage lenders will generally only lend on a newly built home if it's covered by a warranty scheme or a <a href="/guides/professional-consultants-certificate-new-build/">Professional Consultant's Certificate</a>. If a new home has neither, ask why before you exchange.</p>
+<h2>Is there a 15-year new build warranty?</h2>
+<p>For new homes for sale, NHBC, Premier Guarantee and LABC Warranty each list 10-year cover. Premier Guarantee and LABC Warranty list up to 12 years for some social housing and rental products. If you're offered a longer warranty, read what it covers and who stands behind it.</p>
 <h2>Why the end of year two matters</h2>
 <p>Some problems only show once a house has dried out and been through the seasons: settlement cracks, sticking doors, damp patches, drainage issues. Getting them on record <strong>before</strong> the two years are up keeps the builder responsible for them.</p>
 <p>A <a href="/two-year-warranty-inspection/">2-year warranty inspection</a> at around month 22 or 23 gives you time to report everything and for the builder to respond. It costs ${gbp(prices.warranty)}, or ${gbp(prices.warrantyReturning)} if we inspected your home before.</p>
@@ -458,7 +482,7 @@ const originalGuides = [
   },
   {
     slug: 'extension-drawings-total-cost',
-    published: '2026-10-31', updated: '2026-10-31',
+    published: '2026-10-31', updated: '2026-11-18', reviewed: false,
     title: 'How much do extension drawings cost in total? Fees explained',
     summary: 'Drawings, structural calculations, the national planning fee and building control: what you pay before building starts, with a Birmingham worked example.',
     body: `<p>The drawings are only part of the cost of getting an extension approved. Before a builder starts, most homeowners pay for <strong>drawings, structural calculations, a planning fee and building control</strong>, and some also pay for a party wall surveyor.</p>
@@ -468,11 +492,11 @@ const originalGuides = [
 <tr><td>Building Regulations drawings</td><td>Your designer</td><td>From ${gbp(single.s2)} with us (single-storey)</td></tr>
 <tr><td>Structural calculations</td><td>Your engineer</td><td>From ${gbp(single.calcs)} with us (single-storey)</td></tr>
 <tr><td>Householder planning application</td><td>National fee</td><td>£548 in England since 1 April 2026</td></tr>
-<tr><td>Larger home extension prior approval</td><td>National fee</td><td>£249 in England since 1 April 2026</td></tr>
+<tr><td>Larger home extension prior approval</td><td>National fee</td><td>£249 in England since 1 April 2026, due to rise to £310 on 8 December 2026</td></tr>
 <tr><td>Building control</td><td>Your building control body</td><td>Varies: ask for a written quote</td></tr>
 <tr><td>Party wall surveyor</td><td>The surveyor</td><td>Only if needed: ask for a written quote</td></tr>
 </tbody></table></div>
-<p>Planning fees are the same across England, so a council can't charge you more than its neighbour for the same householder application. A further rise to £575 has been proposed, so check the current fee before you apply.</p>
+<p>Planning fees are the same across England, so a council can't charge you more than its neighbour for the same householder application. From 8 December 2026 it is due to rise to £575, if Parliament approves it. See <a href="/guides/planning-application-fees-december-2026/">the December 2026 fee changes</a>.</p>
 <h2>Worked example: a single-storey extension in Birmingham</h2>
 <ul>
 <li>Complete design package with structural calculations: <strong>${gbp(single.complete)}</strong></li>
@@ -488,11 +512,11 @@ const originalGuides = [
 <li><strong>Revisions:</strong> check what your quote allows if the planners ask for changes. Use our <a href="/guides/how-to-compare-extension-drawing-quotes/">quote comparison checklist</a>.</li>
 </ul>
 <p>See <a href="/extension-design-prices/">all extension design prices</a>, including double-storey extensions, loft and garage conversions.</p>
-<p class="small muted">Fees checked on 31 October 2026. These are the costs of design and approval only, not the cost of building the extension.</p>`,
+<p class="small muted">Fees checked on 18 November 2026. These are the costs of design and approval only, not the cost of building the extension.</p>`,
   },
   {
     slug: 'when-do-you-need-structural-calculations',
-    published: '2026-10-31', updated: '2026-10-31',
+    published: '2026-10-31', updated: '2026-10-31', reviewed: false,
     title: 'When do you need structural calculations?',
     summary: 'Wall removals, steel beams, extensions and lofts: when calculations are needed, why building control asks for them, and what they should include.',
     body: `<p>You need structural calculations whenever building work changes how loads travel through your home and someone has to show that the result is safe. Part A of the Building Regulations covers structure, and building control will want evidence that your design complies.</p>
@@ -551,7 +575,7 @@ const originalGuides = [
   },
   {
     slug: 'party-wall-agreements-for-extensions',
-    published: '2026-10-31', updated: '2026-10-31',
+    published: '2026-10-31', updated: '2026-10-31', reviewed: false,
     title: 'Party wall agreements for extensions: when you need one',
     summary: 'When the Party Wall etc Act applies to an extension or loft, how much notice to give, what happens if a neighbour disagrees, and who arranges it.',
     body: `<p>The Party Wall etc Act 1996 applies across England and Wales. It can apply to your extension or loft if the work touches a shared wall, builds on the boundary, or excavates close to a neighbour's building. It's separate from planning permission and Building Regulations, so having those doesn't remove your duty to give notice.</p>
@@ -575,6 +599,130 @@ const originalGuides = [
 <p>Build the time into your programme: with a two-month notice, you need to start this well before your builder's start date.</p>
 <p class="small muted">A general guide, not legal advice. Take advice from a party wall surveyor or solicitor for your own project.</p>`,
   },
+  {
+    slug: 'hbf-star-ratings-2026-housebuilders-ranked',
+    published: '2026-11-18', updated: '2026-11-18', reviewed: false, category: 'snagging',
+    title: 'HBF star ratings 2026: every housebuilder ranked by score',
+    summary: 'The 2026 HBF customer satisfaction results ranked by composite score, what the scores mean, and why a 5-star builder can still leave snags.',
+    body: `<p>The Home Builders Federation (HBF) published its 2026 star ratings in March 2026. They are based on its National New Homes Customer Satisfaction Survey for buyers who moved in between <strong>October 2024 and September 2025</strong>. Every builder in the published 2026 table has 5 stars, so the composite score is the more useful number for comparing them.</p>
+<h2>How the 2026 ratings work</h2>
+<ul>
+<li>Buyers are surveyed <strong>8 weeks and 9 months</strong> after moving in.</li>
+<li>Builders are scored on two questions, one about the quality of the home and one about the service received, on a scale of 1 to 5.</li>
+<li>For this survey year, a builder needed a composite score of <strong>4.15 or higher</strong> for 5 stars. HBF says the threshold will rise in future years.</li>
+<li>Taking part is voluntary, so builders that don't take part, or don't get enough responses, don't appear.</li>
+</ul>
+<h2>The industry picture</h2>
+<p>Across all builders surveyed, HBF reports that 93% of buyers would recommend their builder to a friend, the sixth year in a row at 90% or above. Asked about specific parts of the experience:</p>
+<ul>
+<li>90% were satisfied with the quality of their home.</li>
+<li>90% were satisfied with the service during the buying process.</li>
+<li>88% were satisfied with the service after they moved in.</li>
+</ul>
+<h2>All 48 builders, ranked</h2>
+<div class="table-wrap"><table><thead><tr><th>Rank</th><th>Builder</th><th class="num">Composite score</th><th class="num">Sample surveyed</th></tr></thead><tbody>
+${HBF_2026_TABLE.map(([b, n, s], i) => `<tr><td class="num">${i + 1}</td><td>${HBF_LINKS[b] ? `<a href="${HBF_LINKS[b]}">${b}</a>` : b}</td><td class="num">${s.toFixed(2)}</td><td class="num">${n.toLocaleString('en-GB')}</td></tr>`).join('')}
+</tbody></table></div>
+<p class="small muted">Data from the HBF 2026 star rating results, checked on 18 November 2026. Rank is by composite score; ties keep HBF's order.</p>
+<h2>What stands out</h2>
+<ul>
+<li><strong>Small samples top the table.</strong> Riverdale Developments scored 4.84 from 24 surveys. With so few responses, a handful of buyers can move the score a lot.</li>
+<li><strong>Among the large builders,</strong> Bloor Homes leads with 4.54 from 2,920 surveys, followed by Bellway (4.38) and CALA Group (4.35). Barratt Redrow and Miller Homes both scored 4.32.</li>
+<li><strong>The lowest 5-star scores</strong> were Strata Group (4.15), Cruden Homes (4.16), Durkan (4.17) and Crest Nicholson (4.19), all close to the 4.15 threshold.</li>
+<li><strong>Avant Homes isn't in the 2026 table.</strong> It had 5 stars in the 2025 results.</li>
+</ul>
+<h2>Why a 5-star builder still needs a snagging survey</h2>
+<p>The rating measures how satisfied buyers felt soon after moving in, averaged across a builder's whole output. It doesn't tell you about <em>your</em> plot. Even with a good builder, the quickest way to get defects fixed is to record them in writing while the builder is still responsible for them, ideally before completion. See <a href="/pre-completion-inspection/">pre-completion inspections</a> or <a href="/snagging-prices/">snagging survey prices</a>.</p>
+<p>For builder-by-builder facts, including warranty providers and after-sales contacts, see our <a href="/developers/">housebuilder pages</a>.</p>`,
+  },
+  {
+    slug: 'planning-application-fees-december-2026',
+    published: '2026-11-18', updated: '2026-11-18', reviewed: false, category: 'design',
+    title: 'Planning fees rise on 8 December 2026: what extensions will cost',
+    summary: 'The householder planning fee in England is due to rise from £548 to £575 on 8 December 2026. The fees that affect extensions, old and new.',
+    body: `<p>Planning application fees in England are due to rise on <strong>8 December 2026</strong>, if the draft amending legislation is approved by Parliament. For a householder application to extend a house, the fee goes from <strong>£548 to £575</strong>.</p>
+<h2>Fees that affect house extensions</h2>
+<div class="table-wrap"><table><thead><tr><th>Application</th><th class="num">From 1 April 2026</th><th class="num">From 8 December 2026</th></tr></thead><tbody>
+<tr><td>Householder application: extending or altering a house</td><td class="num">£548</td><td class="num">£575</td></tr>
+<tr><td>Prior approval: larger home extension (Part 1, Class A)</td><td class="num">£249</td><td class="num">£310</td></tr>
+<tr><td>Prior approval: additional storeys on a home (Part 1, Class AA)</td><td class="num">£249</td><td class="num">£310</td></tr>
+<tr><td>Non-material amendment, householder</td><td class="num">£46</td><td class="num">£53</td></tr>
+<tr><td>Lawful Development Certificate, proposed works</td><td class="num">£274</td><td class="num">£287.50</td></tr>
+</tbody></table></div>
+<p class="small muted">From the Planning Portal's current and forthcoming fee schedules, checked on 18 November 2026. A Lawful Development Certificate for proposed works costs half the full application fee, so it is worked out from the householder fee.</p>
+<h2>What this means if you're planning an extension</h2>
+<ul>
+<li><strong>The rise is small next to the total.</strong> For most projects, design, calculations and building control cost far more than the planning fee. See <a href="/guides/extension-drawings-total-cost/">the total cost of extension drawings</a>.</li>
+<li><strong>Prior approval rises the most:</strong> up £61, about 24%. If your extension is going through the <a href="/guides/do-i-need-planning-permission-for-an-extension/">larger home extension route</a>, it's worth knowing which fee will apply.</li>
+<li><strong>Don't rush a weak application.</strong> A refusal and a resubmission cost far more time than the fee difference. See <a href="/guides/extension-planning-permission-refused/">what happens if planning is refused</a>.</li>
+</ul>
+<h2>Fees are national</h2>
+<p>Planning application fees are set nationally, so the same householder fee applies whichever council you apply to. Building control charges are different: each building control body sets its own, so get a written quote.</p>
+<p>Planning an extension? See our <a href="/extension-design-prices/">extension design prices</a>.</p>`,
+  },
+  {
+    slug: 'can-i-extend-my-garage',
+    published: '2026-11-18', updated: '2026-11-18', reviewed: false, category: 'design',
+    title: 'Can I extend my garage? Planning and Building Regulations',
+    summary: 'Extending an attached garage, a detached garage or building over one: when you need planning permission, the permitted development limits and Building Regulations.',
+    body: `<p>Usually, yes, but the rules depend on whether your garage is <strong>attached to the house or detached</strong>, and on what you're adding. Start by working out which of these you're planning.</p>
+<h2>Extending an attached or integral garage</h2>
+<p>A garage that is part of the house is treated as part of the house. Making it bigger, or building a room above it, is a house extension. It follows the same permitted development limits as any other extension, covering depth, height and distance from the boundary. Two-storey and side extensions aren't permitted development in a conservation area.</p>
+<p>See <a href="/guides/do-i-need-planning-permission-for-an-extension/">do I need planning permission for an extension?</a> for the limits for each type of extension.</p>
+<h2>Extending or replacing a detached garage</h2>
+<p>A detached garage is an outbuilding. Under permitted development, outbuildings and garages must:</p>
+<ul>
+<li>be single storey, with eaves no higher than <strong>2.5 m</strong></li>
+<li>be no higher than <strong>4 m</strong> overall with a dual-pitched roof, or <strong>3 m</strong> with any other roof</li>
+<li>be no higher than <strong>2.5 m</strong> if within 2 m of a boundary</li>
+<li>not sit forward of the principal elevation, which is usually the front of the house</li>
+<li>together with other additions, cover no more than <strong>half the land around the original house</strong></li>
+</ul>
+<p>Lower limits apply in National Parks, National Landscapes and World Heritage Sites. Flats and maisonettes have no householder permitted development rights.</p>
+<h2>When you'll need planning permission anyway</h2>
+<ul>
+<li>Your estate's planning permission removed permitted development rights. This is common on newer estates.</li>
+<li>An Article 4 direction applies to your street.</li>
+<li>You live in a listed building, or the work goes beyond the limits above.</li>
+</ul>
+<p>Even when it's permitted development, a <a href="/guides/lawful-development-certificate-house-extension/">Lawful Development Certificate</a> is useful proof when you sell.</p>
+<h2>Building Regulations</h2>
+<p>Extending an attached garage needs Building Regulations approval. A room above a garage brings in structure, fire separation and insulation. A small detached garage can be exempt under Schedule 2 of the Building Regulations, depending on its size, its distance from the boundary and what it's built from, but a larger one needs approval. If a beam or a new opening is involved, you'll also need <a href="/guides/when-do-you-need-structural-calculations/">structural calculations</a>.</p>
+<h2>Converting rather than extending?</h2>
+<p>Turning a garage into a room is a different project. See <a href="/garage-conversion-drawings/">garage conversion drawings</a> and our guide to <a href="/guides/garage-conversion-building-regulations-drawings/">garage conversion Building Regulations drawings</a>.</p>
+<p>Not sure which applies? Try the free <a href="/can-i-extend/">Can I extend?</a> check.</p>`,
+  },
+  {
+    slug: 'professional-consultants-certificate-new-build',
+    published: '2026-11-18', updated: '2026-11-18', reviewed: false, category: 'snagging',
+    title: "Professional Consultant's Certificate: new builds without a warranty",
+    summary: "What a Professional Consultant's Certificate (PCC) is, often called a CML certificate, when lenders accept one instead of a new home warranty, and what to check.",
+    body: `<p>Mortgage lenders will generally only lend on a newly built, converted or renovated home if it's covered by a <strong>warranty scheme</strong> or a <strong>Professional Consultant's Certificate (PCC)</strong>. That's set out in the UK Finance Mortgage Lenders' Handbook. The handbook was previously the CML Lenders' Handbook, which is why the PCC is still often called a "CML certificate".</p>
+<h2>What a PCC confirms</h2>
+<p>The certificate confirms that a professional consultant:</p>
+<ul>
+<li>visited the property during construction to check its progress, and checked it against the drawings approved under Building Regulations and the building contract</li>
+<li>remains liable to the first buyers, their lender and later buyers and lenders for <strong>6 years</strong> from the date of the certificate</li>
+<li>has experience of designing or monitoring residential building work</li>
+<li>keeps professional indemnity insurance in force to cover that liability</li>
+</ul>
+<p>The consultant must belong to one of the professional bodies listed in the handbook, such as the Royal Institution of Chartered Surveyors.</p>
+<h2>Warranty or PCC: the difference for you</h2>
+<div class="table-wrap"><table><thead><tr><th></th><th>New home warranty</th><th>Professional Consultant's Certificate</th></tr></thead><tbody>
+<tr><td>Typical length</td><td>10 years for new homes for sale, from providers such as NHBC, Premier Guarantee and LABC Warranty</td><td>Consultant liable for 6 years from the certificate date</td></tr>
+<tr><td>Who stands behind it</td><td>The warranty provider, with the builder responsible for defects at first</td><td>The consultant and their professional indemnity insurance</td></tr>
+<tr><td>Common on</td><td>Homes built by registered housebuilders</td><td>Self-builds, small developments and conversions</td></tr>
+</tbody></table></div>
+<p>Lenders set their own rules on which warranties and certificates they accept, and some limit when a PCC can be used. If you're buying a home with a PCC, ask your lender and conveyancer early whether it's acceptable, and when it must be issued.</p>
+<h2>Questions to ask the seller</h2>
+<ul>
+<li>Who issued the certificate, and which professional body do they belong to?</li>
+<li>Did they inspect during construction, from the start, at regular stages?</li>
+<li>Is there a Building Regulations completion certificate?</li>
+<li>What professional indemnity insurance is in place?</li>
+</ul>
+<p>Ashbridge doesn't issue Professional Consultant's Certificates. A <a href="/new-build-snagging/">snagging survey</a> is a separate check of the finished home's condition. It doesn't replace a warranty or a PCC. For how warranties work, see <a href="/guides/new-build-warranty-first-two-years/">new-build warranties explained</a>.</p>`,
+  },
 ];
 
 const guides = [
@@ -591,6 +739,18 @@ const AD = ['GOV.UK: Building Regulations Approved Documents', 'https://www.gov.
 const HOA = ['HomeOwners Alliance: how much does a snagging survey cost?', 'https://hoa.org.uk/advice/guides-for-homeowners/i-am-buying/snagging-survey-cost/'];
 const NHQB_P3 = ['NHQB Code V2, Part 3: after-sales service, complaints and the New Homes Ombudsman', 'https://www.nhqb.org.uk/the-code/part-3-after-sales-service-complaints-and-the-new-homes-ombudsman/'];
 const NHOS = ['New Homes Ombudsman Service', 'https://www.nhos.org.uk/about-us'];
+const HBF_RES = ['HBF: 2026 star rating results', 'https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/'];
+const HBF_FAQ = ['HBF: Customer Satisfaction Survey and star ratings FAQs', 'https://www.hbf.co.uk/policy/campaigns-and-initiatives/css-star-awards/css-faqs/'];
+const FEES_NOW = ['Planning Portal: planning application fees in England (from 1 April 2026)', 'https://ecab.planningportal.co.uk/uploads/english_application_fees.pdf'];
+const FEES_DEC = ['Planning Portal: forthcoming planning application fees in England (from 8 December 2026)', 'https://ecab.planningportal.co.uk/uploads/forthcoming_english_application_fees.pdf'];
+const PP_OUT = ['Planning Portal: outbuildings and planning permission', 'https://www.planningportal.co.uk/permission/common-projects/outbuildings/planning-permission'];
+const BR_SCH2 = ['legislation.gov.uk: Building Regulations 2010, Schedule 2 (exempt buildings)', 'https://www.legislation.gov.uk/uksi/2010/2214/schedule/2'];
+const PCC = ["UK Finance Mortgage Lenders' Handbook: Professional Consultant's Certificate", 'https://lendershandbook.ukfinance.org.uk/pcc'];
+const PREMIER = ['Premier Guarantee: New Homes Warranty', 'https://www.premierguarantee.com/en/our-services/structural-warranties/New-Homes-Warranty.html'];
+const LABCW = ['LABC Warranty: what we cover', 'https://www.labcwarranty.co.uk/what-we-cover'];
+const HOMESNAG = ['HomeSnag: snagging in the Midlands', 'https://homesnag.co.uk/midlands/'];
+const PSC = ['Professional Snagging Company: snagging survey Birmingham', 'https://www.snaggingcompany.com/snagging-surveys/snagging-survey-birmingham/'];
+const SSOL = ['Snagging Solutions: snagging survey prices', 'https://snaggingsolutions.co.uk/snagging-survey-prices/'];
 const NHBC = ['NHBC: Buildmark cover for homeowners', 'https://www.nhbc.co.uk/homeowners/buildmark-cover'];
 const REG = ['NHQB Register of Developers', 'https://www.nhqb.org.uk/register-of-developers/'];
 const LANGLEY_SPD = ['Birmingham City Council: Langley SUE supplementary planning document', 'https://www.birmingham.gov.uk/download/downloads/id/12543/langley_sue_spd.pdf'];
@@ -614,9 +774,13 @@ const PW_BOOK = ['GOV.UK: The Party Wall etc Act 1996, explanatory booklet', 'ht
 const PW_ACT = ['legislation.gov.uk: Party Wall etc. Act 1996', 'https://www.legislation.gov.uk/ukpga/1996/40'];
 const PARTP = ['GOV.UK: Approved Document P (electrical safety in dwellings)', 'https://www.gov.uk/government/publications/electrical-safety-approved-document-p'];
 const SOURCES = {
-  'snagging-survey-cost': [HOA, NHQB_P2],
+  'snagging-survey-cost': [HOA, NHQB_P2, HOMESNAG, PSC, SSOL],
+  'hbf-star-ratings-2026-housebuilders-ranked': [HBF_RES, HBF_FAQ],
+  'planning-application-fees-december-2026': [FEES_NOW, FEES_DEC],
+  'can-i-extend-my-garage': [PD, PP, PP_OUT, BR_SCH2],
+  'professional-consultants-certificate-new-build': [PCC, NHBC, PREMIER, LABCW],
   'what-happens-after-your-snagging-report': [NHQB_P3, NHOS],
-  'new-build-warranty-first-two-years': [NHBC, NHQB_P3],
+  'new-build-warranty-first-two-years': [NHBC, PREMIER, LABCW, PCC, NHQB_P3],
   'langley-sutton-coldfield-new-build-guide': [LANGLEY_SPD, LANGLEY_UKE, LANGLEY_HT, REG],
   'can-i-do-my-own-pre-completion-inspection': [NHQB_P2, NHQB],
   'pre-completion-inspection-explained': [NHQB_P2, NHQB],
@@ -639,6 +803,10 @@ const human = (d) => new Date(d + 'T12:00:00').toLocaleDateString('en-GB', { day
 // Each guide links on to related guides and to the service page it supports, so no
 // guide relies on the index page alone for internal links.
 const RELATED = {
+  'hbf-star-ratings-2026-housebuilders-ranked': ['pre-completion-inspection-explained', 'new-build-warranty-first-two-years', 'choosing-a-snagging-company'],
+  'planning-application-fees-december-2026': ['extension-drawings-total-cost', 'do-i-need-planning-permission-for-an-extension', 'lawful-development-certificate-house-extension'],
+  'can-i-extend-my-garage': ['do-i-need-planning-permission-for-an-extension', 'garage-conversion-building-regulations-drawings', 'lawful-development-certificate-house-extension'],
+  'professional-consultants-certificate-new-build': ['new-build-warranty-first-two-years', 'what-is-a-snagging-survey', 'pre-completion-inspection-explained'],
   'what-is-snagging': ['new-build-snagging-checklist', 'what-is-a-snagging-survey', 'what-happens-after-your-snagging-report'],
   'new-build-snagging-checklist': ['what-is-snagging', 'choosing-a-snagging-company', 'can-i-do-my-own-pre-completion-inspection'],
   'choosing-a-snagging-company': ['snagging-survey-cost', 'what-is-a-snagging-survey', 'new-build-snagging-checklist'],
@@ -658,6 +826,10 @@ const RELATED = {
   'snagging-an-extension': ['planning-vs-building-regulations-drawings', 'new-build-snagging-checklist', 'do-i-need-planning-permission-for-an-extension'],
 };
 const NEXT_STEP = {
+  'hbf-star-ratings-2026-housebuilders-ranked': ['/developers/', 'Check your housebuilder'],
+  'planning-application-fees-december-2026': ['/extension-design-prices/', 'Extension design prices'],
+  'can-i-extend-my-garage': ['/can-i-extend/', 'Free "Can I extend?" check'],
+  'professional-consultants-certificate-new-build': ['/new-build-snagging/', 'New-build snagging surveys'],
   'what-is-snagging': ['/new-build-snagging/', 'New-build snagging surveys'],
   'new-build-snagging-checklist': ['/snagging-prices/', 'Instant snagging price'],
   'choosing-a-snagging-company': ['/new-build-snagging/', 'Our snagging surveys'],
@@ -680,6 +852,7 @@ const SNAGGING = new Set(['what-is-snagging', 'new-build-snagging-checklist', 'c
 const bySlug = Object.fromEntries(guides.map((g) => [g.slug, g]));
 
 // A "Related guides" block for any page: pass guide slugs.
+export const guideSlugs = (test) => guides.filter((g) => (typeof test === 'function' ? test(g) : (g.category === test || (test === 'snagging' && SNAGGING.has(g.slug)) || (test === 'design' && g.category !== 'snagging' && !SNAGGING.has(g.slug))))).map((g) => g.slug);
 export function relatedGuides(slugs, heading = 'Related guides') {
   const list = slugs.map((s) => bySlug[s]).filter(Boolean);
   if (!list.length) return '';

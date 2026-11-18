@@ -62,6 +62,21 @@ writeFileSync(join(dist, 'sitemap.xml'), `<?xml version="1.0" encoding="UTF-8"?>
 ${indexable.map((p) => `  <url><loc>${site.url}${p.path}</loc><lastmod>${lastmod[p.path].date}</lastmod></url>`).join('\n')}
 </urlset>
 `);
+// llms.txt: a plain-text map of the site for AI assistants (llmstxt.org format).
+const section = (test) => indexable.filter((p) => test(p.path)).map((p) => `- [${p.title.replace(/ \| .*$/, '')}](${site.url}${p.path}): ${p.description}`).join('\n');
+writeFileSync(join(dist, 'llms.txt'), `# ${site.name}
+
+> ${site.tagline}. Fixed published prices. Based in ${site.base}, covering England.
+
+## Services
+${section((p) => !/^\/(areas|developers|guides)\//.test(p.path) && p.path !== '/')}
+
+## Housebuilders
+${section((p) => /^\/developers\/./.test(p.path))}
+
+## Guides
+${section((p) => /^\/guides\/./.test(p.path))}
+`);
 writeFileSync(join(dist, 'robots.txt'), `User-agent: *\nAllow: /\nSitemap: ${site.url}/sitemap.xml\n`);
 // Browsers and Google look for /favicon.ico at the site root.
 cpSync(join(root, 'assets', 'favicon.ico'), join(dist, 'favicon.ico'));
